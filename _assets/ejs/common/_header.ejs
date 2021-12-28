@@ -27,23 +27,99 @@
 <body>
 
   <div id="wrapper">
-    <header id="header" class="c-header">
-      <div class="inner-block">
-        <% if (pageId === 'home'){ %>
-        <h1><%= jsonData.siteInfo.name %></h1>
-        <% } else { %>
-        <a href="/"><%= jsonData.siteInfo.name %></a>
-        <% } %>
-      </div><!-- /inner-block -->
+
+    <header class="l-header p-header">
+      <div class="l-header__inner">
+        <h1 class="p-header__logo">
+          <a href="/" class="p-header__logo-link">cocosyu.</a>
+        </h1>
+        <div class="p-header__links">
+          <nav class="p-header__nav p-global-nav">
+            <ul class="p-global-nav__list">
+              <li class="p-global-nav__item">
+                <a href="/about/" class="p-global-nav__link">
+                  ABOUT
+                </a>
+              </li>
+              <li class="p-global-nav__item">
+                <a href="/works/" class="p-global-nav__link">
+                  WORKS
+                </a>
+              </li>
+              <li class="p-global-nav__item">
+                <a href="/vision/" class="p-global-nav__link">
+                  VISION
+                </a>
+              </li>
+              <li class="p-global-nav__item">
+                <a href="/contact/" class="p-global-nav__link">
+                  CONTACT
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="p-header-sns">
+            <li class="p-header-sns__item">
+              <a href="https://twitter.com/coco_hack_ll" class="p-header-sns__link" target="_blank" rel="noopener noreferrer">
+                <svg class="c-svg p-header-sns__svg" width="20" height="20">
+                  <use xlink:href="/img/svg/sprite.min.svg#icon-twitter" />
+                </svg>
+              </a>
+            </li>
+            <li class="p-header-sns__item">
+              <a href="https://github.com/kokoro-hart" class="p-header-sns__link" target="_blank" rel="noopener noreferrer">
+                <svg class="c-svg p-header-sns__svg" width="20" height="20">
+                  <use xlink:href="/img/svg/sprite.min.svg#icon-github" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <button id="js-drawer-button" class="p-header__button c-button-drawer"  aria-controls="js-drawer-nav" aria-expanded="false">
+          <span class="c-button-drawer__line">
+          </span>
+        </button>
+
+        <div id="js-drawer-nav" class="p-drawer-nav" aria-hidden="true">
+          <ul class="p-drawer-nav__list">
+            <li class="p-drawer-nav__item">
+              <a href="/about/" class="p-drawer-nav__link">
+                ABOUT
+              </a>
+            </li>
+            <li class="p-drawer-nav__item">
+              <a href="/works/" class="p-drawer-nav__link">
+                WORKS
+              </a>
+            </li>
+            <li class="p-drawer-nav__item">
+              <a href="/vision/" class="p-drawer-nav__link">
+                VISION
+              </a>
+            </li>
+            <li class="p-drawer-nav__item">
+              <a href="/contact/" class="p-drawer-nav__link">
+                CONTACT
+              </a>
+            </li>
+          </ul>
+          <ul class="p-drawer-nav__sns p-sns">
+            <li class="p-sns__item">
+              <a href="https://twitter.com/coco_hack_ll" class="p-sns__link" target="_blank" rel="noopener noreferrer">
+                <svg class="c-svg p-sns__svg" width="20" height="20">
+                  <use xlink:href="/img/svg/sprite.min.svg#icon-twitter" />
+                </svg>
+              </a>
+            </li>
+            <li class="p-sns__item">
+              <a href="https://github.com/kokoro-hart" class="p-sns__link" target="_blank" rel="noopener noreferrer">
+                <svg class="c-svg p-sns__svg" width="20" height="20">
+                  <use xlink:href="/img/svg/sprite.min.svg#icon-github" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
-    <nav>
-      <ul>
-        <% for(let page in jsonData.pages){ %>
-        <% if (page === pageId) { %>
-        <li class="current"><%= jsonData.pages[page].name %></li>
-        <% } else { %>
-        <li><a href="<%= jsonData.pages[page].slug %>"><%= jsonData.pages[page].name %></a></li>
-        <% } %>
-        <% }; %>
-      </ul>
-    </nav>
