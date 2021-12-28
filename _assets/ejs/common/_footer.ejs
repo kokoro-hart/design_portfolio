@@ -1,0 +1,19 @@
+<footer id="footer" class="c-footer">
+  <div class="inner-block">
+    <nav>
+      <ul>
+        <% for(let page in jsonData.pages){ %>
+        <li><a href="<%= jsonData.pages[page].slug %>"><%= jsonData.pages[page].name %></a></li>
+        <% }; %>
+      </ul>
+    </nav>
+    <p><small>（c）<%= jsonData.siteInfo.name %></small></p>
+  </div><!-- /inner-block -->
+</footer>
+
+</div><!-- /wrapper -->
+
+<script src="/js/bundle.js"></script>
+</body>
+
+</html>

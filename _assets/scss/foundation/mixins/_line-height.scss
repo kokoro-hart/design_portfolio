@@ -1,0 +1,11 @@
+@use "breakpoint";
+
+@mixin lh($lineH_xs: "", $lineH_md: "") {
+  line-height: #{$lineH_xs}em;
+
+  @if ($lineH_md != "") {
+    @include breakpoint.mq(md) {
+      line-height: #{$lineH_md}em;
+    }
+  }
+}

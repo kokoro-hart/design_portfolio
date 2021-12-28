@@ -1,0 +1,11 @@
+@use "breakpoint";
+
+@mixin fz($font_xs: "", $font_md: "") {
+  font-size: #{$font_xs}px;
+
+  @if ($font_md != "") {
+    @include breakpoint.mq(md) {
+      font-size: #{$font_md}px;
+    }
+  }
+}

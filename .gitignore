@@ -1,0 +1,8 @@
+_gulp/node_modules/
+_gulp/package-lock.json
+_static/dist/
+.vscode
+
+*.map
+
+!.gitkeep

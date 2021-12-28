@@ -1,0 +1,49 @@
+<% let title = (pageId === 'home') ? jsonData.siteInfo.name : jsonData.pages[pageId].name + ' | ' + jsonData.siteInfo.name%>
+<% let description = jsonData.pages[pageId].description %>
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width">
+  <link rel="apple-touch-icon" href="/img/common/apple-touch-icon.png">
+
+  <title><%= title %></title>
+  <meta name="description" content="<%= description %>">
+
+  <meta property="og:title" content="<%= title %>">
+  <meta property="og:description" content="<%= description %>">
+  <meta property="og:url" content="<%= jsonData.siteInfo.siteUrl + jsonData.pages[pageId].slug %>">
+  <meta property="og:type" content="<%= jsonData.pages[pageId].type %> ">
+  <meta property="og:local" content="ja_JP">
+  <meta property="og:image" content="/common/og-image.jpg">
+  <meta property="og:site_name" content="<%= jsonData.siteInfo.siteUrl %> ">
+
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+
+</head>
+
+<body>
+
+  <div id="wrapper">
+    <header id="header" class="c-header">
+      <div class="inner-block">
+        <% if (pageId === 'home'){ %>
+        <h1><%= jsonData.siteInfo.name %></h1>
+        <% } else { %>
+        <a href="/"><%= jsonData.siteInfo.name %></a>
+        <% } %>
+      </div><!-- /inner-block -->
+    </header>
+    <nav>
+      <ul>
+        <% for(let page in jsonData.pages){ %>
+        <% if (page === pageId) { %>
+        <li class="current"><%= jsonData.pages[page].name %></li>
+        <% } else { %>
+        <li><a href="<%= jsonData.pages[page].slug %>"><%= jsonData.pages[page].name %></a></li>
+        <% } %>
+        <% }; %>
+      </ul>
+    </nav>

@@ -1,0 +1,38 @@
+{
+  "siteInfo": {
+    "name": "cocosyu",
+    "siteUrl": "cocosyu.link"
+  },
+  "pages": {
+    "home": {
+      "name": "TOP",
+      "description": "テストページの説明",
+      "type": "website",
+      "slug": "/"
+    },
+    "about": {
+      "name": "ABOUT",
+      "description": "ABOUTページの説明",
+      "type": "article",
+      "slug": "/about/"
+    },
+    "works": {
+      "name": "WORKS",
+      "description": "WORKSページの説明",
+      "type": "article",
+      "slug": "/works/"
+    },
+    "vision": {
+      "name": "VISION",
+      "description": "VISIONページの説明",
+      "type": "article",
+      "slug": "/vision/"
+    },
+    "contact": {
+      "name": "CONTACT",
+      "description": "CONTACTページの説明",
+      "type": "article",
+      "slug": "/contact/"
+    }
+  }
+}

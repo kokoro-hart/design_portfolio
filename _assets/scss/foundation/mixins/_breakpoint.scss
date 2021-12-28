@@ -1,0 +1,32 @@
+
+//※モバイルファースト
+$screen: (
+  xs: 376px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+) !default;
+
+@mixin mq($size, $width: min) {
+  $result: 0;
+
+  @if (type-of($size) == number) {
+    $result: $size;
+  } @else {
+    @each $key, $value in $screen {
+      @if ($key == $size) {
+        $result: $value;
+      }
+    }
+  }
+
+  @if ($width == max) {
+    $result: $result - 1;
+  }
+
+  @media (#{$width}-width: #{$result}) {
+    @content;
+  }
+}
