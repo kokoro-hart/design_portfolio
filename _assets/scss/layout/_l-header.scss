@@ -7,12 +7,13 @@
   position: fixed;
   top: 0;
   left: 0;
+  z-index: map-get(global.$layer, header);
   width: 100%;
 }
 
 .l-header__inner {
   position: relative;
-  z-index: 20;
+  z-index: map-get(global.$layer, header-inner);
   display: flex;
   justify-content: space-between;
   width: 100%;

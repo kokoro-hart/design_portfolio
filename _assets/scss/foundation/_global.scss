@@ -3,12 +3,10 @@
 @forward "variables/color";
 @forward "variables/layout";
 @forward "variables/easing";
+@forward "variables/z-index";
 
 //mixins
 @forward "mixins/breakpoint";
 @forward "mixins/object-fit";
 @forward "mixins/font-size";
 @forward "mixins/line-height";
-
-//functions
-@forward "functions/z-index";

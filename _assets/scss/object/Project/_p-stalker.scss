@@ -1,0 +1,48 @@
+@use "foundation/global";
+
+// Project マウスストーカー
+//--------------------------------------------------------------------------
+
+.p-stalker {
+  pointer-events: none;
+  position: fixed;
+  top: -8px;
+  left: -8px;
+  z-index: map-get(global.$layer, stalker);
+  width: 48px;
+  height: 48px;
+  background: transparent;
+  border: 1px solid global.$color-border;
+  border-radius: 50%;
+  transition: transform 0.2s, top, 0.3s, left 0.3s, width 0.3s, height 0.3s, background-color 0.3s;
+  transition-timing-function: ease-out;
+
+  &.is-hover {
+    top: -30px;
+    left: -35px;
+    width: 70px;
+    height: 80px;
+    background: transparent;
+    transition: 0.5s;
+    border: none;
+    &::before,
+    &::after {
+      content: "";
+      width: 50%;
+      height: 70%;
+      background: rgba(255, 0, 0, 0.2);
+      border-radius: 40% 40% 0 0;
+      display: block;
+      position: absolute;
+    }
+    &::before {
+      background: linear-gradient(to bottom, rgba(255, 0, 0, 0.2) 0 38%, transparent 0 62%);
+      transform: rotate(-45deg);
+      left: 14%;
+    }
+    &::after {
+      transform: rotate(45deg);
+      right: 14%;
+    }
+  }
+}
