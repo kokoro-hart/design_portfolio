@@ -1,0 +1,24 @@
+@use "foundation/global";
+
+// Layout ヘッダー
+//--------------------------------------------------------------------------
+
+.l-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.l-header__inner {
+  position: relative;
+  z-index: 20;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 20px 0;
+
+  @include global.mq(md) {
+    padding: 40px 40px 0;
+  }
+}

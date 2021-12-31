@@ -1,0 +1,37 @@
+@use "foundation/global";
+
+// Project ヘッダー
+//--------------------------------------------------------------------------
+
+.p-header {
+  mix-blend-mode: difference;
+  background-color: transparent;
+  font-family: global.$font-family-en;
+}
+
+.p-header__logo {
+  transition: color 0.3s global.ease(out-quint);
+}
+
+.p-header__logo-link {
+  display: block;
+  @include global.fz(28, 32);
+  @include global.lh(1.2);
+  font-style: italic;
+  font-weight: 400;
+}
+
+.p-header__links {
+  display: flex;
+}
+
+.p-header__button {
+  transform: translateX(5px);
+}
+
+//ドロワーアクティブ時
+.is-drawer-active {
+  .p-header__logo {
+    color: global.$color-black;
+  }
+}

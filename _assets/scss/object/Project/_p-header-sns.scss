@@ -1,0 +1,29 @@
+@use "foundation/global";
+
+// Project ヘッダーSNS
+//--------------------------------------------------------------------------
+
+.p-header-sns {
+  display: flex;
+  align-items: center;
+  border-left: 1px solid global.$color-white;
+  height: 100%;
+  margin-left: 28px;
+}
+
+.p-header-sns__item {
+  height: 100%;
+  padding-left: 18px;
+}
+
+.p-header-sns__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 100%;
+}
+
+.p-header-sns__svg {
+  display: block;
+}

@@ -1,0 +1,21 @@
+@use "foundation/global";
+
+// Project sns
+//--------------------------------------------------------------------------
+
+.p-sns__item {
+  &:not(:first-child) {
+    margin-left: 10px;
+  }
+}
+
+.p-sns__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid global.$color-accent;
+  border-radius: 50%;
+  width: 46px;
+  height: 46px;
+  color: global.$color-accent;
+}

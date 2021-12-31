@@ -1,0 +1,32 @@
+@use "foundation/global";
+
+// Project グローバルナビゲーション
+//--------------------------------------------------------------------------
+
+.p-global-nav {
+  height: 100%;
+}
+
+.p-global-nav__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.p-global-nav__item {
+  height: 100%;
+  
+  &:not(:first-child) {
+    margin-left: 28px;
+  }
+}
+
+.p-global-nav__link {
+  display: block;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  @include global.fz(14);
+  @include global.lh(1.2);
+}
