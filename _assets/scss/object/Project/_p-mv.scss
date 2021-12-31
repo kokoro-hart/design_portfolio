@@ -1,0 +1,92 @@
+@use "foundation/global";
+
+// Project メインビジュアル
+//--------------------------------------------------------------------------
+
+.p-mv {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: global.$font-family-en;
+}
+
+.p-mv__inner {
+  width: 100%;
+}
+
+.p-mv__heading {
+  padding-left: 10%;
+  font-size: 8vw;
+  @include global.lh(1.2, 1);
+  font-weight: 400;
+  white-space: nowrap;
+
+  @include global.mq(md) {
+    padding-left: 15%;
+    font-size: 5.7vw;
+  }
+
+  &:not(:first-child) {
+    margin-top: 0.7em;
+
+    @include global.mq(md) {
+      margin-top: 0.5em;
+    }
+  }
+}
+
+.p-mv__scroll {
+  display: inline-block;
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  overflow: hidden;
+  color: global.$color-white;
+  @include global.fz(14, 16);
+  @include global.lh(1);
+  padding: 10px 10px 70px 10px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  writing-mode: vertical-lr;
+
+  @include global.mq(md) {
+    padding: 10px 10px 90px 10px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 60px;
+    background-color: global.$color-accent;
+    will-change: animation;
+    animation: scrollDownLine 1.5s cubic-bezier(1, 0, 0, 1) infinite;
+    animation-delay: 1.5s;
+
+    @include global.mq(md) {
+      height: 80px;
+    }
+  }
+  @keyframes scrollDownLine {
+    0% {
+      transform: scale(1, 0);
+      transform-origin: 0 0;
+    }
+    50% {
+      transform: scale(1, 1);
+      transform-origin: 0 0;
+    }
+    50.1% {
+      transform: scale(1, 1);
+      transform-origin: 0 100%;
+    }
+    100% {
+      transform: scale(1, 0);
+      transform-origin: 0 100%;
+    }
+  }
+}
