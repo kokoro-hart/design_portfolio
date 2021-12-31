@@ -5,13 +5,13 @@
 
 @each $bp in map-keys(global.$screen) {
   .u-hidden-#{$bp}-up {
-    @include global.mq($bp, min) {
+    @include global.mq($bp) {
       display: none;
     }
   }
 
   .u-hidden-#{$bp}-down {
-    @include global.mq($bp) {
+    @include global.mq($bp, max) {
       display: none;
     }
   }
