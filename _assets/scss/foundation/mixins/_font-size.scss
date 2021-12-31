@@ -1,5 +1,8 @@
 @use "breakpoint";
 
+// Mixins font-size一括指定
+//--------------------------------------------------------------------------
+
 @mixin fz($font_xs: "", $font_md: "") {
   font-size: #{$font_xs}px;
 

@@ -1,5 +1,8 @@
-//setting
-@forward "tools/variables";
+//variables
+@forward "variables/font-family";
+@forward "variables/color";
+@forward "variables/layout";
+@forward "variables/easing";
 
 //mixins
 @forward "mixins/breakpoint";
@@ -8,4 +11,4 @@
 @forward "mixins/line-height";
 
 //functions
-@forward "tools/functions";
+@forward "functions/z-index";

@@ -1,5 +1,8 @@
 @use "breakpoint";
 
+// Mixins line-height一括指定
+//--------------------------------------------------------------------------
+
 @mixin lh($lineH_xs: "", $lineH_md: "") {
   line-height: #{$lineH_xs}em;
 

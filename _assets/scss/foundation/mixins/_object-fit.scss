@@ -1,4 +1,7 @@
 
+// Mixins object-fitポリフィル使用時のfont-family指定
+//--------------------------------------------------------------------------
+
 @mixin object-fit($value: fill, $position: null) {
   object-fit: $value;
 
