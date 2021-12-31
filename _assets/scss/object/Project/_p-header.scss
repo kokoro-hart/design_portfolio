@@ -31,6 +31,9 @@
 
 //ドロワーアクティブ時
 .is-drawer-active {
+  .p-header {
+    mix-blend-mode: normal;
+  }
   .p-header__logo {
     color: global.$color-black;
   }
