@@ -1,9 +1,9 @@
 @use "foundation/global";
 
-// Project メインビジュアル
+// Project ファーストビュー
 //--------------------------------------------------------------------------
 
-.p-mv {
+.p-first-view {
   position: relative;
   display: flex;
   justify-content: center;
@@ -11,11 +11,11 @@
   font-family: global.$font-family-en;
 }
 
-.p-mv__inner {
+.p-first-view__inner {
   width: 100%;
 }
 
-.p-mv__heading {
+.p-first-view__heading {
   padding-left: 10%;
   font-size: 8vw;
   @include global.lh(1.2, 1);
@@ -36,7 +36,7 @@
   }
 }
 
-.p-mv__scroll {
+.p-first-view__scroll {
   display: inline-block;
   position: absolute;
   bottom: 5%;
