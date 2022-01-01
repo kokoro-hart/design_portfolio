@@ -1,0 +1,51 @@
+@use "foundation/global";
+
+// Project トップページ 制作実績
+//--------------------------------------------------------------------------
+
+.p-home-works__contents {
+  margin-top: 60px;
+
+  @include global.mq(md) {
+    margin-top: 100px;
+  }
+}
+
+.p-home-works__cards {
+  width: 100%;
+  @include global.mq(md) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+.p-home-works__card {
+  width: 100%;
+
+  @include global.mq(md) {
+    width: calc(50% - 40px / 2);
+  }
+
+  &:not(:first-child) {
+    margin-top: 52px;
+
+    @include global.mq(md) {
+      margin-top: 0;
+    }
+  }
+
+  &:nth-child(n + 3) {
+    @include global.mq(md) {
+      margin-top: 70px;
+    }
+  }
+}
+
+.p-home-works__link-wrapper {
+  margin-top: 48px;
+
+  @include global.mq(md) {
+    margin-top: 70px;
+  }
+}
