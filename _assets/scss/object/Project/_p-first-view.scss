@@ -4,10 +4,11 @@
 //--------------------------------------------------------------------------
 
 .p-first-view {
-  position: relative;
   display: flex;
   justify-content: center;
   flex-direction: column;
+  color: global.$color-white;
+  background-color: global.$color-black;
   font-family: global.$font-family-en;
 }
 

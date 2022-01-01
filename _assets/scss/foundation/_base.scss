@@ -15,8 +15,8 @@ html {
 
 html,
 body {
-  color: global.$color-white;
-  background-color: global.$color-black;
+  color: global.$color-black;
+  background-color: global.$color-base;
   font-family: global.$font-family-ja;
   @include global.fz(14);
   -webkit-font-smoothing: antialiased;
@@ -28,6 +28,11 @@ body {
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   font-weight: 400;
+}
+
+body.is-drawer-active {
+  min-height: 100vh;
+  overflow: hidden;
 }
 
 body,
@@ -125,4 +130,15 @@ button:focus {
 
 :focus:not(:focus-visible) {
   outline: 0; //キーボード操作"以外"でフォーカスされた際はoutlineを消す
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  overflow-x: hidden;
 }
