@@ -1,0 +1,33 @@
+@use "foundation/global";
+
+// Component セクション見出し
+//--------------------------------------------------------------------------
+
+.c-section-heading {
+  border-top: 1px solid global.$color-border;
+  width: 100%;
+  padding-top: 52px;
+
+  @include global.mq(md) {
+    padding-top: 63px;
+  }
+}
+
+.c-section-heading__en {
+  @include global.fz(34, 42);
+  @include global.lh(1.2);
+  font-weight: 400;
+  font-family: global.$font-family-en;
+}
+
+.c-section-heading__ja {
+  margin-top: 10px;
+  color: global.$color-border;
+  @include global.fz(16);
+  @include global.lh(1.2);
+  font-weight: 400;
+
+  @include global.mq(md) {
+    margin-top: 12px;
+  }
+}
