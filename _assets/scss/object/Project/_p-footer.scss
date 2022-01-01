@@ -1,0 +1,45 @@
+@use "foundation/global";
+
+// Project フッター
+//--------------------------------------------------------------------------
+
+.p-footer {
+  font-family: global.$font-family-en;
+}
+
+.p-footer__contents {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @include global.mq(md) {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+
+.p-footer__info {
+  max-width: 316px;
+  width: 100%;
+}
+
+.p-footer__nav {
+  margin-top: 50px;
+
+  @include global.mq(md) {
+    width: calc(100% - 15% - 316px);
+    max-width: 500px;
+    margin-top: 0;
+    margin-left: 20%;
+  }
+}
+
+.p-footer__copyright {
+  width: 90%;
+  @include global.fz(14, 16);
+  @include global.lh(1.2);
+  text-align: right;
+}
