@@ -1,0 +1,20 @@
+@use "foundation/global";
+
+// Project トップページ ビジョン
+//--------------------------------------------------------------------------
+
+.p-home-vision__contents {
+  margin-top: 32px;
+
+  @include global.mq(md) {
+    margin-top: 92px;
+  }
+}
+
+.p-home-vision__link-wrapper {
+  margin-top: 48px;
+
+  @include global.mq(md) {
+    margin-top: 70px;
+  }
+}
