@@ -1,0 +1,8 @@
+@use "foundation/global";
+
+// Utility フォントファミリー
+//--------------------------------------------------------------------------
+
+.u-family-en {
+  font-family: global.$font-family-en;
+}

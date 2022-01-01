@@ -1,0 +1,9 @@
+@use "foundation/global";
+
+// Utility 下線
+//--------------------------------------------------------------------------
+
+.u-under-line {
+  border-bottom: 2px solid global.$color-accent;
+  padding-bottom: 1px;
+}
