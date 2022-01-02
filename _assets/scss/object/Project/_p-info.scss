@@ -1,0 +1,30 @@
+@use "foundation/global";
+
+// Project お知らせ
+//--------------------------------------------------------------------------
+
+.p-info__contents {
+  margin-top: 60px;
+
+  @include global.mq(md) {
+    margin-top: 100px;
+  }
+}
+
+.p-info__item {
+  &:not(:first-child) {
+    margin-top: 40px;
+
+    @include global.mq(md) {
+      margin-top: 56px;
+    }
+  }
+}
+
+.p-info__link-wrapper {
+  margin-top: 56px;
+
+  @include global.mq(md) {
+    margin-top: 72px;
+  }
+}

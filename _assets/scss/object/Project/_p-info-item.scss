@@ -1,0 +1,51 @@
+@use "foundation/global";
+
+// Project お知らせ アイテム
+//--------------------------------------------------------------------------
+
+.p-info-item {
+  display: block;
+  transition: opacity 0.3s ease-in-out;
+
+  @include global.mq(md) {
+    display: flex;
+    align-items: baseline;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+}
+
+.p-info-item__date {
+  position: relative;
+  display: block;
+  padding-right: 35px;
+  max-width: 135px;
+  width: 100%;
+  @include global.fz(14, 16);
+  @include global.lh(1.72, 1.44);
+  font-weight: 700;
+  white-space: nowrap;
+
+  @include global.mq(md) {
+    margin-right: 3em;
+  }
+}
+
+.p-info-item__title {
+  @include global.fz(14, 16);
+  @include global.lh(1.72, 2);
+  font-weight: 700;
+}
+
+.p-info-item__svg {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-68%);
+  width: 27px;
+  height: 27px;
+  color: global.$color-base;
+}

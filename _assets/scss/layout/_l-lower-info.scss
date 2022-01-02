@@ -1,0 +1,17 @@
+@use "foundation/global";
+
+// Layout informationページ
+//--------------------------------------------------------------------------
+
+.l-lower-info {
+  background-color: global.$color-black;
+  color: global.$color-base;
+}
+
+.l-lower-info__contents {
+  padding-bottom: 80px;
+
+  @include global.mq(md) {
+    padding-bottom: 160px;
+  }
+}
