@@ -95,7 +95,6 @@
   padding-left: 18px;
   @include global.fz(14, 16);
   @include global.lh(1.44);
-  font-weight: 700;
 
   @include global.mq(md) {
     max-width: 100px;
@@ -108,7 +107,7 @@
     top: 0.65em;
     left: 0;
     width: 12px;
-    height: 1px;
+    height: 2px;
     background-color: global.$color-accent;
   }
 }
@@ -126,9 +125,10 @@
   display: inline-block;
   margin-top: 4px;
   padding-left: 18px;
-  @include global.fz(14, 16);
+  @include global.fz(14);
   @include global.lh(1.72, 2);
   font-weight: 400;
+  letter-spacing: 0.03em;
 
   @include global.mq(md) {
     margin-top: 0;
@@ -159,13 +159,14 @@
   color: global.$color-border;
   white-space: nowrap;
   transition: color 0.3s ease-in-out;
+  font-weight: 400;
 
   &:hover,
   &:focus {
-    color: global.$color-base;
+    color: global.$color-black;
 
     .p-profile__svg {
-      color: global.$color-base;
+      color: global.$color-black;
     }
   } 
 }
