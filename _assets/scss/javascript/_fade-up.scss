@@ -1,0 +1,24 @@
+@use "foundation/global";
+
+// Javascript フェードアップ
+//--------------------------------------------------------------------------
+
+.is-fade-up {
+  display: block;
+  visibility: hidden;
+  opacity: 0;
+  transition: 
+    opacity 1.7s global.ease(out-expo),
+    transform 1.7s global.ease(out-expo)
+  ;
+  transform: translateY(40px);
+}
+
+//トリガー発火後
+.is-active {
+  .is-fade-up {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

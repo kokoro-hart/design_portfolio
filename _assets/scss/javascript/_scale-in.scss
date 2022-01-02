@@ -1,0 +1,15 @@
+@use "foundation/global";
+
+// javascript スケールイン
+//--------------------------------------------------------------------------
+
+.is-scale-in {
+  transform: scale(0, 1);
+  transition: transform 0.6s global.ease(out-quint);
+}
+
+.is-active {
+  .is-scale-in {
+    transform: scale(1 ,1);
+  }
+}
