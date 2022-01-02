@@ -3,9 +3,176 @@
 <%- include('../common/_header', {pageId:pageId }) %>
 
 <% console.log(jsonData) %>
-<main>
-  <div class="inner-block">
-    aboutページです
+<main id="js-switching-area" class="l-lower-about p-contents">
+  <div class="l-container">
+    <section id="js-first-view" class="p-lower-first-view">
+      <h2 class="c-page-heading">
+        <span class="c-page-heading__en is-wrap">
+          <span class="is-slide-up u-delay05">
+            ABOUT
+          </span>
+        </span>
+        <span class="c-page-heading__ja is-wrap">
+          <span class="is-slide-up u-delay05">
+            私について
+          </span>
+        </span>
+      </h2>
+      <div class="p-intro p-lower-first-view__intro">
+        <div class="p-intro__inner">
+          <p class="p-intro__heading">
+            <span class="is-wrap">
+              <span class="is-slide-up">
+                I AM MORE POSITIVE
+              </span>
+            </span>
+            <span class="is-wrap">
+              <span class="is-slide-up u-delay01">
+                THAN ANYONE.
+              </span>
+            </span>
+          </p>
+          <p class="p-intro__text is-fade-up u-delay02">
+            多忙な日々や苦しい時期でも、マイナスに考えず「成長の機会」として捉え、<br class="u-hidden-md-down">
+            技術者として「毎日」技術向上を楽しんでいきます。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="p-profile l-lower-about__profile">
+      <h2 class="c-section-heading js-trigger">
+        <span class="c-section-heading__en is-wrap">
+          <span class="is-slide-up">
+            PROFILE
+          </span>
+        </span>
+        <span class="c-section-heading__ja is-fade-up">
+          プロフィール
+        </span>
+      </h2>
+      <div class="p-profile__contents">
+        <div class="p-profile__img-wrapper">
+          <picture class="p-profile__picture">
+            <source class="p-profile__img" srcset="/img/webp/img-profile.webp" type="image/webp" />
+            <img src="/img/common/img-profile.jpeg" class="p-profile__img" alt="プロフィール画像">
+          </picture>
+        </div>
+        <div class="p-profile__body">
+          <section class="p-profile__info">
+            <h3 class="p-profile__heading">
+              <span class="p-profile__heading-en">
+                KOKORO TOBITA
+              </span>
+              <span class="p-profile__heading-ja">
+                飛田 心
+              </span>
+            </h3>
+            <dl class="p-profile__dl">
+              <div class="p-profile__row">
+                <dt class="p-profile__dt">
+                  生年月日
+                </dt>
+                <dd class="p-profile__dd">
+                  2000年11月26日
+                </dd>
+              </div>
+              <div class="p-profile__row">
+                <dt class="p-profile__dt">
+                  出身地
+                </dt>
+                <dd class="p-profile__dd">
+                  茨城県日立市
+                </dd>
+              </div>
+              <div class="p-profile__row">
+                <dt class="p-profile__dt">
+                  現職
+                </dt>
+                <dd class="p-profile__dd">
+                  化学メーカーにて勤務、現在3年目
+                </dd>
+              </div>
+              <div class="p-profile__row">
+                <dt class="p-profile__dt">
+                  好きなこと
+                </dt>
+                <dd class="p-profile__dd">
+                  部屋のコーディネート / DIY
+                </dd>
+              </div>
+              <div class="p-profile__row">
+                <dt class="p-profile__dt">
+                  直近の目標
+                </dt>
+                <dd class="p-profile__dd">
+                  マークアップエンジニアとして信頼できる実装者になること。
+                </dd>
+              </div>
+              <div class="p-profile__row">
+                <dt class="p-profile__dt">
+                  長期目標
+                </dt>
+                <dd class="p-profile__dd">
+                  デザインと実装、双方の観点からアプローチをかけることができるフロントエンドのプロフェッショナルになること。
+                </dd>
+              </div>
+            </dl>
+          </section>
+
+          <section class="p-profile__links">
+            <h3 class="p-profile__heading">
+              <span class="p-profile__heading-en">
+                LINKS
+              </span>
+            </h3>
+            <dl class="p-profile__dl">
+              <div class="p-profile__row p-profile__row--links">
+                <dt class="p-profile__dt p-profile__dt--links">
+                  Twitter
+                </dt>
+                <dd class="p-profile__dd p-profile__dd--links">
+                  <a href="https://twitter.com/coco_hack_ll" class="p-profile__link" target="_blank" rel="noopener noreferrer">
+                    twitter.com/coco_hack_ll
+                    <svg class="c-svg p-profile__svg" width="14" height="14">
+                      <use xlink:href="/img/svg/sprite.min.svg#icon-blank" />
+                    </svg>
+                  </a>
+                </dd>
+              </div>
+              <div class="p-profile__row p-profile__row--links">
+                <dt class="p-profile__dt p-profile__dt--links">
+                  GitHub
+                </dt>
+                <dd class="p-profile__dd p-profile__dd--links">
+                  <a href="https://github.com/kokoro-hart" class="p-profile__link" target="_blank" rel="noopener noreferrer">
+                    github.com/kokoro-hart
+                    <svg class="c-svg p-profile__svg" width="14" height="14">
+                      <use xlink:href="/img/svg/sprite.min.svg#icon-blank" />
+                    </svg>
+                  </a>
+                </dd>
+              </div>
+              <div class="p-profile__row p-profile__row--links">
+                <dt class="p-profile__dt p-profile__dt--links">
+                  Qiita
+                </dt>
+                <dd class="p-profile__dd p-profile__dd--links">
+                  <a href="https://qiita.com/Coco__syu" class="p-profile__link" target="_blank" rel="noopener noreferrer">
+                    qiita.com/Coco__syu
+                    <svg class="c-svg p-profile__svg" width="14" height="14">
+                      <use xlink:href="/img/svg/sprite.min.svg#icon-blank" />
+                    </svg>
+                  </a>
+                </dd>
+              </div>
+            </dl>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    
   </div>
 </main>
 
