@@ -1,0 +1,24 @@
+@use "foundation/global";
+
+// Layout worksページ 制作実績
+//--------------------------------------------------------------------------
+
+.p-works__card {
+  width: 100%;
+
+  &:not(:first-child) {
+    margin-top: 60px;
+
+    @include global.mq(md) {
+      margin-top: 120px;
+    }
+  }
+
+  @include global.mq(md) {
+    width: 60%;
+
+    &:nth-child(2n) {
+      margin-left: auto;
+    }
+  }
+}
