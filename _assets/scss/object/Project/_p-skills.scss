@@ -1,0 +1,75 @@
+@use "foundation/global";
+
+// Project 使用技術
+//--------------------------------------------------------------------------
+
+.p-skills__contents {
+  margin-top: 60px;
+
+  @include global.mq(md) {
+    margin-top: 120px;
+  }
+}
+
+.p-skills__dl {
+  @include global.mq(md) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+.p-skills__row {
+  border-top: 1px solid global.$color-border-thin;
+  padding: 10px 8px;
+
+  &:not(:first-child) {
+    margin-top: 32px;
+
+    @include global.mq(md) {
+      margin-top: 0;
+    }
+  }
+
+  @include global.mq(md) {
+    width: calc(50% - 4% / 2);
+    padding: 15px 10px;
+
+    &:nth-child(n + 3) {
+      margin-top: 48px;
+    }
+  }
+}
+
+.p-skills__dt {
+  display: flex;
+  align-items: center;
+  @include global.fz(18, 20);
+  @include global.lh(1.4, 1.2);
+  font-weight: 700;
+  font-family: global.$font-family-en;
+}
+
+.p-skills__dd {
+  margin-top: 4px;
+  padding-left: 55px;
+  @include global.fz(14, 16);
+  @include global.lh(2);
+  letter-spacing: 0.03em;
+
+  @include global.mq(md) {
+    padding-left: 65px;
+  }
+}
+
+.p-skills__svg {
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+  color: global.$color-accent;
+
+  @include global.mq(md) {
+    width: 50px;
+    height: 50px;
+  }
+}
