@@ -1,0 +1,20 @@
+@use "foundation/global";
+
+// Project 下層ページ ファーストビュー
+//--------------------------------------------------------------------------
+
+.p-lower-first-view {
+  padding: 180px 0 80px;
+
+  @include global.mq(md) {
+    padding-bottom: 160px;
+  }
+}
+
+.p-lower-first-view__intro {
+  padding-top: 80px;
+
+  @include global.mq(md) {
+    padding-top: 160px;
+  }
+}
