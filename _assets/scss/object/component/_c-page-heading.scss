@@ -1,0 +1,27 @@
+@use "foundation/global";
+
+// Component ページ見出し
+//--------------------------------------------------------------------------
+
+.c-page-heading {
+  width: 100%;
+}
+
+.c-page-heading__en {
+  @include global.fz(30, 60);
+  @include global.lh(1);
+  font-family: global.$font-family-en;
+  font-weight: 400;
+}
+
+.c-page-heading__ja {
+  margin-top: 10px;
+  color: global.$color-border;
+  @include global.fz(14, 16);
+  @include global.lh(1);
+  font-weight: 400;
+
+  @include global.mq(md) {
+    margin-top: 12px;
+  }
+}
