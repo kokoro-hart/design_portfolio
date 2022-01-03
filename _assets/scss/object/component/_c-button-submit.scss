@@ -1,0 +1,31 @@
+@use "foundation/global";
+
+// Component 送信ボタン
+//--------------------------------------------------------------------------
+
+.c-button-submit {
+  position: relative;
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 172px;
+  width: 100%;
+  min-height: 48px;
+  padding: 13px;
+  @include global.fz(18);
+  @include global.lh(1.2);
+  background-color: global.$color-accent;
+  color: global.$color-base;
+  transition: opacity 0.3s ease-in-out;
+
+  @include global.mq(md) {
+    max-width: 192px;
+    min-height: 56px;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+}

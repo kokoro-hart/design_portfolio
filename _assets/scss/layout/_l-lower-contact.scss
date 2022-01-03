@@ -1,0 +1,14 @@
+@use "foundation/global";
+
+// Project お問い合わせページ
+//--------------------------------------------------------------------------
+
+.l-lower-contact__contents {
+  max-width: 790px;
+  width: 100%;
+  padding-bottom: 80px;
+
+  @include global.mq(md) {
+    padding-bottom: 160px;
+  }
+}

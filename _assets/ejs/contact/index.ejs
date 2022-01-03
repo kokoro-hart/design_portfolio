@@ -3,9 +3,81 @@
   <%- include('../common/_header', {pageId:pageId }) %>
 
     <% console.log(jsonData) %>
-      <main>
-        <div class="inner-block">
-          contactページです
+      <main class="l-lower-contact">
+        <div class="l-container">
+          <div id="js-first-view" class="p-lower-first-view">
+            <h2 class="c-page-heading">
+              <span class="c-page-heading__en is-wrap">
+                <span class="is-slide-up">
+                  CONTACT
+                </span>
+              </span>
+              <span class="c-page-heading__ja is-wrap">
+                <span class="is-slide-up">
+                  お問い合わせ
+                </span>
+              </span>
+            </h2>
+          </div>
+          <div class="l-lower-contact__contents">
+            <div class="p-form">
+              <dl class="p-form__dl">
+                <!--お名前-->
+                <div class="p-form__row">
+                  <dt class="p-form__dt">
+                    <label class="p-form__label p-form__label--required" for="your-name">お名前</label>
+                  </dt>
+                  <dd class="p-form__dd">
+                    <input class="p-form__input" id="your-name" type="text" placeholder="例） cocosyu太郎" autocomplete="name"
+                      required>
+                  </dd>
+                </div>
+                <!--/お名前-->
+          
+                <!--御社名-->
+                <div class="p-form__row">
+                  <dt class="p-form__dt">
+                    <label class="p-form__label" for="your-company">御社名</label>
+                  </dt>
+                  <dd class="p-form__dd">
+                    <input class="p-form__input" id="your-company" type="text" placeholder="例） 株式会社cocosyu"
+                      autocomplete="organization">
+                  </dd>
+                </div>
+                <!--/御社名-->
+          
+                <!--メールアドレス-->
+                <div class="p-form__row">
+                  <dt class="p-form__dt">
+                    <label class="p-form__label p-form__label--required" for="your-email">メールアドレス</label>
+                  </dt>
+                  <dd class="p-form__dd">
+                    <input class="p-form__input" id="your-email" type="email" placeholder="例） example@mail.com"
+                      autocomplete="email" required>
+                  </dd>
+                </div>
+                <!--/メールアドレス-->
+          
+                <!--お問い合わせ内容-->
+                <div class="p-form__row">
+                  <dt class="p-form__dt">
+                    <label class="p-form__label p-form__label--required" for="your-textarea">お問い合わせ内容</label>
+                  </dt>
+                  <dd class="p-form__dd">
+                    <textarea class="p-form__input p-form__textarea" id="your-textarea" placeholder="お問い合わせ内容を入力してください。"
+                      required></textarea>
+                  </dd>
+                </div>
+                <!--/お問い合わせ内容-->
+          
+                <!--送信ボタン-->
+                <div class="p-form__submit-wrapper">
+                  <input class="c-button-submit" type="submit" value="送信">
+                </div>
+                <!--送信ボタン-->
+              </dl>
+            </div>
+          </div>
         </div>
       </main>
 

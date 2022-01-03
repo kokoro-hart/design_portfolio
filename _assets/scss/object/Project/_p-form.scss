@@ -1,0 +1,104 @@
+@use "foundation/global";
+
+// Project フォーム
+//--------------------------------------------------------------------------
+
+.p-form__dd {
+  margin-top: 13px;
+
+  @include global.mq(md) {
+    margin-top: 16px;
+  }
+}
+
+.p-form__row {
+  &:not(:first-child) {
+    margin-top: 42px;
+
+    @include global.mq(md) {
+      margin-top: 48px;
+    }
+  }
+}
+
+.p-form__label {
+  @include global.fz(16, 20);
+  @include global.lh(1.44, 1.2);
+  font-weight: 400;
+}
+
+//必須の場合
+.p-form__label--required {
+  position: relative;
+  padding-right: 55px;
+
+  @include global.mq(md) {
+    padding-right: 63px;
+  }
+
+  &::after {
+    content: "必須";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 24px;
+    @include global.fz(14);
+    @include global.lh(1);
+    background-color: global.$color-accent;
+    color: global.$color-base;
+    font-weight: 700;
+
+    @include global.mq(md) {
+      width: 56px;
+      height: 28px;
+    }
+  }
+}
+
+.p-form__input {
+  width: 100%;
+  padding: 13px 16px;
+  box-shadow: none;
+  appearance: none;
+  border: 1px solid global.$color-form;
+  border-radius: 0;
+  background-color: global.$color-base;
+  color: inherit;
+  @include global.fz(14, 16);
+  @include global.lh(1.4);
+  font-family: inherit;
+
+  @include global.mq(md) {
+    padding: 16px;
+  }
+
+  &::placeholder {
+    color: global.$color-border;
+    @include global.fz(14);
+  }
+}
+
+.p-form__textarea {
+  min-height: 120px;
+
+  @include global.mq(md) {
+    min-height: 140px;
+  }
+}
+
+.p-form__submit-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 48px;
+
+  @include global.mq(md) {
+    margin-top: 70px;
+  }
+}
