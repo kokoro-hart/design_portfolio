@@ -1,0 +1,29 @@
+@use "foundation/global";
+
+// Component シングルページ見出し
+//--------------------------------------------------------------------------
+
+.c-single-heading {
+  border-top: 1px solid global.$color-border;
+  padding-top: 29px;
+
+  @include global.mq(md) {
+    padding-top: 40px;
+  }
+}
+
+.c-single-heading__head {
+  @include global.fz(20, 36);
+  @include global.lh(1.2);
+  font-weight: 400;
+  letter-spacing: 0.03em;
+}
+
+.c-single-heading__foot {
+  display: block;
+  margin-top: 12px;
+  color: global.$color-border;
+  @include global.fz(12, 14);
+  @include global.lh(1.44);
+  font-weight: 400;
+}
