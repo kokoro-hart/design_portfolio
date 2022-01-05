@@ -1,0 +1,50 @@
+@use "foundation/global";
+
+// javascript マスク
+//--------------------------------------------------------------------------
+
+.is-mask-black {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: global.$color-black;
+    transition: height 2s global.ease(out-quint);
+    z-index: map-get(global.$layer, default);
+  }
+}
+
+.is-mask-white {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: global.$color-base;
+    transition: width 2s global.ease(out-quint);
+    z-index: map-get(global.$layer, default);
+  }
+}
+
+
+.is-active {
+  .is-mask-white {
+    &::after {
+      width: 0;
+    }
+  }
+
+  .is-mask-black {
+    &::after {
+      height: 0;
+    }
+  }
+
+}
