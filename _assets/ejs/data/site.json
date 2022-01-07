@@ -22,11 +22,23 @@
       "type": "article",
       "slug": "/works/"
     },
-    "vision": {
-      "name": "VISION",
-      "description": "VISIONページの説明",
+    "single-works": {
+      "name": "作品のタイトル",
+      "description": "作品のタイトルの説明",
       "type": "article",
-      "slug": "/vision/"
+      "slug": "/single-works/"
+    },
+    "information": {
+      "name": "INFORMATION",
+      "description": "INFORMATIONページの説明",
+      "type": "article",
+      "slug": "/information/"
+    },
+    "single-info": {
+      "name": "記事のタイトル",
+      "description": "記事のタイトルの説明",
+      "type": "article",
+      "slug": "/single-info/"
     },
     "contact": {
       "name": "CONTACT",
