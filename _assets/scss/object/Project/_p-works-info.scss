@@ -1,0 +1,59 @@
+@use "foundation/global";
+
+// Project 制作実績概要
+//--------------------------------------------------------------------------
+
+.p-works-info__text {
+  @include global.fz(14, 16);
+  @include global.lh(2);
+}
+
+.p-works-info__contents {
+  margin-top: 24px;
+
+  @include global.mq(md) {
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.p-works-info__dl {
+  margin-top: 12px;
+  width: 100%;
+
+  @include global.mq(md) {
+    margin-top: 0;
+    width: calc(50% - 8% / 2);
+  }
+}
+
+.p-works-info__row {
+  &:not(:first-child) {
+    margin-top: 24px;
+
+    @include global.mq(md) {
+      margin-top: 32px;
+    }
+  }
+}
+
+.p-works-info__dt {
+  @include global.fz(14, 16);
+  @include global.lh(1.44);
+}
+
+.p-works-info__dd {
+  @include global.fz(14, 16);
+  @include global.lh(2);
+}
+
+.p-works-info__img {
+  display: block;
+  margin-top: 6px;
+
+  @include global.mq(md) {
+    margin-top: 12px;
+  }
+}

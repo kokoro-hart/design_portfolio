@@ -1,0 +1,24 @@
+@use "foundation/global";
+
+// Layout 制作実績シングルページ
+//--------------------------------------------------------------------------
+
+.l-single-works {
+  padding-bottom: 160px;
+
+  @include global.mq(md) {
+    padding-bottom: 240px;
+  }
+}
+
+.l-single-works__heading {
+  padding-top: 180px;
+}
+
+.l-single-works__contents {
+  margin-top: 80px;
+
+  @include global.mq(md) {
+    margin-top: 160px;
+  }
+}
