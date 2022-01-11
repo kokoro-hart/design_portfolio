@@ -5,8 +5,14 @@
 
 //SVGスプライトをIEで使用するためのライブラリ
 import '@modules/svgxuse';
-//ブラウザ判定のためライブラリ
-import './lib/b_browser_switcher.js';
 
+//画像遅延読み込みライブラリ
+import './lib/lazysizes'
+import './lib/lax'
 
 import './common'
+
+import './modules/drawer'
+import './modules/intersection-observer'
+import './modules/emblem'
+import './modules/stalker'
