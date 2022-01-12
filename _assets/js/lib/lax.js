@@ -66,7 +66,7 @@ window.onload = function () {
 
   });
 
-  //HELLO WORLD
+  //タイポグラフィ
   lax.addElements('.js-typography', {
     scrollY: {
       translateY: [
@@ -85,7 +85,7 @@ window.onload = function () {
     scrollY: {
       translateY: [
         ['elInY', 'elOutY'],
-        ['-screenHeight/3', 'screenHeight/3'],
+        ['-screenHeight/2', 'screenHeight/2'],
         {
           easing: 'easeInOutSine',
         }
