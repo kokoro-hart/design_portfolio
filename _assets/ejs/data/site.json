@@ -6,7 +6,7 @@
   "pages": {
     "home": {
       "name": "TOP",
-      "description": "テストページの説明",
+      "description": "トップページの説明",
       "type": "website",
       "slug": "/"
     },
