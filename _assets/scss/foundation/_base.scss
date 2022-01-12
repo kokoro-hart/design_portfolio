@@ -100,6 +100,10 @@ dd {
   margin: 0;
 }
 
+p {
+  letter-spacing: 0.03em;
+}
+
 ul,
 ol {
   list-style: none;
@@ -132,13 +136,9 @@ button:focus {
   outline: 0; //キーボード操作"以外"でフォーカスされた際はoutlineを消す
 }
 
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
 main {
-  flex: 1;
+  position: relative;
+  width: 100%;
+  z-index: map-get(global.$layer, main);
   overflow-x: hidden;
 }

@@ -8,8 +8,79 @@
   color: global.$color-black;
 }
 
+.p-career__heading {
+  position: relative;
+  display: inline-block;
+  padding-right: 100px;
+
+  @include global.mq(md) {
+    padding-right: 130px;
+  }
+}
+
+.p-career__heading-en {
+  @include global.fz(34, 42);
+  @include global.lh(1);
+  font-weight: 400;
+  font-family: global.$font-family-en;
+}
+
+.p-career__heading-ja {
+  margin-top: 6px;
+  color: global.$color-border;
+  @include global.fz(16);
+  @include global.lh(1);
+  font-weight: 400;
+
+  @include global.mq(md) {
+    margin-top: 12px;
+  }
+}
+
+.p-career__emblem {
+  display: inline-block;
+  position: absolute;
+  top: -7px;
+  right: 0;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	color:  global.$color-accent;
+	text-align: center;
+  font-weight: 700;
+	animation: spinZ 10s linear infinite;
+
+	@keyframes spinZ {
+		0% {
+			transform: rotateZ(360deg);
+		}
+		100% {
+			transform: rotateZ(0deg);
+		}
+	}
+
+  @include global.mq(md) {
+    top: -13px;
+    width: 90px;
+    height: 90px;
+  }
+
+	span {
+		position: absolute;
+		display: inline-block;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+    @include global.fz(12, 14);
+	}
+}
+
 .p-career__contents {
+  max-width: 960px;
+  width: 100%;
   margin-top: 60px;
+  margin-right: auto;
 
   @include global.mq(md) {
     margin-top: 100px;
@@ -17,9 +88,6 @@
 }
 
 .p-career__row {
-  max-width: 960px;
-  width: 100%;
-  margin-right: auto;
   &:not(:first-child) {
     margin-top: 56px;
 

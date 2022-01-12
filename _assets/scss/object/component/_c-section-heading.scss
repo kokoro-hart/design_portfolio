@@ -15,16 +15,16 @@
 
 .c-section-heading__en {
   @include global.fz(34, 42);
-  @include global.lh(1.2);
+  @include global.lh(1);
   font-weight: 400;
   font-family: global.$font-family-en;
 }
 
 .c-section-heading__ja {
-  margin-top: 10px;
+  margin-top: 6px;
   color: global.$color-border;
   @include global.fz(16);
-  @include global.lh(1.2);
+  @include global.lh(1);
   font-weight: 400;
 
   @include global.mq(md) {

@@ -9,6 +9,7 @@
   font-weight: 400;
   font-family: global.$font-family-en;
   white-space: nowrap;
+  letter-spacing: 0.02em;
 }
 
 .p-intro__text {
@@ -16,7 +17,7 @@
   @include global.fz(14, 16);
   @include global.lh(2);
   font-weight: 400;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.1em;
 
   @include global.mq(md) {
     margin-top: 70px;

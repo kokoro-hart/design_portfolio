@@ -4,15 +4,17 @@
 //--------------------------------------------------------------------------
 
 .p-first-view {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+  position: relative;
   color: global.$color-white;
   background-color: global.$color-black;
   font-family: global.$font-family-en;
 }
 
 .p-first-view__inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 100%;
 }
 
@@ -23,15 +25,14 @@
   font-weight: 400;
   white-space: nowrap;
 
-  @include global.mq(md) {
-    padding-left: 15%;
-    font-size: 5.7vw;
+  @include global.mq(lg) {
+    font-size: 6.5vw;
   }
 
   &:not(:first-child) {
     margin-top: 0.7em;
 
-    @include global.mq(md) {
+    @include global.mq(lg) {
       margin-top: 0.5em;
     }
   }
@@ -40,19 +41,25 @@
 .p-first-view__scroll {
   display: inline-block;
   position: absolute;
-  bottom: 5%;
-  right: 5%;
+  right: 1%;
+  bottom: 10%;
   overflow: hidden;
   color: global.$color-white;
   @include global.fz(14, 16);
   @include global.lh(1);
-  padding: 10px 10px 70px 10px;
+  padding: 10px 10px 80px 10px;
   letter-spacing: 3px;
   text-transform: uppercase;
   writing-mode: vertical-lr;
+  transition-delay: 1s;
 
   @include global.mq(md) {
-    padding: 10px 10px 90px 10px;
+    bottom: calc(20vh + 7%);
+  }
+
+  @include global.mq(lg) {
+    right: 17%;
+    padding-bottom: 90px;
   }
 
   &::after {
@@ -62,22 +69,20 @@
     left: 50%;
     transform: translateX(-50%);
     width: 2px;
-    height: 60px;
+    height: 0;
     background-color: global.$color-accent;
     will-change: animation;
     animation: scrollDownLine 1.5s cubic-bezier(1, 0, 0, 1) infinite;
     animation-delay: 1.5s;
-
-    @include global.mq(md) {
-      height: 80px;
-    }
   }
   @keyframes scrollDownLine {
     0% {
+      height: 75px;
       transform: scale(1, 0);
       transform-origin: 0 0;
     }
     50% {
+      height: 75px;
       transform: scale(1, 1);
       transform-origin: 0 0;
     }

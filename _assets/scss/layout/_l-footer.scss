@@ -6,9 +6,9 @@
 
 .l-footer {
   position: relative;
+  z-index: map-get(global.$layer, footer);
   width: 100%;
   height: 100vh;
-  z-index: map-get(global.$layer, default);
 }
 
 .l-footer__inner {

@@ -6,7 +6,7 @@
 <main class="l-home">
   <section id="js-first-view" class="p-first-view l-home__first-view">
     <div class="p-first-view__inner">
-      <h2 class="p-first-view__body">
+      <h2 class="p-first-view__body js-typography">
         <span class="p-first-view__heading is-wrap">
           <span class="is-slide-up u-delay01">
             PORTFOLIO
@@ -32,31 +32,32 @@
     <span class="p-first-view__scroll is-scale-in">SCROLL</span>
   </section>
 
-  <section class="p-key-visual l-home__key-visual">
-    <h2 class="p-key-visual__heading">
-      HELLO WORLD.
-    </h2>
+  <section id="js-key-visual" class="p-key-visual l-home__key-visual">
+    <div class="p-key-visual__inner">
+      <h2 class="p-key-visual__heading js-typography">
+        Technology Used...
+    </div>
     <span class="p-key-visual__letter p-letter p-letter--bg-black">
-      <span class="p-letter__inner">
+      <span class="p-letter__inner js-letter01">
         JavaScript
       </span>
     </span>
     <span class="p-key-visual__letter p-letter">
-      <span class="p-letter__inner">
+      <span class="p-letter__inner js-letter02">
         WordPress
       </span>
     </span>
     <span class="p-key-visual__letter p-letter">
-      <span class="p-letter__inner">
+      <span class="p-letter__inner js-letter03">
         HTML & CSS
       </span>
     </span>
-    <svg class="c-svg p-key-visual__svg" width="120" height="120">
+    <svg class="c-svg p-key-visual__svg js-pen" width="120" height="120">
       <use xlink:href="/img/svg/sprite.min.svg#pen" />
     </svg>
   </section>
 
-  <div id="js-switching-area" class="p-contents">
+  <div id="js-switching-area" class="p-home">
     <div class="l-container">
       <div id="js-switching-bg">
         <section class="p-intro l-home__intro">
@@ -93,16 +94,16 @@
             </span>
           </h2>
 
-          <div class="p-home-about__contents">
+          <div class="p-home-about__contents js-trigger">
             <div class="p-home-about__media">
-              <p class="p-home-about__img-wrapper">
+              <p class="p-home-about__img-wrapper is-mask-white">
                 <picture class="p-home-about__picture">
-                  <source class="p-home-about__img" srcset="/img/webp/about.webp" type="image/webp" />
-                  <img src="/img/common/about.jpeg" class="p-home-about__img" alt="プロフィール画像">
+                  <source data-srcset="/img/webp/about.webp" class="p-home-about__img" type="image/webp" />
+                  <img data-src="/img/common/about.jpeg" src="/img/common/placeholder.png" class="p-home-about__img lazyload" width="540" height="540" loading="lazy" alt="プロフィール画像">
                 </picture>
               </p>
             </div>
-            <section class="p-home-about__profile">
+            <section class="p-home-about__profile is-fade-up u-delay05">
               <h3 class="p-home-about__heading">
                 <span class="p-home-about__heading-en">
                   KOKORO TOBITA
@@ -128,85 +129,6 @@
         </section>
       </div>
 
-      <section class="p-home-works l-home__works">
-        <h2 class="c-section-heading js-trigger">
-          <span class="c-section-heading__en is-wrap">
-            <span class="is-slide-up">
-              WORKS
-            </span>
-          </span>
-          <span class="c-section-heading__ja is-fade-up">
-            制作実績
-          </span>
-        </h2>
-
-        <div class="p-home-works__contents">
-          <ul class="p-home-works__cards">
-            <li class="p-home-works__card">
-              <a href="" class="p-card-works">
-                <div class="p-card-works__img-wrapper">
-                  <picture class="p-card-works__picture">
-                    <source class="p-card-works__img" srcset="/img/webp/img-works.webp" type="image/webp" />
-                    <img src="/img/common/img-works.jpeg" class="p-card-works__img" alt="作品のタイトル">
-                  </picture>
-                </div>
-                <div class="p-card-works__body">
-                  <h3 class="p-card-works__title">COMING SOON</h3>
-                  <p class="p-card-works__sub-title">近日公開予定</p>
-                </div>
-              </a>
-            </li>
-            <li class="p-home-works__card">
-              <a href="" class="p-card-works">
-                <div class="p-card-works__img-wrapper">
-                  <picture class="p-card-works__picture">
-                    <source class="p-card-works__img" srcset="/img/webp/img-works.webp" type="image/webp" />
-                    <img src="/img/common/img-works.jpeg" class="p-card-works__img" alt="作品のタイトル">
-                  </picture>
-                </div>
-                <div class="p-card-works__body">
-                  <h3 class="p-card-works__title">COMING SOON</h3>
-                  <p class="p-card-works__sub-title">近日公開予定</p>
-                </div>
-              </a>
-            </li>
-            <li class="p-home-works__card">
-              <a href="" class="p-card-works">
-                <div class="p-card-works__img-wrapper">
-                  <picture class="p-card-works__picture">
-                    <source class="p-card-works__img" srcset="/img/webp/img-works.webp" type="image/webp" />
-                    <img src="/img/common/img-works.jpeg" class="p-card-works__img" alt="作品のタイトル">
-                  </picture>
-                </div>
-                <div class="p-card-works__body">
-                  <h3 class="p-card-works__title">COMING SOON</h3>
-                  <p class="p-card-works__sub-title">近日公開予定</p>
-                </div>
-              </a>
-            </li>
-            <li class="p-home-works__card">
-              <a href="" class="p-card-works">
-                <div class="p-card-works__img-wrapper">
-                  <picture class="p-card-works__picture">
-                    <source class="p-card-works__img" srcset="/img/webp/img-works.webp" type="image/webp" />
-                    <img src="/img/common/img-works.jpeg" class="p-card-works__img" alt="作品のタイトル">
-                  </picture>
-                </div>
-                <div class="p-card-works__body">
-                  <h3 class="p-card-works__title">COMING SOON</h3>
-                  <p class="p-card-works__sub-title">近日公開予定</p>
-                </div>
-              </a>
-            </li>
-          </ul>
-          <div class="p-home-works__link-wrapper">
-            <a href="/about/" class="c-button-primary">
-              VIEW ALL
-            </a>
-          </div>
-        </div>
-      </section>
-
       <section class="p-vision l-home__vision">
         <h2 class="c-section-heading js-trigger">
           <span class="c-section-heading__en is-wrap">
@@ -222,19 +144,88 @@
           <h3 class="p-intro__heading">
             <span class="is-wrap">
               <span class="is-slide-up">
-                COMPASSIONATE
+                CODING FOR
               </span>
             </span>
             <span class="is-wrap">
               <span class="is-slide-up u-delay01">
-                WEB PRODUCTION.
+                FURTHER POLISH.
               </span>
             </span>
           </h3>
           <p class="p-intro__text is-fade-up u-delay02">
-            ヒアリング力や提案力、エンジニアとしての問題解決能力を身につけることに加え、 <br>
-            会社やチーム全体のためにどう貢献できるかを常に考え、自社とお客様、双方に貢献できる人材を目指します。
+            「100%完成されたデザインであれば、それを120%にできる。」
+            <br>
+            <br>
+            常に想像以上のものを創れるエンジニアを目指します。
           </p>
+        </div>
+      </section>
+
+      <section class="p-home-works l-home__works">
+        <h2 class="c-section-heading js-trigger">
+          <span class="c-section-heading__en is-wrap">
+            <span class="is-slide-up">
+              WORKS
+            </span>
+          </span>
+          <span class="c-section-heading__ja is-fade-up">
+            制作実績
+          </span>
+        </h2>
+
+        <div class="p-home-works__contents js-trigger">
+          <ul class="p-home-works__cards is-fade-up">
+            <li class="p-home-works__card">
+              <a href="" class="p-card-works">
+                <div class="p-card-works__img-wrapper">                    
+                  <img data-src="/img/common/img-works.jpeg" src="/img/common/placeholder.png" class="p-card-works__img lazyload"width="580" height="306" loading="lazy" alt="作品のタイトル">
+                </div>
+                <div class="p-card-works__body">
+                  <h3 class="p-card-works__title">COMING SOON</h3>
+                  <p class="p-card-works__sub-title">近日公開予定</p>
+                </div>
+              </a>
+            </li>
+            <li class="p-home-works__card">
+              <a href="" class="p-card-works">
+                <div class="p-card-works__img-wrapper">                    
+                  <img data-src="/img/common/img-works.jpeg" src="/img/common/placeholder.png" class="p-card-works__img lazyload"width="580" height="306" loading="lazy" alt="作品のタイトル">
+                </div>
+                <div class="p-card-works__body">
+                  <h3 class="p-card-works__title">COMING SOON</h3>
+                  <p class="p-card-works__sub-title">近日公開予定</p>
+                </div>
+              </a>
+            </li>
+            <li class="p-home-works__card">
+              <a href="" class="p-card-works">
+                <div class="p-card-works__img-wrapper">                    
+                  <img data-src="/img/common/img-works.jpeg" src="/img/common/placeholder.png" class="p-card-works__img lazyload"width="580" height="306" loading="lazy" alt="作品のタイトル">
+                </div>
+                <div class="p-card-works__body">
+                  <h3 class="p-card-works__title">COMING SOON</h3>
+                  <p class="p-card-works__sub-title">近日公開予定</p>
+                </div>
+              </a>
+            </li>
+            <li class="p-home-works__card">
+              <a href="" class="p-card-works">
+                <div class="p-card-works__img-wrapper">                    
+                  <img data-src="/img/common/img-works.jpeg" src="/img/common/placeholder.png" class="p-card-works__img lazyload"width="580" height="306" loading="lazy" alt="作品のタイトル">
+                </div>
+                <div class="p-card-works__body">
+                  <h3 class="p-card-works__title">COMING SOON</h3>
+                  <p class="p-card-works__sub-title">近日公開予定</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <div class="p-home-works__link-wrapper">
+            <a href="/about/" class="c-button-primary">
+              VIEW ALL
+            </a>
+          </div>
         </div>
       </section>
 

@@ -19,9 +19,10 @@
 .p-card-works__img-wrapper {
   position: relative;
   overflow: hidden;
-  padding-top: calc(760 / 1440 * 100%);
   width: 100%;
+  padding-top: calc(760 / 1440 * 100%);
 }
+
 .p-card-works__img {
   position: absolute;
   top: 50%;
@@ -50,9 +51,9 @@
 
 .p-card-works__sub-title {
   margin-top: 5px;
+  color: global.$color-border;
   @include global.fz(14, 16);
   @include global.lh(1.2);
-  color: global.$color-border;
 
   @include global.mq(md) {
     margin-top: 10px;

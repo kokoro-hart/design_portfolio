@@ -27,15 +27,20 @@
 <body>
 
   <div id="wrapper">
-
-    <header class="l-header p-header">
+    <span id="js-stalker" class="p-stalker"></span>
+    <header id="js-header" class="l-header p-header">
       <div class="l-header__inner">
         <h1 class="p-header__logo">
           <a href="/" class="p-header__logo-link">cocosyu.</a>
         </h1>
-        <div class="p-header__links">
+        <div class="p-header__contents u-hidden-md-down">
           <nav class="p-header__nav p-global-nav">
             <ul class="p-global-nav__list">
+              <li class="p-global-nav__item">
+                <a href="/" class="p-global-nav__link">
+                  TOP
+                </a>
+              </li>
               <li class="p-global-nav__item">
                 <a href="/about/" class="p-global-nav__link">
                   ABOUT
@@ -47,8 +52,8 @@
                 </a>
               </li>
               <li class="p-global-nav__item">
-                <a href="/vision/" class="p-global-nav__link">
-                  VISION
+                <a href="/information/" class="p-global-nav__link">
+                  INFORMATION
                 </a>
               </li>
               <li class="p-global-nav__item">
@@ -76,13 +81,20 @@
           </ul>
         </div>
 
-        <button id="js-drawer-button" class="p-header__button c-button-drawer"  aria-controls="js-drawer-nav" aria-expanded="false">
+        <button id="js-drawer-button" class="p-header__button c-button-drawer u-hidden-md-up"  aria-controls="js-drawer-nav" aria-expanded="false">
           <span class="c-button-drawer__line">
           </span>
         </button>
+      </div>
 
-        <div id="js-drawer-nav" class="p-drawer-nav" aria-hidden="true">
+      <div id="js-drawer-nav" class="p-drawer-nav u-hidden-md-up" aria-hidden="true">
+        <div class="p-drawer-nav__inner">
           <ul class="p-drawer-nav__list">
+            <li class="p-drawer-nav__item">
+              <a href="/" class="p-drawer-nav__link">
+                TOP
+              </a>
+            </li>
             <li class="p-drawer-nav__item">
               <a href="/about/" class="p-drawer-nav__link">
                 ABOUT
@@ -94,8 +106,8 @@
               </a>
             </li>
             <li class="p-drawer-nav__item">
-              <a href="/vision/" class="p-drawer-nav__link">
-                VISION
+              <a href="/information/" class="p-drawer-nav__link">
+                INFORMATION
               </a>
             </li>
             <li class="p-drawer-nav__item">
@@ -104,6 +116,7 @@
               </a>
             </li>
           </ul>
+          <p class="p-drawer-nav__text">FOLLOW ME</p>
           <ul class="p-drawer-nav__sns p-sns">
             <li class="p-sns__item">
               <a href="https://twitter.com/coco_hack_ll" class="p-sns__link" target="_blank" rel="noopener noreferrer">

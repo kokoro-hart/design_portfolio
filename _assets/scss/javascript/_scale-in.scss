@@ -8,6 +8,7 @@
   transition: transform 0.6s global.ease(out-quint);
 }
 
+//トリガー発火後
 .is-active {
   .is-scale-in {
     transform: scale(1 ,1);

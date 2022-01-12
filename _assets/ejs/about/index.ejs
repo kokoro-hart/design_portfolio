@@ -3,7 +3,7 @@
 <%- include('../common/_header', {pageId:pageId }) %>
 
 <% console.log(jsonData) %>
-<main id="js-switching-area" class="l-lower-about p-contents">
+<main id="js-switching-area" class="l-lower-about">
   <div class="l-container">
     <div id="js-switching-bg">
       <section id="js-first-view" class="p-lower-first-view">
@@ -53,13 +53,13 @@
           </span>
         </h2>
         <div class="p-profile__contents js-trigger">
-          <div class="p-profile__img-wrapper">
+          <div class="p-profile__img-wrapper is-mask-white">
             <picture class="p-profile__picture">
-              <source class="p-profile__img" srcset="/img/webp/img-profile.webp" type="image/webp" />
-              <img src="/img/common/img-profile.jpeg" class="p-profile__img" alt="プロフィール画像">
+              <source class="p-profile__img" data-srcset="/img/webp/img-profile.webp" type="image/webp" />
+              <img data-src="/img/common/img-profile.jpeg" src="/img/common/placeholder.png" class="p-profile__img lazyload" width="552" height="912" loading="lazy" alt="プロフィール画像">
             </picture>
           </div>
-          <div class="p-profile__body is-fade-up">
+          <div class="p-profile__body is-fade-up u-delay05">
             <section class="p-profile__info">
               <h3 class="p-profile__heading">
                 <span class="p-profile__heading-en">
@@ -271,15 +271,16 @@
     </div>
 
     <section class="p-career l-lower-about__career">
-      <h2 class="js-trigger">
-        <span class="c-section-heading__en is-wrap">
+      <h2 class="p-career__heading js-trigger">
+        <span class="p-career__heading-en is-wrap">
           <span class="is-slide-up">
             CAREER
           </span>
         </span>
-        <span class="c-section-heading__ja is-fade-up">
+        <span class="p-career__heading-ja is-fade-up">
           経歴
         </span>
+        <span id="js-emblem" class="p-career__emblem is-fade-up">KOKORO*TOBITA*</span>
       </h2>
       <div class="p-career__contents js-trigger">
         <dl class="p-career__dl is-fade-up">

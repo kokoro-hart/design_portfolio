@@ -4,8 +4,8 @@
 //--------------------------------------------------------------------------
 
 .p-single-works {
-  background-color: global.$color-white;
-  color: global.$color-black;
+  background-color: global.$color-black;
+  color: global.$color-base;
 }
 
 .p-single-works__intro {
@@ -26,8 +26,8 @@
   display: block;
   position: relative;
   overflow: hidden;
-  padding-top: calc( 760 / 1440 * 100%);
   margin-top: 24px;
+  padding-top: calc( 760 / 1440 * 100%);
 
   @include global.mq(md) {
     margin-top: 40px;

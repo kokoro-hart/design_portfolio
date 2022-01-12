@@ -10,7 +10,6 @@
   @include global.fz(16, 18);
   @include global.lh(1);
   font-family: global.$font-family-en;
-  font-weight: 700;
 
   &::before {
     content: "";

@@ -3,7 +3,77 @@
 // Layout トップページ
 //--------------------------------------------------------------------------
 
-.l-home__mv {
+// ファーストビュー
+.l-home__first-view {
+  position: relative;
+  z-index: map-get(global.$layer, default);
   width: 100%;
   height: 100vh;
+  min-height: 720px;
+
+  @include global.mq(md) {
+    height: 120vh;
+  }
+}
+
+// キービジュアル
+.l-home__key-visual {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+
+  @include global.mq(lg) {
+    height: 120vh;
+  }
+}
+
+// イントロ
+.l-home__intro {
+  width: 100%;
+  padding: 120px 0 30px;
+
+  @include global.mq(md) {
+    padding: 250px 0 60px;
+  }
+}
+
+// 私について
+.l-home__about {
+  width: 100%;
+  padding: 80px 0;
+
+  @include global.mq(md) {
+    padding: 160px 0;
+  }
+}
+
+
+// 制作実績
+.l-home__works {
+  width: 100%;
+  padding: 80px 0;
+
+  @include global.mq(md) {
+    padding: 160px 0;
+  }
+}
+
+// ビジョン
+.l-home__vision {
+  width: 100%;
+  padding: 80px 0 40px;
+
+  @include global.mq(md) {
+    padding: 160px 0 80px;
+  }
+}
+
+// お知らせ
+.l-home__info {
+  width: 100%;
+  padding: 80px 0;
+
+  @include global.mq(md) {
+    padding: 160px 0 240px;
+  }
 }

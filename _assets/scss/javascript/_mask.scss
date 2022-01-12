@@ -3,6 +3,7 @@
 // javascript マスク
 //--------------------------------------------------------------------------
 
+//背景が黒の場合
 .is-mask-black {
   position: relative;
   &::after {
@@ -10,14 +11,15 @@
     position: absolute;
     top: 0;
     left: 0;
+    z-index: map-get(global.$layer, default);
     width: 100%;
     height: 100%;
     background-color: global.$color-black;
     transition: height 2s global.ease(out-quint);
-    z-index: map-get(global.$layer, default);
   }
 }
 
+//背景が白の場合
 .is-mask-white {
   position: relative;
   &::after {
@@ -33,7 +35,7 @@
   }
 }
 
-
+//トリガー発火後
 .is-active {
   .is-mask-white {
     &::after {
@@ -46,5 +48,4 @@
       height: 0;
     }
   }
-
 }

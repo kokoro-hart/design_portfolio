@@ -4,8 +4,9 @@
 //--------------------------------------------------------------------------
 
 .l-lower-about {
-  // background-color: global.$color-black;
-  // color: global.$color-base;
+  background-color: global.$color-base;
+  color: global.$color-black;
+  transition: background-color 0.4s ease-out, color 0.4s ease-out;
 }
 
 // プロイフィール
@@ -31,11 +32,11 @@
 // 経歴
 .l-lower-about__career {
   width: 100%;
-  padding: 80px 24px;
+  padding: 100px 24px 80px;
   margin-bottom: 100px;
 
   @include global.mq(md) {
-    padding: 160px 48px;
+    padding: 200px 48px 160px;
     margin-bottom: 200px;
   }
 }

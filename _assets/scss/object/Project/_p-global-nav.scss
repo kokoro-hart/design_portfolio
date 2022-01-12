@@ -23,10 +23,30 @@
 }
 
 .p-global-nav__link {
+  position: relative;
   display: block;
   display: flex;
   align-items: center;
   height: 100%;
   @include global.fz(14);
   @include global.lh(1.2);
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 7px;
+    width: 100%;
+    height: 1px;
+    background-color: global.$color-accent;
+    transform: scale(0, 1);
+    transform-origin: left top;
+    transition: transform 0.6s global.ease(out-quint);
+  }
+  &:hover,
+  &:focus {
+    &::after {
+      transform: scale(1, 1);
+    }
+  }
 }
