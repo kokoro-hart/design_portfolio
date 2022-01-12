@@ -1,7 +1,6 @@
 
 //ドロワー
 const body = document.body;
-const headerLogo = document.getElementById('js-header-logo');
 const drawerButton = document.getElementById('js-drawer-button');
 const drawerNav = document.getElementById('js-drawer-nav');
 
