@@ -21,10 +21,14 @@
 }
 
 .p-home-works__card {
-  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
 
   @include global.mq(md) {
-    width: calc(50% - 40px / 2);
+    width: calc(50% - 8% / 2);
+    margin: 0;
   }
 
   &:not(:first-child) {
@@ -37,7 +41,7 @@
 
   &:nth-child(n + 3) {
     @include global.mq(md) {
-      margin-top: 70px;
+      margin-top: 92px;
     }
   }
 }
