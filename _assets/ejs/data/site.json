@@ -45,6 +45,12 @@
       "description": "CONTACTページの説明",
       "type": "article",
       "slug": "/contact/"
+    },
+    "contact-thanks": {
+      "name": "送信完了-CONTACT",
+      "description": "送信完了ページの説明",
+      "type": "article",
+      "slug": "/contact-thanks/"
     }
   }
 }
