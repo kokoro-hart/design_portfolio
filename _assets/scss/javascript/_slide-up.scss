@@ -10,6 +10,7 @@
 }
 .is-slide-up {
   display: inline-block;
+  will-change: transform;
   transform: translateY(1.4em);
   transition: transform 1.7s global.ease(out-expo);
 }

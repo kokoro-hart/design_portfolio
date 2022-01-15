@@ -7,6 +7,7 @@
   display: block;
   visibility: hidden;
   opacity: 0;
+  will-change: transform;
   transition: 
     opacity 1.7s global.ease(out-expo),
     transform 1.7s global.ease(out-expo)
