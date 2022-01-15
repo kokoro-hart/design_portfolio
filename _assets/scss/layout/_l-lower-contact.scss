@@ -1,9 +1,10 @@
 @use "foundation/global";
 
-// Project お問い合わせページ
+// Layout お問い合わせページ
 //--------------------------------------------------------------------------
 
 .l-lower-contact {
+  background-color: global.$color-base;
   padding-bottom: 80px;
 
   @include global.mq(md) {
@@ -14,4 +15,8 @@
 .l-lower-contact__contents {
   max-width: 790px;
   width: 100%;
+}
+
+.l-lower-contact__thanks {
+  padding-bottom: 160px;
 }
