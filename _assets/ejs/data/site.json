@@ -28,6 +28,12 @@
       "type": "article",
       "slug": "/single-works/"
     },
+    "site-detail": {
+      "name": "ポートフォリオサイト",
+      "description": "作品のタイトルの説明",
+      "type": "article",
+      "slug": "/site-detail/"
+    },
     "information": {
       "name": "INFORMATION",
       "description": "INFORMATIONページの説明",
