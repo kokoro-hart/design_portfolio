@@ -55,11 +55,11 @@ add_action( 'wp', function()
 });
 
 //lazyload対象の投稿画像はsrcをdata-srcに置き換える
-function my_post_image_html( $html, $post_id, $post_image_id ) {
-
+function my_post_image_html( $html, $post_id, $post_image_id ) 
+{
   //遅延読み込み対象の画像のみ
   if(strpos($html, 'lazyload') === false) {
-      return $html;
+    return $html;
   }
 
   //srcをdata-srcに置換する
@@ -78,7 +78,17 @@ function scriptLoader($script, $handle, $src) {
 }
 add_filter('script_loader_tag', 'scriptLoader', 10, 5);
 
-
+//ナビゲーションのカレント
+function check($param) {
+  switch(true) {
+    case is_post_type_archive($param);
+    case is_page($param);
+    case is_singular($param);
+    case $param === 'contact' && is_page('contact-thanks'); 
+    echo 'is-current';
+    break;
+  }
+}
 
 add_action('init', function() 
 {
