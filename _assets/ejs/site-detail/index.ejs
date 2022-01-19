@@ -1,0 +1,201 @@
+<% let pageId='site-detail' ; %>
+
+  <%- include('../common/_header', {pageId:pageId }) %>
+
+    <% console.log(jsonData) %>
+      <main class="l-single-works p-single-works">
+        <div class="l-container">
+          <div id="js-first-view" class="l-single-works__heading">
+            <div class="c-single-heading">
+              <h1 class="c-single-heading__head is-wrap">
+                <span class="is-slide-up">
+                  ポートフォリオサイト
+                </span>
+              </h1>
+              <p class="c-single-heading__foot is-fade-up">
+                本サイト
+              </p>
+            </div>
+          </div>
+
+          <div class="l-single-works__contents">
+
+            <div class="p-single-works__data p-works-data">
+              <div class="p-works-data__row">
+                <dl class="p-works-data__dl">
+                  <dt class="p-works-data__dt">
+                    Site link
+                  </dt>
+                  <dd class="p-works-data__dd">
+                    <a href="" class="p-works-data__link" target="_blank" rel="noopener noreferrer">
+                      https://cocosyu.link
+                      <svg class="c-svg p-works-data__blank" width="14" height="14">
+                        <use xlink:href="/img/svg/sprite.min.svg#icon-blank" />
+                      </svg>
+                    </a>
+                  </dd>
+                </dl>
+              </div>
+              <div class="p-works-data__row">
+                <dl class="p-works-data__dl">
+                  <dt class="p-works-data__dt">
+                    Source code
+                    <svg class="c-svg p-works-data__icon" width="18" height="18">
+                      <use xlink:href="/img/svg/sprite.min.svg#icon-github" />
+                    </svg>
+                  </dt>
+                  <dd class="p-works-data__dd">
+                    <a href="" class="p-works-data__link" target="_blank" rel="noopener noreferrer">
+                      https://github.com/kokoro-hart
+                      <svg class="c-svg p-works-data__blank" width="14" height="14">
+                        <use xlink:href="/img/svg/sprite.min.svg#icon-blank" />
+                      </svg>
+                    </a>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+
+            <a href="" class="p-single-works__thumbnail">
+              <picture class="p-single-works__picture">
+                <source src="/img/webp/works-portfolio.webp" class="p-single-works__thumbnail-img" type="image/webp" />
+                <img src="/img/common/works-portfolio.jpeg" class="p-single-works__thumbnail-img"
+                  alt="" width="1200" height="720" decoding="async">
+              </picture>
+            </a>
+
+            <div class="p-single-works__info p-works-info">
+              <p class="p-works-info__text">
+                転職活動に使う自分のポートフォリオサイトを作成しました。
+              </p>
+              <div class="p-works-info__contents">
+                <dl class="p-works-info__dl">
+                  <dt class="p-works-info__dt">サイトマップ</dt>
+                  <dd class="p-works-info__dd">
+                    <img data-src="/img/common/site-map.png" src="/img/common/placeholder.png"
+                      class="p-works-info__img lazyload" loading="lazy" alt="サイトマップ">
+                  </dd>
+                </dl>
+                <dl class="p-works-info__dl">
+                  <div class="p-works-info__row">
+                    <dt class="p-works-info__dt">
+                      担当範囲
+                    </dt>
+                    <dd class="p-works-info__dd">
+                      デザイン / コーディング
+                    </dd>
+                  </div>
+                  <div class="p-works-info__row">
+                    <dt class="p-works-info__dt">
+                      制作期間
+                    </dt>
+                    <dd class="p-works-info__dd">
+                      3週間
+                    </dd>
+                  </div>
+                  <div class="p-works-info__row">
+                    <dt class="p-works-info__dt">
+                      使用ツール
+                    </dt>
+                    <dd class="p-works-info__dd">
+                      Git / Gulp / vscode / figma
+                    </dd>
+                  </div>
+                  <div class="p-works-info__row">
+                    <dt class="p-works-info__dt">
+                      使用言語
+                    </dt>
+                    <dd class="p-works-info__dd">
+                      HTML(EJS) / CSS(Sass) / JavaScript / PHP
+                    </dd>
+                  </div>
+                  <div class="p-works-info__row">
+                    <dt class="p-works-info__dt">
+                      CMS
+                    </dt>
+                    <dd class="p-works-info__dd">
+                      WordPress
+                    </dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+
+            <div class="p-single-works__detail p-works-detail">
+              <div class="p-works-detail__contents">
+                <div id="page-top" class="p-works-detail__img-wrapper js-screen-img">
+                  <img src="/img/common/top-portfolio.png" alt="" class="p-works-detail__img">
+                </div>
+                <article data-id="#page-top" class="p-works-detail__body u-hidden-md-down">
+                  <h2 class="p-works-detail__heading">
+                    TOPページ
+                  </h2>
+                  <h3 class="p-works-detail__sub-heading">
+                    ポイント
+                  </h3>
+                  <p class="p-works-detail__text">
+                    なるべくシンプルに、かつ思考過程を伝えることを意識して制作しました。<br>
+                    複数ページの制作は初めてでしたが、コンポーネントベースを取り入れたことで、各パーツを再利用しながら制作することが出来ました。
+                  </p>
+                  <h3 class="p-works-detail__sub-heading">
+                    ポイント
+                  </h3>
+                  <p class="p-works-detail__text">
+                    なるべくシンプルに、かつ思考過程を伝えることを意識して制作しました。<br>
+                    複数ページの制作は初めてでしたが、コンポーネントベースを取り入れたことで、各パーツを再利用しながら制作することが出来ました。
+                  </p>
+                </article>
+              </div>
+            </div>
+
+            <div class="p-single-works__detail p-works-detail">
+              <div class="p-works-detail__contents">
+                <div id="page-about" class="p-works-detail__img-wrapper js-screen-img">
+                  <img src="/img/common/top-portfolio.png" alt="" class="p-works-detail__img">
+                </div>
+                <article data-id="#page-about" class="p-works-detail__body u-hidden-md-down">
+                  <h2 class="p-works-detail__heading">
+                    ABOUTページ
+                  </h2>
+                  <h3 class="p-works-detail__sub-heading">
+                    ポイント
+                  </h3>
+                  <p class="p-works-detail__text">
+                    なるべくシンプルに、かつ思考過程を伝えることを意識して制作しました。<br>
+                    複数ページの制作は初めてでしたが、コンポーネントベースを取り入れたことで、各パーツを再利用しながら制作することが出来ました。
+                  </p>
+                </article>
+              </div>
+            </div>
+
+            <div class="p-single-works__detail p-works-detail">
+              <div class="p-works-detail__contents">
+                <div id="page-works" class="p-works-detail__img-wrapper js-screen-img">
+                  <img src="/img/common/top-portfolio.png" alt="" class="p-works-detail__img">
+                </div>
+                <article data-id="#page-works" class="p-works-detail__body u-hidden-md-down">
+                  <h2 class="p-works-detail__heading">
+                    WORKSページ
+                  </h2>
+                  <h3 class="p-works-detail__sub-heading">
+                    ポイント
+                  </h3>
+                  <p class="p-works-detail__text">
+                    なるべくシンプルに、かつ思考過程を伝えることを意識して制作しました。<br>
+                    複数ページの制作は初めてでしたが、コンポーネントベースを取り入れたことで、各パーツを再利用しながら制作することが出来ました。
+                  </p>
+                  <h3 class="p-works-detail__sub-heading">
+                    ポイント
+                  </h3>
+                  <p class="p-works-detail__text">
+                    なるべくシンプルに、かつ思考過程を伝えることを意識して制作しました。<br>
+                    複数ページの制作は初めてでしたが、コンポーネントベースを取り入れたことで、各パーツを再利用しながら制作することが出来ました。
+                  </p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <%- include('../common/_footer', {pageId:pageId }) %>
