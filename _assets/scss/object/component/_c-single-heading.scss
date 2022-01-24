@@ -2,16 +2,6 @@
 
 // Component シングルページ見出し
 //--------------------------------------------------------------------------
-
-.c-single-heading {
-  border-top: 1px solid global.$color-border;
-  padding-top: 29px;
-
-  @include global.mq(md) {
-    padding-top: 40px;
-  }
-}
-
 .c-single-heading__head {
   @include global.fz(20, 36);
   @include global.lh(1.2);
