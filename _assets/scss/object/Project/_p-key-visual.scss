@@ -25,7 +25,7 @@
   z-index: map-get(global.$layer, default);
 
   @include global.mq(md) {
-    font-size: 6vw;
+    font-size: min(6vw, 120px);
   }
 }
 
@@ -39,6 +39,10 @@
 
     @include global.mq(lg) {
       top: 32%;
+    }
+
+    @include global.mq(1441px, min) {
+      right: 0;
     }
   }
 
@@ -66,11 +70,14 @@
 
     @include global.mq(md) {
       top: 48%;
-      left: 17%;
     }
 
     @include global.mq(lg) {
       top: 45%;
+    }
+
+    @include global.mq(1441px, min) {
+      left: 0;
     }
   }
 }

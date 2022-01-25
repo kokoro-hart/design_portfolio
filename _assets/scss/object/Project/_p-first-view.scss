@@ -26,7 +26,7 @@
   white-space: nowrap;
 
   @include global.mq(lg) {
-    font-size: 6.5vw;
+    font-size: min(6.5vw, 120px);
   }
 
   &:not(:first-child) {
