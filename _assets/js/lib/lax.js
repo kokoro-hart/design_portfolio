@@ -71,14 +71,27 @@ window.onload = function () {
     scrollY: {
       translateY: [
         ['elInY', 'elOutY'],
+        ['-screenHeight/3', 'screenHeight/3'],
+        {
+          easing: 'easeInOutSine',
+        }
+      ],
+    }
+  });
+
+  //タイポグラフィ
+  lax.addElements('.js-fv-text', {
+    scrollY: {
+      translateY: [
+        ['elInY', 'elOutY'],
         ['-screenHeight/6', 'screenHeight/5'],
         {
           easing: 'easeInOutSine',
         }
       ],
     }
-
   });
+  
 
   //フッター
   lax.addElements('.js-footer', {
