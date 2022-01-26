@@ -39,7 +39,7 @@ const fvTrigger = document.getElementById('js-first-view');
 function fvAnimation() {
   fvTrigger.classList.add('is-active');
 }
-window.addEventListener('DOMContentLoaded', () => {
+window.addEventListener('load', () => {
   fvAnimation();
 });
 
