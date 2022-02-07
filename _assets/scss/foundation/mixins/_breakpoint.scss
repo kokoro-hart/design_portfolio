@@ -8,6 +8,7 @@ $screen: (
   sm: 576px,
   md: 768px,
   lg: 992px,
+  lax: 1025px,//慣性スクロールとパララックス有無のブレイクポイント
   xl: 1200px,
   xxl: 1400px,
 ) !default;
