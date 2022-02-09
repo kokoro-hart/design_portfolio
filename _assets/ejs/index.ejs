@@ -3,145 +3,195 @@
 <%- include('./common/_header', {pageId:pageId }) %>
 
 <%# console.log(jsonData) %>
-<main class="l-home">
-  <section id="js-first-view" class="p-first-view l-home__first-view">
-    <div class="p-first-view__inner">
-      <h2 class="p-first-view__body js-fv-text">
-        <span class="p-first-view__heading is-wrap">
-          <span class="is-slide-up u-delay01">
-            PORTFOLIO
-          </span>
-        </span>
-        <span class="p-first-view__heading is-wrap">
-          <span class="is-slide-up u-delay02">
-            KOKORO TOBITA
-          </span>
-        </span>
-        <span class="p-first-view__heading is-wrap">
-          <span class="is-slide-up u-delay03">
-            WEB PRODUCTION &
-          </span>
-        </span>
-        <span class="p-first-view__heading is-wrap">
-          <span class="is-slide-up u-delay04">
-            DEVELOPMENT.
-          </span>
-        </span>
-      </h2>
-    </div>
-    <span class="p-first-view__scroll is-scale-in">SCROLL</span>
-  </section>
-
-  <section id="js-key-visual" class="p-key-visual l-home__key-visual l-container">
-    <div class="p-key-visual__inner  js-typography">
-      <h2 class="p-key-visual__heading">
-        Technology Used...
-      </h2>
-    </div>
-    <span class="p-key-visual__letter p-letter p-letter--bg-black">
-      <span class="p-letter__inner js-letter01">
-        JavaScript
-      </span>
-    </span>
-    <span class="p-key-visual__letter p-letter">
-      <span class="p-letter__inner js-letter02">
-        WordPress
-      </span>
-    </span>
-    <span class="p-key-visual__letter p-letter">
-      <span class="p-letter__inner js-letter03">
-        HTML & CSS
-      </span>
-    </span>
-    <svg class="c-svg p-key-visual__svg js-pen" width="120" height="120">
-      <use xlink:href="/img/svg/sprite.min.svg#pen" />
-    </svg>
-  </section>
-
-  <div id="js-switching-area" class="p-home">
-    <div class="l-container">
-      <div id="js-switching-bg">
-        <section class="p-intro l-home__intro">
-          <div class="p-intro__inner js-trigger">
-            <h3 class="p-intro__heading">
-              <span class="is-wrap">
-                <span class="is-slide-up">
-                  TO BE A RELIABLE
-                </span>
-              </span>
-              <span class="is-wrap">
-                <span class="is-slide-up u-delay01">
-                  WEB CREATOR.
-                </span>
-              </span>
-            </h3>
-            <p class="p-intro__text is-fade-up u-delay02">
-              初めまして、コーダー・マークアップエンジニア志望の飛田 心と申します。
-              <br>
-              本サイトを通じて少しでも私にご興味を持ってもらえれば幸いです。
-            </p>
-          </div>
-        </section>
-
-        <section class="p-home-about l-home__about">
-
-          <h2 class="c-section-heading js-trigger">
-            <span class="c-section-heading__en is-wrap">
-              <span class="is-slide-up">
-                ABOUT
-              </span>
+<main id="js-switching-area" class="l-home p-home">
+  <!--ファーストビュー-->
+  <section id="js-first-view" class="l-home__first-view">
+    <div class="p-first-view">
+      <div class="p-first-view__inner">
+        <h2  id="js-typography" class="p-first-view__heading" data-scroll data-scroll-speed="-10">
+          <span class="p-first-view__heading-text is-wrap">
+            <span class="is-slide-up u-delay03">
+              KOKORO TOBITA 
             </span>
-            <span class="c-section-heading__ja is-fade-up">
-              私について
+          </span>
+          <span class="p-first-view__heading-text is-wrap">
+            <span class="is-slide-up u-delay02">
+              WEB PRODUCTION
+            </span>
+          </span>
+          <span class="p-first-view__heading-text is-wrap">
+            <span class="is-slide-up u-delay01">
+              PORTFOLIO.
+            </span>
+          </span>
+        </h2>
+      </div>
+    </div>
+    <div class="p-key-visual">
+      <div class="p-key-visual__inner" data-scroll data-scroll-speed="-2">
+        <picture class="p-key-visual__picture">
+          <source class="p-key-visual__img" data-srcset="/img/webp/mv.webp" type="image/webp" />
+          <img src="/img/common/mv.jpeg" class="p-key-visual__img " alt="メインビジュアル" decoding="async" width="796" height="944.89">
+        </picture>
+      </div>
+      <div class="p-key-visual__mask" data-scroll data-scroll-speed="1.3"></div>
+    </div>
+  </section>
+  <!--/ファーストビュー-->
+
+  <div class="l-home__contents">
+    <div class="l-container">
+      <div id="js-switching-trigger">
+        <!--私について-->
+        <section class="p-home-about l-home__about">
+          <h2 class="c-section-heading js-trigger">
+            <span class="c-section-heading__ja is-wrap">
+              <span class="is-slide-up">
+                私について
+              </span>
             </span>
           </h2>
-
+          <div class="p-home-about__intro p-intro js-trigger">
+            <div class="p-intro__body">
+              <h3 class="p-intro__heading p-intro__heading--to-right">
+                <span class="is-wrap">
+                  <span class="is-slide-up">
+                    Hi, I'm Kokoro.
+                  </span>
+                </span>
+                <span class="is-wrap">
+                  <span class="is-slide-up u-delay01">
+                    I'm growing up to be a coder or <span class="u-hidden-sm-up">markup engineer.</span>
+                  </span>
+                </span>
+                <span class="is-wrap u-hidden-sm-down">
+                  <span class="is-slide-up u-delay02">
+                    markup engineer.
+                  </span>
+                </span>
+              </h3>
+              <div class="p-intro__text-wrapper">
+                <div class="p-intro__text-left"></div>
+                <p class="p-intro__text is-fade-up">
+                  初めまして、コーダー・マークアップエンジニア志望の<br class="u-hidden-lg-down">
+                  飛田 心と申します。本サイトを通じて少しでも私に<br class="u-hidden-lg-down">
+                  ご興味を持ってもらえれば幸いです。
+                </p>
+              </div>
+            </div>
+          </div>
           <div class="p-home-about__contents js-trigger">
             <div class="p-home-about__media">
-              <p class="p-home-about__img-wrapper is-mask-white">
+              <p class="p-home-about__img-wrapper is-mask-white" data-scroll data-scroll-speed="-1">
                 <picture class="p-home-about__picture">
-                  <source data-srcset="/img/webp/about.webp" class="p-home-about__img" type="image/webp" />
-                  <img data-src="/img/common/about.jpeg" src="/img/common/placeholder.png" class="p-home-about__img lazyload" width="540" height="540" loading="lazy" alt="プロフィール画像">
+                  <source data-srcset="/img/webp/img-profile.webp" class="p-home-about__img" type="image/webp" />
+                  <img data-src="/img/common/img-profile.jpeg" src="/img/common/placeholder.png"
+                    class="p-home-about__img lazyload" width="529" height="897" loading="lazy" alt="プロフィール画像">
                 </picture>
               </p>
             </div>
-            <section class="p-home-about__profile is-fade-up u-delay05">
-              <h3 class="p-home-about__heading">
-                <span class="p-home-about__heading-en">
-                  KOKORO TOBITA
-                </span>
-                <span class="p-home-about__heading-ja">
-                  飛田 心
-                </span>
-              </h3>
-              <p class="p-home-about__text">
-                茨城県在住、化学メーカーに勤務の21歳です。<br class="u-hidden-md-down">
-                ハイクオリティでスピーディなコーディングができるマークアップエンジニアを目指して日々勉強中です。<br>
-                詳しい経歴などは<a href="/about/" class="u-weight700 u-under-line"><span class="u-family-en">ABOUT</span>ページ</a>をご覧ください。
-              </p>
-              <div class="p-home-about__link-wrapper">
-                <a href="/about/" class="c-button-primary">
-                  VIEW MORE
-                </a>
+            <div class="p-home-about__profile">
+              <div class="p-home-about__body is-fade-up">
+                <h3 class="p-home-about__heading">
+                  <span class="p-home-about__heading-en">
+                    KOKORO TOBITA
+                  </span>
+                  <span class="p-home-about__heading-ja">
+                    飛田 心
+                  </span>
+                </h3>
+                <p class="p-home-about__text">
+                  2000年生まれ、茨城県在住。<br class="u-hidden-md-down">
+                  化学メーカーに勤務しながら独学でマークアップ、<br class="u-hidden-md-down">
+                  Webデザインを学んでいます。
+                </p>
+                <div class="p-home-about__link-wrapper">
+                  <a href="/about/" class="c-button-primary">
+                    VIEW MORE
+                  </a>
+                </div>
               </div>
-            </section>
+            </div>
           </div>
-
         </section>
+        <!--私について-->
       </div>
 
-      <section class="p-vision l-home__vision">
+      <div class="p-home-works l-home__works">
         <h2 class="c-section-heading js-trigger">
-          <span class="c-section-heading__en is-wrap">
+          <span class="c-section-heading__ja is-wrap">
             <span class="is-slide-up">
+              制作実績
+            </span>
+          </span>
+        </h2>
+        <p class="p-home-works__heading">
+          Production<br>Achievements
+        </p>
+        <div class="p-home-works__contents">
+          <ul class="p-home-works__cards">
+            <li class="p-home-works__card p-home-works__card--small">
+              <a href="" class="p-card-works">
+                <p class="p-card-works__img-wrapper" >
+                  <img data-src="/img/common/pf.global.jpeg" src="/img/common/placeholder.png" class="p-card-works__img lazyload" alt="作品のタイトル">
+                </p>
+                
+              </a>
+              <div class="p-card-works__body">
+                  <h3 class="p-card-works__title">Global Standard</h3>
+                  <p class="p-card-works__sub-title">コーポレートサイト</p>
+                </div>
+            </li>
+            <li class="p-home-works__card p-home-works__card--big">
+              <a href="" class="p-card-works">
+                <p class="p-card-works__img-wrapper">
+                  <img data-src="/img/common/pf.open.jpeg" src="/img/common/placeholder.png" class="p-card-works__img lazyload" alt="作品のタイトル">
+                </p>
+                
+              </a>
+              <div class="p-card-works__body">
+                  <h3 class="p-card-works__title">Global Standard</h3>
+                  <p class="p-card-works__sub-title">コーポレートサイト</p>
+                </div>
+            </li>  
+            <li class="p-home-works__card p-home-works__card--big">
+              <a href="" class="p-card-works">
+                <p class="p-card-works__img-wrapper">
+                  <img data-src="/img/common/pf.garden.jpeg" src="/img/common/placeholder.png" class="p-card-works__img lazyload"
+                    alt="作品のタイトル">
+                </p>
+                
+              </a>
+              <div class="p-card-works__body">
+                  <h3 class="p-card-works__title">Global Standard</h3>
+                  <p class="p-card-works__sub-title">コーポレートサイト</p>
+                </div>
+            </li>
+            <li class="p-home-works__card p-home-works__card--small">
+              <a href="" class="p-card-works">
+                <p class="p-card-works__img-wrapper">
+                  <img data-src="/img/common/pf.minami.jpeg" src="/img/common/placeholder.png" class="p-card-works__img lazyload"
+                    alt="作品のタイトル">
+                </p>
+                
+              </a>
+              <div class="p-card-works__body">
+                  <h3 class="p-card-works__title">Global Standard</h3>
+                  <p class="p-card-works__sub-title">コーポレートサイト</p>
+                </div>
+            </li>            
+          </ul>
+            <div class="p-home-works__link-wrapper">
+              <a href="/works/" class="c-button-primary">VIEW ALL</a>
+            </div>
+        </div>
+        <section class="p-vision l-home__vision">
+        <div class="p-vision__contents p-intro js-trigger">
+          <span class="is-wrap">
+            <span class="c-section-heading__ja is-slide-up">
               VISION
             </span>
           </span>
-          <span class="c-section-heading__ja is-fade-up">
-            ビジョン
-          </span>
-        </h2>
-        <div class="p-vision__contents p-intro js-trigger">
           <h3 class="p-intro__heading">
             <span class="is-wrap">
               <span class="is-slide-up">
@@ -154,83 +204,82 @@
               </span>
             </span>
           </h3>
-          <p class="p-intro__text is-fade-up u-delay02">
-            「100%完成されたデザインがあれば、それを120%にできる。」
-            <br>
-            <br>
-            常に想像以上のものを創れるエンジニアを目指します。
-          </p>
-        </div>
-      </section>
-
-      <section class="p-home-works l-home__works">
-        <h2 class="c-section-heading js-trigger">
-          <span class="c-section-heading__en is-wrap">
-            <span class="is-slide-up">
-              WORKS
-            </span>
-          </span>
-          <span class="c-section-heading__ja is-fade-up">
-            制作実績
-          </span>
-        </h2>
-
-        <div class="p-home-works__contents js-trigger">
-          <ul class="p-home-works__cards is-fade-up">
-            <li class="p-home-works__card">
-              <a href="/site-detail/" class="p-card-works">
-                <div class="p-card-works__img-wrapper">                    
-                  <img data-src="/img/common/works-portfolio.png" src="/img/common/placeholder.png" class="p-card-works__img lazyload"width="552" height="291" loading="lazy" alt="作品のタイトル">
-                </div>
-                <div class="p-card-works__body">
-                  <h3 class="p-card-works__title">ポートフォリオサイト</h3>
-                  <p class="p-card-works__sub-title">本サイト</p>
-                </div>
-              </a>
-            </li>
-            <li class="p-home-works__card">
-              <a href="" class="p-card-works">
-                <div class="p-card-works__img-wrapper">
-                  <img data-src="/img/common/pf.open.jpeg" src="/img/common/placeholder.png" class="p-card-works__img lazyload"
-                    width="552" height="291" loading="lazy" alt="作品のタイトル">
-                </div>
-                <div class="p-card-works__body">
-                  <h3 class="p-card-works__title">Open Cafe</h3>
-                  <p class="p-card-works__sub-title">LP</p>
-                </div>
-              </a>
-            </li>
-            <li class="p-home-works__card">
-              <a href="" class="p-card-works">
-                <div class="p-card-works__img-wrapper">                    
-                  <img data-src="/img/common/pf.minami.jpeg" src="/img/common/placeholder.png" class="p-card-works__img lazyload"width="552" height="291" loading="lazy" alt="作品のタイトル">
-                </div>
-                <div class="p-card-works__body">
-                  <h3 class="p-card-works__title">みなみ歯科クリニック</h3>
-                  <p class="p-card-works__sub-title">歯医者さんのサイト</p>
-                </div>
-              </a>
-            </li>
-            <li class="p-home-works__card">
-              <a href="" class="p-card-works">
-                <div class="p-card-works__img-wrapper">                    
-                  <img data-src="/img/common/pf.global.jpeg" src="/img/common/placeholder.png" class="p-card-works__img lazyload"width="552" height="291" loading="lazy" alt="作品のタイトル">
-                </div>
-                <div class="p-card-works__body">
-                  <h3 class="p-card-works__title">Garden Salad</h3>
-                  <p class="p-card-works__sub-title">コーポレートサイト</p>
-                </div>
-              </a>
-            </li>
-          </ul>
-          <div class="p-home-works__link-wrapper">
-            <a href="/about/" class="c-button-primary">
-              VIEW ALL
-            </a>
+          <div class="p-intro__text-wrapper">
+            <div class="p-intro__text-left"></div>
+            <p class="p-intro__text is-fade-up u-delay02">
+              「100%完成されたデザインがあれば、それを120%にできる。」
+              <br>
+              <br>
+              常に想像以上のものを創れるエンジニアを目指します。
+            </p>
           </div>
         </div>
       </section>
+      </div>
+    </div>
 
+
+<!-- 
+    <div class="p-home-works__contents js-trigger">
+      <ul class="p-home-works__cards is-fade-up">
+        <li class="p-home-works__card">
+          <a href="/site-detail/" class="p-card-works">
+            <div class="p-card-works__img-wrapper">
+              <img data-src="/img/common/works-portfolio.png" src="/img/common/placeholder.png"
+                class="p-card-works__img lazyload" width="552" height="291" loading="lazy" alt="作品のタイトル">
+            </div>
+            <div class="p-card-works__body">
+              <h3 class="p-card-works__title">ポートフォリオサイト</h3>
+              <p class="p-card-works__sub-title">本サイト</p>
+            </div>
+          </a>
+        </li>
+        <li class="p-home-works__card">
+          <a href="" class="p-card-works">
+            <div class="p-card-works__img-wrapper">
+              <img data-src="/img/common/pf.open.jpeg" src="/img/common/placeholder.png" class="p-card-works__img lazyload"
+                width="552" height="291" loading="lazy" alt="作品のタイトル">
+            </div>
+            <div class="p-card-works__body">
+              <h3 class="p-card-works__title">Open Cafe</h3>
+              <p class="p-card-works__sub-title">LP</p>
+            </div>
+          </a>
+        </li>
+        <li class="p-home-works__card">
+          <a href="" class="p-card-works">
+            <div class="p-card-works__img-wrapper">
+              <img data-src="/img/common/pf.minami.jpeg" src="/img/common/placeholder.png"
+                class="p-card-works__img lazyload" width="552" height="291" loading="lazy" alt="作品のタイトル">
+            </div>
+            <div class="p-card-works__body">
+              <h3 class="p-card-works__title">みなみ歯科クリニック</h3>
+              <p class="p-card-works__sub-title">歯医者さんのサイト</p>
+            </div>
+          </a>
+        </li>
+        <li class="p-home-works__card">
+          <a href="" class="p-card-works">
+            <div class="p-card-works__img-wrapper">
+              <img data-src="/img/common/pf.global.jpeg" src="/img/common/placeholder.png"
+                class="p-card-works__img lazyload" width="552" height="291" loading="lazy" alt="作品のタイトル">
+            </div>
+            <div class="p-card-works__body">
+              <h3 class="p-card-works__title">Garden Salad</h3>
+              <p class="p-card-works__sub-title">コーポレートサイト</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+      <div class="p-home-works__link-wrapper">
+        <a href="/about/" class="c-button-primary">
+          VIEW ALL
+        </a>
+      </div>
+    </div> -->
+
+
+    <div class="l-container">
       <section class="p-info l-home__info">
         <h2 class="c-section-heading js-trigger">
           <span class="c-section-heading__en is-wrap">
@@ -281,5 +330,4 @@
     </div>
   </div>
 </main>
-
 <%- include('./common/_footer', {pageId:pageId }) %>

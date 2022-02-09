@@ -4,98 +4,58 @@
 //--------------------------------------------------------------------------
 
 .p-key-visual {
-  background-color: global.$color-base;
-  color: global.$color-black;
-  font-family: global.$font-family-en;
-  transition: opacity 0.4s ease-in-out;
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-color: inherit;
+  color: inherit;
+
+  @include global.mq(lax) {
+    height: 110vh;
+  }
+
+  @include global.mq(1921px, min) {
+    height: 90vh;
+  }
 }
 
 .p-key-visual__inner {
   position: relative;
+  z-index: map-get(global.$layer, default);
+  width: 87%;
+  height: 100%;
+  max-width: 796px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 100%;
+  will-change: transform;
+
+  @include global.mq(lax) {
+    padding-top: 0;
+    width: 100%;
+  }
+}
+
+.p-key-visual__img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 100%;
   height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: map-get(global.$layer, default);
+  @include global.object-fit(cover, center);
 }
 
-.p-key-visual__heading {
-  font-size: 8.5vw;
-  white-space: nowrap;
-  font-weight: 400;
-
-  @include global.mq(md) {
-    font-size: min(6vw, 120px);
-  }
-}
-
-.p-key-visual__letter {
-  &:nth-of-type(1) {
-    position: absolute;
-    top: 28%;
-    right: 18%;
-    transform: rotate(20deg);
-    z-index: map-get(global.$layer, default);
-
-    @include global.mq(lg) {
-      top: 32%;
-    }
-
-    @include global.mq(1441px, min) {
-      right: 0;
-    }
-  }
-
-  &:nth-of-type(2) {
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: rotate(7deg);
-
-    @include global.mq(md) {
-      top: 55%;
-    }
-
-    @include global.mq(lg) {
-      top: 58%;
-    }
-  }
-
-  &:nth-of-type(3) {
-    position: absolute;
-    top: 52%;
-    left: 12%;
-
-    transform: rotate(-12deg);
-
-    @include global.mq(md) {
-      top: 48%;
-    }
-
-    @include global.mq(lg) {
-      top: 45%;
-    }
-
-    @include global.mq(1441px, min) {
-      left: 0;
-    }
-  }
-}
-
-.p-key-visual__svg {
+.p-key-visual__mask {
   position: absolute;
-    top: 50%;
-    right: 0;
+  top: 85%;
+  left: 0;
+  z-index: map-get(global.$layer, first-view);
+  width: 100%;
+  height: 100vh;
+  background-color: inherit;
 
-    @include global.mq(md) {
-      right: 10%;
-    }
-
-  @include global.mq(lg) {
-    top: 55%;
-    right: 20%;
-    width: 200px;
-    height: 200px;
+  @include global.mq(1921px, min) {
+    top: 80%;
   }
 }

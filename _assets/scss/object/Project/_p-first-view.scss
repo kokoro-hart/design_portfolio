@@ -3,11 +3,42 @@
 // Project ファーストビュー
 //--------------------------------------------------------------------------
 
-.p-first-view {
+.p-first-view {  
   position: relative;
+  z-index: map-get(global.$layer, first-view);
+  width: 100%;
+  height: calc(30vh + 78px);
+  margin-top: 78px;
+  background-color: inherit;
   color: global.$color-white;
-  background-color: global.$color-black;
   font-family: global.$font-family-en;
+
+  @include global.mq(md) {
+    height: calc(50vh + 78px);
+  }
+
+  @include global.mq(lax) {
+    margin-top: 0;
+  }
+
+  @include global.mq(xxl) {
+    height: 70vh;
+  }
+
+  @include global.mq(1921px, min) {
+    height: 56vh;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: inherit;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .p-first-view__inner {
@@ -19,80 +50,32 @@
 }
 
 .p-first-view__heading {
-  padding-left: 10%;
-  font-size: 8vw;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: opacity 0.4s ease-in-out;
+  will-change: transform;
+}
+
+.p-first-view__heading-text {
+  font-size: 9vw;
   @include global.lh(1.2, 1);
   font-weight: 400;
   white-space: nowrap;
 
-  @include global.mq(lg) {
-    font-size: min(6.5vw, 120px);
+  @include global.mq(xxl) {
+    font-size: min(15vh, 142px);
   }
 
   &:not(:first-child) {
     margin-top: 0.7em;
 
-    @include global.mq(lg) {
+    @include global.mq(lax) {
       margin-top: 0.5em;
     }
-  }
-}
 
-.p-first-view__scroll {
-  display: inline-block;
-  position: absolute;
-  right: 1%;
-  bottom: 10%;
-  overflow: hidden;
-  color: global.$color-white;
-  @include global.fz(14, 16);
-  @include global.lh(1);
-  padding: 10px 10px 80px 10px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  writing-mode: vertical-lr;
-  transition-delay: 1s;
-
-  @include global.mq(md) {
-    bottom: calc(20vh + 7%);
-  }
-
-  @include global.mq(lg) {
-    right: 17%;
-    padding-bottom: 90px;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 2px;
-    height: 0;
-    background-color: global.$color-accent;
-    will-change: animation;
-    animation: scrollDownLine 1.5s cubic-bezier(1, 0, 0, 1) infinite;
-    animation-delay: 1.5s;
-  }
-  @keyframes scrollDownLine {
-    0% {
-      height: 75px;
-      transform: scale(1, 0);
-      transform-origin: 0 0;
-    }
-    50% {
-      height: 75px;
-      transform: scale(1, 1);
-      transform-origin: 0 0;
-    }
-    50.1% {
-      transform: scale(1, 1);
-      transform-origin: 0 100%;
-    }
-    100% {
-      transform: scale(1, 0);
-      transform-origin: 0 100%;
+    @include global.mq(xxl) {
+      margin-top: 0.3em;
     }
   }
 }
