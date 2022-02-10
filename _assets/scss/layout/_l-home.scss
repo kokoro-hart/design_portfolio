@@ -5,63 +5,43 @@
 
 // ファーストビュー
 .l-home__first-view {
-  position: relative;
-  z-index: map-get(global.$layer, default);
-  width: 100%;
-  height: 100vh;
-  min-height: 720px;
-
-  @include global.mq(md) {
-    height: 120vh;
-  }
+  background-color: inherit;
+  color: inherit;
 }
 
-// キービジュアル
-.l-home__key-visual {
+//コンテンツエリア
+.l-home__contents {
   position: relative;
+  z-index: map-get(global.$layer, main);
   width: 100%;
-  height: 100vh;
-
-  @include global.mq(lg) {
-    height: 120vh;
-  }
-}
-
-// イントロ
-.l-home__intro {
-  width: 100%;
-  padding: 120px 0 30px;
-
-  @include global.mq(md) {
-    padding: 250px 0 60px;
-  }
+  background-color: inherit;
+  color: inherit;
 }
 
 // 私について
 .l-home__about {
   width: 100%;
-  padding: 80px 0;
+  padding: 120px 0 75px;
 
   @include global.mq(md) {
-    padding: 160px 0;
+    padding: 180px 0 150px;
   }
 }
-
 
 // 制作実績
 .l-home__works {
   width: 100%;
-  padding: 80px 0;
+  padding: 100px 0 40px;
 
   @include global.mq(md) {
-    padding: 160px 0;
+    padding: 180px 0 80px;
   }
 }
 
 // ビジョン
 .l-home__vision {
   width: 100%;
-  padding: 80px 0 40px;
+  padding: 100px 0 40px;
 
   @include global.mq(md) {
     padding: 160px 0 80px;
@@ -71,7 +51,7 @@
 // お知らせ
 .l-home__info {
   width: 100%;
-  padding: 80px 0 120px;
+  padding: 100px 0 120px;
 
   @include global.mq(md) {
     padding: 160px 0 240px;
