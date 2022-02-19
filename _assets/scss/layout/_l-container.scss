@@ -4,14 +4,8 @@
 //--------------------------------------------------------------------------
 
 .l-container {
-  max-width: calc(global.$layout-width-container + 40px);
-  width: 100%;
+  max-width: global.$layout-width-container;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 20px;
-
-  @include global.mq(md) {
-    max-width: calc(global.$layout-width-container + 80px);
-    padding: 0 40px;
-  }
 }
