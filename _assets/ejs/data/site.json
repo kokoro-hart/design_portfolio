@@ -34,18 +34,6 @@
       "type": "article",
       "slug": "/site-detail/"
     },
-    "information": {
-      "name": "INFORMATION",
-      "description": "INFORMATIONページの説明",
-      "type": "article",
-      "slug": "/information/"
-    },
-    "single-info": {
-      "name": "記事のタイトル",
-      "description": "記事のタイトルの説明",
-      "type": "article",
-      "slug": "/single-info/"
-    },
     "contact": {
       "name": "CONTACT",
       "description": "CONTACTページの説明",
