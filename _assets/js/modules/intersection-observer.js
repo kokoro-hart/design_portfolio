@@ -20,9 +20,9 @@ function targetsElements(entries) {
 };
 
 //背景色切り替え
-const switchingTrigger = document.getElementById('js-switching-bg'); 
+const switchingTrigger = document.getElementById('js-switching-trigger');
 const switchingArea = document.getElementById('js-switching-area'); 
-const keyVisual = document.getElementById('js-key-visual');
+const typography = document.getElementById('js-typography');
 
 const switchingObserver = new IntersectionObserver(switchingBg, {
   root: null,
@@ -34,30 +34,14 @@ if (switchingTrigger !== null) {
   switchingObserver.observe(switchingTrigger);
 }
 
-//キービジュアルを透過する関数
-function removeKeyVisual() {
-  if (keyVisual !== null) {
-    keyVisual.style.opacity = 0;
-  }
-}
-
-//キービジュアルを出現させる関数
-function activateKeyVisual() {
-  if (keyVisual !== null) {
-    keyVisual.style.opacity = 1;
-  }
-}
-
 function switchingBg(entries) {
   for (const e of entries) {
     if (e.isIntersecting) {
       switchingArea.style.backgroundColor = '#ccc';
       switchingArea.style.color = '#111';
-      removeKeyVisual();
     } else {
       switchingArea.style.backgroundColor = '#111';
       switchingArea.style.color = '#ccc';
-      activateKeyVisual()
     }
   }
 };
@@ -106,4 +90,3 @@ function removeIndex(element) {
   const newRemoveIndex = document.querySelector(`[data-id='#${element.id}']`);
   newRemoveIndex.classList.remove('is-fixed');
 }
-
