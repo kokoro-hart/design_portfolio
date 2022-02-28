@@ -5,8 +5,14 @@
 @forward "variables/easing";
 @forward "variables/z-index";
 
+//functions
+@forward "functions/vw";
 //mixins
 @forward "mixins/breakpoint";
 @forward "mixins/object-fit";
 @forward "mixins/font-size";
 @forward "mixins/line-height";
+
+
+
+
