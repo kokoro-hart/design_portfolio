@@ -3,79 +3,77 @@
 // Project ファーストビュー
 //--------------------------------------------------------------------------
 
-.p-first-view {  
-  position: relative;
-  z-index: map-get(global.$layer, first-view);
-  width: 100%;
-  height: calc(30vh + 78px);
-  margin-top: 78px;
-  background-color: inherit;
-  color: global.$color-white;
-  font-family: global.$font-family-en;
+.p-first-view {
+  padding: 20vh 0 15vh;
 
-  @include global.mq(md) {
-    height: calc(50vh + 78px);
-  }
-
-  @include global.mq(lax) {
-    margin-top: 0;
-  }
-
-  @include global.mq(xxl) {
-    height: 70vh;
-  }
-
-  @include global.mq(1921px, min) {
-    height: 56vh;
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: inherit;
-    width: 100%;
-    height: 100%;
+  @include global.mq(xl) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    padding: 0;
   }
 }
 
 .p-first-view__inner {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
+  position: relative;
 }
 
 .p-first-view__heading {
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: opacity 0.4s ease-in-out;
-  will-change: transform;
-}
-
-.p-first-view__heading-text {
-  font-size: 9vw;
-  @include global.lh(1.2, 1);
-  font-weight: 400;
+  font-size: 10vw;
+  @include global.lh(1);
+  font-weight: 200;
+  font-family: global.$font-family-en;
   white-space: nowrap;
 
-  @include global.mq(xxl) {
-    font-size: min(15vh, 142px);
+  @include global.mq(md) {
+    font-size: min(154px, #{global.vw(148)});
+  }
+
+  @include global.mq(1921px, min) {
+    //font-size: min(187px, #{global.vw(187)});
+    font-size: 7.4vw;
   }
 
   &:not(:first-child) {
-    margin-top: 0.7em;
+    margin-top: 0.5em;
 
-    @include global.mq(lax) {
-      margin-top: 0.5em;
+    @include global.mq(md) {
+      margin-top: 0.2em;
     }
+  }
 
-    @include global.mq(xxl) {
-      margin-top: 0.3em;
-    }
+  &:nth-of-type(2) {
+    padding-left: 7%;
+  }
+}
+
+.p-first-view__text {
+  margin-top: 24px;
+  @include global.fz(14, 16);
+  @include global.lh(1.4);
+
+  @include global.mq(md) {
+    margin-top: 48px;
+  }
+}
+
+.p-first-view__arrow {
+  display: block;
+  width: 30px;
+  height: 60px;
+  margin-top: 52px;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20width%3D%2294%22%20height%3D%22188%22%20viewBox%3D%220%200%2094%20188%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M48.1649%200.0429688V187.148M47.609%20186.035C43.6048%20143.062%2034.281%20126.175%201.47192%20112.529M47.0531%20187.148C51.0573%20144.175%2060.3811%20127.289%2093.1902%20113.643%22%20stroke%3D%22black%22%20stroke-width%3D%223%22%2F%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  @include global.mq(md) {
+    position: absolute;
+    bottom: -10%;
+    right: 28%;
+    width: min(84px, #{global.vw(84)});
+    height: min(155px, #{global.vw(155)});
+    margin-top: 0;
   }
 }
