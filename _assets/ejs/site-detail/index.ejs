@@ -20,6 +20,12 @@
 
           <div class="l-single-works__contents">
 
+            <picture class="p-single-works__thumbnail">
+              <source srcset="/img/webp/works-portfolio.webp" class="p-single-works__thumbnail-img" type="image/webp" />
+              <img src="/img/common/works-portfolio.jpeg" class="p-single-works__thumbnail-img" alt="" width="1200" height="720"
+                decoding="async">
+            </picture>
+
             <div class="p-single-works__data p-works-data">
               <div class="p-works-data__row">
                 <dl class="p-works-data__dl">
@@ -56,23 +62,11 @@
               </div>
             </div>
 
-            <a href="" class="p-single-works__thumbnail">
-              <picture class="p-single-works__picture">
-                <source src="/img/webp/works-portfolio.webp" class="p-single-works__thumbnail-img" type="image/webp" />
-                <img src="/img/common/works-portfolio.jpeg" class="p-single-works__thumbnail-img"
-                  alt="" width="1200" height="720" decoding="async">
-              </picture>
-            </a>
-
             <div class="p-single-works__info p-works-info">
-              <p class="p-works-info__text">
-                転職活動に使う自分のポートフォリオサイトを作成しました。
-              </p>
               <div class="p-works-info__contents">
                 <dl class="p-works-info__dl">
-                  <dt class="p-works-info__dt">サイトマップ</dt>
                   <dd class="p-works-info__dd">
-                    <img data-src="/img/common/site-map.png" src="/img/common/placeholder.png"
+                    <img data-src="/img/common/site-map02.png" src="/img/common/placeholder.png"
                       class="p-works-info__img lazyload" loading="lazy" alt="サイトマップ">
                   </dd>
                 </dl>
@@ -123,26 +117,29 @@
 
             <div class="p-single-works__detail p-works-detail">
               <div class="p-works-detail__contents">
-                <div id="page-top" class="p-works-detail__img-wrapper js-screen-img">
-                  <img src="/img/common/top-portfolio.png" alt="" class="p-works-detail__img">
-                </div>
+                <picture id="page-top" class="p-works-detail__picture js-screen-img">
+                  <source srcset="/img/webp/screen-top.webp" class="p-works-detail__img" type="image/webp" />
+                  <img src="/img/common/screen-top.jpeg" class="p-works-detail__img" alt="TOPページ" width="552" height="3027">
+                </picture>
                 <article data-id="#page-top" class="p-works-detail__body u-hidden-md-down">
                   <h2 class="p-works-detail__heading">
-                    TOPページ
+                    TOP
                   </h2>
                   <h3 class="p-works-detail__sub-heading">
-                    ポイント
+                    デザイン
                   </h3>
                   <p class="p-works-detail__text">
-                    なるべくシンプルに、かつ思考過程を伝えることを意識して制作しました。<br>
-                    複数ページの制作は初めてでしたが、コンポーネントベースを取り入れたことで、各パーツを再利用しながら制作することが出来ました。
+                    なるべくシンプルに、デザイン４原則に沿った構成、<br>
+                    視線の動きを考慮したインタラクションを心掛けました。
+                    
                   </p>
                   <h3 class="p-works-detail__sub-heading">
-                    ポイント
+                    工夫点
                   </h3>
                   <p class="p-works-detail__text">
-                    なるべくシンプルに、かつ思考過程を伝えることを意識して制作しました。<br>
-                    複数ページの制作は初めてでしたが、コンポーネントベースを取り入れたことで、各パーツを再利用しながら制作することが出来ました。
+                    セクションの切り替わりで背景色を変化させることでメリハリをつけました。<br>
+                    「イントロ」「ABOUT」は清潔感、親しみやすさを、<br>
+                    「VISION」「WORKS」は重量感や作品を目立たせることを意識しました。
                   </p>
                 </article>
               </div>
@@ -150,13 +147,79 @@
 
             <div class="p-single-works__detail p-works-detail">
               <div class="p-works-detail__contents">
-                <div id="page-about" class="p-works-detail__img-wrapper js-screen-img">
-                  <img src="/img/common/top-portfolio.png" alt="" class="p-works-detail__img">
-                </div>
+                <picture id="page-about" class="p-works-detail__picture js-screen-img">
+                  <source srcset="/img/webp/screen-about.webp" class="p-works-detail__img" type="image/webp" />
+                  <img src="/img/common/screen-about.jpeg" class="p-works-detail__img" alt="ABOUTページ" width="552" height="2605">
+                </picture>
                 <article data-id="#page-about" class="p-works-detail__body u-hidden-md-down">
                   <h2 class="p-works-detail__heading">
-                    ABOUTページ
+                    ABOUT
                   </h2>
+                  <h3 class="p-works-detail__sub-heading">
+                    PROFILEセクション
+                  </h3>
+                  <p class="p-works-detail__text">
+                    採用担当者様との方向性のずれをなくすために、目標や関心技術、将来どうなりたいのかを記載しました。
+                  </p>
+                  <h3 class="p-works-detail__sub-heading">
+                    SKILLセクション
+                  </h3>
+                  <p class="p-works-detail__text">
+                    どんな業務なら任せられそうかイメージできるように、自分のできることをなるべく詳細に記述しました。
+                  </p>
+                  <h3 class="p-works-detail__sub-heading">
+                    CAREERセクション
+                  </h3>
+                  <p class="p-works-detail__text">
+                    下記のポイントを伝えることを意識しました。<br>
+                    ①チームで仕事をしてきた経験<br>
+                    ②自ら考え、業務上の課題を解決した経験<br>
+                    ③Webに興味を持った経緯
+                  </p>
+                </article>
+              </div>
+            </div>
+
+            <div class="p-single-works__detail p-works-detail">
+              <div class="p-works-detail__contents">
+                <picture id="page-works" class="p-works-detail__picture js-screen-img">
+                  <source srcset="/img/webp/screen-works.webp" class="p-works-detail__img" type="image/webp" />
+                  <img src="/img/common/screen-works.jpeg" class="p-works-detail__img" alt="WORKSページ" width="552" height="1610">
+                </picture>
+                <article data-id="#page-works" class="p-works-detail__body u-hidden-md-down">
+                  <h2 class="p-works-detail__heading">
+                    WORKS
+                  </h2>
+                  <h3 class="p-works-detail__sub-heading">
+                    工夫点
+                  </h3>
+                  <p class="p-works-detail__text">
+                    作品が多くない分、あえて1つ1つに目がいくようなレイアウトにしました。
+                  </p>
+                  <p class="p-works-detail__text">
+                    これから作品が増えていった際はグリッドレイアウトなどを検討します。
+                  </p>
+                </article>
+              </div>
+            </div>
+
+            <div class="p-single-works__detail p-works-detail">
+              <div class="p-works-detail__contents">
+                <picture id="page-info" class="p-works-detail__picture js-screen-img">
+                  <source srcset="/img/webp/screen-info.webp" class="p-works-detail__img" type="image/webp" />
+                  <img src="/img/common/screen-info.jpeg" class="p-works-detail__img" alt="INFORMATIONページ" width="552" height="686">
+                </picture>
+                <article data-id="#page-info" class="p-works-detail__body u-hidden-md-down">
+                  <h2 class="p-works-detail__heading">
+                    INFORMATION
+                  </h2>
+                  <h3 class="p-works-detail__sub-heading">
+                    ポイント
+                  </h3>
+                  <p class="p-works-detail__text">
+                    なるべくシンプルに、かつ思考過程を伝えることを意識して制作しました。<br>
+                    複数ページの制作は初めてでしたが、コンポーネントベースを取り入れたことで、各パーツを再利用しながら制作することが出来ました。
+                  </p>
                   <h3 class="p-works-detail__sub-heading">
                     ポイント
                   </h3>
@@ -170,12 +233,13 @@
 
             <div class="p-single-works__detail p-works-detail">
               <div class="p-works-detail__contents">
-                <div id="page-works" class="p-works-detail__img-wrapper js-screen-img">
-                  <img src="/img/common/top-portfolio.png" alt="" class="p-works-detail__img">
-                </div>
-                <article data-id="#page-works" class="p-works-detail__body u-hidden-md-down">
+                <picture id="page-contact" class="p-works-detail__picture js-screen-img">
+                  <source srcset="/img/webp/screen-contact.webp" class="p-works-detail__img" type="image/webp" />
+                  <img src="/img/common/screen-contact.jpeg" class="p-works-detail__img" alt="CONTACTページ" width="552" height="831">
+                </picture>
+                <article data-id="#page-contact" class="p-works-detail__body u-hidden-md-down">
                   <h2 class="p-works-detail__heading">
-                    WORKSページ
+                    CONTACT
                   </h2>
                   <h3 class="p-works-detail__sub-heading">
                     ポイント

@@ -3,31 +3,66 @@
 // Component セクション見出し
 //--------------------------------------------------------------------------
 
-.c-section-heading {
-  border-top: 1px solid global.$color-border;
-  width: 100%;
-  padding-top: 52px;
+// .c-section-heading {
+//   width: 100%;
+// }
 
-  @include global.mq(md) {
-    padding-top: 63px;
-  }
+// .c-section-heading__en {
+//   margin-bottom: 6px;
+//   @include global.fz(34, 42);
+//   @include global.lh(1);
+//   font-weight: 200;
+//   font-family: global.$font-family-en;
+
+//   @include global.mq(md) {
+//     margin-bottom: 12px;
+//   }
+// }
+
+.c-section-heading {
+  position: relative;
+  padding-bottom: 20px;
+
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   bottom: 0;
+  //   left: 0;
+  //   width: 0;
+  //   height: 1px;
+  //   background-color: global.$color-border;
+  //   transition: width 2.5s global.ease(out-quint);
+  // }
 }
 
 .c-section-heading__en {
-  @include global.fz(34, 42);
-  @include global.lh(1);
+  font-size: 38px;
+  @include global.lh(1.2);
   font-weight: 400;
   font-family: global.$font-family-en;
+
+  @include global.mq(md) {
+    font-size: 42px;
+  }
+
+  @include global.mq(lg) {
+    font-size: min(64px, #{global.vw(64)});
+  }
 }
 
 .c-section-heading__ja {
-  margin-top: 6px;
+  margin-top: 4px;
   color: global.$color-border;
-  @include global.fz(16);
+  @include global.fz(14, 16);
   @include global.lh(1);
   font-weight: 400;
+}
 
-  @include global.mq(md) {
-    margin-top: 12px;
+
+.is-active {
+  .c-section-heading {
+    &::after {
+      width: 100%;
+    }
   }
 }

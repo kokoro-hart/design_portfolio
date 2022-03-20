@@ -23,9 +23,7 @@
 @use "layout/l-footer";
 @use "layout/l-lower-about";
 @use "layout/l-lower-works";
-@use "layout/l-lower-info";
 @use "layout/l-lower-contact";
-@use "layout/l-single-info";
 @use "layout/l-single-works";
 
 /* Component (prefix: c- )
@@ -46,16 +44,12 @@
 @use "object/Project/p-drawer-nav";
 @use "object/Project/p-sns";
 @use "object/Project/p-first-view";
-@use "object/Project/p-key-visual";
-@use "object/Project/p-letter";
 @use "object/Project/p-home";
 @use "object/Project/p-intro";
 @use "object/Project/p-home-about";
 @use "object/Project/p-home-works";
 @use "object/Project/p-card-works";
-@use "object/Project/p-vision";
-@use "object/Project/p-info";
-@use "object/Project/p-info-item";
+@use "object/Project/p-home-contact";
 @use "object/Project/p-footer";
 @use "object/Project/p-footer-info";
 @use "object/Project/p-footer-nav";
@@ -65,7 +59,7 @@
 @use "object/Project/p-career";
 @use "object/Project/p-works";
 @use "object/Project/p-form";
-@use "object/Project/p-single-info";
+@use "object/Project/p-contact-thanks";
 @use "object/Project/p-single-works";
 @use "object/Project/p-works-data";
 @use "object/Project/p-works-info";

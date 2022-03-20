@@ -15,19 +15,19 @@ html {
 
 html,
 body {
-  color: global.$color-black;
+  margin: 0;
+  padding: 0;
   background-color: global.$color-base;
+  color: global.$color-black;
+  font-size: 16px;
+  font-weight: 400;
   font-family: global.$font-family-ja;
-  @include global.fz(14);
   -webkit-font-smoothing: antialiased;
   font-feature-settings: 'palt';
-  padding: 0;
-  margin: 0;
   text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
-  font-weight: 400;
 }
 
 body.is-drawer-active {
@@ -135,10 +135,23 @@ button:focus {
 :focus:not(:focus-visible) {
   outline: 0; //キーボード操作"以外"でフォーカスされた際はoutlineを消す
 }
-
+      
 main {
   position: relative;
   width: 100%;
   z-index: map-get(global.$layer, main);
-  overflow-x: hidden;
+  overflow: hidden;
+}
+
+//locomotive-scroll(慣性スクロール)用の記述
+body {
+  @include global.mq(lax) {
+    overflow: hidden;
+  }
+}
+.data-scroll-wrapper {
+  @include global.mq(lax) {
+    overflow: hidden;
+    min-height: 100vh;
+  }
 }

@@ -6,8 +6,8 @@
 .p-stalker {
   pointer-events: none;
   position: fixed;
-  top: -8px;
-  left: -8px;
+  top: -20px;
+  left: -22px;
   z-index: map-get(global.$layer, stalker);
   border: 1px solid global.$color-border;
   border-radius: 50%;
@@ -18,12 +18,11 @@
   transition-timing-function: ease-out;
 
   &.is-hover {
-    top: -30px;
-    left: -35px;
-    width: 70px;
-    height: 80px;
+    top: -40px;
+    left: -44px;
+    width: 100px;
+    height: 115px;
     background: transparent;
-    transition: 0.5s;
     border: none;
     &::before,
     &::after {
@@ -38,7 +37,7 @@
     &::before {
       background: linear-gradient(to bottom, global.$color-hart 0 38%, transparent 0 62%);
       transform: rotate(-45deg);
-      left: 14%;
+      left: 14.49%;
     }
     &::after {
       transform: rotate(45deg);

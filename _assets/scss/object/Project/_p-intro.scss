@@ -4,42 +4,66 @@
 //--------------------------------------------------------------------------
 
 .p-intro__heading {
-  @include global.fz(38, 80);
+  margin-top: 18px;
+  font-size: 38px;
   @include global.lh(1.2);
-  font-weight: 400;
+  font-weight: 200;
   font-family: global.$font-family-en;
-  letter-spacing: 0.02em;
+
+  @include global.mq(md) {
+    margin-top: 0;
+    white-space: nowrap;
+    //font-size: min(90px, 5.6vw);
+    font-size: min(68px, #{global.vw(68)});
+  }
 }
 
 .p-intro__heading--to-right {
 
-  & > span:first-child {
-    padding-left: 51%;
-
+  @include global.mq(md) {
+    & > span:first-child {
+      padding-left: 49.5%;
+    }
   }
 }
 
 .p-intro__text-wrapper {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 60px;
+  //margin-top: 24px;
 
   @include global.mq(md) {
-    margin-top: 130px;
+    display: flex;
+    justify-content: space-between;
+    //margin-top: min(130px, #{global.vw(130)});
   }
 }
 
 .p-intro__text-left {
-  border-top: 1px solid global.$color-border;
-  width: calc(48% - 8% / 2);
-  height: 100%;
-  transform: translateY(9px);
+  position: relative;
+  width: 0;
+  height: 1px;
+  background-color: global.$color-border;
+  transition: width 2.5s global.ease(out-quint);
+  margin-top: 12px;
+}
 
+.is-active {
+  .p-intro__text-left {
+    width: 88%;
+    @include global.mq(md) {
+      //width: calc(46% - 8% / 2);
+    }
+  }
 }
 
 .p-intro__text {
+  margin-top: 12px;
   @include global.fz(14, 16);
-  @include global.lh(2);
+  @include global.lh(2, 1.7);
   font-weight: 400;
-  width: calc(52% - 8% / 2);
+
+  @include global.mq(md) {
+    margin-top: 0;
+    max-width: 100%;
+    width: calc(54% - 8% / 2);
+  }
 }

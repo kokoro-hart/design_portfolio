@@ -4,6 +4,9 @@
 //--------------------------------------------------------------------------
 
 .p-footer {
+  position: relative;
+  background-color: global.$color-base;
+  color: global.$color-black;
   font-family: global.$font-family-en;
 }
 

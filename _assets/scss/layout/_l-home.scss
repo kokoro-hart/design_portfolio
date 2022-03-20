@@ -3,57 +3,22 @@
 // Layout トップページ
 //--------------------------------------------------------------------------
 
-// ファーストビュー
-.l-home__first-view {
-  background-color: inherit;
-  color: inherit;
-}
-
-//コンテンツエリア
-.l-home__contents {
-  position: relative;
-  z-index: map-get(global.$layer, main);
+//プロフィール
+.l-home__profile {
   width: 100%;
-  background-color: inherit;
-  color: inherit;
-}
+  padding-bottom: 136px;
 
-// 私について
-.l-home__about {
-  width: 100%;
-  padding: 120px 0 75px;
-
-  @include global.mq(md) {
-    padding: 180px 0 150px;
+  @include global.mq(xl) {
+    padding: min(84px, #{global.vw(84)}) 0 0;
   }
 }
 
 // 制作実績
 .l-home__works {
   width: 100%;
-  padding: 100px 0 40px;
+  padding: 100px 0 180px;
 
   @include global.mq(md) {
-    padding: 180px 0 80px;
-  }
-}
-
-// ビジョン
-.l-home__vision {
-  width: 100%;
-  padding: 100px 0 40px;
-
-  @include global.mq(md) {
-    padding: 160px 0 80px;
-  }
-}
-
-// お知らせ
-.l-home__info {
-  width: 100%;
-  padding: 100px 0 120px;
-
-  @include global.mq(md) {
-    padding: 160px 0 240px;
+    padding: 45vh 0 260px;
   }
 }

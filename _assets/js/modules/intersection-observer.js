@@ -37,11 +37,11 @@ if (switchingTrigger !== null) {
 function switchingBg(entries) {
   for (const e of entries) {
     if (e.isIntersecting) {
-      switchingArea.style.backgroundColor = '#fff6ef';
-      switchingArea.style.color = '#1f1b1b';
-    } else {
       switchingArea.style.backgroundColor = '#1f1b1b';
-      switchingArea.style.color = '#fff6ef';
+      switchingArea.style.color = '#fff';
+    } else {
+      switchingArea.style.backgroundColor = '#fff';
+      switchingArea.style.color = '#1f1b1b';
     }
   }
 };

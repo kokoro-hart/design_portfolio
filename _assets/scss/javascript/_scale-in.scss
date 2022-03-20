@@ -4,8 +4,8 @@
 //--------------------------------------------------------------------------
 
 .is-scale-in {
-  transform: scale(0, 1);
-  transition: transform 0.6s global.ease(out-quint);
+  transform: scale(1, 1.2);
+  transition: transform 2s global.ease(out-quint);
 }
 
 //トリガー発火後

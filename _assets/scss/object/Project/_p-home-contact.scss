@@ -1,0 +1,20 @@
+@use "foundation/global";
+
+// Project トップページ お問い合わせ
+//--------------------------------------------------------------------------
+
+.p-home-contact {
+  height: 100vh;
+  background-color: global.$color-contact;
+  color: global.$color-base;
+  font-size: min(115px, #{global.vw(115)});
+  font-family: global.$font-family-en;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+}
+
+.p-home-contact__link {
+  display: block;
+}

@@ -14,19 +14,10 @@ function mouseStalker() {
     const linkElem = document.querySelectorAll('a:not(.no_stick_)');
     for (let i = 0; i < linkElem.length; i++) {
       linkElem[i].addEventListener('mouseover', function (e) {
-        hovFlag = true;
-
         stalker.classList.add('is-hover');
-
-        let rect = e.target.getBoundingClientRect();
-        let posX = rect.left + (rect.width / 2);
-        let posY = rect.top + (rect.height / 2);
-
-        stalker.style.transform = 'translate(' + posX + 'px, ' + posY + 'px)';
       });
       //マウスホバー解除時
       linkElem[i].addEventListener('mouseout', function (e) {
-        hovFlag = false;
         stalker.classList.remove('is-hover');
       });
     }

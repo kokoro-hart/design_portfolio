@@ -4,6 +4,8 @@
 //--------------------------------------------------------------------------
 
 .l-single-works {
+  background-color: global.$color-base;
+  color: global.$color-black;
   padding-bottom: 160px;
 
   @include global.mq(md) {

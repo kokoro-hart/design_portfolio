@@ -4,9 +4,12 @@
 //--------------------------------------------------------------------------
 
 .l-lower-about {
-  background-color: global.$color-base;
-  color: global.$color-black;
   transition: background-color 0.4s ease-out, color 0.4s ease-out;
+  padding-bottom: 100px;
+
+  @include global.mq(md) {
+    padding-bottom: 200px;
+  }
 }
 
 // プロイフィール
@@ -33,10 +36,8 @@
 .l-lower-about__career {
   width: 100%;
   padding: 100px 24px 80px;
-  margin-bottom: 100px;
 
   @include global.mq(md) {
     padding: 200px 48px 160px;
-    margin-bottom: 200px;
   }
 }

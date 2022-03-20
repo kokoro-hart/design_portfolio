@@ -4,7 +4,18 @@
 //--------------------------------------------------------------------------
 
 .l-container {
-  max-width: global.$layout-width-container;
+  max-width: 100%;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include global.mq(xl) {
+    width: 85%;
+  }
+}
+
+.l-container--large {
+  max-width: 100%;
   width: 90%;
   margin-left: auto;
   margin-right: auto;

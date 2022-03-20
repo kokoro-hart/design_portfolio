@@ -1,0 +1,107 @@
+@use "foundation/global";
+
+// Project トップページ 私について
+//--------------------------------------------------------------------------
+.p-home-about__inner {
+
+  @include global.mq(md) {
+    margin-top: 84px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.p-home-about__heading {
+  font-size: 19vw;
+  @include global.lh(1);
+  font-weight: 500;
+  font-family: global.$font-family-en;
+  color: global.$color-border-thin;
+  white-space: nowrap;
+  letter-spacing: -0.01em;
+
+  @include global.mq(md) {
+    width: 40%;
+    font-size: 19vw;
+  }
+
+  @include global.mq(1026px, min) {
+    font-size: 12vw;
+  }
+
+  @include global.mq(xl) {
+    width: 50%;
+  }
+}
+
+.p-home-about__profile {
+  width: 100%;
+  margin-top: global.vw(-154);
+
+  @include global.mq(md) {
+    margin-top: global.vw(160);
+    width: 60%;
+  }
+
+  @include global.mq(xl) {
+    width: 50%;
+  }
+}
+
+.p-home-about__name-en {
+  display: block;
+  font-size: 32px;
+  @include global.lh(1.2);
+  font-weight: 400;
+  font-family: global.$font-family-en;
+  white-space: nowrap;
+  letter-spacing: -0.02em;
+
+  @include global.mq(md) {
+    font-size: max(48px, 3.5vw);
+  }
+}
+
+.p-home-about__name-ja {
+  display: block;
+  margin-top: 7px;
+  font-size: 16px;
+  font-weight: 400;
+  @include global.lh(1.2);
+
+  @include global.mq(md) {
+    font-size: 16px;
+  }
+}
+
+.p-home-about__text {
+  font-size: 14px;
+  @include global.lh(2);
+
+  @include global.mq(md) {
+    font-size: 16px;
+  }
+
+  &:nth-of-type(1) {
+    margin-top: 14px;
+    @include global.mq(md) {
+      margin-top: 24px;
+    }
+  }
+
+  &:nth-of-type(2) {
+    margin-top: 32px;
+    
+    @include global.mq(md) {
+      margin-top: 52px;
+    }
+  }
+}
+
+.p-home-about__link-wrapper {
+  margin-top: 52px;
+
+  @include global.mq(md) {
+    margin-top: 84px;
+  }
+}

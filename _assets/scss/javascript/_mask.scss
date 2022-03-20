@@ -10,12 +10,13 @@
     content: "";
     position: absolute;
     top: 0;
-    left: 0;
+    bottom: 0;
+    right: 0;
     z-index: map-get(global.$layer, default);
     width: 100%;
     height: 100%;
     background-color: global.$color-black;
-    transition: height 2s global.ease(out-quint);
+    transition: width 3s global.ease(out-quint);
   }
 }
 
@@ -26,12 +27,13 @@
     content: "";
     position: absolute;
     top: 0;
+    bottom: 0;
     right: 0;
+    z-index: map-get(global.$layer, default);
     width: 100%;
     height: 100%;
     background-color: global.$color-base;
-    transition: width 2s global.ease(out-quint);
-    z-index: map-get(global.$layer, default);
+    transition: width 3s global.ease(out-quint);
   }
 }
 
@@ -45,7 +47,7 @@
 
   .is-mask-black {
     &::after {
-      height: 0;
+      width: 0;
     }
   }
 }
