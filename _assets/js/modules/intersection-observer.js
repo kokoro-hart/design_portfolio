@@ -46,9 +46,8 @@ function switchingBg(entries) {
   }
 };
 
-
-//制作実績全画面キャプチャ 右側コンテンツ追従
-const fullScreenImg = document.querySelectorAll('.js-screen-img');
+//制作実績
+const fullScreenImg = document.querySelectorAll('.js-mock-up');
 
 const options = {
   root: null,
@@ -70,23 +69,23 @@ function followContents(entries) {
   });
 }
 
-//コンテンツを右側に固定する関数
+//コンテンツを固定する関数
 function activateIndex(element) {
 
-  //既にfixedされているコンテンツ以外は.is-fixedクラスを削除
-  const currentActiveIndex = document.querySelector('.is-fixed');
+  //既にshowされているコンテンツ以外は.is-showクラスを削除
+  const currentActiveIndex = document.querySelector('.is-show');
 
   if (currentActiveIndex !== null) {
-    currentActiveIndex.classList.remove('is-fixed');
+    currentActiveIndex.classList.remove('is-show');
   }
 
-  //引数で渡されたDOMが紐づいたdata属性を選択し.is-fixedクラスを付与
+  //引数で渡されたDOMが紐づいたdata属性を選択し.is-showクラスを付与
   const newActiveIndex = document.querySelector(`[data-id='#${element.id}']`);
-  newActiveIndex.classList.add('is-fixed');
+  newActiveIndex.classList.add('is-show');
 }
 
 //固定を解除する関数
 function removeIndex(element) {
   const newRemoveIndex = document.querySelector(`[data-id='#${element.id}']`);
-  newRemoveIndex.classList.remove('is-fixed');
+  newRemoveIndex.classList.remove('is-show');
 }
