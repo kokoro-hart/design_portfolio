@@ -6,7 +6,7 @@
 .p-first-view {
   padding: 20vh 0 15vh;
 
-  @include global.mq(xl) {
+  @include global.mq(lax) {
     display: flex;
     flex-direction: column;
     justify-content: center;

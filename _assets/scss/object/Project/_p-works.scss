@@ -1,24 +1,94 @@
 @use "foundation/global";
 
-// Layout worksページ 制作実績
+// Project 制作実績
 //--------------------------------------------------------------------------
 
-.p-works__card {
-  width: 100%;
+.p-works__inner {
+  position: relative;
+}
 
-  &:not(:first-child) {
-    margin-top: 60px;
-
-    @include global.mq(md) {
-      margin-top: 120px;
-    }
-  }
+.p-works__heading {
+  width: 75%;
+  margin-left: auto;
+  font-size: 19vw;
+  @include global.lh(1);
+  font-weight: 500;
+  font-family: global.$font-family-en;
+  color: global.$color-secondary;
+  white-space: nowrap;
+  letter-spacing: -0.01em;
 
   @include global.mq(md) {
-    width: 60%;
+    font-size: 19vw;
+  }
 
-    &:nth-child(2n) {
-      margin-left: auto;
+  @include global.mq(1026px, min) {
+    font-size: 12vw;
+  }
+
+  @include global.mq(xl) {
+    width: 60%;
+  }
+}
+
+.p-works__content {
+  width: 100%;
+  counter-reset: number 0;
+
+  @include global.mq(md) {
+    height: 50vh;
+    position: relative;
+    width: 45%;
+  }
+}
+
+.p-works__items {
+  width: 100%;
+
+    margin-top: -5vw;
+
+  @include global.mq(lax) {
+    margin-top: 0;
+    width: 52%;
+    margin-left: auto;
+  }
+
+  @include global.mq(xl) {
+    width: 50%;
+  }
+}
+
+.p-works__item {
+  width: 100%;
+
+  @include global.mq(lax, max) {
+    padding-top: 18.5vw;
+
+    &:not(:last-child) {
+      padding-bottom: max(136px, 22vw);
     }
   }
+
+  @include global.mq(lax) {
+    display: block;
+
+
+    &:not(:first-child) {
+      padding-top: 17vh;
+    }
+
+    &:not(:last-child) {
+      padding-bottom: 17vh;
+    }
+  }
+}
+
+.p-works__mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  width: 100%;
+  height: calc(100% - global.vw(160));
+  background-color: transparent;
 }

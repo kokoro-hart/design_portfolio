@@ -9,16 +9,16 @@
   padding-bottom: 136px;
 
   @include global.mq(xl) {
-    padding: min(84px, #{global.vw(84)}) 0 0;
+    padding: min(84px, #{global.vw(84)}) 0 global.vw(260);
   }
 }
 
 // 制作実績
 .l-home__works {
   width: 100%;
-  padding: 100px 0 180px;
+  padding-bottom: max(160px, 30vw);
 
   @include global.mq(md) {
-    padding: 45vh 0 260px;
+    padding-bottom: 260px;
   }
 }

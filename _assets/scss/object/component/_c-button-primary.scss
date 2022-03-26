@@ -8,10 +8,9 @@
   display: inline-block;
   padding-left: 34px;
   @include global.fz(16, 18);
-  @include global.lh(1);
+  @include global.lh(2);
   font-family: global.$font-family-en;
-  font-weight: 400;
-  color: global.$color-black;
+  font-weight: 500;
 
   &::before {
     content: "";
@@ -22,6 +21,20 @@
     border-radius: 50%;
     width: 20px;
     height: 20px;
-    background-color: global.$color-accent;
+    background-color: global.$color-primary;
+  }
+}
+
+.c-button-primary--large {
+  letter-spacing: -0.01em;
+  padding-left: max(34px, #{global.vw(34)});
+
+  &::before {
+    width: max(20px, #{global.vw(20)});
+    height: max(20px, #{global.vw(20)});
+  }
+
+  @include global.mq(md) {
+    font-size: max(24px, #{global.vw(24)});
   }
 }
