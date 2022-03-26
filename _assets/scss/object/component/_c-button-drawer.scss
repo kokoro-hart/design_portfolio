@@ -15,7 +15,7 @@
   transform: translate(-50%, -50%);
   width: 20px;
   height: 1px;
-  background-color: global.$color-white;
+  background-color: global.$color-primary;
   transition: width 0.3s ease-in-out;
 
   &::before {
@@ -26,7 +26,7 @@
     transform: translateX(-50%);
     width: 20px;
     height: 1px;
-    background-color: global.$color-white;
+    background-color: global.$color-primary;
     transition: transform 0.6s global.ease(out-quint);
   }
 
@@ -38,7 +38,7 @@
     transform: translateX(-50%);
     width: 20px;
     height: 1px;
-    background-color: global.$color-white;
+    background-color: global.$color-primary;
     transition: transform 0.6s global.ease(out-quint);
   }
 }
@@ -47,18 +47,18 @@
 .is-drawer-active {
   .c-button-drawer__line {
     width: 0;
-    background-color: global.$color-black;
+    background-color: global.$color-primary;
 
     &::before {
       top: 50%;
       transform: translate(-50%, -50%) rotate(45deg);
-      background-color: global.$color-black;
+      background-color: global.$color-primary;
     }
 
     &::after {
       top: 50%;
       transform: translate(-50%, -50%) rotate(-45deg);
-      background-color: global.$color-black;
+      background-color: global.$color-primary;
     }
   }
 }

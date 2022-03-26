@@ -18,7 +18,7 @@
   visibility: hidden;
   width: 100vw;
   height: 100vh;
-  color: global.$color-black;
+  color: global.$color-primary;
 
   &::before {
     content: "";
@@ -58,6 +58,12 @@
   @include global.lh(1);
   font-weight: 400;
   transform: translateY(1em);
+}
+
+.p-drawer-nav__svg {
+  width: 19px;
+  height: 19px;
+  color: global.$color-primary;
 }
 
 .p-drawer-nav__text {

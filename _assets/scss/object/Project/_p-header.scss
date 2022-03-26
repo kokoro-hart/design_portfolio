@@ -4,14 +4,9 @@
 //--------------------------------------------------------------------------
 
 .p-header {
-  mix-blend-mode: difference;
   background-color: transparent;
   font-family: global.$font-family-en;
-  color: global.$color-white;
-}
-
-.p-header__logo {
-  transition: color 0.3s global.ease(out-quint);
+  color: global.$color-primary;
 }
 
 .p-header__logo-link {
@@ -27,14 +22,4 @@
 
 .p-header__button {
   transform: translateX(5px);
-}
-
-//ドロワーアクティブ時
-.is-drawer-active {
-  .p-header {
-    mix-blend-mode: normal;
-  }
-  .p-header__logo {
-    color: global.$color-black;
-  }
 }
