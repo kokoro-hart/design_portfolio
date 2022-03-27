@@ -4,44 +4,20 @@
 //--------------------------------------------------------------------------
 
 .p-stalker {
-  pointer-events: none;
   position: fixed;
-  top: -20px;
-  left: -22px;
+  top: 0;
+  left: 0;
   z-index: map-get(global.$layer, stalker);
-  border: 1px solid global.$color-border;
-  border-radius: 50%;
-  width: 48px;
-  height: 48px;
-  background: transparent;
-  transition: transform 0.2s, top, 0.3s, left 0.3s, width 0.3s, height 0.3s, background-color 0.3s;
+  pointer-events: none;
+  color: transparent;
+  font-size: 0;
+  text-shadow: 0 0 0 rgba(global.$color-accent, 0.5);
+  transition: transform 0.2s, top, 0.3s, left 0.3s;
   transition-timing-function: ease-out;
 
   &.is-hover {
-    top: -40px;
-    left: -44px;
-    width: 100px;
-    height: 115px;
-    background: transparent;
-    border: none;
-    &::before,
-    &::after {
-      content: "";
-      width: 50%;
-      height: 70%;
-      background-color: global.$color-hart;
-      border-radius: 40% 40% 0 0;
-      display: block;
-      position: absolute;
-    }
-    &::before {
-      background: linear-gradient(to bottom, global.$color-hart 0 38%, transparent 0 62%);
-      transform: rotate(-45deg);
-      left: 14.49%;
-    }
-    &::after {
-      transform: rotate(45deg);
-      right: 14%;
-    }
+    top: min(-50px, #{global.vw(-50)});
+    left: min(-35px, #{global.vw(-35)});
+    font-size: max(78px, #{global.vw(78)});
   }
 }
