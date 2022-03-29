@@ -15,8 +15,9 @@
 }
 
 .l-container--large {
-  max-width: 100%;
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
+  width: 93%;
+
+  @include global.mq(xl) {
+    width: 93%;
+  }
 }
