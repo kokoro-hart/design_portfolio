@@ -4,72 +4,69 @@
 //--------------------------------------------------------------------------
 
 .p-profile__contents {
-  margin-top: 60px;
+  margin-top: 52px;
 
   @include global.mq(md) {
     display: flex;
     justify-content: space-between;
-    margin-top: 100px;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-top: 84px;
+  }
+
+  @include global.mq(xl) {
+    width: 75vw;
   }
 }
 
-.p-profile__img-wrapper {
-  position: relative;
-  overflow: hidden;
-  width: 85%;
-  padding-top: 100%;
-
-  @include global.mq(md) {
-    width: calc(50% - 8% / 2);
-    padding-top: 56%;
-  }
-}
-
-.p-profile__img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.p-profile__column {
   width: 100%;
-  height: 100%;
-  @include global.object-fit(cover, center);
-}
-
-.p-profile__body {
-  margin-top: 32px;
 
   @include global.mq(md) {
+    width: 80%;
+  }
+
+  @include global.mq(1026px, min) {
     width: calc(50% - 8% / 2);
+  }
+
+  &:not(:first-child) {
+    margin-top: 70px;
+
+    @include global.mq(1026px, min) {
+      margin-top: 0;
+    }
   }
 }
 
 .p-profile__heading {
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .p-profile__heading-en {
   display: block;
-  @include global.fz(28, 32);
-  @include global.lh(1.2);
+  font-size: 32px;
+  @include global.lh(1);
   font-family: global.$font-family-en;
+  letter-spacing: -0.01em;
+
+  @include global.mq(md) {
+    font-size: max(34px, #{global.vw(48)});
+  }
 }
 
 .p-profile__heading-ja {
   display: block;
-  margin-top: 7px;
-  color: global.$color-border;
-  @include global.fz(16);
+  margin-top: 4px;
+  color: global.$color-primary;
+  @include global.fz(14, 16);
   @include global.lh(1.2);
-
-  @include global.mq(md) {
-    margin-top: 14px;
-  }
 }
 
 .p-profile__dl {
   margin-top: 32px;
 
-  @include global.mq(md) {
+  @include global.mq(lax) {
     margin-top: 40px;
   }
 }
@@ -79,75 +76,71 @@
     display: flex;
     align-items: baseline;
   }
+
   &:not(:first-child) {
-    margin-top: 22px;
+    margin-top: 24px;
+
+    @include global.mq(lax) {
+      margin-top: 28px;
+    }
   }
 }
-//--links
+
+//ddがリンクの場合
 .p-profile__row--links {
   display: flex;
   align-items: baseline;
+
+  &:not(:first-child) {
+    margin-top: 22px;
+
+    @include global.mq(lax) {
+      margin-top: 28px;
+    }
+  }
+
+  .p-profile__dt {
+    max-width: 80px;
+    width: 100%;
+
+    @include global.mq(md) {
+      max-width: 80px;
+    }
+  }
+  .p-profile__dd {
+    margin-top: 0;
+    padding-left: 8px;
+    @include global.lh(2);
+
+    @include global.mq(md) {
+      padding-left: 14px;
+    }
+  }
 }
 
 .p-profile__dt {
   position: relative;
-  padding-left: 18px;
-  @include global.fz(14, 16);
+  @include global.fz(16);
   @include global.lh(1.44);
+  font-weight: 600;
 
   @include global.mq(md) {
-    max-width: 100px;
+    max-width: 90px;
     width: 100%;
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0.65em;
-    left: 0;
-    width: 12px;
-    height: 2px;
-    background-color: global.$color-accent;
-  }
-}
-//--links
-.p-profile__dt--links {
-  max-width: 80px;
-  width: 100%;
-
-  @include global.mq(md) {
-    max-width: 80px;
   }
 }
 
 .p-profile__dd {
   display: inline-block;
   margin-top: 4px;
-  padding-left: 18px;
-  @include global.fz(14);
-  @include global.lh(1.72, 2);
+  @include global.fz(14, 16);
+  @include global.lh(1.7, 1.8);
   font-weight: 400;
   letter-spacing: 0.03em;
 
   @include global.mq(md) {
+    padding-left: 18px;
     margin-top: 0;
-  }
-}
-//--links
-.p-profile__dd--links {
-  margin-top: 0;
-  padding-left: 8px;
-
-  @include global.mq(md) {
-    padding-left: 14px;
-  }
-}
-
-.p-profile__links {
-  margin-top: 48px;
-
-  @include global.mq(md) {
-    margin-top: 70px;
   }
 }
 
@@ -155,24 +148,35 @@
   display: block;
   position: relative;
   padding-right: 20px;
-  color: global.$color-border;
+  color: global.$color-primary;
   white-space: nowrap;
   transition: color 0.3s ease-in-out;
   font-weight: 400;
 
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+    width: 100%;
+    height: 1px;
+    background-color: global.$color-primary;
+    transform: scale(0, 1);
+    transform-origin: right top;
+    transition: transform 0.6s global.ease(out-quint);
+  }
   &:hover,
   &:focus {
-    color: global.$color-black;
-
-    .p-profile__svg {
-      color: global.$color-black;
+    &::before {
+      transform: scale(1, 1);
+      transform-origin: left top;
     }
-  } 
+  }
 }
 
 .p-profile__svg {
   position: absolute;
-  top: 50%;
+  top: 44%;
   right: 0;
   transform: translateY(-50%);
   transition: color 0.3s ease-in-out;

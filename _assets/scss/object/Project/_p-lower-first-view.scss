@@ -4,17 +4,35 @@
 //--------------------------------------------------------------------------
 
 .p-lower-first-view {
-  padding: 180px 0 80px;
+  width: 100%;
+  padding: 20vh 0 15vh;
 
-  @include global.mq(md) {
-    padding-bottom: 160px;
+  @include global.mq(lax) {
+    display: flex;
+    padding: 15vw 0 8vw;
+  }
+}
+
+.p-lower-first-view__inner {
+  width: 100%;
+
+  @include global.mq(lax) {
+    display: flex;
+  }
+}
+
+.p-lower-first-view__heading {
+  @include global.mq(lax) {
+    width: calc(40% - 8% / 2);
   }
 }
 
 .p-lower-first-view__intro {
-  padding-top: 80px;
+  margin-top: 84px;
 
-  @include global.mq(md) {
-    padding-top: 160px;
+  @include global.mq(lax) {
+    width: calc(55% - 8% / 2);
+    margin-top: global.vw(174);
+    margin-left: 8%;
   }
 }

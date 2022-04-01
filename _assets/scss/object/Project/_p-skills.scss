@@ -4,10 +4,16 @@
 //--------------------------------------------------------------------------
 
 .p-skills__contents {
-  margin-top: 60px;
+  width: 100%;
+  margin-top: 52px;
 
   @include global.mq(md) {
-    margin-top: 120px;
+    margin-top: 84px;
+  }
+
+  @include global.mq(xl) {
+    width: 75vw;
+    margin-left: auto;
   }
 }
 
@@ -20,8 +26,6 @@
 }
 
 .p-skills__row {
-  border-top: 1px solid global.$color-border-thin;
-  padding: 10px 8px;
 
   &:not(:first-child) {
     margin-top: 32px;
@@ -32,11 +36,10 @@
   }
 
   @include global.mq(md) {
-    width: calc(50% - 4% / 2);
-    padding: 15px 10px;
+    width: calc(50% - 8% / 2);
 
     &:nth-child(n + 3) {
-      margin-top: 48px;
+      margin-top: max(52px, #{global.vw(52)});
     }
   }
 }
@@ -44,21 +47,26 @@
 .p-skills__dt {
   display: flex;
   align-items: center;
-  @include global.fz(18, 20);
+  font-size: 20px;
   @include global.lh(1.4, 1.2);
-  font-weight: 700;
+  font-weight: 500;
   font-family: global.$font-family-en;
+
+  @include global.mq(md) {
+    font-size:  max(24px, #{global.vw(24)});
+  }
 }
 
 .p-skills__dd {
   margin-top: 4px;
   padding-left: 45px;
   @include global.fz(14, 16);
-  @include global.lh(2);
+  @include global.lh(1.7, 1.8);
   letter-spacing: 0.03em;
 
   @include global.mq(md) {
-    padding-left: 55px;
+    margin-top: max(4px, #{global.vw(4)});
+    padding-left: max(55px, #{global.vw(55)});
   }
 }
 
@@ -66,10 +74,10 @@
   width: 30px;
   height: 30px;
   margin-right: 15px;
-  color: global.$color-accent;
+  color: global.$color-primary;
 
   @include global.mq(md) {
-    width: 40px;
-    height: 40px;
+    width: max(40px, #{global.vw(40)});
+    height: max(40px, #{global.vw(40)});
   }
 }

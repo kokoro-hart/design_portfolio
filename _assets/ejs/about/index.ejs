@@ -3,305 +3,377 @@
 <%- include('../common/_header', {pageId:pageId }) %>
 
 <% console.log(jsonData) %>
-<main id="js-switching-area" class="l-lower-about">
+<main class="l-lower-about">
   <div class="l-container">
-    <div id="js-switching-trigger">
-      <section id="js-first-view" class="p-lower-first-view">
-        <h2 class="c-page-heading">
-          <span class="c-page-heading__en is-wrap">
+    <!--ファーストビュー-->
+    <section id="js-first-view" class="p-lower-first-view">
+      <div class="p-lower-first-view__inner">
+        <div class="p-lower-first-view__heading c-page-heading">
+          <h2 class="c-page-heading__en is-wrap" style="transform: translate(0px, 0px);">
             <span class="is-slide-up u-delay05">
-              About
+              ABOUT <span class="u-hidden-lax-up">ME</span>
+            </span>
+          </h2>
+          <span class="c-page-heading__en is-wrap u-hidden-lax-down" style="transform: translate(0px, 0px);">
+            <span class="is-slide-up u-delay06">
+              ME
             </span>
           </span>
-          <span class="c-page-heading__ja is-wrap">
-            <span class="is-slide-up u-delay05">
-              私について
-            </span>
-          </span>
-        </h2>
-        <div class="p-intro p-lower-first-view__intro">
+        </div>
+        <div class="p-lower-first-view__intro p-intro">
           <div class="p-intro__inner">
-            <p class="p-intro__heading">
-              <span class="is-wrap">
+            <h3 class="p-intro__heading">
+              <span class="is-wrap" style="transform: translate(0px, 0px);">
                 <span class="is-slide-up">
-                  I AM MORE POSITIVE
-                  I am more positive
+                  To be a creator
                 </span>
               </span>
-              <span class="is-wrap">
+              <span class="is-wrap" style="transform: translate(0px, 0px);">
                 <span class="is-slide-up u-delay01">
-                  THAN ANYONE.
-                  than anyone.
+                  who moves hearts
+                  <span class="p-intro__icon" aria-hidden="true">&#x1f5a4</span>
                 </span>
               </span>
-            </p>
+            </h3>
             <p class="p-intro__text is-fade-up u-delay02">
-              多忙な日々や苦しい時期でも、マイナスに考えず「成長の機会」として捉え、<br class="u-hidden-md-down">
-              技術者として「毎日」技術向上を楽しんでいきます。
+              初めまして、マークアップエンジニア志望の飛田 心です。<br>
+              Webサイトにおいての使いやすさを前提として、その上でインタラクションなどの視覚表現にこだわる事によって、
+              「驚いたり、ワクワクしたり、ドキドキしたり」人の心を動かす制作物を創れる実装者を目指しています。
+              事業や企業の魅力を様々な角度から伝えていくお手伝いをさせていただけると嬉しいです。
             </p>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
+    <!--/ファーストビュー-->
 
-      <section class="p-profile l-lower-about__profile">
-        <h2 class="c-section-heading js-trigger">
-          <span class="c-section-heading__en is-wrap">
-            <span class="is-slide-up">
-              Profile
+    <!--プロフィール-->
+    <section class="p-profile l-lower-about__profile">
+      <h2 class="c-section-heading js-trigger" style="transform: translate(0px, 0px);">
+        <span class="c-section-heading__en is-wrap">
+          <span class="is-slide-up">
+            PROFILE
+          </span>
+        </span>
+        <span class="c-section-heading__ja is-fade-up">
+          プロフィール
+        </span>
+      </h2>
+      <div class="p-profile__contents js-trigger">
+        <section class="p-profile__column">
+          <h3 class="p-profile__heading is-fade-up">
+            <span class="p-profile__heading-en">
+              Kokoro Tobita
             </span>
-          </span>
-          <span class="c-section-heading__ja is-fade-up">
-            プロフィール
-          </span>
-        </h2>
-        <div class="p-profile__contents js-trigger">
-          <div class="p-profile__img-wrapper is-mask-white">
-            <picture class="p-profile__picture">
-              <source class="p-profile__img" data-srcset="/img/webp/img-about.webp" type="image/webp" />
-              <img data-src="/img/common/img-about.jpeg" src="/img/common/placeholder.png" class="p-profile__img lazyload" width="552" height="912" loading="lazy" alt="プロフィール画像">
-            </picture>
-          </div>
-          <div class="p-profile__body is-fade-up u-delay05">
-            <section class="p-profile__info">
-              <h3 class="p-profile__heading">
-                <span class="p-profile__heading-en">
-                  KOKORO TOBITA
-                </span>
-                <span class="p-profile__heading-ja">
-                  飛田 心
-                </span>
-              </h3>
-              <dl class="p-profile__dl">
-                <div class="p-profile__row">
-                  <dt class="p-profile__dt">
-                    生年月日
-                  </dt>
-                  <dd class="p-profile__dd">
-                    2000年11月26日
-                  </dd>
-                </div>
-                <div class="p-profile__row">
-                  <dt class="p-profile__dt">
-                    出身地
-                  </dt>
-                  <dd class="p-profile__dd">
-                    茨城県
-                  </dd>
-                </div>
-                <div class="p-profile__row">
-                  <dt class="p-profile__dt">
-                    現職
-                  </dt>
-                  <dd class="p-profile__dd">
-                    化学メーカーにて勤務、現在3年目
-                  </dd>
-                </div>
-                <div class="p-profile__row">
-                  <dt class="p-profile__dt">
-                    好きなこと
-                  </dt>
-                  <dd class="p-profile__dd">
-                    DIY / 洋服 / スノーボード
-                  </dd>
-                </div>
-                <div class="p-profile__row">
-                  <dt class="p-profile__dt">
-                    現在の目標
-                  </dt>
-                  <dd class="p-profile__dd">
-                    ハイクオリティでスピーディーなマークアップができるようになる。
-                  </dd>
-                </div>
-                <div class="p-profile__row">
-                  <dt class="p-profile__dt">
-                    将来の目標
-                  </dt>
-                  <dd class="p-profile__dd">
-                    UI・UX設計やパフォーマンス、アクセシビティに精通したフロントエンドエンジニア
-                  </dd>
-                </div>
-                <div class="p-profile__row">
-                  <dt class="p-profile__dt">
-                    関心技術
-                  </dt>
-                  <dd class="p-profile__dd">
-                    WAI-ARIA、JavaScript
-                  </dd>
-                </div>
-              </dl>
-            </section>
-
-            <section class="p-profile__links">
-              <h3 class="p-profile__heading">
-                <span class="p-profile__heading-en">
-                  LINKS
-                </span>
-              </h3>
-              <dl class="p-profile__dl">
-                <div class="p-profile__row p-profile__row--links">
-                  <dt class="p-profile__dt p-profile__dt--links">
-                    Twitter
-                  </dt>
-                  <dd class="p-profile__dd p-profile__dd--links">
-                    <a href="https://twitter.com/coco_hack_ll" class="p-profile__link" target="_blank" rel="noopener noreferrer">
-                      twitter.com/coco_hack_ll
-                      <svg class="c-svg p-profile__svg" width="14" height="14">
-                        <use xlink:href="/img/svg/sprite.min.svg#icon-blank" />
-                      </svg>
-                    </a>
-                  </dd>
-                </div>
-                <div class="p-profile__row p-profile__row--links">
-                  <dt class="p-profile__dt p-profile__dt--links">
-                    GitHub
-                  </dt>
-                  <dd class="p-profile__dd p-profile__dd--links">
-                    <a href="https://github.com/kokoro-hart" class="p-profile__link" target="_blank" rel="noopener noreferrer">
-                      github.com/kokoro-hart
-                      <svg class="c-svg p-profile__svg" width="14" height="14">
-                        <use xlink:href="/img/svg/sprite.min.svg#icon-blank" />
-                      </svg>
-                    </a>
-                  </dd>
-                </div>
-                <div class="p-profile__row p-profile__row--links">
-                  <dt class="p-profile__dt p-profile__dt--links">
-                    Qiita
-                  </dt>
-                  <dd class="p-profile__dd p-profile__dd--links">
-                    <a href="https://qiita.com/Coco__syu" class="p-profile__link" target="_blank" rel="noopener noreferrer">
-                      qiita.com/Coco__syu
-                      <svg class="c-svg p-profile__svg" width="14" height="14">
-                        <use xlink:href="/img/svg/sprite.min.svg#icon-blank" />
-                      </svg>
-                    </a>
-                  </dd>
-                </div>
-              </dl>
-            </section>
-          </div>
-        </div>
-      </section>
-
-      <section class="p-skills l-lower-about__skills">
-        <h2 class="c-section-heading js-trigger">
-          <span class="c-section-heading__en is-wrap">
-            <span class="is-slide-up">
-              Skills
+            <span class="p-profile__heading-ja">
+              飛田 心
             </span>
-          </span>
-          <span class="c-section-heading__ja is-fade-up">
-            使用技術
-          </span>
-        </h2>
-        <div class="p-skills__contents js-trigger">
-          <dl class="p-skills__dl is-fade-up">
-            <div class="p-skills__row">
-              <dt class="p-skills__dt">
-                <svg class="c-svg p-skills__svg" width="40" height="40">
-                  <use xlink:href="/img/svg/sprite.min.svg#icon-html" />
-                </svg>
-                HTML
+          </h3>
+          <dl class="p-profile__dl is-fade-up u-delay01">
+            <div class="p-profile__row">
+              <dt class="p-profile__dt">
+                生年月日
               </dt>
-              <dd class="p-skills__dd">
-                アクセシビリティやセマンティクスを考慮したマークアップを心掛けています。また、EJSやPugなどのテンプレートエンジンを用いたコーディングも可能です。
+              <dd class="p-profile__dd">
+                2000年11月26日
               </dd>
             </div>
-            <div class="p-skills__row">
-              <dt class="p-skills__dt">
-                <svg class="c-svg p-skills__svg" width="40" height="40">
-                  <use xlink:href="/img/svg/sprite.min.svg#icon-css" />
-                </svg>
-                CSS
+            <div class="p-profile__row">
+              <dt class="p-profile__dt">
+                出身地
               </dt>
-              <dd class="p-skills__dd">
-                基本的なスタイリングから、Scssで変数やmixin、functionなどを用いた柔軟なコーディングが可能です。CSS設計は予測しやすく、可読性が高いことから主にFLOCSSを使用しています。
+              <dd class="p-profile__dd">
+                茨城県
               </dd>
             </div>
-            <div class="p-skills__row">
-              <dt class="p-skills__dt">
-                <svg class="c-svg p-skills__svg" width="40" height="40">
-                  <use xlink:href="/img/svg/sprite.min.svg#icon-js" />
-                </svg>
-                JavaScript
+            <div class="p-profile__row">
+              <dt class="p-profile__dt">
+                現職
               </dt>
-              <dd class="p-skills__dd">
-                inputタグを利用した絞り込み検索やスライダーのようなUIであれば生のJavascriptで作成できます。また、Async / await などAPIを使った非同期処理の実装も可能です。
-                ネイティブのJavaScriptの理解を深めた後に各種FWを学んでいく予定です。
+              <dd class="p-profile__dd">
+                化学メーカーにて勤務、現在4年目
               </dd>
             </div>
-            <div class="p-skills__row">
-              <dt class="p-skills__dt">
-                <svg class="c-svg p-skills__svg" width="40" height="40">
-                  <use xlink:href="/img/svg/sprite.min.svg#icon-wp" />
-                </svg>
-                WordPress
+            <div class="p-profile__row">
+              <dt class="p-profile__dt">
+                好きなこと
               </dt>
-              <dd class="p-skills__dd">
-                カスタム投稿やカスタムフィールドなどを用いた保守・管理に強いテーマ構築が可能です。サイト制作後の修正まで意識した制作を心掛けています。既存テーマの修正対応も可能です。
+              <dd class="p-profile__dd">
+                小学生のときからゲームが大好きです。好きなことにひたすら没頭できるスキルは、ゲームで鍛えられたと思っています。
               </dd>
             </div>
-            <div class="p-skills__row">
-              <dt class="p-skills__dt">
-                <svg class="c-svg p-skills__svg" width="40" height="40">
-                  <use xlink:href="/img/svg/sprite.min.svg#icon-git" />
-                </svg>
-                Git / GitHub
+            <div class="p-profile__row">
+              <dt class="p-profile__dt">
+                キャリア像
               </dt>
-              <dd class="p-skills__dd">
-                Git、GitHubを用いたバージョン管理が可能です。現在、複数人での使用を円滑にするため勉強中です。
+              <dd class="p-profile__dd">
+                マイクロインタラクション、クリエイティブ表現に加えてサイトパフォーマンスやアクセシビリティに精通したフロントエンドエンジニア
               </dd>
             </div>
-            <div class="p-skills__row">
-              <dt class="p-skills__dt">
-                <svg class="c-svg p-skills__svg" width="40" height="40">
-                  <use xlink:href="/img/svg/sprite.min.svg#icon-gulp" />
-                </svg>
-                Gulp
+            <div class="p-profile__row">
+              <dt class="p-profile__dt">
+                関心領域
               </dt>
-              <dd class="p-skills__dd">
-                テンプレートエンジンとScssのコンパイル、画像圧縮、ホットリロード、svgスプライト、ファイルのminify、webpackでjsのバンドルを行なっています。
-              </dd>
-            </div>
-            <div class="p-skills__row">
-              <dt class="p-skills__dt">
-                <svg class="c-svg p-skills__svg" width="40" height="40">
-                  <use xlink:href="/img/svg/sprite.min.svg#icon-ps" />
-                </svg>
-                Design Tools（PSD / XD / Figma）
-              </dt>
-              <dd class="p-skills__dd">
-                画像編集、ロゴやバナーの作成のほか、デザインカンプ、ワイヤーフレームの作成が可能です。デザインカンプはコーディングに配慮した制作を心掛けています。
+              <dd class="p-profile__dd">
+                アクセシビリティ、WAI-ARIA、JavaScript、インタラクションデザイン
               </dd>
             </div>
           </dl>
-        </div>
-      </section>
-    </div>
+        </section>
 
-    <section class="p-career l-lower-about__career">
-      <h2 class="p-career__heading js-trigger">
-        <span class="p-career__heading-en is-wrap">
+        <section class="p-profile__column">
+          <h3 class="p-profile__heading is-fade-up">
+            <span class="p-profile__heading-en">
+              Media
+            </span>
+            <span class="p-profile__heading-ja">
+              メディア・SNS
+            </span>
+          </h3>
+          <dl class="p-profile__dl is-fade-up u-delay01">
+            <div class="p-profile__row p-profile__row--links">
+              <dt class="p-profile__dt p-profile__dt--links">
+                Twitter
+              </dt>
+              <dd class="p-profile__dd p-profile__dd--links">
+                <a href="https://twitter.com/coco_hack_ll" class="p-profile__link" target="_blank" rel="noopener noreferrer">
+                  twitter.com/coco_hack_ll
+                  <svg class="c-svg p-profile__svg" width="14" height="14">
+                    <use xlink:href="/img/svg/sprite.min.svg#icon-blank" />
+                  </svg>
+                </a>
+              </dd>
+            </div>
+            <div class="p-profile__row p-profile__row--links">
+              <dt class="p-profile__dt p-profile__dt--links">
+                Zenn
+              </dt>
+              <dd class="p-profile__dd p-profile__dd--links">
+                <a href="https://qiita.com/Coco__syu" class="p-profile__link" target="_blank" rel="noopener noreferrer">
+                  zenn.dev/cocosyu
+                  <svg class="c-svg p-profile__svg" width="14" height="14">
+                    <use xlink:href="/img/svg/sprite.min.svg#icon-blank" />
+                  </svg>
+                </a>
+              </dd>
+            </div>
+            <div class="p-profile__row p-profile__row--links">
+              <dt class="p-profile__dt p-profile__dt--links">
+                GitHub
+              </dt>
+              <dd class="p-profile__dd p-profile__dd--links">
+                <a href="https://github.com/kokoro-hart" class="p-profile__link" target="_blank" rel="noopener noreferrer">
+                  github.com/kokoro-hart
+                  <svg class="c-svg p-profile__svg" width="14" height="14">
+                    <use xlink:href="/img/svg/sprite.min.svg#icon-blank" />
+                  </svg>
+                </a>
+              </dd>
+            </div>
+            <div class="p-profile__row p-profile__row--links">
+              <dt class="p-profile__dt p-profile__dt--links">
+                Blog
+              </dt>
+              <dd class="p-profile__dd p-profile__dd--links">
+                <a href="https://qiita.com/Coco__syu" class="p-profile__link" target="_blank" rel="noopener noreferrer">
+                  cocosyu.com
+                  <svg class="c-svg p-profile__svg" width="14" height="14">
+                    <use xlink:href="/img/svg/sprite.min.svg#icon-blank" />
+                  </svg>
+                </a>
+              </dd>
+            </div>
+          </dl>
+        </section>
+      </div>
+    </section>
+    <!--/プロフィール-->
+
+    <!--スキル-->
+    <section class="p-skills l-lower-about__skills">
+      <h2 class="c-section-heading js-trigger" style="transform: translate(0px, 0px);">
+        <span class="c-section-heading__en is-wrap">
           <span class="is-slide-up">
-            Career
+            SKILLS
           </span>
         </span>
-        <span class="p-career__heading-ja is-fade-up">
-          経歴
+        <span class="c-section-heading__ja is-fade-up">
+          使用言語・ツール
         </span>
-        <span id="js-circle-text" class="p-career__circle is-fade-up">KOKORO*TOBITA*</span>
+      </h2>
+      <div class="p-skills__contents js-trigger">
+        <dl class="p-skills__dl is-fade-up">
+          <div class="p-skills__row">
+            <dt class="p-skills__dt">
+              <svg class="c-svg p-skills__svg" width="40" height="40" role="img" aria-label="HTMLのアイコン">
+                <use xlink:href="/img/svg/sprite.min.svg#icon-html" />
+              </svg>
+              HTML
+            </dt>
+            <dd class="p-skills__dd">
+              セマンティクスやアクセシビリティを考慮したマークアップを心掛けています。また、EJSやPugなどのテンプレートエンジンを用いたコーディングも可能です。
+            </dd>
+          </div>
+          <div class="p-skills__row">
+            <dt class="p-skills__dt">
+              <svg class="c-svg p-skills__svg" width="40" height="40" role="img" aria-label="CSSのアイコン">
+                <use xlink:href="/img/svg/sprite.min.svg#icon-css" />
+              </svg>
+              CSS
+            </dt>
+            <dd class="p-skills__dd">
+              基本的なスタイリングから、Scssで変数やmixin、functionなどを用いたコーディングが可能です。CSS設計は予測しやすく、可読性が高いことから主にFLOCSSを使用しています。
+            </dd>
+          </div>
+          <div class="p-skills__row">
+            <dt class="p-skills__dt">
+              <svg class="c-svg p-skills__svg" width="40" height="40" role="img" aria-label="JavaScriptのアイコン">
+                <use xlink:href="/img/svg/sprite.min.svg#icon-js" />
+              </svg>
+              JavaScript
+            </dt>
+            <dd class="p-skills__dd">
+              カーセル、タブ、アコーディオン、モーダルような頻出のUIの実装。また、Async / await を利用した非同期処理の実装が可能です。
+              今後はネイティブのJavaScriptの理解を深めながら各種FWを学んでいく予定です。
+            </dd>
+          </div>
+          <div class="p-skills__row">
+            <dt class="p-skills__dt">
+              <svg class="c-svg p-skills__svg" width="40" height="40" role="img" aria-label="WordPressのアイコン">
+                <use xlink:href="/img/svg/sprite.min.svg#icon-wp" />
+              </svg>
+              WordPress
+            </dt>
+            <dd class="p-skills__dd">
+              カスタム投稿やカスタムフィールドなどを用いた保守・管理に強い自作テーマ構築が可能です。サイト制作後の修正まで意識した制作を心掛けています。既存テーマの修正対応も可能です。
+            </dd>
+          </div>
+          <div class="p-skills__row">
+            <dt class="p-skills__dt">
+              <svg class="c-svg p-skills__svg" width="40" height="40" role="img" aria-label="Gitのアイコン">
+                <use xlink:href="/img/svg/sprite.min.svg#icon-git" />
+              </svg>
+              Git / GitHub
+            </dt>
+            <dd class="p-skills__dd">
+              Git、GitHubを用いたバージョン管理が可能です。現在、複数人での使用を円滑にするため勉強中です。
+            </dd>
+          </div>
+          <div class="p-skills__row">
+            <dt class="p-skills__dt">
+              <svg class="c-svg p-skills__svg" width="40" height="40" role="img" aria-label="webpackのアイコン">
+                <use xlink:href="/img/svg/sprite.min.svg#icon-webpack" />
+              </svg>
+              webpack
+            </dt>
+            <dd class="p-skills__dd">
+              jsのバンドル、babelでのトランスパイルで使用しています。
+            </dd>
+          </div>
+          <div class="p-skills__row">
+            <dt class="p-skills__dt">
+              <svg class="c-svg p-skills__svg" width="40" height="40" role="img" aria-label="Gulpのアイコン">
+                <use xlink:href="/img/svg/sprite.min.svg#icon-gulp" />
+              </svg>
+              Gulp
+            </dt>
+            <dd class="p-skills__dd">
+              テンプレートエンジンとScssのコンパイル、画像圧縮、ホットリロード、svgスプライト、ファイルのminifyで使用しています。
+            </dd>
+          </div>
+          <div class="p-skills__row">
+            <dt class="p-skills__dt">
+              <svg class="c-svg p-skills__svg" width="40" height="40" role="img" aria-label="Photoshopのアイコン">
+                <use xlink:href="/img/svg/sprite.min.svg#icon-ps" />
+              </svg>
+              Design Tools
+            </dt>
+            <dd class="p-skills__dd">
+              Photoshop、illustrator、XD、Figmaカンプからのコーディング経験があります。本サイトではデザインをfigma、画像のレタッチはPhotoshopを使用しました。
+            </dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+    <!--/スキル-->
+
+
+    <!--ビジョン-->
+    <section class="p-vision l-lower-about__vision">
+      <h2 class="c-section-heading js-trigger" style="transform: translate(0px, 0px);">
+        <span class="c-section-heading__en is-wrap">
+          <span class="is-slide-up">
+            VISION
+          </span>
+        </span>
+        <span class="c-section-heading__ja is-fade-up">
+          ビジョン
+        </span>
+      </h2>
+      <div class="p-vision__contents js-trigger">
+        <div class="p-vision__body is-fade-up">
+          <h3 class="p-vision__heading">
+            私の目指すクリエイター像
+          </h3>
+          <ul class="p-vision__list">
+            <li class="p-vision__item">
+              <h3 class="p-vision__title">
+                チームメンバー・クライアントとの信頼関係を大切にできる
+              </h3>
+              <p class="p-vision__text">
+                HTMLコーディングであればアクセシビリティやセマンティックスを意識したり、3D表現ではエモーショナルな表現を求めたり、性能面重視のSPA開発ではパフォーマンスチューニングを徹底します。
+              </p>
+            </li>
+            <li class="p-vision__item">
+              <h3 class="p-vision__title">
+                ユーザーファーストな構築、性能面重視の実装ができる
+              </h3>
+              <p class="p-vision__text">
+                HTMLコーディングであればアクセシビリティやセマンティックスを意識したり、3D表現ではエモーショナルな表現を求めたり
+              </p>
+            </li>
+            <li class="p-vision__item">
+              <h3 class="p-vision__title">
+                デザインを有効に見せる最適なインタラクションを提案、実装できる
+              </h3>
+              <p class="p-vision__text">
+                HTMLコーディングであればアクセシビリティやセマンティックスを意識したり、3D表現ではエモーショナルな表現を求めたり、性能面重視のSPA開発
+              </p>
+            </li>            
+          </ul>
+        </div>
+        <figure class="p-vision__img-wrapper is-fade-up">
+          <img src="/img/common/img-vision.png" alt="" class="p-vision__img">
+        </figure>
+      </div>
+    </section>
+    <!--/ビジョン-->
+
+    <!--経歴-->
+    <section class="p-career l-lower-about__career">
+      <h2 class="c-section-heading js-trigger" style="transform: translate(0px, 0px);">
+        <span class="c-section-heading__en is-wrap">
+          <span class="is-slide-up">
+            CAREER
+          </span>
+        </span>
+        <span class="c-section-heading__ja is-fade-up">
+          これまでの経歴
+        </span>
       </h2>
       <div class="p-career__contents js-trigger">
-        <dl class="p-career__dl is-fade-up">
+        <dl class="p-career__dl">
           <div class="p-career__row">
+            <dt class="p-career__date">
+              2019.04
+            </dt>
             <dt class="p-career__dt">
-              高校卒業後、化学メーカーに就職<span class="p-career__date">（2019.04入社）</span>
+              高校卒業後、化学メーカーに就職
             </dt>
             <dd class="p-career__dd">
               化学メーカーにて、医療機器の受託製造に従事する。4人チームの1人として製造工程の進捗管理、製品の仕上げ・検査作業を行う。<br>
-              前年度から製品不良が多いという課題があり、現行業務の見直しを提案。トラブル時の対策用ドキュメント作成や製品出荷前のチェックシートを作成し、<span class="u-under-line">半年間不良品ゼロを達成。</span><br>
+              前年度から製品不良が多いという課題があり、現行業務の見直しを提案。トラブル時の対策用ドキュメント作成や製品出荷前のチェックシートを作成し、<span class="u-under-line">半年間不良品ゼロを達成。</span>
               また、少人数チームであることから、<span class="u-under-line">ナレッジの共有や業務効率化の推進</span>を行い普段からスケジュールに余裕を持たせることで、誰かが不在時の負担を減らすことを意識した。
-              <br>
               <br>
               →チームで仕事をする難しさを学んだ。 <br>
               →課題解決のプロセスから面白さを感じた。<br>
@@ -317,23 +389,31 @@
             </dd>
           </div>
           <div class="p-career__row">
+            <dt class="p-career__date">
+              2019.04
+            </dt>
             <dt class="p-career__dt">
-              デザインに興味を持つ<span class="p-career__date">（2021.04〜）</span>
+              デザインに興味を持つ
             </dt>
             <dd class="p-career__dd">
-              化学メーカーに入社して３年目、職場の表示類を作成をするための参考として書店で配色やグラフィックの書籍を読んでいるときに、デザインに興味を持つ。<br>
-              身の回りのあらゆるところに書籍で書いてあるデザイン技術が使われていることを知り感動。<br>
-              表示類の作成だけではなく、資料作りなどにも活かせると思いデザイン本を読み始める。
+              <img src="/img/common/book02.jpeg" alt="" class="img-tesst">
+              化学メーカーに入社して３年目、職場の表示類を作成をするための参考として書店で配色やグラフィック関連の書籍を手に取り、デザインに興味を持つ。<br>
+              広告や看板など身の回りのあらゆるところにデザイン技術が使われていることを知り感動。<br>
+              職場の表示類の作成だけではなく、資料作りなどにも活かせると思いデザインの勉強を始める。
             </dd>
           </div>
           <div class="p-career__row">
+            <dt class="p-career__date">
+              2019.04
+            </dt>
             <dt class="p-career__dt">
-              Webデザインを知り、コーディングにハマる<span class="p-career__date">（2021.05〜）</span>
+              Web業界に興味を持つ
             </dt>
             <dd class="p-career__dd">
+              <img src="/img/common/book01.jpeg" alt="" class="img-tesst">
               書籍をきっかけにWebデザインを知る。<br>
-              有名なデザイナーさんのポートフォリオサイトを拝見したことから自分もプロフィール的なサイトを作ってみたいと思い、デザインツールの使い方やHTML、CSSを学び始める。<br>
-              簡単なサイトを作成してみたところ<span class="u-under-line">コーディングの楽しさにハマり</span>、その後もわからないことを都度調べながら様々なサイトを作ってみる。              
+              有名なデザイナーさんのポートフォリオサイトを拝見し心を動かされたことから自分もポートフォリオサイトを作ってみたいと思い、デザインツールの使い方やHTML、CSSを学び始める。<br>
+              サイトを作っていく中で<span class="u-under-line">コーディングの楽しさにハマり</span>、Web技術に興味を持つ。
               <br>
               <br>
               →コーディングの楽しさから技術への関心が高まる。<br>
@@ -341,8 +421,11 @@
             </dd>
           </div>
           <div class="p-career__row">
+            <dt class="p-career__date">
+              2019.04
+            </dt>
             <dt class="p-career__dt">
-              Web制作会社への転職を決意する。<span class="p-career__date">（2021.05〜現在）</span>
+              制作会社への転職を決意する。
             </dt>
             <dd class="p-career__dd">
               サイトを作るための知識を学び続ける楽しさから本格的に仕事として携わりたいと考え、転職を決意する。<br>
@@ -352,7 +435,17 @@
         </dl>
       </div>
     </section>
+    <!--/経歴-->
   </div>
+
+
+    <!--お問いわせ-->
+    <section class="p-contact-connect">
+      <a href="/contact/" class="p-contact-connect__link">
+        Contact Me
+      </a>
+    </section>
+    <!--/お問いわせ-->
 </main>
 
 

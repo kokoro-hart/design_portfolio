@@ -1,0 +1,107 @@
+@use "foundation/global";
+
+// Project ビジョン どんなクリエイターになりたいか
+//--------------------------------------------------------------------------
+
+.p-vision__contents {
+  width: 100%;
+  margin-top: 52px;
+
+  @include global.mq(md) {
+    margin-top: 84px;
+  }
+
+  @include global.mq(xl) {
+    margin-left: auto;
+    width: 75vw;
+  }
+
+  @include global.mq(xxl) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.p-vision__body {
+  @include global.mq(xxl) {
+    width: calc(50% - 5% / 2);
+  }
+}
+
+.p-vision__heading {
+  font-size: 18px;
+  @include global.lh(1.2);
+  font-weight: 600;
+
+  @include global.mq(md) {
+    font-size: max(32px, #{global.vw(32)});
+  }
+}
+
+.p-vision__list {
+  margin-top: max(52px, #{global.vw(52)});
+}
+
+.p-vision__item {
+  &:not(:first-child) {
+    margin-top: 32px;
+
+    @include global.mq(md) {
+      margin-top: max(52px, #{global.vw(52)})
+    }
+  }
+}
+
+.p-vision__title {
+  position: relative;
+  padding-left: max(32px, #{global.vw(32)});
+  font-size: 16px;
+  @include global.lh(1.44);
+  font-weight: 600;
+
+  @include global.mq(md) {
+    padding-left: max(40px, #{global.vw(40)});
+    font-size: max(20px, #{global.vw(20)});
+  }
+
+  &::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: counter(number, decimal-leading-zero)"：";
+    counter-increment: number 1;
+    font-size: 16px;
+    font-weight: 600;
+
+    @include global.mq(md) {
+      font-size: max(20px, #{global.vw(20)});
+    }
+  }
+}
+
+.p-vision__text {
+  margin-top: 4px;
+  padding-left:  max(32px, #{global.vw(32)});
+  @include global.fz(14, 16);
+  @include global.lh(1.7, 1.8);
+
+  @include global.mq(md) {
+    margin-top: 8px;
+    padding-left:  max(40px, #{global.vw(40)});
+  }
+}
+
+.p-vision__img-wrapper {
+  margin-top: 32px;
+
+  @include global.mq(md) {
+    width: 70%;
+    margin-top: 52px;
+  }
+
+  @include global.mq(xxl) {
+    margin-top: 0;
+    width: calc(50% - 5% / 2);
+  }
+}
