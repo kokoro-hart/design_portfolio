@@ -118,8 +118,8 @@ const clean = () => {
 const TARGET_BROWSERS = [
   'last 2 versions',
   'ie >= 11',
-  'iOS >= 7',
-  'Android >= 4.4'
+  'iOS >= 14',
+  'Android >= 5.1'
 ];
 
 /**
