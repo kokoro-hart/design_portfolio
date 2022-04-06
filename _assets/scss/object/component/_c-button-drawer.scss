@@ -47,18 +47,18 @@
 .is-drawer-active {
   .c-button-drawer__line {
     width: 0;
-    background-color: global.$color-primary;
+    background-color: global.$color-primary !important;
 
     &::before {
       top: 50%;
       transform: translate(-50%, -50%) rotate(45deg);
-      background-color: global.$color-primary;
+      background-color: global.$color-primary !important;
     }
 
     &::after {
       top: 50%;
       transform: translate(-50%, -50%) rotate(-45deg);
-      background-color: global.$color-primary;
+      background-color: global.$color-primary !important;
     }
   }
 }

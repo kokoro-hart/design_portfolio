@@ -4,66 +4,37 @@
 //--------------------------------------------------------------------------
 
 .p-intro__heading {
-  margin-top: 18px;
-  font-size: 38px;
-  @include global.lh(1.2);
-  font-weight: 200;
+  font-size: max(33px, 5.5vw);
+  @include global.lh(1.05);
+  font-weight: 400;
   font-family: global.$font-family-en;
+  letter-spacing: 0.01em;
 
-  @include global.mq(md) {
+  @include global.mq(lax) {
     margin-top: 0;
     white-space: nowrap;
-    //font-size: min(90px, 5.6vw);
-    font-size: min(68px, #{global.vw(68)});
-  }
-}
-
-.p-intro__heading--to-right {
-
-  @include global.mq(md) {
-    & > span:first-child {
-      padding-left: 49.5%;
-    }
-  }
-}
-
-.p-intro__text-wrapper {
-  //margin-top: 24px;
-
-  @include global.mq(md) {
-    display: flex;
-    justify-content: space-between;
-    //margin-top: min(130px, #{global.vw(130)});
-  }
-}
-
-.p-intro__text-left {
-  position: relative;
-  width: 0;
-  height: 1px;
-  background-color: global.$color-border;
-  transition: width 2.5s global.ease(out-quint);
-  margin-top: 12px;
-}
-
-.is-active {
-  .p-intro__text-left {
-    width: 88%;
-    @include global.mq(md) {
-      //width: calc(46% - 8% / 2);
-    }
+    font-size: max(40px, #{global.vw(86)});
   }
 }
 
 .p-intro__text {
-  margin-top: 12px;
+  width: 100%;
+  margin-top: 32px;
   @include global.fz(14, 16);
-  @include global.lh(2, 1.7);
+  @include global.lh(1.7, 1.8);
   font-weight: 400;
 
   @include global.mq(md) {
-    margin-top: 0;
-    max-width: 100%;
-    width: calc(54% - 8% / 2);
+    width: 80%;
+    margin-top: 40px;
   }
+
+  @include global.mq(1026px, min) {
+    width: 100%;
+  }
+}
+
+.p-intro__icon {
+  color: transparent;
+  text-shadow: 0 0 0 global.$color-accent;
 }

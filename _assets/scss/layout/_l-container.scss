@@ -8,16 +8,15 @@
   width: 90%;
   margin-left: auto;
   margin-right: auto;
-
-  @include global.mq(xl) {
-    width: 85%;
-  }
 }
 
 .l-container--large {
   width: 93%;
+}
 
-  @include global.mq(xl) {
-    width: 93%;
+.l-container--small {
+  
+  @include global.mq(md) {
+    width: 85%;
   }
 }

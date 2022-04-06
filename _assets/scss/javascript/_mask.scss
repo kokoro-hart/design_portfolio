@@ -15,7 +15,7 @@
     z-index: map-get(global.$layer, default);
     width: 100%;
     height: 100%;
-    background-color: global.$color-black;
+    background-color: global.$color-primary;
     transition: width 3s global.ease(out-quint);
   }
 }

@@ -49,7 +49,7 @@
     height: 24px;
     @include global.fz(14);
     @include global.lh(1);
-    background-color: global.$color-accent;
+    background-color: global.$color-primary;
     color: global.$color-base;
     font-weight: 700;
 
@@ -65,7 +65,7 @@
   padding: 13px 16px;
   box-shadow: none;
   appearance: none;
-  border: 1px solid global.$color-form;
+  border: 1px solid global.$color-primary;
   border-radius: 0;
   background-color: global.$color-base;
   color: inherit;
@@ -78,7 +78,7 @@
   }
 
   &::placeholder {
-    color: global.$color-border;
+    color: global.$color-secondary;
     @include global.fz(14);
   }
 }

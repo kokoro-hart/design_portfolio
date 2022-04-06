@@ -1,0 +1,61 @@
+@use "foundation/global";
+
+// Project 制作実績 詳細
+//--------------------------------------------------------------------------
+
+.p-works-detail__heading {
+  font-size: 28px;
+  @include global.lh(1);
+  font-weight: 400;
+  font-family: global.$font-family-en;
+  letter-spacing: -0.01em;
+
+  @include global.mq(md) {
+    font-size: max(32px, #{global.vw(40)});
+  }
+}
+
+.p-works-detail__body {
+  margin-top: 32px;
+
+  @include global.mq(md) {
+    margin-top: 52px;
+  }
+}
+
+.p-works-detail__row {
+  display: flex;
+  align-items: baseline;
+
+  &:not(:first-child) {
+    margin-top: 18px;
+
+    @include global.mq(md) {
+      margin-top: 24px;
+    }
+  }
+}
+
+.p-works-detail__dt {
+  max-width: 80px;
+  width: 100%;
+  font-weight: 600;
+  @include global.fz(14, 16);
+  @include global.lh(1.2);
+
+  @include global.mq(md) {
+    max-width: 110px;
+  }
+}
+
+.p-works-detail__dd {
+  max-width: calc(100% - 110px);
+  width: 100%;
+  padding-left: 7px;
+  @include global.fz(14, 16);
+  @include global.lh(1.7);
+
+  @include global.mq(md) {
+    padding-left: 14px;
+  }
+}

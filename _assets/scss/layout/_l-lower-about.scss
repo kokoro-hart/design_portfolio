@@ -4,21 +4,17 @@
 //--------------------------------------------------------------------------
 
 .l-lower-about {
-  transition: background-color 0.4s ease-out, color 0.4s ease-out;
-  padding-bottom: 100px;
-
-  @include global.mq(md) {
-    padding-bottom: 200px;
-  }
+  color: global.$color-primary;
+  background-color: global.$color-base;
 }
 
 // プロイフィール
 .l-lower-about__profile {
   width: 100%;
-  padding: 80px 0;
+  padding-bottom: 80px;
 
   @include global.mq(md) {
-    padding: 160px 0;
+    padding-bottom: 160px;
   }
 }
 
@@ -32,12 +28,22 @@
   }
 }
 
+// どんなクリエイターになりたいか
+.l-lower-about__vision {
+  width: 100%;
+  padding: 80px 0;
+
+  @include global.mq(md) {
+    padding: 160px 0 180px;
+  }
+}
+
 // 経歴
 .l-lower-about__career {
   width: 100%;
-  padding: 100px 24px 80px;
+  padding: 80px 0;
 
   @include global.mq(md) {
-    padding: 200px 48px 160px;
+    padding: 160px 0 180px;
   }
 }

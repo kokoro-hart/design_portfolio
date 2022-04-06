@@ -6,8 +6,9 @@
 //SVGスプライトをIEで使用するためのライブラリ
 import '@modules/svgxuse';
 
-//画像遅延読み込みライブラリ
+//画像遅延読み込み
 import './lib/lazysizes'
+//慣性スクロール
 import './lib/locomotive-scroll'
 
 import './common'

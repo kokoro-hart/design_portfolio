@@ -1,0 +1,330 @@
+@use "foundation/global";
+
+// Project 制作実績シングルページ
+//--------------------------------------------------------------------------
+
+.p-single-works {
+  transition: background-color 0.6s cubic-bezier(.18,.06,.23,1),color 0.6s cubic-bezier(.26,.06,0,1);
+}
+
+//Global Standard
+.p-single-works--global {
+  background-color: global.$color-base-dark;
+  color: global.$color-global-main;
+
+  .p-works-overview__link {
+    color: global.$color-global-main;
+
+    &::before {
+      background-color: global.$color-global-main;
+    }
+  }
+
+  .p-works-overview__heading {
+    &::after {
+      background-color: global.$color-global-main;
+    }
+  }
+}
+
+//Global Standard fv
+.p-single-works--global.is-active {
+  background-color: global.$color-global-main;
+  color: global.$color-base;
+
+  .p-works-overview__link {
+    color: global.$color-base-dark;
+
+    &::before {
+      background-color: global.$color-base-dark;
+    }
+  }
+
+  .p-works-overview__heading {
+    &::after {
+      background-color: global.$color-base-dark;
+    }
+  }
+}
+
+//open cafe
+.p-single-works--open {
+  background-color: global.$color-base-dark;
+  color: global.$color-open-main;
+
+  .p-works-overview__link {
+    color: global.$color-open-main;
+
+    &::before {
+      background-color: global.$color-open-main;
+    }
+  }
+
+  .p-works-overview__heading {
+    &::after {
+      background-color: global.$color-open-main;
+    }
+  }
+}
+
+//open cafe fv
+.p-single-works--open.is-active {
+  background-color: global.$color-open-main;
+  color: global.$color-base;
+
+  .p-works-overview__link {
+    color: global.$color-base-dark;
+
+    &::before {
+      background-color: global.$color-base-dark;
+    }
+  }
+
+  .p-works-overview__heading {
+    &::after {
+      background-color: global.$color-base-dark;
+    }
+  }
+}
+
+//minami dental
+.p-single-works--minami {
+  background-color: global.$color-base-dark;
+  color: global.$color-minami-main;
+
+  .p-works-overview__link {
+    color: global.$color-minami-main;
+
+    &::before {
+      background-color: global.$color-minami-main;
+    }
+  }
+
+  .p-works-overview__heading {
+    &::after {
+      background-color: global.$color-minami-main;
+    }
+  }
+}
+
+//minami dental fv
+.p-single-works--minami.is-active {
+  background-color: global.$color-minami-main;
+  color: global.$color-base-dark;
+
+  .p-works-overview__link {
+    color: global.$color-base-dark;
+
+    &::before {
+      background-color: global.$color-base-dark;
+    }
+  }
+
+  .p-works-overview__heading {
+    &::after {
+      background-color: global.$color-base-dark;
+    }
+  }
+}
+
+//garden salad
+.p-single-works--garden {
+  background-color: global.$color-base-dark;
+  color: global.$color-garden-main;
+
+  .p-works-overview__link {
+    color: global.$color-garden-main;
+
+    &::before {
+      background-color: global.$color-garden-main;
+    }
+  }
+
+  .p-works-overview__heading {
+    &::after {
+      background-color: global.$color-garden-main;
+    }
+  }
+}
+
+//garden salad fv
+.p-single-works--garden.is-active {
+  background-color: global.$color-garden-main;
+  color: global.$color-base-dark;
+
+  .p-works-overview__link {
+    color: global.$color-base-dark;
+
+    &::before {
+      background-color: global.$color-base-dark;
+    }
+  }
+
+  .p-works-overview__heading {
+    &::after {
+      background-color: global.$color-base-dark;
+    }
+  }
+}
+
+
+
+
+
+.p-single-works__heading-en {
+  font-size: max(38px, 8vw);
+  @include global.lh(1.2);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  font-family: global.$font-family-en;
+
+  @include global.mq(lax) {
+    font-size: max(60px, #{global.vw(100)});
+  }
+}
+
+.p-single-works__heading-ja {
+  margin-top: 14px;
+  font-size: 14px;
+  @include global.lh(1.44);
+  font-weight: 500;
+  font-family: global.$font-family-en;
+
+  @include global.mq(md) {
+    font-size: max(20px, #{global.vw(24)});
+  }
+}
+
+.p-single-works__category {
+  display: block;
+  @include global.lh(1.44);
+  font-size: 14px;
+  font-weight: 500;
+  font-family: global.$font-family-en;
+
+  @include global.mq(md) {
+    font-size: max(20px, #{global.vw(24)});
+  }
+}
+
+
+.p-single-works__figure {
+  display: flex;
+  align-items: flex-end;
+}
+
+.p-single-works__picture--sp {
+  position: relative;
+  z-index: 2;
+  width: 20%;
+
+  @include global.mq(md) {
+    width: 17%;
+  }
+}
+
+.p-single-works__picture--tab {
+  width: 30%;
+  margin-left: -8vw;
+
+  @include global.mq(md) {
+    margin-left: global.vw(-50);
+    width: 27%;
+  }
+}
+
+.p-single-works__picture--pc {
+  width: 80%;
+  margin-left: -8vw;
+  margin-bottom: 3vw;
+
+  @include global.mq(md) {
+    margin-left:  global.vw(-50);
+    margin-bottom:  global.vw(50);
+    width: 67%;
+  }
+}
+
+.p-single-works__info {
+  @include global.mq(lax) {
+    display: flex;
+  }
+}
+
+.p-single-works__overview {
+  width: 100%;
+
+
+  @include global.mq(xxl) {
+    width: calc(40% - 8% / 2);
+  }
+
+
+    &:not(:first-child) {
+      margin-top: 52px;
+
+      @include global.mq(lax) {
+        margin-top: 0;
+      margin-left: 8%;
+      }
+    }
+}
+
+.p-single-works__rotate-picture {
+  display: block;
+  margin: 84px calc(50% - 50vw);
+  width: 100vw;
+  max-height: 100vh;
+  height: 100%;
+  overflow: hidden;
+
+  @include global.mq(md) {
+    margin-top: max(260px, #{global.vw(360)});
+
+    &:not(:first-child) {
+      margin-top: max(180px, #{global.vw(240)});
+    }
+  }
+}
+
+.p-single-works__capture {
+  position: relative;
+  margin-top: 84px;
+
+  @include global.mq(lax) {
+    margin-top: 0;
+    width: 50%;
+  }
+}
+
+.p-single-works__capture-picture {
+  display: block;
+
+  &:not(:first-child) {
+    margin-top: 52px;
+
+    @include global.mq(md) {
+      margin-top: 134px;
+    }
+  }
+}
+
+.p-single-works__capture-mask {
+  position: absolute;
+  top: -25vh;
+  left: 0;
+  width: 1;
+  height: calc(100% - 500px);
+  pointer-events: none;
+}
+
+.p-single-works__detail {
+  margin-top: 84px;
+
+  @include global.mq(lax) {
+    width: 40%;
+    height: 0;
+    margin-left: auto;
+    margin-top: global.vw(360);
+  }
+}

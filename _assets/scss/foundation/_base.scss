@@ -18,7 +18,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: global.$color-base;
-  color: global.$color-black;
+  color: global.$color-primary;
   font-size: 16px;
   font-weight: 400;
   font-family: global.$font-family-ja;
@@ -35,7 +35,7 @@ body.is-drawer-active {
   overflow: hidden;
 }
 
-body,
+body:not(br),
 button,
 input {
   line-height: 1.4;
@@ -129,7 +129,7 @@ textarea:focus,
 input:focus,
 a:focus,
 button:focus {
-  outline: 1.5px solid global.$color-accent;
+  outline: 1.5px solid global.$color-primary;
 }
 
 :focus:not(:focus-visible) {
@@ -145,6 +145,8 @@ main {
 
 //locomotive-scroll(慣性スクロール)用の記述
 body {
+  counter-reset: number 0;
+
   @include global.mq(lax) {
     overflow: hidden;
   }
@@ -154,4 +156,9 @@ body {
     overflow: hidden;
     min-height: 100vh;
   }
+}
+
+br {
+  height: 0;
+  line-height: 0;
 }

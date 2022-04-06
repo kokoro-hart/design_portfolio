@@ -16,6 +16,10 @@
   }
 }
 
+.is-view {
+    opacity: 1;
+  }
+
 .p-first-view__inner {
   position: relative;
 }
@@ -37,10 +41,10 @@
   }
 
   &:not(:first-child) {
-    margin-top: 0.5em;
+    padding-top: 0.5em;
 
     @include global.mq(md) {
-      margin-top: 0.25em;
+      padding-top: 0.25em;
     }
   }
 

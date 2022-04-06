@@ -21,8 +21,8 @@ function targetsElements(entries) {
 
 //背景色切り替え
 const switchingTrigger = document.getElementById('js-switching-trigger');
+const header = document.getElementById('js-header');
 const switchingArea = document.getElementById('js-switching-area'); 
-const typography = document.getElementById('js-typography');
 
 const switchingObserver = new IntersectionObserver(switchingBg, {
   root: null,
@@ -37,14 +37,14 @@ if (switchingTrigger !== null) {
 function switchingBg(entries) {
   for (const e of entries) {
     if (e.isIntersecting) {
-      switchingArea.style.backgroundColor = '#1f1b1b';
-      switchingArea.style.color = '#fff';
+      switchingArea.classList.add('is-active');
+      header.classList.add('is-color-base');
     } else {
-      switchingArea.style.backgroundColor = '#fff';
-      switchingArea.style.color = '#1f1b1b';
+      switchingArea.classList.remove('is-active');
     }
   }
 };
+
 
 //制作実績
 const fullScreenImg = document.querySelectorAll('.js-mock-up');

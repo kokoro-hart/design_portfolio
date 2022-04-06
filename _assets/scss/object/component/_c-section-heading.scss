@@ -3,66 +3,48 @@
 // Component セクション見出し
 //--------------------------------------------------------------------------
 
-// .c-section-heading {
-//   width: 100%;
-// }
-
-// .c-section-heading__en {
-//   margin-bottom: 6px;
-//   @include global.fz(34, 42);
-//   @include global.lh(1);
-//   font-weight: 200;
-//   font-family: global.$font-family-en;
-
-//   @include global.mq(md) {
-//     margin-bottom: 12px;
-//   }
-// }
-
 .c-section-heading {
   position: relative;
-  padding-bottom: 20px;
+  padding-top: 40px;
 
-  // &::after {
-  //   content: "";
-  //   position: absolute;
-  //   bottom: 0;
-  //   left: 0;
-  //   width: 0;
-  //   height: 1px;
-  //   background-color: global.$color-border;
-  //   transition: width 2.5s global.ease(out-quint);
-  // }
+  @include global.mq(xl) {
+    padding-top: 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: global.$color-primary;
+
+    @include global.mq(xl) {
+      top: 35%;
+      left: auto;
+      right: 0;
+      width: 75vw;
+    }
+  }
 }
 
 .c-section-heading__en {
-  font-size: 38px;
-  @include global.lh(1.2);
+  font-size: max(34px, 4vw);
+  @include global.lh(1);
   font-weight: 400;
   font-family: global.$font-family-en;
+  letter-spacing: -0.01em;
 
-  @include global.mq(md) {
-    font-size: 42px;
-  }
-
-  @include global.mq(lg) {
-    font-size: min(64px, #{global.vw(64)});
+  @include global.mq(lax) {
+    max-width: 22%;
+    font-size: max(40px, #{global.vw(60)});
   }
 }
 
 .c-section-heading__ja {
-  margin-top: 4px;
-  color: global.$color-border;
+  margin-top: 8px;
   @include global.fz(14, 16);
   @include global.lh(1);
   font-weight: 400;
-}
-
-
-.is-active {
-  .c-section-heading {
-    &::after {
-      width: 100%;
-    }
-  }
 }

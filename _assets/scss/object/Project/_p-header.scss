@@ -6,7 +6,45 @@
 .p-header {
   background-color: transparent;
   font-family: global.$font-family-en;
-  color: global.$color-primary;
+}
+
+//ペースカラーの場合
+.p-header.is-color-base {
+  color: global.$color-base;
+
+  .p-header__logo-link,
+  .p-global-nav__link,
+  .p-header-sns__link {
+    color: global.$color-base;
+  }
+
+  .p-global-nav__link--blank {
+    &::after {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2213.354%22%20height%3D%2213.354%22%20viewBox%3D%220%200%2013.354%2013.354%22%3E%20%3Cpath%20id%3D%22%E5%90%88%E4%BD%93_1%22%20data-name%3D%22%E5%90%88%E4%BD%93%201%22%20d%3D%22M2335%2C10768.739l11.868-11.869h-11.562v-.87h13.049v13.047h-.87v-11.562l-11.871%2C11.87Z%22%20transform%3D%22translate(-2335.001%20-10756)%22%20fill%3D%22%23fff%22%2F%3E%3C%2Fsvg%3E");
+    }
+  }
+
+  .p-global-nav__link {
+    &::before {
+      background-color: global.$color-base;
+    }
+  }
+
+  .p-header-sns {
+    border-left: 1px solid global.$color-base;
+  }
+
+  .c-button-drawer__line {
+    background-color: global.$color-base;
+
+    &::before {
+      background-color: global.$color-base;
+    }
+
+    &::after {
+      background-color: global.$color-base;
+    }
+  }
 }
 
 .p-header__logo-link {
@@ -14,6 +52,12 @@
   @include global.fz(28, 32);
   @include global.lh(1.2);
   font-weight: 400;
+}
+
+.is-drawer-active {
+  .p-header__logo-link {
+    color: global.$color-primary !important;
+  }
 }
 
 .p-header__contents {

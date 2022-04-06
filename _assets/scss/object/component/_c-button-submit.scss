@@ -15,7 +15,7 @@
   padding: 13px;
   @include global.fz(18);
   @include global.lh(1.2);
-  background-color: global.$color-accent;
+  background-color: global.$color-primary;
   color: global.$color-base;
   transition: opacity 0.3s ease-in-out;
 

@@ -9,17 +9,17 @@
     <section id="js-first-view" class="p-first-view">
       <div class="p-first-view__inner">
         <h2 class="p-first-view__head">
-          <span class="p-first-view__heading is-wrap">
+          <span class="p-first-view__heading is-wrap" style="transform: translate(0px, 0px);">
             <span class="is-slide-up u-delay01">
               KOKORO TOBITA
             </span>
           </span>
-          <span class="p-first-view__heading is-wrap">
+          <span class="p-first-view__heading is-wrap" style="transform: translate(0px, 0px);">
             <span class="is-slide-up u-delay02">
               WEB PRODUCTION
             </span>
           </span>
-          <span class="p-first-view__heading is-wrap">
+          <span class="p-first-view__heading is-wrap" style="transform: translate(0px, 0px);">
             <span class="is-slide-up u-delay03">
               PORTFOLIO.
             </span>
@@ -37,20 +37,19 @@
 
     <!--私について-->
     <section class="p-home-about l-home__profile">
-      <div class="p-home-about__inner">
-        <h2 class="p-home-about__heading" data-scroll data-scroll-speed="-0.7" data-scroll-direction="horizontal">
-          ABOUT ME
-        </h2>
-        <div class="p-home-about__profile js-trigger">
-          <div class="p-home-about__body is-fade-up">
-            <h3 class="p-home-about__name">
-              <span class="p-home-about__name-en">
-                Kokoro Tobita
-              </span>
-              <span class="p-home-about__name-ja">
-                飛田 心
-              </span>
-            </h3>
+      <h2 class="p-home-about__heading" data-scroll data-scroll-speed="-0.7" data-scroll-direction="horizontal">
+        ABOUT ME
+      </h2>
+      <div class="p-home-about__profile js-trigger">
+          <h3 class="p-home-about__name is-fade-up">
+            <span class="p-home-about__name-en">
+              Kokoro Tobita
+            </span>
+            <span class="p-home-about__name-ja">
+              飛田 心
+            </span>
+          </h3>
+          <div class="p-home-about__body is-fade-up u-delay01">
             <p class="p-home-about__text">
               2000年生まれ、茨城県在住のAB型。<br>
               高校卒業後、化学メーカーに勤務しながら独学でマークアップ、フロントエンド、Webデザインを学んでいます。
@@ -63,29 +62,28 @@
               HTML / CSS / Scss / Javascript / WordPress <br>
               Git / Gulp / webpack / vscode
             </p>
-            <div class="p-home-about__link-wrapper">
-              <a href="/about/" class="c-button-primary">
-                VIEW MORE
-              </a>
-            </div>
           </div>
-        </div>
+          <div class="p-home-about__link-wrapper is-fade-up u-delay02">
+            <a href="/about/" class="c-button-primary">
+              VIEW MORE
+            </a>
+          </div>
       </div>
     </section>
     <!--私について-->
   </div>
 
-  <div class="l-container--large">
+  <div class="l-container l-container--large">
     <!--制作実績-->
-    <section class="p-works l-home__works">
+    <section id="works" class="p-works l-home__works">
       <h2 class="p-works__heading" data-scroll data-scroll-speed="0.7" data-scroll-direction="horizontal">
         WORKS
       </h2>
       <div class="p-works__inner">
         <!--pc時作品のタイトル、詳細-->
-        <div data-scroll data-scroll-sticky data-scroll-target="#js-works">
-          <div class="p-works__content u-hidden-lax-down">
-            <div data-id="#js-global" class="p-works-info">
+        <div data-scroll data-scroll-sticky data-scroll-target="#js-works-mask">
+          <ul class="p-works__content u-hidden-lax-down">
+            <li data-id="#js-global" class="p-works-info">
               <div class="p-works-info__number">
                 <span class="is-slide-mask">
                 </span>
@@ -102,13 +100,13 @@
                 </p>
               </div>
               <div class="p-works-info__link-wrapper">
-                <a href="/" class="c-button-primary c-button-primary--large is-slide-mask">
+                <a href="/global-standard/" class="c-button-primary c-button-primary--large is-slide-mask">
                   VIEW MORE
                 </a>
               </div>
-            </div>
+            </li>
 
-            <div data-id="#js-open" class="p-works-info">
+            <li data-id="#js-open" class="p-works-info">
               <div class="p-works-info__number">
                 <span class="is-slide-mask">
                 </span>
@@ -125,13 +123,13 @@
                 </p>
               </div>
               <div class="p-works-info__link-wrapper">
-                <a href="/" class="c-button-primary c-button-primary--large is-slide-mask">
+                <a href="/open-cafe/" class="c-button-primary c-button-primary--large is-slide-mask">
                   VIEW MORE
                 </a>
               </div>
-            </div>
+            </li>
 
-            <div data-id="#js-minami" class="p-works-info">
+            <li data-id="#js-minami" class="p-works-info">
               <div class="p-works-info__number">
                 <span class="is-slide-mask">
                 </span>
@@ -148,13 +146,13 @@
                 </p>
               </div>
               <div class="p-works-info__link-wrapper">
-                <a href="/" class="c-button-primary c-button-primary--large is-slide-mask">
+                <a href="/minami-dental/" class="c-button-primary c-button-primary--large is-slide-mask">
                   VIEW MORE
                 </a>
               </div>
-            </div>
+            </li>
 
-            <div data-id="#js-garden" class="p-works-info">
+            <li data-id="#js-garden" class="p-works-info">
               <div class="p-works-info__number">
                 <span class="is-slide-mask">
                 </span>
@@ -171,13 +169,13 @@
                 </p>
               </div>
               <div class="p-works-info__link-wrapper">
-                <a href="/" class="c-button-primary c-button-primary--large is-slide-mask">
+                <a href="/garden-salad/" class="c-button-primary c-button-primary--large is-slide-mask">
                   VIEW MORE
                 </a>
               </div>
-            </div>
+            </li>
 
-            <div data-id="#js-blog" class="p-works-info">
+            <li data-id="#js-blog" class="p-works-info">
               <div class="p-works-info__number">
                 <span class="is-slide-mask">
                 </span>
@@ -198,132 +196,207 @@
                   VIEW MORE
                 </a>
               </div>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
         <!--/pc時作品のタイトル、詳細-->
 
         <!--モック、sp時作品のタイトル、詳細-->
         <div class="p-works__items">
           <div id="js-global" class="p-works__item p-works-item js-mock-up">
-            <a href="" class="p-works-item__img-wrapper">
-              <img src="/img/common/sp-global.png" class="p-works-item__img p-works-item__img--sp" width="357.11" height="719.28" loading="lazy" alt="作品のタイトル" data-scroll data-scroll-speed="3">
-              <img src="/img/common/tab-global.png" class="p-works-item__img p-works-item__img--tab" width="508.89" height="712.05" loading="lazy" alt="作品のタイトル" data-scroll data-scroll-speed="1.5">
-              <img src="/img/common/pc-global.png" class="p-works-item__img p-works-item__img--pc" width="803.52" height="510.33" loading="lazy" alt="作品のタイトル">             
-            </a>    
-            <div class="p-works-item__body js-trigger">
-              <h3 class="p-works-item__title is-slide-mask">
+            <figure class="p-works-item__figure">
+              <a href="/global-standard/" class="p-works-item__img-link" style="transform: translate(0px, 0px);">
+
+                <picture class="p-works-item__picture p-works-item__picture--sp"  data-scroll data-scroll-speed="2" data-scroll-delay="0.1" >
+                  <source srcset="/img/webp/sp-global-test.webp" class="p-works-item__img" type="image/webp"style="transform: translate(0px, 0px);"/>
+                  <img src="/img/common/sp-global-test.png" class="p-works-item__img" width="357.11" height="719.28" alt="作品のタイトル" style="transform: translate(0px, 0px);">
+                </picture>
+
+                <picture class="p-works-item__picture p-works-item__picture--tab" data-scroll data-scroll-speed="1" data-scroll-delay="0.1">
+                  <source srcset="/img/webp/tab-global.webp" class="p-works-item__img" type="image/webp"style="transform: translate(0px, 0px);"/>
+                  <img src="/img/common/tab-global-test.png" class="p-works-item__img" width="508.89" height="712.05" alt="作品のタイトル" style="transform: translate(0px, 0px);">
+                </picture>
+
+                <picture class="p-works-item__picture p-works-item__picture--pc">
+                  <source srcset="/img/webp/pc-global-test.webp" class="p-works-item__img" type="image/webp"/>
+                  <img src="/img/common/pc-global-test.png" class="p-works-item__img" width="803.52" height="510.33" alt="作品のタイトル" style="transform: translate(0px, 0px);">             
+                </picture>
+
+              </a>
+            </figure>    
+            <div class="p-works-item__body">
+              <h3 class="p-works-item__title">
                 Global Standard
               </h3><br>
-              <p class="p-works-item__category is-slide-mask">
+              <p class="p-works-item__category">
                 Corporate Site / Coding
               </p><br>
-              <p class="p-works-item__text is-slide-mask">
+              <p class="p-works-item__text">
                 世界で活躍できるグローバルな人材を育てる、架空事業会社のコーポレートサイトのコーディング、WordPress化を行いました。
               </p><br>
               <div class="p-works-item__link-wrapper">
-                <a href="" class="c-button-primary is-slide-mask">VIEW MORE</a>
+                <a href="" class="c-button-primary">VIEW MORE</a>
               </div>
             </div>
           </div>
           <div id="js-open" class="p-works__item p-works-item js-mock-up">
-            <a href="" class="p-works-item__img-wrapper">
-              <img src="/img/common/sp-open.png" class="p-works-item__img p-works-item__img--sp"  width="357.11" height="719.28" loading="lazy" alt="作品のタイトル" data-scroll data-scroll-speed="3">
-              <img src="/img/common/tab-open.png" class="p-works-item__img p-works-item__img--tab"  width="508.89" height="712.05" loading="lazy" alt="作品のタイトル" data-scroll data-scroll-speed="1.5">
-              <img src="/img/common/pc-open.png" class="p-works-item__img p-works-item__img--pc"  width="803.52" height="510.33" loading="lazy" alt="作品のタイトル">
-            </a>  
-            <div class="p-works-item__body js-trigger">
-              <h3 class="p-works-item__title is-slide-mask">
+            <figure class="p-works-item__figure">
+              <a href="/open-cafe/" class="p-works-item__img-link" style="transform: translate(0px, 0px);">
+                <picture class="p-works-item__picture p-works-item__picture--sp" data-scroll data-scroll-speed="2" data-scroll-delay="0.1">
+                  <source srcset="/img/webp/sp-open-test.webp" class="p-works-item__img" type="image/webp" />
+                  <img src="/img/common/sp-open-test.png" class="p-works-item__img"  width="357.11" height="719.28" alt="作品のタイトル" style="transform: translate(0px, 0px);">
+                </picture>
+
+                <picture class="p-works-item__picture p-works-item__picture--tab" data-scroll data-scroll-speed="1" data-scroll-delay="0.1">
+                  <source srcset="/img/webp/tab-open-test.webp" class="p-works-item__img" type="image/webp" />
+                  <img src="/img/common/tab-open-test.png" class="p-works-item__img"  width="508.89" height="712.05" alt="作品のタイトル" style="transform: translate(0px, 0px);">
+                </picture>
+
+                <picture class="p-works-item__picture p-works-item__picture--pc">
+                  <source srcset="/img/webp/pc-open-test.webp" class="p-works-item__img" type="image/webp" />
+                  <img src="/img/common/pc-open-test.png" class="p-works-item__img"  width="803.52" height="510.33" alt="作品のタイトル" style="transform: translate(0px, 0px);">
+                </picture>
+              </a>
+            </figure>
+            <div class="p-works-item__body">
+              <h3 class="p-works-item__title">
                 Open Cafe
               </h3><br>
-              <p class="p-works-item__category is-slide-mask">
+              <p class="p-works-item__category">
                 Cafe Site / Coding
               </p><br>
-              <p class="p-works-item__text is-slide-mask">
+              <p class="p-works-item__text">
                 最高のコーヒーと、 時の流れを味わうことができる「Open Cafe - dish & coffee」架空カフェサイトのコーディング、WordPress化を行いました。
               </p><br>
               <div class="p-works-item__link-wrapper">
-                <a href="" class="c-button-primary is-slide-mask">VIEW MORE</a>
+                <a href="" class="c-button-primary">VIEW MORE</a>
               </div>
             </div>
           </div>  
           <div id="js-minami" class="p-works__item p-works-item js-mock-up">
-            <a href="" class="p-works-item__img-wrapper">
-              <img src="/img/common/sp-minami.png" class="p-works-item__img p-works-item__img--sp"  width="357.11" height="719.28" loading="lazy" alt="作品のタイトル" data-scroll data-scroll-speed="3">
-              <img src="/img/common/tab-minami02.png" class="p-works-item__img p-works-item__img--tab"  width="508.89" height="712.05" loading="lazy" alt="作品のタイトル" data-scroll data-scroll-speed="1.5">
-              <img src="/img/common/pc-minami.png" class="p-works-item__img p-works-item__img--pc"  width="803.52" height="510.33" loading="lazy" alt="作品のタイトル">
-            </a>
-            <div class="p-works-item__body js-trigger">
-              <h3 class="p-works-item__title is-slide-mask">
+            <figure class="p-works-item__figure">
+              <a href="/minami-dental/" class="p-works-item__img-link" style="transform: translate(0px, 0px);">
+
+                <picture class="p-works-item__picture  p-works-item__picture--sp" data-scroll data-scroll-speed="2" data-scroll-delay="0.1">
+                  <source srcset="/img/webp/sp-minami-test.webp" class="p-works-item__img" type="image/webp"/>
+                  <img src="/img/common/sp-minami-test.png" class="p-works-item__img"  width="357.11" height="719.28" alt="作品のタイトル" style="transform: translate(0px, 0px);">
+                </picture>
+
+                <picture class="p-works-item__picture  p-works-item__picture--tab" data-scroll data-scroll-speed="1" data-scroll-delay="0.1">
+                  <source srcset="/img/webp/tab-minami02-test.webp" class="p-works-item__img" type="image/webp"/>
+                  <img src="/img/common/tab-minami02-test.png" class="p-works-item__img"  width="508.89" height="712.05" alt="作品のタイトル" style="transform: translate(0px, 0px);">
+                </picture>
+
+                <picture class="p-works-item__picture  p-works-item__picture--pc">
+                  <source srcset="/img/webp/pc-minami-test.webp" class="p-works-item__img" type="image/webp"/>
+                  <img src="/img/common/pc-minami-test.png" class="p-works-item__img"  width="803.52" height="510.33" alt="作品のタイトル" style="transform: translate(0px, 0px);">
+                </picture>
+              </a>
+            </figure>
+            <div class="p-works-item__body">
+              <h3 class="p-works-item__title">
                 Minami Dental
               </h3><br>
-              <p class="p-works-item__category is-slide-mask">
+              <p class="p-works-item__category">
                 Dental Site / Coding
               </p><br>
-              <p class="p-works-item__text is-slide-mask">
+              <p class="p-works-item__text">
                 健康的で素敵な笑顔あふれる街づくりを目指す「みなみ歯科クリニック」架空歯科医院サイトのコーディング、WordPress化を行いました。
               </p><br>
               <div class="p-works-item__link-wrapper">
-                <a href="" class="c-button-primary is-slide-mask">VIEW MORE</a>
+                <a href="/minami-dental/" class="c-button-primary">VIEW MORE</a>
               </div>
             </div>
           </div>
           <div id="js-garden" class="p-works__item p-works-item js-mock-up">
-            <a href="" class="p-works-item__img-wrapper">
-              <img src="/img/common/sp-garden.png" class="p-works-item__img p-works-item__img--sp"  width="357.11" height="719.28" loading="lazy" alt="作品のタイトル" data-scroll data-scroll-speed="3">
-              <img src="/img/common/tab-garden02.png" class="p-works-item__img p-works-item__img--tab"  width="508.89" height="712.05" loading="lazy" alt="作品のタイトル" data-scroll data-scroll-speed="1.5">
-              <img src="/img/common/pc-garden.png" class="p-works-item__img p-works-item__img--pc"  width="803.52" height="510.33" loading="lazy" alt="作品のタイトル">
-            </a>    
-            <div class="p-works-item__body js-trigger">
-              <h3 class="p-works-item__title is-slide-mask">
+            <figure class="p-works-item__figure">
+              <a href="/garden-salad/" class="p-works-item__img-link" style="transform: translate(0px, 0px);">
+
+                <picture class="p-works-item__picture p-works-item__picture--sp" data-scroll data-scroll-speed="2" data-scroll-delay="0.1">
+                  <source srcset="/img/webp/sp-garden-test.webp" class="p-works-item__img" type="image/webp" />
+                  <img src="/img/common/sp-garden-test.png" class="p-works-item__img"  width="357.11" height="719.28" alt="作品のタイトル" style="transform: translate(0px, 0px);">
+                </picture>
+
+                <picture class="p-works-item__picture p-works-item__picture--tab" data-scroll data-scroll-speed="1" data-scroll-delay="0.1">
+                  <source srcset="/img/webp/tab-garden02-test.webp" class="p-works-item__img" type="image/webp" />
+                  <img src="/img/common/tab-garden02-test.png" class="p-works-item__img"  width="508.89" height="712.05" alt="作品のタイトル" style="transform: translate(0px, 0px);">
+                </picture>
+
+                <picture class="p-works-item__picture p-works-item__picture--pc">
+                  <source srcset="/img/webp/pc-garden-test.webp" class="p-works-item__img" type="image/webp" />
+                  <img src="/img/common/pc-garden-test.png" class="p-works-item__img"  width="803.52" height="510.33" alt="作品のタイトル" style="transform: translate(0px, 0px);">
+                </picture>
+              </a>
+            </figure>    
+            <div class="p-works-item__body">
+              <h3 class="p-works-item__title">
                 Garden Salad
               </h3><br>
-              <p class="p-works-item__category is-slide-mask">
+              <p class="p-works-item__category">
                 Cafe Site / Coding
               </p><br>
-              <p class="p-works-item__text is-slide-mask">
+              <p class="p-works-item__text">
                 健康的なのに美味しい、SNSで拡散したくなるようなサラダ「Garden Salad」架空サラダカフェサイトのコーディングを行いました。
               </p><br>
               <div class="p-works-item__link-wrapper">
-                <a href="" class="c-button-primary is-slide-mask">VIEW MORE</a>
+                <a href="" class="c-button-primary">VIEW MORE</a>
               </div>
             </div>
           </div>
           <div id="js-blog" class="p-works__item p-works-item js-mock-up">
-            <a href="" class="p-works-item__img-wrapper">
-              <img src="/img/common/sp-blog.png" class="p-works-item__img p-works-item__img--sp"  width="357.11" height="719.28" loading="lazy" alt="作品のタイトル" data-scroll data-scroll-speed="3">
-              <img src="/img/common/tab-blog.png" class="p-works-item__img p-works-item__img--tab"  width="508.89" height="712.05" loading="lazy" alt="作品のタイトル" data-scroll data-scroll-speed="1.5">
-              <img src="/img/common/pc-blog.png" class="p-works-item__img p-works-item__img--pc"  width="803.52" height="510.33" loading="lazy" alt="作品のタイトル">
-            </a>
-            <div class="p-works-item__body js-trigger">
-              <h3 class="p-works-item__title is-slide-mask">
+            <figure class="p-works-item__figure">
+              <a href="" class="p-works-item__img-link" style="transform: translate(0px, 0px);">
+
+                <picture class="p-works-item__picture p-works-item__picture--sp"  data-scroll data-scroll-speed="2" data-scroll-delay="0.1" >
+                  <source srcset="/img/webp/sp-blog.webp" class="p-works-item__img" type="image/webp" />
+                  <img src="/img/common/sp-blog.png" class="p-works-item__img"  width="357.11" height="719.28" alt="作品のタイトル" style="transform: translate(0px, 0px);">
+                </picture>
+
+                <picture class="p-works-item__picture p-works-item__picture--tab"  data-scroll data-scroll-speed="2" data-scroll-delay="0.1">
+                  <source srcset="/img/webp/tab-blog.webp" class="p-works-item__img" type="image/webp" />
+                  <img src="/img/common/tab-blog.png" class="p-works-item__img"  width="508.89" height="712.05" alt="作品のタイトル" style="transform: translate(0px, 0px);">
+                </picture>
+
+                <picture class="p-works-item__picture p-works-item__picture--pc">
+                  <source srcset="/img/webp/pc-blog.webp" class="p-works-item__img" type="image/webp" />
+                  <img src="/img/common/pc-blog.png" class="p-works-item__img"  width="803.52" height="510.33" alt="作品のタイトル" style="transform: translate(0px, 0px);">
+                </picture>
+              </a>
+            </figure>
+            <div class="p-works-item__body">
+              <h3 class="p-works-item__title">
                 Tech Blog
               </h3><br>
-              <p class="p-works-item__category is-slide-mask">
+              <p class="p-works-item__category">
                 Blog Site / Design / Coding
               </p><br>
-              <p class="p-works-item__text is-slide-mask">
+              <p class="p-works-item__text">
                 「Next Blog」個人アウトプット用の技術ブログ
               </p><br>
               <div class="p-works-item__link-wrapper">
-                <a href="" class="c-button-primary is-slide-mask">VIEW MORE</a>
+                <a href="" class="c-button-primary">VIEW MORE</a>
               </div>
             </div>
           </div>
         </div>
         <!--/モック、sp時作品のタイトル、詳細-->
-        <div id="js-works" class="p-works__mask"></div>
+        <div id="js-works-mask" class="p-works__mask"></div>
       </div>
     </section>
     <!--/制作実績-->
   </div>
 
   <!--お問いわせ-->
-  <section class="p-contact-connect">
+  <div class="p-contact-connect" style="transform: translate(0px, 0px);">
     <a href="/contact/" class="p-contact-connect__link">
-      Contact Me
+      <span class="p-contact-connect__link-head">
+        Get In Touch
+      </span>
+      <span class="p-contact-connect__link-foot">
+        Contact Me
+      </span>
     </a>
-  </section>
+  </div>
   <!--/お問いわせ-->
 </main>
 <%- include('./common/_footer', {pageId:pageId }) %>

@@ -4,23 +4,25 @@
 //--------------------------------------------------------------------------
 
 .l-single-works {
-  background-color: global.$color-base;
-  color: global.$color-black;
-  padding-bottom: 160px;
+}
 
-  @include global.mq(md) {
-    padding-bottom: 240px;
+.l-single-works__first-view {
+  padding: 20vh 0 8vh 2vw;
+
+  @include global.mq(lax) {
+    padding: 15vw 0 7vw 12vw;
   }
 }
 
-.l-single-works__heading {
-  padding-top: 180px;
+.l-single-works__figure {
+  padding-bottom: max(84px, #{global.vw(84)});
 }
 
 .l-single-works__contents {
-  margin-top: 80px;
+  padding-bottom: 134px;
 
   @include global.mq(md) {
-    margin-top: 160px;
+    padding-top: global.vw(84);
+    padding-bottom: 260px;
   }
 }

@@ -2,7 +2,7 @@
 
 // Project トップページ 私について
 //--------------------------------------------------------------------------
-.p-home-about__inner {
+.p-home-about {
   @include global.mq(md) {
     display: flex;
   }

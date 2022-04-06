@@ -20,19 +20,20 @@
   <meta property="og:image" content="/common/og-image.jpg">
   <meta property="og:site_name" content="<%= jsonData.siteInfo.siteUrl %> ">
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="/css/style.css">
 
 </head>
 
 <body>
   <div id="page-wrapper">
-    <span id="js-stalker" class="p-stalker">💚</span>
+    <span id="js-stalker" class="p-stalker">&#x1f5a4</span>
     <div class="data-scroll-wrapper" data-scroll-container>
-      <header id="js-header" class="l-header p-header">
-        <div class="l-header__inner">
+      <header id="js-header" class="l-header p-header" style="transform: translate(0px, 0px);">
+        <div id="js-header__inner" class="l-header__inner">
           <h1 class="p-header__logo">
-            <a href="/" class="p-header__logo-link">KT</a>
+            <a href="/" class="p-header__logo-link">
+              KT
+            </a>
           </h1>
           <div class="p-header__contents u-hidden-md-down">
             <nav class="p-header__nav p-global-nav">
@@ -61,28 +62,29 @@
             </nav>
             <ul class="p-header-sns">
               <li class="p-header-sns__item">
-                <a href="https://twitter.com/coco_hack_ll" class="p-header-sns__link" target="_blank" rel="noopener noreferrer">
-                  <svg class="c-svg p-header-sns__svg" width="20" height="20" aria-label="Twitterのアイコン">
+                <a href="https://twitter.com/coco_hack_ll" class="p-header-sns__link" target="_blank"
+                  rel="noopener noreferrer">
+                  <svg class="c-svg p-header-sns__svg" width="20" height="20" role="img" aria-label="Twitterのアイコン">
                     <use xlink:href="/img/svg/sprite.min.svg#icon-twitter" />
                   </svg>
                 </a>
               </li>
               <li class="p-header-sns__item">
                 <a href="https://github.com/kokoro-hart" class="p-header-sns__link" target="_blank" rel="noopener noreferrer">
-                  <svg class="c-svg p-header-sns__svg" width="20" height="20" aria-label="GitHubのアイコン">
+                  <svg class="c-svg p-header-sns__svg" width="20" height="20" role="img" aria-label="GitHubのアイコン">
                     <use xlink:href="/img/svg/sprite.min.svg#icon-github" />
                   </svg>
                 </a>
               </li>
             </ul>
           </div>
-
-          <button id="js-drawer-button" class="p-header__button c-button-drawer u-hidden-md-up"  aria-controls="js-drawer-nav" aria-expanded="false">
+      
+          <button id="js-drawer-button" class="p-header__button c-button-drawer u-hidden-md-up" aria-controls="js-drawer-nav" aria-expanded="false">
             <span class="c-button-drawer__line">
             </span>
           </button>
         </div>
-
+      
         <div id="js-drawer-nav" class="p-drawer-nav u-hidden-md-up" aria-hidden="true">
           <div class="p-drawer-nav__inner">
             <ul class="p-drawer-nav__list">
