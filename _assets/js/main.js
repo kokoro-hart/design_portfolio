@@ -15,6 +15,4 @@ import './common'
 
 import './modules/drawer'
 import './modules/intersection-observer'
-import './modules/circle-text'
 import './modules/stalker'
-
