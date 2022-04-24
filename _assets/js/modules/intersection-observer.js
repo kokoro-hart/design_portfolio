@@ -1,91 +1,80 @@
 
-//要素感知
-const elementsTrigger = document.querySelectorAll('.js-trigger');
-const elementsScrollObserver = new IntersectionObserver(targetsElements, {
+class scrollObserver {
+  constructor(elements, callback, options) {
+    this.elements = document.querySelectorAll(elements);
+    const defaultOptions = {
+      root: null,
+      rootMargin: '-50% 0px',
+      threshold: 0,
+    };
+    this.callback = callback;
+    this.options = Object.assign(defaultOptions, options);//デフォルトオプションと指定したオプションをマージする
+    this._init();
+  }
+
+  //初期化処理
+  _init() {
+    const initCallbackFunction = function (entries) {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          this.callback(entry.target, true);
+        } else {
+          this.callback(entry.target, false);
+        }
+      });
+    };
+
+    this.io = new IntersectionObserver(initCallbackFunction.bind(this), this.options);
+    this.elements.forEach(element => this.io.observe(element));
+  }
+}
+
+
+//引数で渡されたDOMがが画面内に入ったら.is-inviewを付与する関数
+const addIntoViewClass = (elements, isIntersecting) => {
+  if (isIntersecting) {
+    elements.classList.add('is-inview');
+  }
+}
+
+//引数で渡されたDOMがが画面内にある時のみchangeBgElementに.is-activeを付与する関数
+const toggleIntoViewClass = (elements, isIntersecting) => {
+  const header = document.getElementById('js-header');
+  const changeBgElement = document.getElementById('js-switching-bg');
+  if (isIntersecting) {
+    changeBgElement.classList.add('is-active');
+    header.classList.add('is-color-base');
+  } else {
+    changeBgElement.classList.remove('is-active');
+  }
+}
+
+//引数で渡されたDOMが画面内にある時のみ、DOMが紐づいたdata属性を選択し.is-showクラスを付与。それ以外は.is-showクラスを削除する関数
+const followContents = (elements, isIntersecting) => {
+  if (isIntersecting) {
+
+    //既にshowされているコンテンツ以外は.is-showクラスを削除
+    const currentActiveIndex = document.querySelector('.is-show');
+    if (currentActiveIndex !== null) {
+      currentActiveIndex.classList.remove('is-show');
+    }
+
+    //引数で渡されたDOMが紐づいたdata属性を選択し.is-showクラスを付与
+    const newActiveIndex = document.querySelector(`[data-id='#${elements.id}']`);
+    newActiveIndex.classList.add('is-show');
+
+  } else {
+    const newRemoveIndex = document.querySelector(`[data-id='#${elements.id}']`);
+    newRemoveIndex.classList.remove('is-show');
+  }
+}
+
+
+const scrollObserver01 = new scrollObserver('.js-trigger', addIntoViewClass, {
   root: null,
   rootMargin: '-40% 0px',
   threshold: 0
 });
+const scrollObserver02 = new scrollObserver('#js-switching-trigger', toggleIntoViewClass);
+const scrollObserver03 = new scrollObserver('.js-follow-targets', followContents);
 
-Array.from(elementsTrigger).forEach(target => {
-  elementsScrollObserver.observe(target);
-});
-
-function targetsElements(entries) {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('is-active');
-    }
-  });
-};
-
-//背景色切り替え
-const switchingTrigger = document.getElementById('js-switching-trigger');
-const header = document.getElementById('js-header');
-const switchingArea = document.getElementById('js-switching-area'); 
-
-const switchingObserver = new IntersectionObserver(switchingBg, {
-  root: null,
-  rootMargin: '-50% 0px',
-  threshold: 0
-});
-
-if (switchingTrigger !== null) {
-  switchingObserver.observe(switchingTrigger);
-}
-
-function switchingBg(entries) {
-  for (const e of entries) {
-    if (e.isIntersecting) {
-      switchingArea.classList.add('is-active');
-      header.classList.add('is-color-base');
-    } else {
-      switchingArea.classList.remove('is-active');
-    }
-  }
-};
-
-
-//制作実績
-const fullScreenImg = document.querySelectorAll('.js-mock-up');
-
-const options = {
-  root: null,
-  rootMargin: '-50% 0px',
-  threshold: 0
-};
-const observer = new IntersectionObserver(followContents, options);
-fullScreenImg.forEach(img => {
-  observer.observe(img);
-});
-
-function followContents(entries) {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      activateIndex(entry.target);
-    } else {
-      removeIndex(entry.target);
-    }
-  });
-}
-
-//コンテンツを固定する関数
-function activateIndex(element) {
-
-  //既にshowされているコンテンツ以外は.is-showクラスを削除
-  const currentActiveIndex = document.querySelector('.is-show');
-
-  if (currentActiveIndex !== null) {
-    currentActiveIndex.classList.remove('is-show');
-  }
-
-  //引数で渡されたDOMが紐づいたdata属性を選択し.is-showクラスを付与
-  const newActiveIndex = document.querySelector(`[data-id='#${element.id}']`);
-  newActiveIndex.classList.add('is-show');
-}
-
-//固定を解除する関数
-function removeIndex(element) {
-  const newRemoveIndex = document.querySelector(`[data-id='#${element.id}']`);
-  newRemoveIndex.classList.remove('is-show');
-}
