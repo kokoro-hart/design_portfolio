@@ -16,23 +16,35 @@
       "type": "article",
       "slug": "/about/"
     },
-    "works": {
-      "name": "WORKS",
-      "description": "WORKSページの説明",
-      "type": "article",
-      "slug": "/works/"
-    },
     "single-works": {
       "name": "作品のタイトル",
       "description": "作品のタイトルの説明",
       "type": "article",
       "slug": "/single-works/"
     },
-    "site-detail": {
-      "name": "ポートフォリオサイト",
-      "description": "作品のタイトルの説明",
+    "global-standard": {
+      "name": "Global Standard",
+      "description": "世界で活躍できるグローバルな人材を育てる、架空事業会社のコーポレートサイト",
       "type": "article",
-      "slug": "/site-detail/"
+      "slug": "/global-standard/"
+    },
+    "open-cafe": {
+      "name": "Open Cafe",
+      "description": "最高のコーヒーと、 時の流れを味わうことができる架空カフェサイト",
+      "type": "article",
+      "slug": "/open-cafe/"
+    },
+    "minami-dental": {
+      "name": "Minami Dental",
+      "description": "健康的で素敵な笑顔あふれる街づくりを目指す架空歯科医院",
+      "type": "article",
+      "slug": "/minami-dental/"
+    },
+    "garden-salad": {
+      "name": "Garden Salad",
+      "description": "健康的で素敵な笑顔あふれる街づくりを目指す架空歯科医院",
+      "type": "article",
+      "slug": "/garden-salad/"
     },
     "contact": {
       "name": "CONTACT",
