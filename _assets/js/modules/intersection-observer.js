@@ -1,5 +1,5 @@
 
-class scrollObserver {
+class ScrollObserver {
   constructor(elements, callback, options) {
     this.elements = document.querySelectorAll(elements);
     const defaultOptions = {
@@ -40,10 +40,11 @@ const addIntoViewClass = (elements, isIntersecting) => {
 //引数で渡されたDOMがが画面内にある時のみchangeBgElementに.is-activeを付与する関数
 const toggleIntoViewClass = (elements, isIntersecting) => {
   const header = document.getElementById('js-header');
+  header.classList.add('is-color-base');
   const changeBgElement = document.getElementById('js-switching-bg');
   if (isIntersecting) {
     changeBgElement.classList.add('is-active');
-    header.classList.add('is-color-base');
+    
   } else {
     changeBgElement.classList.remove('is-active');
   }
@@ -70,11 +71,11 @@ const followContents = (elements, isIntersecting) => {
 }
 
 
-const scrollObserver01 = new scrollObserver('.js-trigger', addIntoViewClass, {
+const scrollObserver01 = new ScrollObserver('.js-trigger', addIntoViewClass, {
   root: null,
   rootMargin: '-40% 0px',
   threshold: 0
 });
-const scrollObserver02 = new scrollObserver('#js-switching-trigger', toggleIntoViewClass);
-const scrollObserver03 = new scrollObserver('.js-follow-targets', followContents);
+const scrollObserver02 = new ScrollObserver('#js-switching-trigger', toggleIntoViewClass);
+const scrollObserver03 = new ScrollObserver('.js-follow-targets', followContents);
 
