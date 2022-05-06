@@ -14,7 +14,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 20px;
-  height: 1px;
+  height: 2px;
   background-color: global.$color-primary;
   transition: width 0.3s ease-in-out;
 
@@ -25,7 +25,7 @@
     left: 50%;
     transform: translateX(-50%);
     width: 20px;
-    height: 1px;
+    height: 2px;
     background-color: global.$color-primary;
     transition: transform 0.6s global.ease(out-quint);
   }
@@ -37,7 +37,7 @@
     left: 50%;
     transform: translateX(-50%);
     width: 20px;
-    height: 1px;
+    height: 2px;
     background-color: global.$color-primary;
     transition: transform 0.6s global.ease(out-quint);
   }

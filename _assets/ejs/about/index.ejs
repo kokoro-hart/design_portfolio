@@ -3,7 +3,7 @@
 <%- include('../common/_header', {pageId:pageId }) %>
 
 <% console.log(jsonData) %>
-<main class="l-lower-about">
+<main class="l-lower-about" data-barba="container" data-barba-namespace="about">
   <div class="l-container">
     <!--ファーストビュー-->
     <section id="js-first-view" class="p-lower-first-view">
@@ -22,7 +22,7 @@
         </div>
         <div class="p-lower-first-view__intro p-intro">
           <div class="p-intro__inner">
-            <h3 class="p-intro__heading">
+            <h3 class="p-intro__heading  is-slide-up">
               <span class="is-wrap" style="transform: translate(0px, 0px);">
                 <span class="is-slide-up">
                   To be a creator
@@ -401,10 +401,10 @@
                 広告や看板など身の回りのあらゆるところにデザイン技術が使われていることを知り感動。<br>
                 職場の表示類の作成だけではなく、資料作りなどにも活かせると思いデザインの勉強を始める。
               </div>
-              <picture class="p-career__dd-picture">
-                <!-- <source srcset="/img/webp/sp-global.webp" class="p-works-item__img" type="image/webp" /> -->
+              <!-- <picture class="p-career__dd-picture">
+                <source srcset="/img/webp/sp-global.webp" class="p-works-item__img" type="image/webp" />
                 <img src="/img/common/book02.jpeg" alt="デザインに関する書籍の画像" class="p-career__dd-img">
-              </picture>
+              </picture> -->
             </dd>
           </div>
           <div class="p-career__row">
@@ -431,10 +431,10 @@
                 →コーディングの楽しさから技術への関心が高まる。<br>
                 →Web業界に興味を持つ。
               </div>
-              <picture class="p-career__dd-picture">
-                <!-- <source srcset="/img/webp/sp-global.webp" class="p-works-item__img" type="image/webp" /> -->
+              <!-- <picture class="p-career__dd-picture">
+                <source srcset="/img/webp/sp-global.webp" class="p-works-item__img" type="image/webp" />
                 <img src="/img/common/book01.jpeg" alt="Web技術に関する書籍の画像" class="p-career__dd-img">
-              </picture>
+              </picture> -->
             </dd>
           </div>
           <div class="p-career__row">
@@ -454,8 +454,6 @@
     </section>
     <!--/経歴-->
   </div>
-
-
     <!--お問いわせ-->
     <div class="p-contact-connect" style="transform: translate(0px, 0px);">
       <a href="/contact/" class="p-contact-connect__link">

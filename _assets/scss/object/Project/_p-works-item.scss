@@ -9,10 +9,11 @@
 }
 
 .p-works-item__body {
-  margin-top: 24px;
+  //margin-top: 24px;
+  margin-top: max(40px, 11vw);
   
   @include global.mq(md) {
-    margin-top: 32px;
+    //margin-top: 32px;
   }
 
   @include global.mq(lax) {
@@ -47,18 +48,10 @@
 }
 
 .p-works-item__link-wrapper {
-  opacity: 0;
   margin-top: 32px;
-  text-align: right;
 
   @include global.mq(md) {
     margin-top: 52px;
-  }
-}
-
-.is-active {
-  .p-works-item__link-wrapper {
-    opacity: 1;
   }
 }
 
@@ -76,41 +69,39 @@
 
 .p-works-item__picture {
   display: block;
-  overflow: hidden;
 }
 
 .p-works-item__picture--sp {
   position: relative;
   z-index: 3;
-  width: 15%;
-  margin-bottom: -50%;
+  width: 20%;
+  margin-bottom: -43%;
 
   @include global.mq(lax) {
     margin-bottom: 0;
-    width: 40%;
+    width: 39%;
   }
 }
 
 .p-works-item__picture--tab {
-  z-index: -1;
-  width: 34%;
-  margin-bottom: -39%;
-  margin-left: 10%;
+  position: relative;
+  z-index: 3;
+  width: 30%;
+  margin-bottom: -50%;
+  margin-left: auto;
 
   @include global.mq(lax) {
-    position: relative;
-    z-index: 2;
-    width: 57%;
+    width: 53%;
     margin-top: global.vw(-435);
     margin-bottom: 0;
-    margin-left: auto;
   }
 }
 
 .p-works-item__picture--pc {
   z-index: 1;
-  width: 65%;
-  margin-left: 35%;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 2%;
 
   @include global.mq(lax) {

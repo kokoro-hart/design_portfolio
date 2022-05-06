@@ -12,11 +12,11 @@
     opacity 1.7s global.ease(out-expo),
     transform 1.7s global.ease(out-expo)
   ;
-  transform: translateY(40px);
+  transform: translateY(60px);
 }
 
 //トリガー発火後
-.is-active {
+.is-inview {
   .is-fade-up {
     visibility: visible;
     opacity: 1;

@@ -12,7 +12,6 @@ import './lib/lazysizes'
 import './lib/locomotive-scroll'
 
 import './common'
-
 import './modules/drawer'
 import './modules/intersection-observer'
 import './modules/stalker'

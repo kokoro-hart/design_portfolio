@@ -34,6 +34,7 @@
 }
 
 .p-home-about__profile {
+  z-index: 1;
   width: 100%;
 
   @include global.mq(md) {

@@ -62,7 +62,7 @@
   width: 100%;
 
   @include global.mq(lax, max) {
-    padding-top: 18.5vw;
+    padding-top: 10.5vw;
 
     &:not(:last-child) {
       padding-bottom: max(136px, 22vw);

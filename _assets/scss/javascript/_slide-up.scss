@@ -11,13 +11,12 @@
 
 .is-slide-up {
   display: inline-block;
-  will-change: transform;
   transform: translateY(120%);
   transition: transform 1.7s global.ease(out-expo);
 }
 
 //トリガー発火後
-.is-active {
+.is-inview {
   .is-slide-up {
     transform: translateY(0);
   }

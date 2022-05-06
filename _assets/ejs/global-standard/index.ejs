@@ -3,11 +3,13 @@
   <%- include('../common/_header', {pageId:pageId }) %>
 
     <% console.log(jsonData) %>
+    <div data-barba="container" data-barba-namespace="single">
       <main id="js-switching-bg" class="l-single-works p-single-works p-single-works--global">
         <div class="l-container">
           <div id="js-switching-trigger">
             <!--ファーストビュー-->
-            <div id="js-first-view" class="l-single-works__first-view">
+            <div  id="js-first-view">
+            <div class="l-single-works__first-view">
               <div class="p-single-works__heading c-single-heading">
                 <h1 class="p-single-works__heading-en is-wrap" style="transform: translate(0px, 0px);">
                   <span class="is-slide-up">
@@ -23,25 +25,28 @@
               </div>
             </div>
             <!--/ファーストビュー-->
-
             <!--モックアップ-->
             <figure class="l-single-works__figure p-single-works__figure">
-              <picture class="p-single-works__picture p-single-works__picture--sp" data-scroll data-scroll-speed="1" data-scroll-delay="0.1">
-                <source srcset="/img/webp/sp-global.webp" class="p-single-works__img" type="image/webp" />
-                <img src="/img/common/sp-global.png" class="p-single-works__img" alt="Global Standard spモックアップ" style="transform: translate(0px, 0px);">
+              <picture class="p-single-works__picture p-single-works__picture--sp" style="transform: translate(0px, 0px);">
+                <source srcset="/img/webp/sp-global-test.webp" class="p-single-works__img" type="image/webp" />
+                <img src="/img/common/sp-global-test.png" class="p-single-works__img" alt="Global Standard spモックアップ" width="70"
+                  height="141" loading="lazy" data-scroll data-scroll-speed="1" data-scroll-delay="0.1">
               </picture>
-
-              <picture class="p-single-works__picture p-single-works__picture--pc" data-scroll data-scroll-speed="0.5">
-                <source srcset="/img/webp/pc-global.webp" class="p-single-works__img" type="image/webp" />
-                <img src="/img/common/pc-global.png" class="p-single-works__img" alt="Global Standard pcモックアップ" style="transform: translate(0px, 0px);">
+            
+              <picture class="p-single-works__picture p-single-works__picture--pc" style="transform: translate(0px, 0px);">
+                <source srcset="/img/webp/pc-global-test.webp" class="p-single-works__img" type="image/webp" />
+                <img src="/img/common/pc-global-test.png" class="p-single-works__img" alt="Global Standard pcモックアップ" width="1103"
+                  height="701" loading="lazy" data-scroll data-scroll-speed="0.5">
               </picture>
-
-              <picture class="p-single-works__picture p-single-works__picture--tab" data-scroll data-scroll-speed="0.75" data-scroll-delay="0.05">
-                <source srcset="/img/webp/tab-global.webp" class="p-single-works__img" type="image/webp" />
-                <img src="/img/common/tab-global.png" class="p-single-works__img" alt="Global Standard tabモックアップ" style="transform: translate(0px, 0px);">
+            
+              <picture class="p-single-works__picture p-single-works__picture--tab" style="transform: translate(0px, 0px);">
+                <source srcset="/img/webp/tab-global-test.webp" class="p-single-works__img" type="image/webp" />
+                <img src="/img/common/tab-global-test.png" class="p-single-works__img" alt="Global Standard tabモックアップ" width="445"
+                  height="622" loading="lazy" data-scroll data-scroll-speed="0.75" data-scroll-delay="0.05">
               </picture>
             </figure>
             <!--モックアップ-->
+            </div>
           </div>
         </div>
 
@@ -221,7 +226,7 @@
         <div class="p-works-connect" style="transform: translate(0px, 0px);">
           <div class="p-works-connect__inner">
             <a href="/single-works/" class="p-works-connect__link">
-              <span class="p-works-connect__link-head">
+              <span class="p-works-connect__link-head u-hidden-lax-down">
                 Prev
               </span>
               <span class="p-works-connect__link-foot">
@@ -231,7 +236,7 @@
           </div>
           <div class="p-works-connect__inner">
             <a href="/open-cafe/" class="p-works-connect__link">
-              <span class="p-works-connect__link-head">
+              <span class="p-works-connect__link-head u-hidden-lax-down">
                 Next
               </span>
               <span class="p-works-connect__link-foot">
@@ -242,5 +247,6 @@
         </div>
 
       </main>
+    </div>
 
       <%- include('../common/_footer', {pageId:pageId }) %>

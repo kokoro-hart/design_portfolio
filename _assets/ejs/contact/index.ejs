@@ -3,9 +3,10 @@
   <%- include('../common/_header', {pageId:pageId }) %>
 
     <% console.log(jsonData) %>
-      <main class="l-lower-contact">
+      <main class="l-lower-contact" data-barba="container" data-barba-namespace="contact">
         <div class="l-container">
-          <div id="js-first-view" class="p-lower-first-view">
+          <div id="js-first-view">
+          <div class="p-lower-first-view">
             <h2 class="c-page-heading">
               <span class="c-page-heading__en is-wrap">
                 <span class="is-slide-up">
@@ -19,7 +20,7 @@
               </span>
             </h2>
           </div>
-          <div class="l-lower-contact__contents">
+          <div class="l-lower-contact__contents is-slide-up">
             <div class="p-form">
               <dl class="p-form__dl">
                 <!--お名前-->
@@ -78,6 +79,8 @@
               </dl>
             </div>
           </div>
+          </div>
+
         </div>
       </main>
 
