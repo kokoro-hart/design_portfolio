@@ -10,16 +10,3 @@
   z-index: map-get(global.$layer, header);
   width: 100%;
 }
-
-.l-header__inner {
-  position: relative;
-  z-index: map-get(global.$layer, header-inner);
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  padding: 20px 20px 0;
-
-  @include global.mq(md) {
-    padding: 40px 40px 0;
-  }
-}

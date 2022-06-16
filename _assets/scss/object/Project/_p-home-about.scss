@@ -3,7 +3,7 @@
 // Project トップページ 私について
 //--------------------------------------------------------------------------
 .p-home-about {
-  @include global.mq(md) {
+  @include global.mq(lax) {
     display: flex;
   }
 }
@@ -11,19 +11,15 @@
 .p-home-about__heading {
   margin-left: -8%;
   color: global.$color-secondary;
-  font-size: 19vw;
+  font-size: 18vw;
   @include global.lh(1);
-  font-weight: 500;
+  font-weight: 400;
   font-family: global.$font-family-en;
   white-space: nowrap;
   letter-spacing: -0.01em;
 
-  @include global.mq(md) {
+  @include global.mq(lax) {
     width: 40%;
-    font-size: 19vw;
-  }
-
-  @include global.mq(1026px, min) {
     margin-left: 0;
     font-size: 12vw;
   }
@@ -37,8 +33,8 @@
   z-index: 1;
   width: 100%;
 
-  @include global.mq(md) {
-    margin-top: global.vw(150);
+  @include global.mq(lax) {
+    margin-top: global.vw(170);
   }
 
   @include global.mq(xl) {
@@ -77,30 +73,22 @@
 }
 
 .p-home-about__text {
-  font-size: 14px;
+  margin-top: 14px;
+  @include global.fz(14, 16);
   line-height: 1.7em;
 
   @include global.mq(md) {
-    font-size: 16px;
+    margin-top: 24px;
   }
 
   @include global.mq(lax) {
     line-height: 1.8em;
   }
-
-  &:nth-of-type(1) {
-    margin-top: 14px;
-    
-    @include global.mq(md) {
-      margin-top: 24px;
-    }
-  }
-
-  &:nth-of-type(2) {
-    margin-top: 32px;
-  }
 }
 
 .p-home-about__link-wrapper {
-  margin-top: 52px;
+  margin-top: 32px;
+  @include global.mq(md) {
+    margin-top: 52px;
+  }
 }

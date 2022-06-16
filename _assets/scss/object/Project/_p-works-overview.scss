@@ -3,16 +3,12 @@
 // Project 制作実績概要
 //--------------------------------------------------------------------------
 
-.p-works-overview {
-
-}
-
 .p-works-overview__heading {
   position: relative;
   padding-top: 18px;
-  font-size: 28px;
+  font-size: 24px;
   @include global.lh(1);
-  font-weight: 400;
+  font-weight: 500;
   font-family: global.$font-family-en;
   letter-spacing: -0.01em;
 

@@ -26,6 +26,7 @@
 
 .p-works-info__body {
   padding-left: 3%;
+  padding-bottom: 12%;
 }
 
 .p-works-info__title {
@@ -72,13 +73,9 @@
 
 .p-works-info__text {
   margin-top: 12px;
-  @include global.fz(14, 16);
   @include global.lh(1.4, 1.7);
   font-weight: 400;
-
-  @include global.mq(xxl) {
-    font-size: 18px;
-  }
+  font-size: max(16px, #{global.vw(20)});
 }
 
 .p-works-info__link-wrapper {

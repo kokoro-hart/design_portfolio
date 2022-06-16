@@ -159,6 +159,8 @@ body {
 }
 
 br {
+  content: "";
+  display: block;
   height: 0;
   line-height: 0;
 }

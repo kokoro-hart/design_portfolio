@@ -7,35 +7,11 @@
   position: relative;
 }
 
-.p-works__heading {
-  width: 75%;
-  margin-left: auto;
-  font-size: 19vw;
-  @include global.lh(1);
-  font-weight: 500;
-  font-family: global.$font-family-en;
-  color: global.$color-secondary;
-  white-space: nowrap;
-  letter-spacing: -0.01em;
-
-  @include global.mq(md) {
-    font-size: 19vw;
-  }
-
-  @include global.mq(1026px, min) {
-    font-size: 12vw;
-  }
-
-  @include global.mq(xl) {
-    width: 60%;
-  }
-}
-
 .p-works__content {
   width: 100%;
   counter-reset: number 0;
 
-  @include global.mq(md) {
+  @include global.mq(lax) {
     height: 50vh;
     position: relative;
     width: 45%;
@@ -44,12 +20,14 @@
 
 .p-works__items {
   width: 100%;
-
-    margin-top: -5vw;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 
   @include global.mq(lax) {
-    margin-top: 0;
+    display: block;
     width: 52%;
+    margin-top: 0;
     margin-left: auto;
   }
 
@@ -59,19 +37,19 @@
 }
 
 .p-works__item {
-  width: 100%;
+  display: block;
+  padding-top: 7.5vw;
 
-  @include global.mq(lax, max) {
-    padding-top: 10.5vw;
+  &:not(:last-child) {
+    padding-bottom: max(92px, #{global.vw(180, 1024)});
+  }
 
-    &:not(:last-child) {
-      padding-bottom: max(136px, 22vw);
-    }
+  @include global.mq(md) {
+    width: calc(50% - 1% / 2);
   }
 
   @include global.mq(lax) {
-    display: block;
-
+    width: 100% !important;
 
     &:not(:first-child) {
       padding-top: 17vh;

@@ -6,11 +6,14 @@
 .c-button-primary {
   position: relative;
   display: inline-block;
-  padding-left: 34px;
+  padding-left: 26px;
   @include global.fz(16, 18);
   @include global.lh(2);
   font-family: global.$font-family-en;
   font-weight: 500;
+  @include global.mq(md) {
+    padding-left: 34px;
+  }
 
   &::before {
     content: "";
@@ -19,9 +22,14 @@
     left: 0;
     transform: translateY(-50%);
     border-radius: 50%;
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
     background-color: global.$color-primary;
+
+    @include global.mq(md) {
+      width: 20px;
+    height: 20px;
+    }
   }
 }
 

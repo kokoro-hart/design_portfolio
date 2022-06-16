@@ -4,11 +4,22 @@
 //--------------------------------------------------------------------------
 
 .p-header {
-  background-color: transparent;
   font-family: global.$font-family-en;
 }
 
-//ペースカラーの場合
+.p-header__inner {
+  position: relative;
+  z-index: map-get(global.$layer, header-inner);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 20px 0;
+
+  @include global.mq(md) {
+    padding: 40px 40px 0;
+  }
+}
+
 .p-header.is-color-base {
   color: global.$color-base;
 
@@ -56,7 +67,12 @@
 
 .is-drawer-active {
   .p-header__logo-link {
-    color: global.$color-primary !important;
+    color: global.$color-primary;
+  }
+  .p-header.is-color-base {
+    .p-header__logo-link {
+      color: global.$color-primary;
+    }
   }
 }
 

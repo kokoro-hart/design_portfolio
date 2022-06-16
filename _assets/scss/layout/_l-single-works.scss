@@ -2,10 +2,6 @@
 
 // Layout 制作実績シングルページ
 //--------------------------------------------------------------------------
-
-.l-single-works {
-}
-
 .l-single-works__first-view {
   padding: 20vh 0 8vh 2vw;
 
@@ -14,15 +10,6 @@
   }
 }
 
-.l-single-works__figure {
-  padding-bottom: max(84px, #{global.vw(84)});
-}
-
-.l-single-works__contents {
-  padding-bottom: 134px;
-
-  @include global.mq(md) {
-    padding-top: global.vw(84);
-    padding-bottom: 260px;
-  }
+.l-single-works__detail {
+  padding-bottom: max(134px, #{global.vw(260)});
 }

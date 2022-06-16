@@ -1,3 +1,4 @@
+import barba from '@modules/@barba/core';
 import LocomotiveScroll from '@modules/locomotive-scroll/dist/locomotive-scroll.js';
 //LocomotiveScroll options
 const scroll = new LocomotiveScroll({
@@ -153,6 +154,35 @@ function initDrawerEvent() {
 }
 initDrawerEvent();
 
+function lazyVideo() {
+  let lazyVideos = [].slice.call(document.querySelectorAll("video.js-lazy"));
+
+  if ("IntersectionObserver" in window) {
+    let lazyVideoObserver = new IntersectionObserver(function (entries, observer) {
+      entries.forEach(function (video) {
+        if (video.isIntersecting) {
+          for (let source in video.target.children) {
+            let videoSource = video.target.children[source];
+            if (typeof videoSource.tagName === "string" && videoSource.tagName === "SOURCE") {
+              videoSource.src = videoSource.dataset.src;
+            }
+          }
+
+          video.target.load();
+          video.target.classList.remove("lazy");
+          lazyVideoObserver.unobserve(video.target);
+        }
+      });
+    });
+
+    lazyVideos.forEach(function (lazyVideo) {
+      lazyVideoObserver.observe(lazyVideo);
+    });
+  }
+}
+
+lazyVideo();
+
 const replaceHead = function (data) {
   const head = document.head;
   const newPageRawHead = data.next.html.match(/<head[^>]*>([\s\S.]*)<\/head>/i)[0];
@@ -184,6 +214,15 @@ const replaceHead = function (data) {
   }
 }
 
+const agent = window.navigator.userAgent.toLowerCase();
+if (agent.indexOf('safari') !== -1 && agent.indexOf('chrome') === -1) {
+  console.log('safariです');
+  const imgs = document.querySelectorAll('.p-works-item__img');
+  for (let i = 0; i < imgs.length; i++) {
+    imgs[i].style.transform = 'translateZ(0)';
+  }
+}
+
 const header = document.getElementById('js-header');
 barba.init({
   views: [
@@ -191,7 +230,15 @@ barba.init({
       namespace: 'single',
       beforeEnter(data) {
         initToggleIntoViewClass();
+        lazyVideo();
         header.classList.add('is-color-base');
+      }
+    },
+    {
+      namespace: 'memories',
+      beforeEnter(data) {
+        lazyVideo();
+        header.classList.remove('is-color-base');
       }
     },
     {

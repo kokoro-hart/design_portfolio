@@ -4,82 +4,38 @@
 //--------------------------------------------------------------------------
 
 .p-first-view {
-  padding: 20vh 0 15vh;
-
   @include global.mq(lax) {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 720px;
-    height: 100vh;
-    padding: 0;
   }
 }
 
-.is-view {
-  opacity: 1;
-}
-
-.p-first-view__inner {
-  position: relative;
-}
-
 .p-first-view__heading {
-  font-size: 9vw;
-  @include global.lh(1);
+  width: 100%;
+  font-size: global.vw(41, 375);
+  @include global.lh(1.2);
   font-weight: 400;
   font-family: global.$font-family-en;
   white-space: nowrap;
   letter-spacing: -0.01em;
-
-  @include global.mq(md) {
-    font-size: 8.7vw;
-  }
-
-  @include global.mq(xl) {
-    font-size: global.vw(154);
-  }
-
-  &:not(:first-child) {
-    padding-top: 0.5em;
-
-    @include global.mq(md) {
-      padding-top: 0.25em;
-    }
-  }
-
-  &:nth-of-type(2) {
-    padding-left: 7%;
+  
+  @include global.mq(lax) {
+    font-size: global.vw(74, 1024);
   }
 }
 
 .p-first-view__text {
-  margin-top: 24px;
-  font-size: 14px;
-  @include global.lh(1.4);
+  width: 100%;
+  margin-top: 14px;
+  font-size: global.vw(16, 375);
+  letter-spacing: -0.01em;
+  @include global.lh(1.2);
   font-family: global.$font-family-en;
+  color: global.$color-secondary-dark;
 
-  @include global.mq(md) {
-    font-size: 16px;
-  }
-
-  @include global.mq(xl) {
-    margin-top: 48px;
-    font-size: global.vw(24);
-  }
-}
-
-.p-first-view__arrow {
-  display: inline-block;
-  margin-top: 52px;
-  font-size: 11vw;
-  font-size: max(50px, 11vw);
-
-  @include global.mq(md) {
-    position: absolute;
-    bottom: -23%;
-    left: 60%;
-    margin-top: 0;
-    font-size: max(80px, #{global.vw(148)});
+  @include global.mq(lax) {
+    margin-top: 24px;
+    font-size: global.vw(24, 768);
   }
 }

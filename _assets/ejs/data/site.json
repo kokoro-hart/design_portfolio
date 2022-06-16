@@ -1,32 +1,44 @@
 {
   "siteInfo": {
-    "name": "cocosyu",
+    "name": "KT portfolio",
     "siteUrl": "cocosyu.link"
   },
   "pages": {
     "home": {
-      "name": "TOP",
-      "description": "トップページの説明",
+      "name": "KT portfolio",
+      "description": "Webクリエイター飛田 心のポートフォリオサイト",
       "type": "website",
       "slug": "/"
     },
     "about": {
       "name": "ABOUT",
-      "description": "ABOUTページの説明",
+      "description": "Webクリエイター飛田 心のポートフォリオサイト",
       "type": "article",
       "slug": "/about/"
     },
-    "single-works": {
-      "name": "作品のタイトル",
-      "description": "作品のタイトルの説明",
+    "memories": {
+      "name": "Memories",
+      "description": "世界最大級のカーイベント。世界各国から集まるクラシックカーのチューニング・ドレスアップの総合展示会",
       "type": "article",
-      "slug": "/single-works/"
+      "slug": "/memories/"
+    },
+    "brain-app": {
+      "name": "Brain App",
+      "description": "生活習慣病の早期発見をサポートする医療認定アプリ。",
+      "type": "article",
+      "slug": "/brain-app/"
     },
     "global-standard": {
       "name": "Global Standard",
       "description": "世界で活躍できるグローバルな人材を育てる、架空事業会社のコーポレートサイト",
       "type": "article",
       "slug": "/global-standard/"
+    },
+    "kt-media": {
+      "name": "KT MEDIA",
+      "description": "「KT MEDIA」個人アウトプット用の技術ブログ",
+      "type": "article",
+      "slug": "/kt-media/"
     },
     "open-cafe": {
       "name": "Open Cafe",

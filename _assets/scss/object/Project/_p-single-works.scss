@@ -4,167 +4,7 @@
 //--------------------------------------------------------------------------
 
 .p-single-works {
-  transition: background-color 0.8s cubic-bezier(.18,.06,.23,1),color 0.8s cubic-bezier(.26,.06,0,1);
-}
-
-//Global Standard
-.p-single-works--global {
-  background-color: global.$color-base-dark;
-  color: global.$color-global-main;
-
-  .p-works-overview__link {
-    color: global.$color-global-main;
-
-    &::before {
-      background-color: global.$color-global-main;
-    }
-  }
-
-  .p-works-overview__heading {
-    &::after {
-      background-color: global.$color-global-main;
-    }
-  }
-}
-
-//Global Standard fv
-.p-single-works--global.is-active {
-  background-color: global.$color-global-main;
-  color: global.$color-base;
-
-  .p-works-overview__link {
-    color: global.$color-base-dark;
-
-    &::before {
-      background-color: global.$color-base-dark;
-    }
-  }
-
-  .p-works-overview__heading {
-    &::after {
-      background-color: global.$color-base-dark;
-    }
-  }
-}
-
-//open cafe
-.p-single-works--open {
-  background-color: global.$color-base-dark;
-  color: global.$color-open-main;
-
-  .p-works-overview__link {
-    color: global.$color-open-main;
-
-    &::before {
-      background-color: global.$color-open-main;
-    }
-  }
-
-  .p-works-overview__heading {
-    &::after {
-      background-color: global.$color-open-main;
-    }
-  }
-}
-
-//open cafe fv
-.p-single-works--open.is-active {
-  background-color: global.$color-open-main;
-  color: global.$color-base;
-
-  .p-works-overview__link {
-    color: global.$color-base-dark;
-
-    &::before {
-      background-color: global.$color-base-dark;
-    }
-  }
-
-  .p-works-overview__heading {
-    &::after {
-      background-color: global.$color-base-dark;
-    }
-  }
-}
-
-//minami dental
-.p-single-works--minami {
-  background-color: global.$color-base-dark;
-  color: global.$color-minami-main;
-
-  .p-works-overview__link {
-    color: global.$color-minami-main;
-
-    &::before {
-      background-color: global.$color-minami-main;
-    }
-  }
-
-  .p-works-overview__heading {
-    &::after {
-      background-color: global.$color-minami-main;
-    }
-  }
-}
-
-//minami dental fv
-.p-single-works--minami.is-active {
-  background-color: global.$color-minami-main;
-  color: global.$color-base-dark;
-
-  .p-works-overview__link {
-    color: global.$color-base-dark;
-
-    &::before {
-      background-color: global.$color-base-dark;
-    }
-  }
-
-  .p-works-overview__heading {
-    &::after {
-      background-color: global.$color-base-dark;
-    }
-  }
-}
-
-//garden salad
-.p-single-works--garden {
-  background-color: global.$color-base-dark;
-  color: global.$color-garden-main;
-
-  .p-works-overview__link {
-    color: global.$color-garden-main;
-
-    &::before {
-      background-color: global.$color-garden-main;
-    }
-  }
-
-  .p-works-overview__heading {
-    &::after {
-      background-color: global.$color-garden-main;
-    }
-  }
-}
-
-//garden salad fv
-.p-single-works--garden.is-active {
-  background-color: global.$color-garden-main;
-  color: global.$color-base-dark;
-
-  .p-works-overview__link {
-    color: global.$color-base-dark;
-
-    &::before {
-      background-color: global.$color-base-dark;
-    }
-  }
-
-  .p-works-overview__heading {
-    &::after {
-      background-color: global.$color-base-dark;
-    }
-  }
+  transition: background-color 0.8s, color 0.8s;
 }
 
 .p-single-works__heading-en {
@@ -203,45 +43,100 @@
   }
 }
 
-
-.p-single-works__figure {
-  display: flex;
-  align-items: flex-end;
-}
-
-.p-single-works__picture--sp {
+.p-single-works__mockup {
   position: relative;
-  z-index: 2;
-  width: 20%;
+  padding-top: 195%;
+  margin-bottom: 14.5vw;
 
   @include global.mq(md) {
-    width: 17%;
+    display: flex;
+    align-items: flex-end;
+    padding-top: 0;
+    margin-bottom: 0;
   }
 }
 
-.p-single-works__picture--tab {
-  width: 30%;
-  margin-left: -8vw;
+.p-single-works__mockup-picture--sp {
+  position: absolute;
+  top: 0;
+  left: 5%;
+  z-index: 2;
+  width: 36%;
+  transform-style: preserve-3d;
+  perspective: 840px;
 
   @include global.mq(md) {
+    position: static;
+    width: 17%;
+    transform-style: none;
+    perspective: 0;
+  }
+
+  .p-single-works__mockup-img {
+    transform: rotate3d(2, 2, -1.5, 34deg);
+
+    @include global.mq(md) {
+      transform: none;
+    }
+  }
+}
+
+.p-single-works__mockup-picture--tab {
+  position: absolute;
+  top: 24%;
+  right: 0;
+  width: 64%;
+  transform-style: preserve-3d;
+  perspective: 840px;
+
+  @include global.mq(md) {
+    position: static;
+    transform-style: none;
+    perspective: 0;
+    width: 28%;
+    margin-left: -8vw;
+  }
+
+  @include global.mq(lax) {
     margin-left: global.vw(-50);
     width: 27%;
   }
+
+  .p-single-works__mockup-img {
+    transform: rotate3d(1, -1, 1, 48deg);
+    @include global.mq(md) {
+      transform: none;
+    }
+  }
 }
 
-.p-single-works__picture--pc {
-  width: 80%;
-  margin-left: -8vw;
-  margin-bottom: 3vw;
+.p-single-works__mockup-picture--pc {
+  transform-style: preserve-3d;
+  perspective: 140vw;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 105%;
 
   @include global.mq(md) {
-    margin-left:  global.vw(-50);
-    margin-bottom:  global.vw(50);
-    width: 67%;
+    position: static;
+    transform-style: none;
+    perspective: 0;
+    width: 80%;
+    margin-left: -5vw;
+    margin-bottom: 3vw;
+  }
+
+  .p-single-works__mockup-img {
+    transform: rotate3d(1, 1, -1, 29deg);
+    @include global.mq(md) {
+      transform: none;
+    }
   }
 }
 
 .p-single-works__info {
+  padding-top: max(84px, #{global.vw(134)});
   @include global.mq(lax) {
     display: flex;
   }
@@ -250,36 +145,43 @@
 .p-single-works__overview {
   width: 100%;
 
-
   @include global.mq(xxl) {
     width: calc(40% - 8% / 2);
   }
 
+  &:not(:first-child) {
+    margin-top: 52px;
 
-    &:not(:first-child) {
-      margin-top: 52px;
-
-      @include global.mq(lax) {
-        margin-top: 0;
+    @include global.mq(lax) {
+      margin-top: 0;
       margin-left: 8%;
-      }
     }
+  }
 }
 
 .p-single-works__rotate-picture {
   display: block;
-  margin: 84px calc(50% - 50vw);
+  overflow: hidden;
   width: 100vw;
   max-height: 100vh;
   height: 100%;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  margin-top: max(84px, #{global.vw(134)});
+}
+.p-single-works__video-wrapper {
+  position: relative;
   overflow: hidden;
+  padding-top: 62.5%;
+  margin-top: max(42px, #{global.vw(134)});
 
-  @include global.mq(md) {
-    margin-top: max(260px, #{global.vw(360)});
-
-    &:not(:first-child) {
-      margin-top: max(180px, #{global.vw(240)});
-    }
+  video {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -297,11 +199,7 @@
   display: block;
 
   &:not(:first-child) {
-    margin-top: 52px;
-
-    @include global.mq(md) {
-      margin-top: 134px;
-    }
+    margin-top: max(52px, #{global.vw(134)});
   }
 }
 
@@ -315,12 +213,340 @@
 }
 
 .p-single-works__detail {
-  margin-top: 84px;
+  margin-top: max(84px, #{global.vw(260)});
 
   @include global.mq(lax) {
     width: 40%;
     height: 0;
     margin-left: auto;
-    margin-top: global.vw(360);
+  }
+}
+
+//Memories
+.p-single-works--memories {
+  background-color: global.$color-base;
+  color: global.$color-primary;
+
+  .p-single-works__heading {
+    mix-blend-mode: difference;
+    color: global.$color-base;
+  }
+  .p-single-works--memories__inner {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 7%;
+      left: 50%;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 50%;
+      transform: skewY(-35deg) translateX(-50%);
+      background: global.$color-memories-main;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 10%;
+      left: 50%;
+      bottom: 0;
+      right: 0;
+      width: 109%;
+      height: 110%;
+      background: global.$color-primary;
+      transform: skewY(-45deg) translateX(-50%);
+
+      @include global.mq(lax) {
+        top: 9%;
+        height: 77%;
+      }
+    }
+  }
+
+  .p-single-works__rotate-picture {
+    max-height: 120vh;
+  }
+
+  .p-single-works__info {
+    color: global.$color-base;
+  }
+
+  .p-works-overview__link {
+    color: global.$color-base;
+
+    &::before {
+      background-color: global.$color-base;
+    }
+  }
+
+  .p-works-overview__heading {
+    &::after {
+      background-color: global.$color-base;
+    }
+  }
+
+  .p-single-works__rotate-picture {
+    position: relative;
+
+    &::after {
+      content: "Memories";
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: global.vw(80);
+      color: global.$color-base;
+    }
+  }
+  .p-single-works__detail {
+    mix-blend-mode: difference;
+    color: global.$color-base;
+  }
+}
+
+//Brain App
+.p-single-works--brain {
+  background-color: global.$color-base;
+  color: global.$color-brain-main;
+
+  .p-works-overview__link {
+    color: global.$color-brain-main;
+
+    &::before {
+      background-color: global.$color-brain-main;
+    }
+  }
+
+  .p-works-overview__heading {
+    &::after {
+      background-color: global.$color-brain-main;
+    }
+  }
+}
+
+//Brain App fv
+.p-single-works--brain.is-active {
+  background-color: global.$color-brain-main;
+  color: global.$color-base;
+
+  .p-works-overview__link {
+    color: global.$color-base;
+
+    &::before {
+      background-color: global.$color-base;
+    }
+  }
+
+  .p-works-overview__heading {
+    &::after {
+      background-color: global.$color-base;
+    }
+  }
+}
+
+//KT MEDIA
+.p-single-works--kt-media {
+  background-color: global.$color-base;
+  color: global.$color-kt-main;
+
+  .p-works-overview__link {
+    color: global.$color-kt-main;
+
+    &::before {
+      background-color: global.$color-kt-main;
+    }
+  }
+
+  .p-works-overview__heading {
+    &::after {
+      background-color: global.$color-kt-main;
+    }
+  }
+}
+
+//KT MEDIA fv
+.p-single-works--kt-media.is-active {
+  background-color: global.$color-kt-main;
+  color: global.$color-base;
+
+  .p-works-overview__link {
+    color: global.$color-base;
+
+    &::before {
+      background-color: global.$color-base;
+    }
+  }
+
+  .p-works-overview__heading {
+    &::after {
+      background-color: global.$color-base;
+    }
+  }
+}
+
+//Global Standard
+.p-single-works--global {
+  background-color: global.$color-base;
+  color: global.$color-global-main;
+
+  .p-works-overview__link {
+    color: global.$color-global-main;
+
+    &::before {
+      background-color: global.$color-global-main;
+    }
+  }
+
+  .p-works-overview__heading {
+    &::after {
+      background-color: global.$color-global-main;
+    }
+  }
+}
+
+//Global Standard fv
+.p-single-works--global.is-active {
+  background-color: global.$color-global-main;
+  color: global.$color-base;
+
+  .p-works-overview__link {
+    color: global.$color-base;
+
+    &::before {
+      background-color: global.$color-base;
+    }
+  }
+
+  .p-works-overview__heading {
+    &::after {
+      background-color: global.$color-base;
+    }
+  }
+}
+
+//open cafe
+.p-single-works--open {
+  background-color: global.$color-base;
+  color: global.$color-open-main;
+
+  .p-works-overview__link {
+    color: global.$color-open-main;
+
+    &::before {
+      background-color: global.$color-open-main;
+    }
+  }
+
+  .p-works-overview__heading {
+    &::after {
+      background-color: global.$color-open-main;
+    }
+  }
+}
+
+//open cafe fv
+.p-single-works--open.is-active {
+  background-color: global.$color-open-main;
+  color: global.$color-base;
+
+  .p-works-overview__link {
+    color: global.$color-base;
+
+    &::before {
+      background-color: global.$color-base;
+    }
+  }
+
+  .p-works-overview__heading {
+    &::after {
+      background-color: global.$color-base;
+    }
+  }
+}
+
+//minami dental
+.p-single-works--minami {
+  background-color: global.$color-base;
+  color: global.$color-minami-main;
+
+  .p-works-overview__link {
+    color: global.$color-minami-main;
+
+    &::before {
+      background-color: global.$color-minami-main;
+    }
+  }
+
+  .p-works-overview__heading {
+    &::after {
+      background-color: global.$color-minami-main;
+    }
+  }
+}
+
+//minami dental fv
+.p-single-works--minami.is-active {
+  background-color: global.$color-minami-main;
+  color: global.$color-base;
+
+  .p-works-overview__link {
+    color: global.$color-base;
+
+    &::before {
+      background-color: global.$color-base;
+    }
+  }
+
+  .p-works-overview__heading {
+    &::after {
+      background-color: global.$color-base;
+    }
+  }
+}
+
+//garden salad
+.p-single-works--garden {
+  background-color: global.$color-base;
+  color: global.$color-garden-main;
+
+  .p-works-overview__link {
+    color: global.$color-garden-main;
+
+    &::before {
+      background-color: global.$color-garden-main;
+    }
+  }
+
+  .p-works-overview__heading {
+    &::after {
+      background-color: global.$color-garden-main;
+    }
+  }
+}
+
+//garden salad fv
+.p-single-works--garden.is-active {
+  background-color: global.$color-garden-main;
+  color: global.$color-base;
+
+  .p-works-overview__link {
+    color: global.$color-base;
+
+    &::before {
+      background-color: global.$color-base;
+    }
+  }
+
+  .p-works-overview__heading {
+    &::after {
+      background-color: global.$color-base;
+    }
   }
 }

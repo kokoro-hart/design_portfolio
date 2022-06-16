@@ -4,9 +4,9 @@
 //--------------------------------------------------------------------------
 
 .p-works-detail__heading {
-  font-size: 28px;
+  font-size: 24px;
   @include global.lh(1);
-  font-weight: 400;
+  font-weight: 500;
   font-family: global.$font-family-en;
   letter-spacing: -0.01em;
 
@@ -18,7 +18,7 @@
 .p-works-detail__body {
   margin-top: 32px;
 
-  @include global.mq(md) {
+  @include global.mq(lax) {
     margin-top: 52px;
   }
 }

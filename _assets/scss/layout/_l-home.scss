@@ -3,20 +3,29 @@
 // Layout トップページ
 //--------------------------------------------------------------------------
 
-//プロフィール
-.l-home__profile {
-  width: 100%;
-  padding-bottom: 136px;
+//ファーストビュー
+.l-home__first-view {
+  padding: 20vh 0 15vh;
 
-  @include global.mq(xl) {
-    padding: min(84px, #{global.vw(84)}) 0 global.vw(260);
+  @include global.mq(lax) {
+    min-height: 500px;
+    height: 83vh;
+    padding: 0;
+  }
+}
+
+//プロフィール
+.l-home__about {
+  padding-bottom: 134px;
+
+  @include global.mq(lax) {
+    padding-bottom: 0;
   }
 }
 
 // 制作実績
 .l-home__works {
-  width: 100%;
-  padding-bottom: max(160px, 30vw);
+  padding-bottom: 160px;
 
   @include global.mq(md) {
     padding-bottom: 260px;

@@ -3,138 +3,144 @@
   <%- include('../common/_header', {pageId:pageId }) %>
 
     <% console.log(jsonData) %>
-    <div data-barba="container" data-barba-namespace="single">
-      <main id="js-switching-bg" class="l-single-works p-single-works p-single-works--garden">
-        <div class="l-container">
+      <div data-barba="container" data-barba-namespace="single">
+        <main id="js-switching-bg" class="l-single-works p-single-works p-single-works--garden">
           <div id="js-switching-trigger">
-            <!--ファーストビュー-->
-            <div id="js-first-view" class="l-single-works__first-view">
-              <div class="p-single-works__heading c-single-heading">
-                <h1 class="p-single-works__heading-en is-wrap" style="transform: translate(0px, 0px);">
-                  <span class="is-slide-up">
-                    Garden Salad
-                  </span>
-                </h1>
-                <p class="p-single-works__heading-ja is-fade-up">
-                  架空サラダカフェサイト
-                </p>
-                <p class="p-single-works__category is-fade-up">
-                  Cafe Site / Coding
-                </p>
-              </div>
-            </div>
-            <!--/ファーストビュー-->
-              <!--モックアップ-->
-              <figure class="l-single-works__figure p-single-works__figure">
-                <picture class="p-single-works__picture p-single-works__picture--sp" style="transform: translate(0px, 0px);">
-                  <source srcset="/img/webp/sp-garden-test.webp" class="p-single-works__img" type="image/webp" />
-                  <img src="/img/common/sp-garden-test.png" class="p-single-works__img" alt="Garden Salad spモックアップ" width="70" height="141"
-                    loading="lazy" data-scroll data-scroll-speed="1" data-scroll-delay="0.1">
-                </picture>
-              
-                <picture class="p-single-works__picture p-single-works__picture--pc" style="transform: translate(0px, 0px);">
-                  <source srcset="/img/webp/pc-garden-test.webp" class="p-single-works__img" type="image/webp" />
-                  <img src="/img/common/pc-garden-test.png" class="p-single-works__img" alt="Garden Salad pcモックアップ" width="1103"
-                    height="701" loading="lazy" data-scroll data-scroll-speed="0.5">
-                </picture>
-              
-                <picture class="p-single-works__picture p-single-works__picture--tab" style="transform: translate(0px, 0px);">
-                  <source srcset="/img/webp/tab-garden02-test.webp" class="p-single-works__img" type="image/webp" />
-                  <img src="/img/common/tab-garden02-test.png" class="p-single-works__img" alt="Garden Salad tabモックアップ" width="445"
-                    height="622" loading="lazy" data-scroll data-scroll-speed="0.75" data-scroll-delay="0.05">
-                </picture>
-              </figure>
-              <!--モックアップ-->
-          </div>
-        </div>
-
-        <div class="l-container l-container--small">
-          <div class="l-single-works__contents">
-            <!--概要-->
-            <div class="p-single-works__info" style="transform: translate(0px, 0px);">
-              <section class="p-single-works__overview p-works-overview">
-                <h2 class="p-works-overview__heading is-wrap js-trigger">
-                  <span class="is-slide-up">
-                    LINKS
-                  </span>
-                </h2>
-                <div class="p-works-overview__body">
-                  <dl class="p-works-overview__dl">
-                    <div class="p-works-overview__row">
-                      <dt class="p-works-overview__dt">
-                        Site url
-                      </dt>
-                      <dd class="p-works-overview__dd">
-                        <a href="" class="p-works-overview__link" target="_blank" rel="noopener noreferrer"
-                          style="transform: translate(0px, 0px);">
-                          https://garden-salad.com/
-                          <svg class="c-svg p-works-overview__blank" width="14" height="14">
-                            <use xlink:href="/img/svg/sprite.min.svg#icon-blank" />
-                          </svg>
-                        </a>
-                      </dd>
-                    </div>
-                    <div class="p-works-overview__row">
-                      <dt class="p-works-overview__dt">
-                        Source
-                        <svg class="c-svg p-works-overview__svg" width="20" height="20" role="img"
-                          aria-label="GitHubのアイコン">
-                          <use xlink:href="/img/svg/sprite.min.svg#icon-github" />
-                        </svg>
-                      </dt>
-                      <dd class="p-works-overview__dd">
-                        <a href="https://github.com/kokoro-hart/global_standard" class="p-works-overview__link"
-                          target="_blank" rel="noopener noreferrer" style="transform: translate(0px, 0px);">
-                          https://github.com/kokoro-hart
-                          <svg class="c-svg p-works-overview__blank" width="14" height="14">
-                            <use xlink:href="/img/svg/sprite.min.svg#icon-blank" />
-                          </svg>
-                        </a>
-                      </dd>
-                    </div>
-                    <div class="p-works-overview__row">
-                      <dt class="p-works-overview__dt">
-                        Basic認証
-                      </dt>
-                      <dd class="p-works-overview__dd">
-                        ID : garden <br>
-                        Pass : garden
-                      </dd>
-                    </div>
-                  </dl>
-                </div>
-              </section>
-              <section class="p-single-works__overview p-works-overview">
-                <h2 class="p-works-overview__heading is-wrap js-trigger">
-                  <span class="is-slide-up">
-                    OVERVIEW
-                  </span>
-                </h2>
-                <div class="p-works-overview__body">
-                  <p class="p-works-overview__text">
-                    健康的なのに美味しい、SNSで拡散したくなるようなサラダ「Garden Salad」架空サラダカフェサイトのコーディングを行いました。
+            <div id="js-first-view" class="l-container">
+              <div class="l-single-works__first-view">
+                <div class="p-single-works__heading c-single-heading">
+                  <h2 class="p-single-works__heading-en is-wrap" style="transform: translate(0px, 0px);">
+                    <span class="is-slide-up">
+                      Garden Salad
+                    </span>
+                  </h2>
+                  <p class="p-single-works__heading-ja is-fade-up u-delay01">
+                    架空カフェサイト
+                  </p>
+                  <p class="p-single-works__category is-fade-up u-delay02">
+                    Cafe Site / Coding
                   </p>
                 </div>
-              </section>
+              </div>
+              <div class="p-single-works__mockup" style="transform: translate(0px, 0px);">
+                <picture class="p-single-works__mockup-picture p-single-works__mockup-picture--sp" data-scroll data-scroll-speed="1" data-scroll-delay="0.1">
+                  <source srcset="/img/webp/sp-garden.webp" class="p-single-works__mockup-img" type="image/webp" />
+                  <img src="/img/common/sp-garden.png" class="p-single-works__mockup-img" alt="Garden Salad架空カフェサイト、スマホ画面のビュー" width="70" height="141" decoding="async">
+                </picture>
+
+                <picture class="p-single-works__mockup-picture p-single-works__mockup-picture--pc" data-scroll data-scroll-speed="0.5">
+                  <source srcset="/img/webp/pc-garden.webp" class="p-single-works__mockup-img" type="image/webp" />
+                  <img src="/img/common/pc-garden.png" class="p-single-works__mockup-img" alt="Garden Salad架空カフェサイト、PC画面のビュー" width="1103" height="701" decoding="async">
+                </picture>
+
+                <picture class="p-single-works__mockup-picture p-single-works__mockup-picture--tab" data-scroll data-scroll-speed="0.75" data-scroll-delay="0.05">
+                  <source srcset="/img/webp/tab-garden.webp" class="p-single-works__mockup-img" type="image/webp" />
+                  <img src="/img/common/tab-garden.png" class="p-single-works__mockup-img" alt="Garden Salad架空カフェサイト、タブレット画面のビュー" width="445" height="622" decoding="async">
+                </picture>
+              </div>
             </div>
-            <!--/概要-->
 
-            <!--斜めのモックアップ-->
-            <picture class="p-single-works__rotate-picture" style="transform: translate(0px, 0px);">
-              <source srcset="/img/webp/garden-rotate.webp" class="p-single-works__rotate-img" type="image/webp" />
-              <img src="/img/common/garden-rotate.jpeg" class="p-single-works__rotate-img" width="1920" height="1331.33"
-                loading="lazy" data-scroll data-scroll-speed="-1" alt="斜めのモックアップ画像">
-            </picture>
-            <picture class="p-single-works__rotate-picture" style="transform: translate(0px, 0px);">
-              <source srcset="/img/webp/garden-rotate.webp" class="p-single-works__rotate-img" type="image/webp" />
-              <img src="/img/common/garden-rotate.jpeg" class="p-single-works__rotate-img" width="1920" height="1331.33"
-                loading="lazy" data-scroll data-scroll-speed="-1" alt="斜めのモックアップ画像">
-            </picture>
-            <!--/斜めのモックアップ-->
+            <div class="l-container l-container--small">
+              <div class="p-single-works__info" style="transform: translate(0px, 0px);">
+                <section class="p-single-works__overview p-works-overview">
+                  <h2 class="p-works-overview__heading">
+                    LINKS
+                  </h2>
+                  <div class="p-works-overview__body">
+                    <dl class="p-works-overview__dl">
+                      <div class="p-works-overview__row">
+                        <dt class="p-works-overview__dt">
+                          Site url
+                        </dt>
+                        <dd class="p-works-overview__dd">
+                          <a href="" class="p-works-overview__link" target="_blank" rel="noopener noreferrer"
+                            style="transform: translate(0px, 0px);">
+                            https://global-standard.com/
+                            <svg class="c-svg p-works-overview__blank" width="14" height="14">
+                              <use xlink:href="/img/svg/sprite.min.svg#icon-blank" />
+                            </svg>
+                          </a>
+                        </dd>
+                      </div>
+                      <div class="p-works-overview__row">
+                        <dt class="p-works-overview__dt">
+                          Source
+                          <svg class="c-svg p-works-overview__svg" width="20" height="20" role="img"
+                            aria-label="GitHubのアイコン">
+                            <use xlink:href="/img/svg/sprite.min.svg#icon-github" />
+                          </svg>
+                        </dt>
+                        <dd class="p-works-overview__dd">
+                          <a href="https://github.com/kokoro-hart/global_standard" class="p-works-overview__link"
+                            target="_blank" rel="noopener noreferrer" style="transform: translate(0px, 0px);">
+                            https://github.com/kokoro-hart
+                            <svg class="c-svg p-works-overview__blank" width="14" height="14">
+                              <use xlink:href="/img/svg/sprite.min.svg#icon-blank" />
+                            </svg>
+                          </a>
+                        </dd>
+                      </div>
+                      <div class="p-works-overview__row">
+                        <dt class="p-works-overview__dt">
+                          Basic認証
+                        </dt>
+                        <dd class="p-works-overview__dd">
+                          ID : global <br>
+                          Pass : global
+                        </dd>
+                      </div>
+                    </dl>
+                  </div>
+                </section>
+                <section class="p-single-works__overview p-works-overview">
+                  <h2 class="p-works-overview__heading">
+                    OVERVIEW
+                  </h2>
+                  <div class="p-works-overview__body">
+                    <p class="p-works-overview__text">
+                      世界で活躍できるグローバルな人材を育てる、架空事業会社コーポレートサイトのコーディング、WordPress化を行いました。
+                    </p>
+                  </div>
+                </section>
+              </div>
 
-            <!--詳細-->
-            <section class="p-single-works__detail p-works-detail" data-scroll data-scroll-sticky
-              data-scroll-target="#js-capture">
+              <picture class="p-single-works__rotate-picture" style="transform: translate(0px, 0px);">
+                <source srcset="/img/webp/garden-rotate.webp" class="p-single-works__rotate-img" type="image/webp" />
+                <img src="/img/common/garden-rotate.png" class="p-single-works__rotate-img" width="1920" height="1336" loading="lazy" data-scroll data-scroll-speed="-1" alt="">
+              </picture>
+              <div class="p-single-works__info" style="transform: translate(0px, 0px);">
+                <section class="p-single-works__overview p-works-overview">
+                  <h2 class="p-works-overview__heading">
+                    INTERACTION
+                  </h2>
+                  <div class="p-works-overview__body">
+                    <p class="p-works-overview__text">
+                      世界で活躍できるグローバルな人材を育てる、架空事業会社コーポレートサイトのコーディング、WordPress化を行いました。
+                    </p>
+                  </div>
+                </section>
+              </div>
+              <div class="p-single-works__video-wrapper">
+                <video class="js-lazy" autoplay muted loop playsinline preload="metadata" width="1632" height="1020" data-scroll data-scroll-speed="-1">
+                  <source data-src="/img/video/garden-video.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="p-single-works__info" style="transform: translate(0px, 0px);">
+                <section class="p-single-works__overview p-works-overview">
+                  <h2 class="p-works-overview__heading">
+                    POINT
+                  </h2>
+                  <div class="p-works-overview__body">
+                    <p class="p-works-overview__text">
+                      世界で活躍できるグローバルな人材を育てる、架空事業会社コーポレートサイトのコーディング、WordPress化を行いました。
+                    </p>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+          <div class="l-single-works__detail l-container l-container--small">
+            <section class="p-single-works__detail p-works-detail" data-scroll data-scroll-sticky data-scroll-target="#js-capture">
               <div class="p-works-detail__inner">
                 <h2 class="js-trigger" style="transform: translate(0px, 0px);">
                   <span class="p-works-detail__heading">
@@ -195,45 +201,38 @@
                 </div>
               </div>
             </section>
-            <!--/詳細-->
-
-            <!--キャプチャ-->
             <div class="p-single-works__capture">
               <picture class="p-single-works__capture-picture">
                 <source srcset="/img/webp/garden-top.webp" class="p-single-works__capture-img" type="image/webp" />
-                <img src="/img/common/garden-top.jpeg" class="p-single-works__capture-img" alt="作品のタイトル" width="816" height="3376.25" loading="lazy" decoding="async">
+                <img src="/img/common/garden-top.png" class="p-single-works__capture-img" alt="Garden Salad架空カフェサイトのトップページフルスクリーンキャプチャ" width="816" height="3371" loading="lazy">
               </picture>
-
               <div class="p-single-works__capture-mask" id="js-capture"></div>
             </div>
-            <!--/キャプチャ-->
           </div>
-        </div>
+          <div class="p-works-connect" style="transform: translate(0px, 0px);">
+            <div class="p-works-connect__inner">
+              <a href="/minami-dental/" class="p-works-connect__link">
+                <span class="p-works-connect__link-head u-hidden-lax-down">
+                  Prev
+                </span>
+                <span class="p-works-connect__link-foot">
+                  Mimami Dental
+                </span>
+              </a>
+            </div>
+            <div class="p-works-connect__inner">
+              <a href="/Memories/" class="p-works-connect__link">
+                <span class="p-works-connect__link-head u-hidden-lax-down">
+                  Next
+                </span>
+                <span class="p-works-connect__link-foot">
+                  Memories
+                </span>
+              </a>
+            </div>
+          </div>
 
-        <div class="p-works-connect" style="transform: translate(0px, 0px);">
-          <div class="p-works-connect__inner">
-            <a href="/open-cafe/" class="p-works-connect__link">
-              <span class="p-works-connect__link-head u-hidden-lax-down">
-                Prev
-              </span>
-              <span class="p-works-connect__link-foot">
-                Open cafe
-              </span>
-            </a>
-          </div>
-          <div class="p-works-connect__inner">
-            <a href="/garden-salad/" class="p-works-connect__link">
-              <span class="p-works-connect__link-head u-hidden-lax-down">
-                Next
-              </span>
-              <span class="p-works-connect__link-foot">
-                Garden Salad
-              </span>
-            </a>
-          </div>
-        </div>
-
-      </main>
-    </div>
+        </main>
+      </div>
 
       <%- include('../common/_footer', {pageId:pageId }) %>
