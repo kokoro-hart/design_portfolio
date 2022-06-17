@@ -68,6 +68,17 @@
 </div><!-- /#page-wrapper -->
 
 <script src="/js/bundle.js"></script>
+
+<% if (pageId==='contact' || pageId==='contact-thanks' ){ %>
+  <script type="text/javascript">
+    let submitted = false;
+  </script>
+  <!--サンクスページへの遷移-->
+  <iframe name="hidden_iframe" id="hidden_iframe" style="display: none"
+    onload="if (submitted) { window.location = '/contact-thanks/'; }">
+  </iframe>
+  <!--/サンクスページへの遷移-->
+<% } %>
 </body>
 
 </html>

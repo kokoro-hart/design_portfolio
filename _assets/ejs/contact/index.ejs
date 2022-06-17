@@ -21,7 +21,8 @@
             </h2>
           </div>
           <div class="l-lower-contact__contents is-slide-up">
-            <div class="p-form">
+            <h3 class="formTitle u-visually-hidden">お問い合わせフォーム</h3>
+            <form id="js-form" class="p-form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdWVihzITkGsBjGj6KJVVhGOgP-tTKr2I5zKUkF3J8DoT1cjA/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;" aria-labelledby="formTitle">
               <dl class="p-form__dl">
                 <!--お名前-->
                 <div class="p-form__row">
@@ -29,8 +30,7 @@
                     <label class="p-form__label p-form__label--required" for="your-name">お名前</label>
                   </dt>
                   <dd class="p-form__dd">
-                    <input class="p-form__input" id="your-name" type="text" placeholder="例） cocosyu太郎" autocomplete="name"
-                      required>
+                    <input class="p-form__input" id="your-name" type="text" placeholder="例） cocosyu太郎" name="entry.228557334" autocomplete="name" required aria-required="true">
                   </dd>
                 </div>
                 <!--/お名前-->
@@ -41,8 +41,7 @@
                     <label class="p-form__label" for="your-company">御社名</label>
                   </dt>
                   <dd class="p-form__dd">
-                    <input class="p-form__input" id="your-company" type="text" placeholder="例） 株式会社cocosyu"
-                      autocomplete="organization">
+                    <input class="p-form__input" id="your-company" type="text" name="entry.1322745816" placeholder="例） 株式会社cocosyu" autocomplete="organization">
                   </dd>
                 </div>
                 <!--/御社名-->
@@ -53,8 +52,7 @@
                     <label class="p-form__label p-form__label--required" for="your-email">メールアドレス</label>
                   </dt>
                   <dd class="p-form__dd">
-                    <input class="p-form__input" id="your-email" type="email" placeholder="例） example@mail.com"
-                      autocomplete="email" required>
+                    <input class="p-form__input" id="your-email" type="email" placeholder="例） example@mail.com" js-name="YPqjbf" name="entry.1785101720" autocomplete="email" required aria-required="true">
                   </dd>
                 </div>
                 <!--/メールアドレス-->
@@ -65,23 +63,20 @@
                     <label class="p-form__label p-form__label--required" for="your-textarea">お問い合わせ内容</label>
                   </dt>
                   <dd class="p-form__dd">
-                    <textarea class="p-form__input p-form__textarea" id="your-textarea" placeholder="お問い合わせ内容を入力してください。"
-                      required></textarea>
+                    <textarea class="p-form__input p-form__textarea maxlength" id="your-textarea" placeholder="お問い合わせ内容を入力してください。" name="entry.2130733584" required aria-required="true"></textarea>
                   </dd>
                 </div>
                 <!--/お問い合わせ内容-->
           
                 <!--送信ボタン-->
                 <div class="p-form__submit-wrapper">
-                  <input class="c-button-submit" type="submit" value="送信">
+                  <input id="submit" class="c-button-submit" type="submit" value="送信">
                 </div>
                 <!--送信ボタン-->
               </dl>
-            </div>
+            </form>
           </div>
           </div>
-
         </div>
       </main>
-
   <%- include('../common/_footer', {pageId:pageId }) %>

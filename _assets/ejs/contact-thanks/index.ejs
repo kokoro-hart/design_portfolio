@@ -3,7 +3,7 @@
   <%- include('../common/_header', {pageId:pageId }) %>
 
     <% console.log(jsonData) %>
-      <main class="l-lower-contact">
+      <main class="l-lower-contact" data-barba="container" data-barba-namespace="contact">
         <div class="l-container">
           <div id="js-first-view" class="p-lower-first-view">
             <h2 class="c-page-heading">
@@ -14,7 +14,7 @@
               </span>
               <span class="c-page-heading__ja is-wrap">
                 <span class="is-slide-up">
-                  お問い合わせ
+                  お問い合わせ完了
                 </span>
               </span>
             </h2>
@@ -27,15 +27,18 @@
                 </h2>
                 <p class="p-contact-thanks__text">
                   お問い合わせありがとうございます。<br>
-                  ご入力いただいたメールアドレスに自動送信メールをお送り致しました。
+                  ご入力いただいたメールアドレスに自動送信メールをお送り致しました。<br>
+                  万が一、自動返信メールが届かない場合はお手数ですが迷惑メールフォルダを確認いただくか、再度ご連絡をお願い致します。<br>
+                  また、お問い合わせいただいた内容は確認後、48時間以内にご連絡させていただきます。<br>
+                  今しばらくお時間をいただければ幸いです。
                 </p>
               </div>
               <div class="p-contact-thanks__link-wrapper">
                 <a href="/" class="c-button-primary">
-                  TOP
+                  TOPページへ戻る
                 </a>
               </div>
-            </section>
+            </section>            
           </div>
         </div>
       </main>
