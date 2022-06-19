@@ -3,12 +3,13 @@
 // Javascript スライドアップ
 //--------------------------------------------------------------------------
 
-//スライドアップ
+//ラッパースタイル（親要素）
 .is-wrap {
   display: block;
   overflow: hidden;
 }
 
+//子要素
 .is-slide-up {
   display: inline-block;
   transform: translateY(120%);

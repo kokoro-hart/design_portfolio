@@ -3,24 +3,24 @@
   <%- include('./common/_header', {pageId:pageId }) %>
 
     <%# console.log(jsonData) %>
-      <main class="l-home p-home" data-barba="container" data-barba-namespace="home">
+      <main class="l-home" data-barba="container" data-barba-namespace="home">
         <div class="l-container">
           <!--ファーストビュー-->
           <section id="js-first-view" class="p-first-view l-home__first-view">
             <div class="p-first-view__inner">
               <h2 class="p-first-view__heading" style="transform: translate(0px, 0px);">
                 <span class="is-wrap">
-                  <span class="is-slide-up u-delay02">
+                  <span class="is-slide-up u-delay01">
                     K.TOBITA
                   </span>
                 </span>
                 <span class="is-wrap">
-                  <span class="is-slide-up u-delay01">
+                  <span class="is-slide-up u-delay02">
                     PORTFOLIO SITE
                   </span>
                 </span>
               </h2>
-              <p class="p-first-view__text is-fade-up u-delay04">
+              <p class="p-first-view__text is-fade-up u-delay06">
                 Web creator based in Japan - Ibaraki & Tokyo
               </p>
             </div>
@@ -41,16 +41,19 @@
                   飛田 心
                 </span>
               </h3>
-              <div class="p-home-about__body">
-                <p class="p-home-about__text">
-                  2000年生まれ、茨城県在住のAB型。<br>
-                  高校卒業後、化学メーカーに勤務しながら独学でマークアップ、フロントエンド、Webデザインを学んでいます。
-                  出来ない事を出来るようになるまで行動し達成できた時の喜びを感じるのが大好きです。
-                </p>
-              </div>
+              <p class="p-home-about__text">
+                2000年生まれ、茨城県在住のAB型。<br>
+                高校卒業後、化学メーカーに勤務しながら独学でマークアップ、フロントエンド、Webデザインを学んでいます。
+                出来ない事を出来るようになるまで行動し達成できた時の喜びを感じるのが大好きです。
+              </p>
               <div class="p-home-about__link-wrapper">
                 <a href="/about/" class="c-button-primary">
-                  VIEW MORE
+                  <span class="c-button-primary__head">
+                    View more
+                  </span>
+                  <span class="c-button-primary__head">
+                    About me
+                  </span>
                 </a>
               </div>
             </div>
@@ -83,7 +86,12 @@
                     </div>
                     <div class="p-works-info__link-wrapper">
                       <a href="/memories/" class="c-button-primary c-button-primary--large is-slide-mask">
-                        VIEW MORE
+                        <span class="c-button-primary__head">
+                          View more
+                        </span>
+                        <span class="c-button-primary__head">
+                          Memories
+                        </span>
                       </a>
                     </div>
                   </li>
@@ -106,7 +114,12 @@
                     </div>
                     <div class="p-works-info__link-wrapper">
                       <a href="/brain-app/" class="c-button-primary c-button-primary--large is-slide-mask">
-                        VIEW MORE
+                        <span class="c-button-primary__head">
+                          View more
+                        </span>
+                        <span class="c-button-primary__head">
+                          Brain App
+                        </span>
                       </a>
                     </div>
                   </li>
@@ -129,7 +142,12 @@
                     </div>
                     <div class="p-works-info__link-wrapper">
                       <a href="/kt-media/" class="c-button-primary c-button-primary--large is-slide-mask">
-                        VIEW MORE
+                        <span class="c-button-primary__head">
+                          View more
+                        </span>
+                        <span class="c-button-primary__head">
+                          KT MEDIA
+                        </span>
                       </a>
                     </div>
                   </li>
@@ -152,7 +170,12 @@
                     </div>
                     <div class="p-works-info__link-wrapper">
                       <a href="/global-standard/" class="c-button-primary c-button-primary--large is-slide-mask">
-                        VIEW MORE
+                        <span class="c-button-primary__head">
+                          View more
+                        </span>
+                        <span class="c-button-primary__head">
+                          Global Standard
+                        </span>
                       </a>
                     </div>
                   </li>
@@ -175,7 +198,12 @@
                     </div>
                     <div class="p-works-info__link-wrapper">
                       <a href="/open-cafe/" class="c-button-primary c-button-primary--large is-slide-mask">
-                        VIEW MORE
+                        <span class="c-button-primary__head">
+                          View more
+                        </span>
+                        <span class="c-button-primary__head">
+                          Open Cafe
+                        </span>
                       </a>
                     </div>
                   </li>
@@ -198,7 +226,12 @@
                     </div>
                     <div class="p-works-info__link-wrapper">
                       <a href="/minami-dental/" class="c-button-primary c-button-primary--large is-slide-mask">
-                        VIEW MORE
+                        <span class="c-button-primary__head">
+                          View more
+                        </span>
+                        <span class="c-button-primary__head">
+                          Minami Dental
+                        </span>
                       </a>
                     </div>
                   </li>
@@ -221,7 +254,12 @@
                     </div>
                     <div class="p-works-info__link-wrapper">
                       <a href="/garden-salad/" class="c-button-primary c-button-primary--large is-slide-mask">
-                        VIEW MORE
+                        <span class="c-button-primary__head">
+                          View more
+                        </span>
+                        <span class="c-button-primary__head">
+                          Garden Salad
+                        </span>
                       </a>
                     </div>
                   </li>
@@ -234,17 +272,17 @@
                 <div id="js-memories" class="p-works__item p-works-item js-follow-targets">
                   <div class="p-works-item__img-wrapper">
                     <a href="/memories/" class="p-works-item__link" style="transform: translate(0px, 0px);">
-                      <picture class="p-works-item__picture p-works-item__picture--sp" data-scroll data-scroll-speed="2.5" data-scroll-speed="1.5">
+                      <picture class="p-works-item__picture p-works-item__picture--sp" data-scroll data-scroll-speed="2">
                         <source srcset="/img/webp/sp-memories.webp" class="p-works-item__img" type="image/webp" />
-                        <img src="/img/common/sp-memories.png" class="p-works-item__img" width="357.11" height="719.28" alt="Memories架空カーイベントサイト、スマホ画面のビュー" loading="lazy">
+                        <img src="/img/common/sp-memories.png" class="p-works-item__img" width="357" height="719" alt="Memories架空カーイベントサイト、スマホ画面のビュー" loading="lazy">
                       </picture>
                       <picture class="p-works-item__picture p-works-item__picture--tab u-hidden-lax-down" data-scroll data-scroll-speed="1.25" data-scroll-delay="0.1">
                         <source srcset="/img/webp/tab-memories.webp" class="p-works-item__img" type="image/webp" />
-                        <img src="/img/common/tab-memories.png" class="p-works-item__img" width="508.89" height="712.05" alt="Memories架空カーイベントサイト、タブレット画面のビュー" loading="lazy">
+                        <img src="/img/common/tab-memories.png" class="p-works-item__img" width="508" height="712" alt="Memories架空カーイベントサイト、タブレット画面のビュー" loading="lazy">
                       </picture>
                       <picture class="p-works-item__picture p-works-item__picture--pc">
                         <source srcset="/img/webp/pc-memories.webp" class="p-works-item__img" type="image/webp" />
-                        <img src="/img/common/pc-memories.png" class="p-works-item__img" width="803.52" height="510.33" alt="Memories架空カーイベントサイト、PC画面ファーストビュー" loading="lazy">
+                        <img src="/img/common/pc-memories.png" class="p-works-item__img" width="804" height="510" alt="Memories架空カーイベントサイト、PC画面ファーストビュー" loading="lazy">
                       </picture>
                     </a>
                   </div>
@@ -260,17 +298,17 @@
                 <div id="js-brain" class="p-works__item p-works-item js-follow-targets">
                   <div class="p-works-item__img-wrapper">
                     <a href="/brain-app/" class="p-works-item__link" style="transform: translate(0px, 0px);">
-                      <picture class="p-works-item__picture p-works-item__picture--sp" data-scroll data-scroll-speed="2.5" data-scroll-speed="1.5">
+                      <picture class="p-works-item__picture p-works-item__picture--sp" data-scroll data-scroll-speed="2">
                         <source srcset="/img/webp/sp-BrainApp.webp" class="p-works-item__img" type="image/webp" />
-                        <img src="/img/common/sp-BrainApp.png" class="p-works-item__img" width="357.11" height="719.28" alt="Brain App架空医療系アプリLP、スマホ画面のビュー" loading="lazy">
+                        <img src="/img/common/sp-BrainApp.png" class="p-works-item__img" width="357" height="719" alt="Brain App架空医療系アプリLP、スマホ画面のビュー" loading="lazy">
                       </picture>
                       <picture class="p-works-item__picture p-works-item__picture--tab u-hidden-lax-down" data-scroll data-scroll-speed="1.25" data-scroll-delay="0.1">
                         <source srcset="/img/webp/tab-BrainApp.webp" class="p-works-item__img" type="image/webp" />
-                        <img src="/img/common/tab-BrainApp.png" class="p-works-item__img" width="508.89" height="712.05" alt="Brain App架空医療系アプリLP、タブレット画面のビュー" loading="lazy">
+                        <img src="/img/common/tab-BrainApp.png" class="p-works-item__img" width="508" height="712" alt="Brain App架空医療系アプリLP、タブレット画面のビュー" loading="lazy">
                       </picture>
                       <picture class="p-works-item__picture p-works-item__picture--pc">
                         <source srcset="/img/webp/pc-BrainApp.webp" class="p-works-item__img" type="image/webp" />
-                        <img src="/img/common/pc-BrainApp.png" class="p-works-item__img" width="803.52" height="510.33" alt="Brain App架空医療系アプリLP、PC画面のビュー" loading="lazy">
+                        <img src="/img/common/pc-BrainApp.png" class="p-works-item__img" width="804" height="510" alt="Brain App架空医療系アプリLP、PC画面のビュー" loading="lazy">
                       </picture>
                     </a>
                   </div>
@@ -286,17 +324,17 @@
                 <div id="js-blog" class="p-works__item p-works-item js-follow-targets">
                   <div class="p-works-item__img-wrapper">
                     <a href="/kt-media/" class="p-works-item__link" style="transform: translate(0px, 0px);">
-                      <picture class="p-works-item__picture p-works-item__picture--sp" data-scroll data-scroll-speed="2.5" data-scroll-speed="1.5">
+                      <picture class="p-works-item__picture p-works-item__picture--sp" data-scroll data-scroll-speed="2">
                         <source srcset="/img/webp/sp-media-light.webp" class="p-works-item__img" type="image/webp" />
-                        <img src="/img/common/sp-media-light.png" class="p-works-item__img" width="357.11" height="719.28" alt="KT MEDIA 個人技術ブログ、スマホ画面のビュー" loading="lazy">
+                        <img src="/img/common/sp-media-light.png" class="p-works-item__img" width="357" height="719" alt="KT MEDIA 個人技術ブログ、スマホ画面のビュー" loading="lazy">
                       </picture>
                       <picture class="p-works-item__picture p-works-item__picture--tab u-hidden-lax-down" data-scroll data-scroll-speed="1.25" data-scroll-delay="0.1">
                         <source srcset="/img/webp/tab-media-light.webp" class="p-works-item__img" type="image/webp" />
-                        <img src="/img/common/tab-media-light.png" class="p-works-item__img" width="508.89" height="712.05" alt="KT MEDIA 個人技術ブログ、タブレット画面のビュー" loading="lazy">
+                        <img src="/img/common/tab-media-light.png" class="p-works-item__img" width="508" height="712" alt="KT MEDIA 個人技術ブログ、タブレット画面のビュー" loading="lazy">
                       </picture>
                       <picture class="p-works-item__picture p-works-item__picture--pc">
                         <source srcset="/img/webp/pc-media-light.webp" class="p-works-item__img" type="image/webp" />
-                        <img src="/img/common/pc-media-light.png" class="p-works-item__img" width="803.52" height="510.33" alt="KT MEDIA 個人技術ブログ、PC画面のビュー" loading="lazy">
+                        <img src="/img/common/pc-media-light.png" class="p-works-item__img" width="804" height="510" alt="KT MEDIA 個人技術ブログ、PC画面のビュー" loading="lazy">
                       </picture>
                     </a>
                   </div>
@@ -312,17 +350,17 @@
                 <div id="js-global" class="p-works__item p-works-item js-follow-targets">
                   <div class="p-works-item__img-wrapper">
                     <a href="/global-standard/" class="p-works-item__link" style="transform: translate(0px, 0px);">
-                      <picture class="p-works-item__picture p-works-item__picture--sp" data-scroll data-scroll-speed="2.5" data-scroll-speed="1.5">
+                      <picture class="p-works-item__picture p-works-item__picture--sp" data-scroll data-scroll-speed="2">
                         <source srcset="/img/webp/sp-global.webp" class="p-works-item__img" type="image/webp" />
-                        <img src="/img/common/sp-global.png" class="p-works-item__img" width="357.11" height="719.28" alt="Global Standard架空コーポレートサイト、スマホ画面のビュー" loading="lazy">
+                        <img src="/img/common/sp-global.png" class="p-works-item__img" width="357" height="719" alt="Global Standard架空コーポレートサイト、スマホ画面のビュー" loading="lazy">
                       </picture>
                       <picture class="p-works-item__picture p-works-item__picture--tab u-hidden-lax-down" data-scroll data-scroll-speed="1.25" data-scroll-delay="0.1">
                         <source srcset="/img/webp/tab-global.webp" class="p-works-item__img" type="image/webp" />
-                        <img src="/img/common/tab-global.png" class="p-works-item__img" width="508.89" height="712.05" alt="Global Standard架空コーポレートサイト、タブレット画面のビュー" loading="lazy">
+                        <img src="/img/common/tab-global.png" class="p-works-item__img" width="508" height="712" alt="Global Standard架空コーポレートサイト、タブレット画面のビュー" loading="lazy">
                       </picture>
                       <picture class="p-works-item__picture p-works-item__picture--pc">
                         <source srcset="/img/webp/pc-global.webp" class="p-works-item__img" type="image/webp" />
-                        <img src="/img/common/pc-global.png" class="p-works-item__img" width="803.52" height="510.33" alt="Global Standard架空コーポレートサイト、PC画面のビュー" loading="lazy">
+                        <img src="/img/common/pc-global.png" class="p-works-item__img" width="804" height="510" alt="Global Standard架空コーポレートサイト、PC画面のビュー" loading="lazy">
                       </picture>
                     </a>
                   </div>
@@ -338,17 +376,17 @@
                 <div id="js-open" class="p-works__item p-works-item js-follow-targets">
                   <div class="p-works-item__img-wrapper">
                     <a href="/open-cafe/" class="p-works-item__link" style="transform: translate(0px, 0px);">
-                      <picture class="p-works-item__picture p-works-item__picture--sp" data-scroll data-scroll-speed="2.5" data-scroll-speed="1.5">
+                      <picture class="p-works-item__picture p-works-item__picture--sp" data-scroll data-scroll-speed="2">
                         <source srcset="/img/webp/sp-open.webp" class="p-works-item__img" type="image/webp" />
-                        <img src="/img/common/sp-open.png" class="p-works-item__img" width="357.11" height="719.28" alt="OpenCafe架空カフェサイト、スマホ時のファーストビュー" loading="lazy">
+                        <img src="/img/common/sp-open.png" class="p-works-item__img" width="357" height="719" alt="OpenCafe架空カフェサイト、スマホ時のファーストビュー" loading="lazy">
                       </picture>
                       <picture class="p-works-item__picture p-works-item__picture--tab u-hidden-lax-down" data-scroll data-scroll-speed="1.25" data-scroll-delay="0.1">
                         <source srcset="/img/webp/tab-open.webp" class="p-works-item__img" type="image/webp" />
-                        <img src="/img/common/tab-open.png" class="p-works-item__img" width="508.89" height="712.05" alt="OpenCafe架空カフェサイト、タブレット時のビュー" loading="lazy">
+                        <img src="/img/common/tab-open.png" class="p-works-item__img" width="508" height="712" alt="OpenCafe架空カフェサイト、タブレット時のビュー" loading="lazy">
                       </picture>
                       <picture class="p-works-item__picture p-works-item__picture--pc">
                         <source srcset="/img/webp/pc-open.webp" class="p-works-item__img" type="image/webp" />
-                        <img src="/img/common/pc-open.png" class="p-works-item__img" width="803.52" height="510.33" alt="OpenCafe架空カフェサイト、PC時のファーストビュー" loading="lazy">
+                        <img src="/img/common/pc-open.png" class="p-works-item__img" width="804" height="510" alt="OpenCafe架空カフェサイト、PC時のファーストビュー" loading="lazy">
                       </picture>
                     </a>
                   </div>
@@ -364,17 +402,17 @@
                 <div id="js-minami" class="p-works__item p-works-item js-follow-targets">
                   <div class="p-works-item__img-wrapper">
                     <a href="/minami-dental/" class="p-works-item__link" style="transform: translate(0px, 0px);">
-                      <picture class="p-works-item__picture  p-works-item__picture--sp" data-scroll data-scroll-speed="2.5" data-scroll-speed="1.5">
+                      <picture class="p-works-item__picture  p-works-item__picture--sp" data-scroll data-scroll-speed="2">
                         <source srcset="/img/webp/sp-minami.webp" class="p-works-item__img" type="image/webp" />
-                        <img src="/img/common/sp-minami.png" class="p-works-item__img" width="357.11" height="719.28" alt="みなみ歯科クリニック架空サイト、スマホ時のファーストビュー" loading="lazy">
+                        <img src="/img/common/sp-minami.png" class="p-works-item__img" width="357" height="719" alt="みなみ歯科クリニック架空サイト、スマホ時のファーストビュー" loading="lazy">
                       </picture>
                       <picture class="p-works-item__picture  p-works-item__picture--tab u-hidden-lax-down" data-scroll data-scroll-speed="1.25" data-scroll-delay="0.1">
                         <source srcset="/img/webp/tab-minami.webp" class="p-works-item__img" type="image/webp" />
-                        <img src="/img/common/tab-minami.png" class="p-works-item__img" width="508.89" height="712.05" alt="みなみ歯科クリニック架空サイト、タブレット時のビュー" loading="lazy">
+                        <img src="/img/common/tab-minami.png" class="p-works-item__img" width="508" height="712" alt="みなみ歯科クリニック架空サイト、タブレット時のビュー" loading="lazy">
                       </picture>
                       <picture class="p-works-item__picture  p-works-item__picture--pc">
                         <source srcset="/img/webp/pc-minami.webp" class="p-works-item__img" type="image/webp" />
-                        <img src="/img/common/pc-minami.png" class="p-works-item__img" width="803.52" height="510.33" alt="みなみ歯科クリニック架空サイト、PC時のファーストビュー" loading="lazy">
+                        <img src="/img/common/pc-minami.png" class="p-works-item__img" width="804" height="510" alt="みなみ歯科クリニック架空サイト、PC時のファーストビュー" loading="lazy">
                       </picture>
                     </a>
                   </div>
@@ -390,17 +428,17 @@
                 <div id="js-garden" class="p-works__item p-works-item js-follow-targets">
                   <div class="p-works-item__img-wrapper">
                     <a href="/garden-salad/" class="p-works-item__link" style="transform: translate(0px, 0px);">
-                      <picture class="p-works-item__picture p-works-item__picture--sp" data-scroll data-scroll-speed="2.5" data-scroll-speed="1.5">
+                      <picture class="p-works-item__picture p-works-item__picture--sp" data-scroll data-scroll-speed="2">
                         <source srcset="/img/webp/sp-garden.webp" class="p-works-item__img" type="image/webp" />
-                        <img src="/img/common/sp-garden.png" class="p-works-item__img" width="357.11" height="719.28" alt="Garden Salad架空カフェサイト、スマホ時のファーストビュー" loading="lazy">
+                        <img src="/img/common/sp-garden.png" class="p-works-item__img" width="357" height="719" alt="Garden Salad架空カフェサイト、スマホ時のファーストビュー" loading="lazy">
                       </picture>
                       <picture class="p-works-item__picture p-works-item__picture--tab u-hidden-lax-down" data-scroll data-scroll-speed="1.25" data-scroll-delay="0.1">
                         <source srcset="/img/webp/tab-garden.webp" class="p-works-item__img" type="image/webp" />
-                        <img src="/img/common/tab-garden.png" class="p-works-item__img" width="508.89" height="712.05" alt="Garden Salad架空カフェサイト、タブレット時のビュー" loading="lazy">
+                        <img src="/img/common/tab-garden.png" class="p-works-item__img" width="508" height="712" alt="Garden Salad架空カフェサイト、タブレット時のビュー" loading="lazy">
                       </picture>
                       <picture class="p-works-item__picture p-works-item__picture--pc">
                         <source srcset="/img/webp/pc-garden.webp" class="p-works-item__img" type="image/webp" />
-                        <img src="/img/common/pc-garden.png" class="p-works-item__img" width="803.52" height="510.33" alt="Garden Salad架空カフェサイト、PC時のファーストビュー" loading="lazy">
+                        <img src="/img/common/pc-garden.png" class="p-works-item__img" width="804" height="510" alt="Garden Salad架空カフェサイト、PC時のファーストビュー" loading="lazy">
                       </picture>
                     </a>
                   </div>

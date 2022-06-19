@@ -6,9 +6,7 @@
 .p-header-sns {
   display: flex;
   align-items: center;
-  border-left: 1px solid global.$color-primary;
-  height: 100%;
-  margin-left: 28px;
+  border-left: 1px solid global.$color-base;
 }
 
 .p-header-sns__item {
@@ -22,8 +20,4 @@
   justify-content: center;
   width: 30px;
   height: 100%;
-}
-
-.p-header-sns__svg {
-  display: block;
 }

@@ -12,8 +12,7 @@
   transition: color 0s 0.5s;
 }
 
-.p-works-info.is-show,
-.is-active {
+.is-show {
   .is-slide-mask {
     color: global.$color-primary;
 

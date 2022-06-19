@@ -5,7 +5,7 @@
 
 .p-works-connect {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
 
   @include global.mq(md) {
     flex-direction: row;
@@ -13,12 +13,12 @@
 }
 
 .p-works-connect__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 40vh;
   background-color: global.$color-primary-dark;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
   @include global.mq(md) {
     height: 70vh;
@@ -27,6 +27,18 @@
   &:not(:first-child) {
     background-color: global.$color-primary;
     color: global.$color-base;
+
+    .p-works-connect__link-foot {
+      &::before {
+        content: "Next";
+        left: auto;
+        right: 0;
+
+        @include global.mq(md) {
+          content: none;
+        }
+      }
+    }
   }
 }
 
@@ -35,7 +47,7 @@
   display: inline-block;
   overflow: hidden;
   color: global.$color-base;
-  font-size: max(40px, #{global.vw(100)});
+  font-size: max(42px, #{global.vw(100)});
   @include global.lh(1.2);
   font-family: global.$font-family-en;
   font-weight: 400;
@@ -51,10 +63,7 @@
         transform-origin: left top;
       }
 
-      .p-works-connect__link-head {
-        transform: translateY(-1.2em);
-      }
-
+      .p-works-connect__link-head,
       .p-works-connect__link-foot {
         transform: translateY(-1.2em);
       }
@@ -81,6 +90,30 @@
 }
 
 .p-works-connect__link-foot {
+  position: relative;
   display: block;
   transition: transform 0.6s global.ease(out-quint);
+  padding-top: 12px;
+  &::before {
+    content: "Prev";
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include global.fz(14);
+    @include global.lh(1);
+  }
+
+  @include global.mq(md) {
+    padding-top: 0;
+
+    &::before {
+      content: none;
+      display: block;
+      background-color: #ddd;
+      border-top: 1px solid #333;
+      border-bottom: 1px solid #333;
+      padding: 50px 20px;
+      text-align: center;
+    }
+  }
 }

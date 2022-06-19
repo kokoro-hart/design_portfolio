@@ -10,7 +10,7 @@
 html {
   width: 100%;
   min-height: 100vh;
-  height: 100%; 
+  height: 100%;
 }
 
 html,
@@ -23,11 +23,22 @@ body {
   font-weight: 400;
   font-family: global.$font-family-ja;
   -webkit-font-smoothing: antialiased;
-  font-feature-settings: 'palt';
+  font-feature-settings: "palt";
   text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
+}
+
+body {
+  position: relative;
+  counter-reset: number 0;
+  background-color: global.$color-base;
+  color: global.$color-primary;
+
+  @include global.mq(lax) {
+    overflow: hidden;
+  }
 }
 
 body.is-drawer-active {
@@ -39,6 +50,15 @@ body:not(br),
 button,
 input {
   line-height: 1.4;
+}
+
+main {
+  position: relative;
+  width: 100%;
+  z-index: map-get(global.$layer, main);
+  overflow: hidden;
+  background-color: global.$color-base;
+  color: global.$color-primary;
 }
 
 a {
@@ -123,44 +143,21 @@ address {
   font-style: normal;
 }
 
-//フォーカス時のoutline指定
-[type="checkbox"]:focus + span,
-textarea:focus,
-input:focus,
-a:focus,
-button:focus {
-  outline: 1.5px solid global.$color-primary;
-}
-
-:focus:not(:focus-visible) {
-  outline: 0; //キーボード操作"以外"でフォーカスされた際はoutlineを消す
-}
-      
-main {
-  position: relative;
-  width: 100%;
-  z-index: map-get(global.$layer, main);
-  overflow: hidden;
-}
-
-//locomotive-scroll(慣性スクロール)用の記述
-body {
-  counter-reset: number 0;
-
-  @include global.mq(lax) {
-    overflow: hidden;
-  }
-}
-.data-scroll-wrapper {
-  @include global.mq(lax) {
-    overflow: hidden;
-    min-height: 100vh;
-  }
-}
-
 br {
   content: "";
   display: block;
   height: 0;
   line-height: 0;
+}
+
+:focus:not(:focus-visible) {
+  outline: 0; //キーボード操作"以外"でフォーカスされた際はoutlineを消す
+}
+
+//locomotive-scroll.js用の記述
+.data-scroll-wrapper {
+  @include global.mq(lax) {
+    overflow: hidden;
+    min-height: 100vh;
+  }
 }

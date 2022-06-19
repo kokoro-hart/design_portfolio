@@ -15,10 +15,11 @@
   transform: translate(-50%, -50%);
   width: 20px;
   height: 2px;
-  background-color: global.$color-primary;
+  background-color: global.$color-base;
   transition: width 0.3s ease-in-out;
 
-  &::before {
+  &::before,
+  &::after {
     content: "";
     position: absolute;
     top: -10px;
@@ -26,20 +27,16 @@
     transform: translateX(-50%);
     width: 20px;
     height: 2px;
-    background-color: global.$color-primary;
+    background-color: global.$color-base;
     transition: transform 0.6s global.ease(out-quint);
   }
 
+  &::before {
+    top: -10px;
+  }
+
   &::after {
-    content: "";
-    position: absolute;
     top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 20px;
-    height: 2px;
-    background-color: global.$color-primary;
-    transition: transform 0.6s global.ease(out-quint);
   }
 }
 
@@ -47,18 +44,25 @@
 .is-drawer-active {
   .c-button-drawer__line {
     width: 0;
-    background-color: global.$color-primary !important;
 
     &::before {
       top: 50%;
       transform: translate(-50%, -50%) rotate(45deg);
-      background-color: global.$color-primary !important;
     }
 
     &::after {
       top: 50%;
       transform: translate(-50%, -50%) rotate(-45deg);
-      background-color: global.$color-primary !important;
+    }
+  }
+
+  //ドロワーアクティブ時かつ乗算が外れている時
+  .is-blend-normal {
+    .c-button-drawer__line {
+      &::before,
+      &::after {
+        background-color: global.$color-primary;
+      }
     }
   }
 }

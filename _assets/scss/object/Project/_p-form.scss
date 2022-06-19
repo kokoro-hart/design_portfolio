@@ -2,15 +2,6 @@
 
 // Project フォーム
 //--------------------------------------------------------------------------
-
-.p-form__dd {
-  margin-top: 13px;
-
-  @include global.mq(md) {
-    margin-top: 16px;
-  }
-}
-
 .p-form__row {
   &:not(:first-child) {
     margin-top: 42px;
@@ -42,7 +33,7 @@
     top: 50%;
     right: 0;
     transform: translateY(-50%);
-        display: flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     width: 48px;
@@ -63,6 +54,7 @@
 .p-form__input {
   width: 100%;
   padding: 13px 16px;
+  margin-top: 13px;
   box-shadow: none;
   appearance: none;
   border: 1px solid global.$color-primary;
@@ -74,28 +66,27 @@
   font-family: inherit;
 
   @include global.mq(md) {
+    margin-top: 16px;
     padding: 16px;
   }
 
   &::placeholder {
-    color: global.$color-secondary;
+    color: global.$color-primary-thin;
     @include global.fz(14);
   }
 }
 
 .p-form__textarea {
-  min-height: 120px;
+  display: inline-block;
+  min-height: 140px;
 
   @include global.mq(md) {
-    min-height: 140px;
+    min-height: 200px;
   }
 }
 
-.p-form__submit-wrapper {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  width: 100%;
+.p-form__submit {
+  display: inline-block;
   margin-top: 48px;
 
   @include global.mq(md) {

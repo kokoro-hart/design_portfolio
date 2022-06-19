@@ -4,9 +4,26 @@
 //--------------------------------------------------------------------------
 
 .l-header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: map-get(global.$layer, header);
   width: 100%;
+
+  @include global.mq(lax) {
+    position: absolute;
+  }
+}
+
+.l-header__inner {
+  position: relative;
+  z-index: map-get(global.$layer, header-inner);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 20px 0;
+
+  @include global.mq(md) {
+    padding: 40px 40px 0;
+  }
 }

@@ -58,6 +58,7 @@
     width: 60%;
     margin-top: global.vw(-400);
     margin-bottom: 0;
+    margin-right: -1vw;
 
     .p-works-item__img {
       filter: drop-shadow(global.vw(52) global.vw(80) 10px global.$color-drop-shadow);

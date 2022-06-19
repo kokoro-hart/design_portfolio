@@ -5,7 +5,6 @@
 
 .is-fade-up {
   display: block;
-  visibility: hidden;
   opacity: 0;
   transition: 
     opacity 1.7s global.ease(out-expo),
@@ -17,7 +16,6 @@
 //トリガー発火後
 .is-inview {
   .is-fade-up {
-    visibility: visible;
     opacity: 1;
     transform: translateY(0);
   }

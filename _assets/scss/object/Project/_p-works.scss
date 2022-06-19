@@ -65,8 +65,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  pointer-events: none;
   width: 100%;
   height: calc(100% - global.vw(160));
   background-color: transparent;
+  pointer-events: none;
 }

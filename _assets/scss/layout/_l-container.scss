@@ -15,7 +15,6 @@
 }
 
 .l-container--small {
-  
   @include global.mq(md) {
     width: 85%;
   }

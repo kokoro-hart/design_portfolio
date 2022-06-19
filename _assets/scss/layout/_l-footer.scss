@@ -1,4 +1,3 @@
-
 @use "foundation/global";
 
 // Layout フッター
@@ -18,11 +17,11 @@
 .l-footer__inner {
   max-width: 1200px;
   width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  height: inherit;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: inherit;
+  margin-left: auto;
+  margin-right: auto;
 }

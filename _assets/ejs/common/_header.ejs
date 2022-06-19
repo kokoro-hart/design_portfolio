@@ -1,5 +1,5 @@
-<% let title = (pageId === 'home') ? jsonData.siteInfo.name : jsonData.pages[pageId].name + ' | ' + jsonData.siteInfo.name%>
-<% let description = jsonData.pages[pageId].description %>
+<% let title=(pageId==='home' ) ? jsonData.siteInfo.name : jsonData.pages[pageId].name + ' | ' + jsonData.siteInfo.name%>
+<% let description=jsonData.pages[pageId].description %>
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -8,7 +8,9 @@
   <meta name="format-detection" content="telephone=no">
   <meta name="viewport" content="width=device-width">
   <link rel="apple-touch-icon" href="/img/common/apple-touch-icon.png">
-  <title><%= title %></title>
+  <title>
+    <%= title %>
+  </title>
   <meta name="description" content="<%= description %>">
   <meta property="og:title" content="<%= title %>">
   <meta property="og:description" content="<%= description %>">
@@ -21,110 +23,121 @@
 </head>
 
 <body data-barba="wrapper">
-  <div id="page-wrapper">
-    <div id="content-wrapper">
-      <div class="data-scroll-wrapper" data-scroll-container>
-        <header id="js-header" class="l-header p-header" style="transform: translate(0px, 0px);">
-          <div class="p-header__inner l-header__inner">
-            <h1 class="p-header__logo">
-              <a href="/" class="p-header__logo-link">
-                KT
-              </a>
-            </h1>
-            <div class="p-header__contents u-hidden-md-down">
-              <nav class="p-header__nav p-global-nav">
-                <ul class="p-global-nav__list">
-                  <li class="p-global-nav__item">
-                    <a href="/" class="p-global-nav__link">
-                      TOP
-                    </a>
-                  </li>
-                  <li class="p-global-nav__item">
-                    <a href="/about/" class="p-global-nav__link">
-                      ABOUT
-                    </a>
-                  </li>
-                  <li class="p-global-nav__item">
-                    <a href="/contact/" class="p-global-nav__link">
-                      CONTACT
-                    </a>
-                  </li>
-                  <li class="p-global-nav__item">
-                    <a href="https://kt-media.blog/" class="p-global-nav__link p-global-nav__link--blank" target="_blank" rel="noopener noreferrer">
-                      BLOG
-                    </a>
-                  </li>
-                </ul>
-              </nav>
-              <ul class="p-header-sns">
-                <li class="p-header-sns__item">
-                  <a href="https://twitter.com/coco_hack_ll" class="p-header-sns__link" target="_blank"
-                    rel="noopener noreferrer">
-                    <svg class="c-svg p-header-sns__svg" width="20" height="20" role="img" aria-label="Twitterのアイコン">
-                      <use xlink:href="/img/svg/sprite.min.svg#icon-twitter" />
-                    </svg>
-                  </a>
-                </li>
-                <li class="p-header-sns__item">
-                  <a href="https://github.com/kokoro-hart" class="p-header-sns__link" target="_blank" rel="noopener noreferrer">
-                    <svg class="c-svg p-header-sns__svg" width="20" height="20" role="img" aria-label="GitHubのアイコン">
-                      <use xlink:href="/img/svg/sprite.min.svg#icon-github" />
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
-        
-            <button id="js-drawer-button" class="p-header__button c-button-drawer u-hidden-md-up" aria-controls="js-drawer-nav" aria-expanded="false">
-              <span class="c-button-drawer__line">
+  <div id="page-wrapper" class="data-scroll-wrapper" data-scroll-container>
+    <header id="js-header" class="l-header p-header is-color-base" style="transform: translate(0px, 0px);">
+      <div class="l-header__inner">
+        <h1 class="p-header__logo">
+          <a href="/" class="p-header__logo-link">
+            <span class="p-header__logo-text">
+              KOKORO
+            </span>
+            <span class="p-header__logo-change">
+              <span class="p-header__logo-head">
+                &copy;2022
               </span>
-            </button>
-          </div>
-        
-          <div id="js-drawer-nav" class="p-drawer-nav u-hidden-md-up" aria-hidden="true">
-            <div class="p-drawer-nav__inner">
-              <ul class="p-drawer-nav__list">
-                <li class="p-drawer-nav__item">
-                  <a href="/" class="p-drawer-nav__link">
-                    TOP
-                  </a>
-                </li>
-                <li class="p-drawer-nav__item">
-                  <a href="/about/" class="p-drawer-nav__link">
-                    ABOUT
-                  </a>
-                </li>
-                <li class="p-drawer-nav__item">
-                  <a href="/contact/" class="p-drawer-nav__link">
-                    CONTACT
-                  </a>
-                </li>
-                <li class="p-drawer-nav__item">
-                  <a href="https://kt-media.blog/" class="p-drawer-nav__link p-drawer-nav__link--blank" target="_blank" rel="noopener noreferrer">
-                    BLOG
-                    <svg class="c-svg p-drawer-nav__svg" width="23" height="23">
-                      <use xlink:href="/img/svg/sprite.min.svg#arrow" />
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-              <p class="p-drawer-nav__text">FOLLOW ME</p>
-              <ul class="p-drawer-nav__sns p-sns">
-                <li class="p-sns__item">
-                  <a href="https://twitter.com/coco_hack_ll" class="p-sns__link" target="_blank" rel="noopener noreferrer">
-                    <svg class="c-svg p-sns__svg" width="20" height="20" aria-label="Twitterのアイコン">
-                      <use xlink:href="/img/svg/sprite.min.svg#icon-twitter" />
-                    </svg>
-                  </a>
-                </li>
-                <li class="p-sns__item">
-                  <a href="https://github.com/kokoro-hart" class="p-sns__link" target="_blank" rel="noopener noreferrer">
-                    <svg class="c-svg p-sns__svg" width="20" height="20" aria-label="GitHubのアイコン">
-                      <use xlink:href="/img/svg/sprite.min.svg#icon-github" />
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </header>
+              <span class="p-header__logo-foot">
+                Tobita
+              </span>
+            </span>
+          </a>
+        </h1>
+        <div class="p-header__contents u-hidden-md-down">
+          <nav class="p-header__nav p-global-nav">
+            <ul class="p-global-nav__list">
+              <li class="p-global-nav__item">
+                <a href="/" class="p-global-nav__link">
+                  TOP
+                </a>
+              </li>
+              <li class="p-global-nav__item">
+                <a href="/about/" class="p-global-nav__link">
+                  ABOUT
+                </a>
+              </li>
+              <li class="p-global-nav__item">
+                <a href="/contact/" class="p-global-nav__link">
+                  CONTACT
+                </a>
+              </li>
+              <li class="p-global-nav__item">
+                <a href="https://kt-media.blog/" class="p-global-nav__link p-global-nav__link--blank"
+                  target="_blank" rel="noopener noreferrer">
+                  BLOG
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="p-header__sns p-header-sns">
+            <li class="p-header-sns__item">
+              <a href="https://twitter.com/coco_hack_ll" class="p-header-sns__link" target="_blank"
+                rel="noopener noreferrer">
+                <svg class="c-svg p-header-sns__svg" width="20" height="20" role="img" aria-label="Twitterのアイコン">
+                  <use xlink:href="/img/svg/sprite.min.svg#icon-twitter" />
+                </svg>
+              </a>
+            </li>
+            <li class="p-header-sns__item">
+              <a href="https://github.com/kokoro-hart" class="p-header-sns__link" target="_blank"
+                rel="noopener noreferrer">
+                <svg class="c-svg p-header-sns__svg" width="20" height="20" role="img" aria-label="GitHubのアイコン">
+                  <use xlink:href="/img/svg/sprite.min.svg#icon-github" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <button id="js-drawer-button" class="p-header__button c-button-drawer u-hidden-md-up"
+          aria-controls="js-drawer-nav" aria-expanded="false">
+          <span class="c-button-drawer__line">
+          </span>
+        </button>
+      </div>
+    </header>
+    <div id="js-drawer-nav" class="p-drawer-nav u-hidden-md-up" aria-hidden="true">
+      <div class="p-drawer-nav__inner">
+        <ul class="p-drawer-nav__list">
+          <li class="p-drawer-nav__item">
+            <a href="/" class="p-drawer-nav__link">
+              TOP
+            </a>
+          </li>
+          <li class="p-drawer-nav__item">
+            <a href="/about/" class="p-drawer-nav__link">
+              ABOUT
+            </a>
+          </li>
+          <li class="p-drawer-nav__item">
+            <a href="/contact/" class="p-drawer-nav__link">
+              CONTACT
+            </a>
+          </li>
+          <li class="p-drawer-nav__item">
+            <a href="https://kt-media.blog/" class="p-drawer-nav__link p-drawer-nav__link--blank" target="_blank"
+              rel="noopener noreferrer">
+              BLOG
+              <svg class="c-svg p-drawer-nav__svg" width="23" height="23">
+                <use xlink:href="/img/svg/sprite.min.svg#arrow" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <p class="p-drawer-nav__text">FOLLOW ME</p>
+        <ul class="p-drawer-nav__sns p-sns">
+          <li class="p-sns__item">
+            <a href="https://twitter.com/coco_hack_ll" class="p-sns__link" target="_blank" rel="noopener noreferrer">
+              <svg class="c-svg p-sns__svg" width="20" height="20" role="img" aria-label="Twitterのアイコン">
+                <use xlink:href="/img/svg/sprite.min.svg#icon-twitter" />
+              </svg>
+            </a>
+          </li>
+          <li class="p-sns__item">
+            <a href="https://github.com/kokoro-hart" class="p-sns__link" target="_blank" rel="noopener noreferrer">
+              <svg class="c-svg p-sns__svg" width="20" height="20" role="img" aria-label="GitHubのアイコン">
+                <use xlink:href="/img/svg/sprite.min.svg#icon-github" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>

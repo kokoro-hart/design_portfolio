@@ -20,13 +20,13 @@
   position: relative;
   display: inline-block;
   overflow: hidden;
-  text-align: center;
   height: 1.2em;
   color: global.$color-base;
   font-size: max(32px, #{global.vw(115)});
   @include global.lh(1.2);
   font-family: global.$font-family-en;
   font-weight: 400;
+  text-align: center;
 
   &::before {
     content: "";
@@ -48,22 +48,15 @@
       transform-origin: left top;
     }
 
-    .p-contact-connect__link-head {
-      transform: translateY(-1.2em);
-    }
-
+    .p-contact-connect__link-head,
     .p-contact-connect__link-foot {
       transform: translateY(-1.2em);
     }
   }
 }
 
-.p-contact-connect__link-head {
-  display: block;
-  transition: transform 0.6s global.ease(out-quint);
-}
-
+.p-contact-connect__link-head,
 .p-contact-connect__link-foot {
-  transition: transform 0.6s global.ease(out-quint);
   display: block;
+  transition: transform 0.6s global.ease(out-quint);
 }

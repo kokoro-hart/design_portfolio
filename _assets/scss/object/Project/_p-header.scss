@@ -4,82 +4,68 @@
 //--------------------------------------------------------------------------
 
 .p-header {
+  background-color: transparent;
   font-family: global.$font-family-en;
-}
-
-.p-header__inner {
-  position: relative;
-  z-index: map-get(global.$layer, header-inner);
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  padding: 20px 20px 0;
-
-  @include global.mq(md) {
-    padding: 40px 40px 0;
-  }
-}
-
-.p-header.is-color-base {
   color: global.$color-base;
-
-  .p-header__logo-link,
-  .p-global-nav__link,
-  .p-header-sns__link {
-    color: global.$color-base;
-  }
-
-  .p-global-nav__link--blank {
-    &::after {
-      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2213.354%22%20height%3D%2213.354%22%20viewBox%3D%220%200%2013.354%2013.354%22%3E%20%3Cpath%20id%3D%22%E5%90%88%E4%BD%93_1%22%20data-name%3D%22%E5%90%88%E4%BD%93%201%22%20d%3D%22M2335%2C10768.739l11.868-11.869h-11.562v-.87h13.049v13.047h-.87v-11.562l-11.871%2C11.87Z%22%20transform%3D%22translate(-2335.001%20-10756)%22%20fill%3D%22%23fff%22%2F%3E%3C%2Fsvg%3E");
-    }
-  }
-
-  .p-global-nav__link {
-    &::before {
-      background-color: global.$color-base;
-    }
-  }
-
-  .p-header-sns {
-    border-left: 1px solid global.$color-base;
-  }
-
-  .c-button-drawer__line {
-    background-color: global.$color-base;
-
-    &::before {
-      background-color: global.$color-base;
-    }
-
-    &::after {
-      background-color: global.$color-base;
-    }
-  }
+  mix-blend-mode: difference;
 }
 
 .p-header__logo-link {
-  display: block;
-  @include global.fz(28, 32);
+  display: flex;
+  overflow: hidden;
+  @include global.fz(18, 20);
   @include global.lh(1.2);
   font-weight: 400;
-}
+  height: 1.2em;
 
-.is-drawer-active {
-  .p-header__logo-link {
-    color: global.$color-primary;
-  }
-  .p-header.is-color-base {
-    .p-header__logo-link {
-      color: global.$color-primary;
+  &:hover,
+  &:focus {
+    .p-header__logo-head,
+    .p-header__logo-foot {
+      transform: translateY(-1.2em);
     }
   }
+}
+
+.p-header__logo-text {
+  font-weight: 500;
+  @include global.lh(1.1);
+}
+
+.p-header__logo-change {
+  display: inline-block;
+  margin-left: 0.25em;
+}
+
+.p-header__logo-head,
+.p-header__logo-foot {
+  display: block;
+  transition: transform 0.6s global.ease(out-quint);
 }
 
 .p-header__contents {
   display: flex;
 }
 
+.p-header__sns {
+  height: 100%;
+  margin-left: 28px;
+}
+
 .p-header__button {
   transform: translateX(5px);
+}
+
+//乗算を外す
+.p-header.is-blend-normal {
+  mix-blend-mode: normal;
+}
+
+//ドロワーアクティブ時
+.is-drawer-active {
+  .p-header.is-blend-normal {
+    .p-header__logo-link {
+      color: global.$color-primary;
+    }
+  }
 }

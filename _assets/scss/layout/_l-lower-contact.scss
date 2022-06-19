@@ -4,8 +4,6 @@
 //--------------------------------------------------------------------------
 
 .l-lower-contact {
-  background-color: global.$color-base;
-  color: global.$color-primary;
   padding-bottom: 80px;
 
   @include global.mq(md) {

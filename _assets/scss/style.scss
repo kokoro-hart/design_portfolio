@@ -7,13 +7,11 @@
 // base
 @use "foundation/base";
 
-/* Javascript（トリガー発火後のスタイル）
+/* Animation（トリガー発火時のアニメーション）
    ----------------------------------------------------------------- */
-// base
-@use "javascript/slide-up";
-@use "javascript/fade-up";
-@use "javascript/slide-mask";
-@use "javascript/mask";
+@use "animation/is-slide-up";
+@use "animation/is-fade-up";
+@use "animation/is-slide-mask";
 
 /* Layout (prefix: l- )
    ----------------------------------------------------------------- */
@@ -41,7 +39,6 @@
 @use "object/Project/p-drawer-nav";
 @use "object/Project/p-sns";
 @use "object/Project/p-first-view";
-@use "object/Project/p-home";
 @use "object/Project/p-home-about";
 @use "object/Project/p-works";
 @use "object/Project/p-works-info";
