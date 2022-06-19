@@ -13,6 +13,8 @@ import firstViewAnimation from './common/firstViewTrigger';
 import lazyVideo from './common/lazyVideo';
 import replaceHead from './common/replaceHead';
 import agentEvent from './common/agentEvent';
+import { initLoading, endLoading } from './common/loading';
+import { addBlendHeader, removeBlendHeader } from './common/header';
 
 // intersectionObserver
 import addClassIntersection from './intersectionObserver/addClassIntersection';
@@ -32,6 +34,8 @@ const scroll = new LocomotiveScroll({
   getDirection: true
 });
 
+window.onload = endLoading();
+
 // DOMContentLoaded
 window.addEventListener('DOMContentLoaded', () => {
   resizeEvent();
@@ -41,8 +45,6 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 firstViewAnimation();
 
-
-const header = document.getElementById('js-header');
 // barba.js options
 barba.init({
   views: [
@@ -51,25 +53,21 @@ barba.init({
       afterEnter(data) {
         toggleChangeBg(data.next.container.id);
         lazyVideo();
-        header.classList.add('is-blend-normal');
+        removeBlendHeader();
       }
     },
     {
       namespace: 'memories',
       beforeEnter(data) {
         lazyVideo();
-        if (header.classList.contains('is-blend-normal')) {
-          header.classList.remove('is-blend-normal');
-        }
+        addBlendHeader();
       }
     },
     {
       namespace: 'home',
       afterEnter(data) {
         followContents();
-        if (header.classList.contains('is-blend-normal')) {
-          header.classList.remove('is-blend-normal');
-        }
+        addBlendHeader();
         agentEvent();
       }
     },
@@ -77,20 +75,20 @@ barba.init({
       namespace: 'about',
       afterEnter(data) {
         addClassIntersection();
-        if (header.classList.contains('is-blend-normal')) {
-          header.classList.remove('is-blend-normal');
-        }
+        addBlendHeader();
       }
     },
     {
       namespace: 'contact',
       afterEnter(data) {
-        if (header.classList.contains('is-blend-normal')) {
-          header.classList.remove('is-blend-normal');
-        }
+        addBlendHeader();
       }
     },
   ]
+});
+
+barba.hooks.before((data) => {
+  initLoading();
 });
 
 barba.hooks.beforeLeave((data) => {
@@ -99,12 +97,12 @@ barba.hooks.beforeLeave((data) => {
 
 barba.hooks.beforeEnter((data) => {
   replaceHead(data);
-  removeDrawerContent();
+  removeEvent();
 })
 
 barba.hooks.after((data) => {
   scroll.init();
   window.scrollTo(0, 0);
   firstViewAnimation();
-  removeEvent();
+  endLoading();
 });
