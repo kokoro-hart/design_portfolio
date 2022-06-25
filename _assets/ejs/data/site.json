@@ -12,7 +12,7 @@
     },
     "about": {
       "name": "ABOUT",
-      "description": "Webクリエイター飛田 心のポートフォリオサイト",
+      "description": "ABOUT | Webクリエイター飛田 心のポートフォリオサイト",
       "type": "article",
       "slug": "/about/"
     },
@@ -60,13 +60,13 @@
     },
     "contact": {
       "name": "CONTACT",
-      "description": "CONTACTページの説明",
+      "description": "CONTACT | Webクリエイター飛田 心のポートフォリオサイト",
       "type": "article",
       "slug": "/contact/"
     },
     "contact-thanks": {
       "name": "送信完了-CONTACT",
-      "description": "送信完了ページの説明",
+      "description": "送信完了 | Webクリエイター飛田 心のポートフォリオサイト",
       "type": "article",
       "slug": "/contact-thanks/"
     }

@@ -22,7 +22,7 @@
   overflow: hidden;
   height: 1.2em;
   color: global.$color-base;
-  font-size: max(32px, #{global.vw(115)});
+  font-size: max(42px, #{global.vw(110)});
   @include global.lh(1.2);
   font-family: global.$font-family-en;
   font-weight: 400;
@@ -48,15 +48,19 @@
       transform-origin: left top;
     }
 
-    .p-contact-connect__link-head,
-    .p-contact-connect__link-foot {
+    .p-contact-connect__text {
       transform: translateY(-1.2em);
     }
   }
 }
 
-.p-contact-connect__link-head,
-.p-contact-connect__link-foot {
+.p-contact-connect__text {
   display: block;
   transition: transform 0.6s global.ease(out-quint);
+
+  &::after {
+    content: attr(data-text);
+    display: block;
+    white-space: nowrap;
+  }
 }

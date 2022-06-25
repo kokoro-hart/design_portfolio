@@ -35,6 +35,7 @@ body {
   counter-reset: number 0;
   background-color: global.$color-base;
   color: global.$color-primary;
+  cursor: wait;
 
   @include global.mq(lax) {
     overflow: hidden;

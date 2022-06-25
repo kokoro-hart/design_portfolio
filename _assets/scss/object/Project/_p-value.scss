@@ -1,9 +1,9 @@
 @use "foundation/global";
 
-// Project ビジョン どんなクリエイターになりたいか
+// Project バリュー
 //--------------------------------------------------------------------------
 
-.p-vision__contents {
+.p-value__contents {
   width: 100%;
   margin-top: 52px;
 
@@ -23,13 +23,13 @@
   }
 }
 
-.p-vision__body {
+.p-value__body {
   @include global.mq(xxl) {
     width: calc(50% - 5% / 2);
   }
 }
 
-.p-vision__heading {
+.p-value__heading {
   font-size: 18px;
   @include global.lh(1.2);
   font-weight: 600;
@@ -39,11 +39,11 @@
   }
 }
 
-.p-vision__list {
+.p-value__list {
   margin-top: max(52px, #{global.vw(52)});
 }
 
-.p-vision__item {
+.p-value__item {
   &:not(:first-child) {
     margin-top: 32px;
 
@@ -53,7 +53,7 @@
   }
 }
 
-.p-vision__title {
+.p-value__title {
   position: relative;
   padding-left: max(32px, #{global.vw(32)});
   font-size: 16px;
@@ -80,7 +80,7 @@
   }
 }
 
-.p-vision__text {
+.p-value__text {
   margin-top: 4px;
   padding-left:  max(32px, #{global.vw(32)});
   @include global.fz(14, 16);
@@ -92,7 +92,7 @@
   }
 }
 
-.p-vision__img-wrapper {
+.p-value__img-wrapper {
   margin-top: 32px;
 
   @include global.mq(md) {

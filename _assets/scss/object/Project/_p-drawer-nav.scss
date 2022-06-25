@@ -57,7 +57,7 @@
   display: block;
   @include global.fz(28);
   @include global.lh(1);
-  font-weight: 400;
+  font-weight: 500;
   transform: translateY(1em);
 }
 
@@ -73,13 +73,13 @@
   @include global.fz(14);
   @include global.lh(1.4);
   letter-spacing: 1px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .p-drawer-nav__sns {
   display: flex;
   opacity: 0;
-  margin-top: 18px;
+  margin-top: 14px;
 }
 
 //ドロワーアクティブ時

@@ -7,6 +7,10 @@
   display: flex;
   align-items: center;
   border-left: 1px solid global.$color-base;
+
+  @include global.mq(lax) {
+    border-left: 1px solid global.$color-primary;
+  }
 }
 
 .p-header-sns__item {
@@ -20,4 +24,10 @@
   justify-content: center;
   width: 30px;
   height: 100%;
+}
+
+.is-blend-normal {
+  .p-header-sns {
+    border-left: 1px solid global.$color-base;
+  }
 }

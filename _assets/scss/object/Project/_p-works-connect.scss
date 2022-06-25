@@ -20,25 +20,12 @@
   height: 40vh;
   background-color: global.$color-primary-dark;
 
-  @include global.mq(md) {
-    height: 70vh;
+  &:nth-child(2) {
+    background-color: global.$color-primary;
   }
 
-  &:not(:first-child) {
-    background-color: global.$color-primary;
-    color: global.$color-base;
-
-    .p-works-connect__link-foot {
-      &::before {
-        content: "Next";
-        left: auto;
-        right: 0;
-
-        @include global.mq(md) {
-          content: none;
-        }
-      }
-    }
+  @include global.mq(md) {
+    height: 70vh;
   }
 }
 
@@ -63,8 +50,7 @@
         transform-origin: left top;
       }
 
-      .p-works-connect__link-head,
-      .p-works-connect__link-foot {
+      .p-works-connect__text {
         transform: translateY(-1.2em);
       }
     }
@@ -84,36 +70,23 @@
   }
 }
 
-.p-works-connect__link-head {
-  display: block;
-  transition: transform 0.6s global.ease(out-quint);
-}
-
-.p-works-connect__link-foot {
+.p-works-connect__text {
   position: relative;
   display: block;
+  @include global.fz(14);
+  @include global.lh(1);
   transition: transform 0.6s global.ease(out-quint);
-  padding-top: 12px;
-  &::before {
-    content: "Prev";
-    position: absolute;
-    top: 0;
-    left: 0;
-    @include global.fz(14);
-    @include global.lh(1);
+
+  @include global.mq(lax) {
+    font-size: max(42px, #{global.vw(100)});
+    @include global.lh(1.2);
   }
 
-  @include global.mq(md) {
-    padding-top: 0;
-
-    &::before {
-      content: none;
-      display: block;
-      background-color: #ddd;
-      border-top: 1px solid #333;
-      border-bottom: 1px solid #333;
-      padding: 50px 20px;
-      text-align: center;
-    }
+  &::after {
+    content: attr(data-text);
+    display: block;
+    white-space: nowrap;
+    font-size: max(42px, #{global.vw(100)});
+    @include global.lh(1.2);
   }
 }

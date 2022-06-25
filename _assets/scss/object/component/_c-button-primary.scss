@@ -34,19 +34,24 @@
     }
   }
 
-  &:hover, 
+  &:hover,
   &:focus {
-    .c-button-primary__head,
-    .c-button-primary__foot {
+    .c-button-primary__text {
       transform: translateY(-1.5em);
     }
   }
 }
 
-.c-button-primary__head,
-.c-button-primary__foot {
+.c-button-primary__text {
+  position: relative;
   display: block;
   transition: transform 0.6s global.ease(out-quint);
+
+  &::after {
+    content: attr(data-text);
+    display: block;
+    white-space: nowrap;
+  }
 }
 
 .c-button-primary--large {

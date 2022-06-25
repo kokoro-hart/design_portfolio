@@ -35,9 +35,10 @@
   font-weight: 400;
   font-family: global.$font-family-en;
   letter-spacing: -0.01em;
+  white-space: nowrap;
 
   @include global.mq(lax) {
-    max-width: 22%;
+    max-width: 17%;
     font-size: max(40px, #{global.vw(60)});
   }
 }

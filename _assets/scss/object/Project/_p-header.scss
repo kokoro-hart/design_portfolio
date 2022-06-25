@@ -8,6 +8,11 @@
   font-family: global.$font-family-en;
   color: global.$color-base;
   mix-blend-mode: difference;
+
+  @include global.mq(lax) {
+    mix-blend-mode: normal;
+    color: global.$color-primary;
+  }
 }
 
 .p-header__logo-link {
@@ -58,12 +63,16 @@
 
 //乗算を外す
 .p-header.is-blend-normal {
-  mix-blend-mode: normal;
+
+  @include global.mq(lax) {
+    color: global.$color-base;
+  }
 }
 
 //ドロワーアクティブ時
 .is-drawer-active {
   .p-header.is-blend-normal {
+    mix-blend-mode: normal;
     .p-header__logo-link {
       color: global.$color-primary;
     }

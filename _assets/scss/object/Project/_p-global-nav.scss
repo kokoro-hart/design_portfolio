@@ -15,8 +15,10 @@
 }
 
 .p-global-nav__item {
+  display: flex;
+  align-items: center;
   height: 100%;
-  
+
   &:not(:first-child) {
     margin-left: 28px;
   }
@@ -24,12 +26,10 @@
 
 .p-global-nav__link {
   position: relative;
-  display: block;
-  display: flex;
-  align-items: center;
-  height: 100%;
+  display: inline-block;
+  height: 1.7em;
   @include global.fz(16);
-  @include global.lh(1.2);
+  @include global.lh(1.7);
 
   &::before {
     content: "";
@@ -42,10 +42,13 @@
     transform: scale(0, 1);
     transform-origin: right top;
     transition: transform 0.6s global.ease(out-quint);
+
+    @include global.mq(lax) {
+      background-color: global.$color-primary;
+    }
   }
   &:hover,
-  &:focus,
-  &.is-current {
+  &:focus {
     &::before {
       transform-origin: left top;
       transform: scale(1, 1);
@@ -68,5 +71,26 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+
+    @include global.mq(lax) {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2213.354%22%20height%3D%2213.354%22%20viewBox%3D%220%200%2013.354%2013.354%22%3E%20%3Cpath%20id%3D%22%E5%90%88%E4%BD%93_1%22%20data-name%3D%22%E5%90%88%E4%BD%93%201%22%20d%3D%22M2335%2C10768.739l11.868-11.869h-11.562v-.87h13.049v13.047h-.87v-11.562l-11.871%2C11.87Z%22%20transform%3D%22translate(-2335.001%20-10756)%22%20fill%3D%22%233b3b3b%22%2F%3E%3C%2Fsvg%3E");
+    }
+  }
+}
+
+.is-blend-normal {
+  .p-global-nav__link {
+    color: global.$color-base;
+
+    &::before {
+      @include global.mq(lax) {
+        background-color: global.$color-base;
+      }
+    }
+  }
+  .p-global-nav__link--blank {
+    &::after {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2213.354%22%20height%3D%2213.354%22%20viewBox%3D%220%200%2013.354%2013.354%22%3E%20%3Cpath%20id%3D%22%E5%90%88%E4%BD%93_1%22%20data-name%3D%22%E5%90%88%E4%BD%93%201%22%20d%3D%22M2335%2C10768.739l11.868-11.869h-11.562v-.87h13.049v13.047h-.87v-11.562l-11.871%2C11.87Z%22%20transform%3D%22translate(-2335.001%20-10756)%22%20fill%3D%22%23fff%22%2F%3E%3C%2Fsvg%3E");
+    }
   }
 }
