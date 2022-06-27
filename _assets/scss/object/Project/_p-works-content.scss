@@ -4,10 +4,7 @@
 //--------------------------------------------------------------------------
 
 
-.p-works-info {
-  position: absolute;
-  top: 0;
-  left: 0;
+.p-works-content {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -24,12 +21,12 @@
   }
 }
 
-.p-works-info__body {
+.p-works-content__body {
   padding-left: 3%;
   padding-bottom: 12%;
 }
 
-.p-works-info__title {
+.p-works-content__title {
   font-size: 32px;
   @include global.lh(1.2);
   font-weight: 500;
@@ -41,24 +38,22 @@
   }
 }
 
-.p-works-info__number {
+.p-works-content__number {
   padding-top: 45px;
-  span {
-    &::before {
-      content: counter(number, decimal-leading-zero);
-      counter-increment: number 1;
-      font-size: 24px;
-      font-weight: 600;
-      font-family: global.$font-family-en;
-      
-      @include global.mq(md) {
-        font-size: max(30px, #{global.vw(38)});
-      }
+  span::before {
+    content: counter(number, decimal-leading-zero);
+    counter-increment: number 1;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: global.$font-family-en;
+    
+    @include global.mq(md) {
+      font-size: max(30px, #{global.vw(38)});
     }
   }
 }
 
-.p-works-info__category {
+.p-works-content__category {
   margin-top: 32px;
   font-size: 32px;
   @include global.lh(1.4);
@@ -71,13 +66,13 @@
   }
 }
 
-.p-works-info__text {
+.p-works-content__text {
   margin-top: 12px;
   @include global.lh(1.4, 1.7);
   font-weight: 400;
   font-size: max(16px, #{global.vw(20)});
 }
 
-.p-works-info__link-wrapper {
+.p-works-content__link-wrapper {
   padding-bottom: 50px;
 }

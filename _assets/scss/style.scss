@@ -13,6 +13,10 @@
 @use "animation/is-fade-up";
 @use "animation/is-slide-mask";
 
+/* Animation（トリガー発火時のアニメーション）
+   ----------------------------------------------------------------- */
+@use "external/locomotive-scroll";
+
 /* Layout (prefix: l- )
    ----------------------------------------------------------------- */
 @use "layout/l-header";
@@ -41,7 +45,7 @@
 @use "object/Project/p-first-view";
 @use "object/Project/p-home-about";
 @use "object/Project/p-works";
-@use "object/Project/p-works-info";
+@use "object/Project/p-works-content";
 @use "object/Project/p-works-item";
 @use "object/Project/p-single-works";
 @use "object/Project/p-works-overview";
@@ -63,6 +67,7 @@
 /* Utitlity (prefix: u- )
    ----------------------------------------------------------------- */
 @use "object/utility/u-hidden";
+@use "object/utility/u-visually-hidden";
 @use "object/utility/u-delay";
 @use "object/utility/u-weight";
 @use "object/utility/u-family";

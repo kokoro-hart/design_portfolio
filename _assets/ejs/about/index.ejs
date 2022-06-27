@@ -1,11 +1,9 @@
 <% let pageId='about' ; %>
-
 <%- include('../common/_header', {pageId:pageId }) %>
 
 <% console.log(jsonData) %>
 <main class="l-lower-about" data-barba="container" data-barba-namespace="about">
   <div class="l-container">
-    <!--ファーストビュー-->
     <section id="js-first-view" class="p-lower-first-view">
       <div class="p-lower-first-view__inner">
         <div class="p-lower-first-view__heading c-page-heading">
@@ -44,9 +42,7 @@
         </div>
       </div>
     </section>
-    <!--/ファーストビュー-->
 
-    <!--プロフィール-->
     <section class="p-profile l-lower-about__profile">
       <h2 class="c-section-heading js-trigger" style="transform: translate(0px, 0px);">
         <span class="c-section-heading__en is-wrap">
@@ -178,9 +174,7 @@
         </section>
       </div>
     </section>
-    <!--/プロフィール-->
 
-    <!--スキル-->
     <section class="p-skills l-lower-about__skills">
       <h2 class="c-section-heading js-trigger" style="transform: translate(0px, 0px);">
         <span class="c-section-heading__en is-wrap">
@@ -288,10 +282,7 @@
         </dl>
       </div>
     </section>
-    <!--/スキル-->
 
-
-    <!--バリュー-->
     <section class="p-value l-lower-about__vision">
       <h2 class="c-section-heading js-trigger" style="transform: translate(0px, 0px);">
         <span class="c-section-heading__en is-wrap">
@@ -343,9 +334,7 @@
         </figure>
       </div>
     </section>
-    <!--/バリュー-->
 
-    <!--経歴-->
     <section class="p-career l-lower-about__career">
       <h2 class="c-section-heading js-trigger" style="transform: translate(0px, 0px);">
         <span class="c-section-heading__en is-wrap">
@@ -422,19 +411,14 @@
         </dl>
       </div>
     </section>
-    <!--/経歴-->
   </div>
-    <!--お問いわせ-->
-    <div class="p-contact-connect" style="transform: translate(0px, 0px);">
-      <a href="/contact/" class="p-contact-connect__link">
-        <span class="p-contact-connect__text" data-text="Contact Me">
-          Get In Touch
-        </span>
-      </a>
-    </div>
-    <!--/お問いわせ-->
+  <div class="p-contact-connect" style="transform: translate(0px, 0px);">
+    <a href="/contact/" class="p-contact-connect__link">
+      <span class="p-contact-connect__text" data-text="Contact Me">
+        Get In Touch
+      </span>
+    </a>
+  </div>
 </main>
-
-
 
 <%- include('../common/_footer', {pageId:pageId }) %>

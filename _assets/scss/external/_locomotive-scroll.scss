@@ -1,0 +1,11 @@
+@use "foundation/global";
+
+// external locomotive-scroll.jsの上書き
+//--------------------------------------------------------------------------
+
+.data-scroll-container {
+  @include global.mq(lax) {
+    overflow: hidden;
+    min-height: 100vh;
+  }
+}

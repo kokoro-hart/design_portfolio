@@ -1,0 +1,17 @@
+@use "foundation/global";
+
+// Utility スクリーンリーダ向け隠しコンテンツ
+//--------------------------------------------------------------------------
+
+.u-visually-hidden {
+  position: absolute;
+  border: 0;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}

@@ -105,7 +105,6 @@ small {
   font-size: 100%;
 }
 
-// 半角英数表示崩れ
 h1,
 h2,
 h3,
@@ -153,12 +152,4 @@ br {
 
 :focus:not(:focus-visible) {
   outline: 0; //キーボード操作"以外"でフォーカスされた際はoutlineを消す
-}
-
-//locomotive-scroll.js用の記述
-.data-scroll-wrapper {
-  @include global.mq(lax) {
-    overflow: hidden;
-    min-height: 100vh;
-  }
 }

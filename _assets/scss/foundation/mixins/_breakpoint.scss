@@ -7,7 +7,7 @@ $screen: (
   xs: 376px,
   sm: 576px,
   md: 768px,
-  lax: 1025px,
+  lax: 1025px,// 1025px以上は慣性スクロール、パララックスが有効
   xl: 1200px,
   xxl: 1400px,
 ) !default;

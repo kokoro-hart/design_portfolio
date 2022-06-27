@@ -1,6 +1,6 @@
 @use "foundation/global";
 
-// Project 制作実績アイテム（モック　sp時の作品タイトル、詳細）
+// Project 制作実績アイテム（モック sp時の作品タイトル、詳細）
 //--------------------------------------------------------------------------
 
 .p-works-item {
@@ -8,26 +8,25 @@
   position: relative;
 }
 
-.p-works-item__picture {
+.p-works-item__mockups {
   display: block;
-  transform: translateZ(0);
-  filter: drop-shadow(10px 10px 10px global.$color-drop-shadow);
-
-  @include global.mq(lax) {
-    filter: none;
-    transform: none;
-  }
-}
-
-.p-works-item__img-wrapper {
-  display: block;
-  padding: 10% 10% 10% 10%;
+  padding: 10%;
   background-color: global.$color-secondary-thin;
 
   @include global.mq(lax) {
     width: 100%;
     padding: 0;
     background-color: transparent;
+  }
+}
+
+.p-works-item__picture {
+  display: block;
+  filter: drop-shadow(10px 10px 10px global.$color-drop-shadow);
+
+  @include global.mq(lax) {
+    filter: none;
+    transform: none;
   }
 }
 
@@ -38,8 +37,8 @@
   margin-bottom: -63%;
 
   @include global.mq(lax) {
-    margin-bottom: 0;
     width: 39%;
+    margin-bottom: 0;
 
     .p-works-item__img {
       filter: drop-shadow(global.vw(100) global.vw(150) 25px global.$color-drop-shadow);
@@ -90,10 +89,6 @@
   @include global.mq(md) {
     margin-top: 24px;
   }
-
-  @include global.mq(lax) {
-    display: none;
-  }
 }
 
 .p-works-item__title {
@@ -110,15 +105,4 @@
   @include global.lh(1.2);
   font-weight: 500;
   letter-spacing: -0.01em;
-}
-
-.p-works-item__link-wrapper {
-  margin-top: 24px;
-  @include global.mq(md) {
-    margin-top: 52px;
-  }
-}
-
-.p-works-item__img-link {
-  display: block;
 }
