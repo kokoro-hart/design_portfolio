@@ -39,7 +39,7 @@
         </h3>
         <p class="p-home-about__text">
           2000年生まれ、茨城県在住のAB型。<br>
-          高校卒業後、化学メーカーに勤務しながら独学でマークアップ、フロントエンド、Webデザインを学んでいます。
+          化学メーカーに勤務しながら独学でマークアップ、フロントエンド、Webデザインを学んでいます。
           出来ない事を出来るようになるまで行動し達成できた時の喜びを感じるのが大好きです。
         </p>
         <div class="p-home-about__link-wrapper">
@@ -57,6 +57,7 @@
     <section class="p-works l-home__works">
       <div class="p-works__inner">
         <ul class="p-works__contents u-hidden-lax-down" data-scroll data-scroll-sticky data-scroll-target="#js-works-mask">
+          <%# 制作実績コンテンツ _assets/ejs/data/site.jsonにて管理 %>
           <% for(let work in jsonData.works){ %>
           <li data-id="<%= jsonData.works[work].dataId %>" class="p-works__content p-works-content">
             <div class="p-works-content__number">

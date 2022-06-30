@@ -10,7 +10,11 @@
     opacity 1.7s global.ease(out-expo),
     transform 1.7s global.ease(out-expo)
   ;
-  transform: translateY(60px);
+  transform: translateY(30px);
+
+  @include global.mq(md) {
+    transform: translateY(60px);
+  }
 }
 
 //トリガー発火後

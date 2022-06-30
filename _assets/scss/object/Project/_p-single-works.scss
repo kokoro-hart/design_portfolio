@@ -44,7 +44,7 @@
   }
 }
 
-.p-single-works__mockup {
+.p-single-works__mockups {
   position: relative;
   padding-top: 195%;
   margin-bottom: 14.5vw;
@@ -57,7 +57,7 @@
   }
 }
 
-.p-single-works__mockup-picture--sp {
+.p-single-works__mockup--sp {
   position: absolute;
   top: 0;
   left: 5%;
@@ -82,7 +82,7 @@
   }
 }
 
-.p-single-works__mockup-picture--tab {
+.p-single-works__mockup--tab {
   position: absolute;
   top: 24%;
   right: 0;
@@ -111,7 +111,7 @@
   }
 }
 
-.p-single-works__mockup-picture--pc {
+.p-single-works__mockup--pc {
   transform-style: preserve-3d;
   perspective: 140vw;
   position: absolute;
@@ -160,12 +160,16 @@
   }
 }
 
-.p-single-works__rotate-picture {
+.p-single-works__picture {
   display: block;
   overflow: hidden;
-  width: 100vw;
   max-height: 100vh;
   height: 100%;
+  margin-top: max(42px, #{global.vw(84)});
+}
+
+.p-single-works__picture--wide {
+  width: 100vw;
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
   margin-top: max(84px, #{global.vw(134)});
@@ -175,7 +179,7 @@
   position: relative;
   overflow: hidden;
   padding-top: 62.5%;
-  margin-top: max(42px, #{global.vw(134)});
+  margin-top: max(42px, #{global.vw(105)});
 
   video {
     display: inline-block;
@@ -187,7 +191,7 @@
   }
 }
 
-.p-single-works__capture {
+.p-single-works__captures {
   position: relative;
   margin-top: 84px;
 
@@ -197,7 +201,7 @@
   }
 }
 
-.p-single-works__capture-picture {
+.p-single-works__capture {
   display: block;
 
   &:not(:first-child) {
@@ -270,7 +274,7 @@
     }
   }
 
-  .p-single-works__rotate-picture {
+  .p-single-works__picture {
     max-height: 120vh;
   }
 
@@ -292,7 +296,7 @@
     }
   }
 
-  .p-single-works__rotate-picture {
+  .p-single-works__picture {
     position: relative;
 
     &::after {
