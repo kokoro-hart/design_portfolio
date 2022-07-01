@@ -150,6 +150,11 @@ br {
   line-height: 0;
 }
 
+hr {
+  border: none;
+  margin-top: 24px;
+}
+
 :focus:not(:focus-visible) {
   outline: 0; //キーボード操作"以外"でフォーカスされた際はoutlineを消す
 }

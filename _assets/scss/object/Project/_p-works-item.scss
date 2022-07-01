@@ -39,10 +39,6 @@
   @include global.mq(lax) {
     width: 39%;
     margin-bottom: 0;
-
-    .p-works-item__img {
-      filter: drop-shadow(global.vw(100) global.vw(150) 25px global.$color-drop-shadow);
-    }
   }
 }
 
@@ -58,10 +54,6 @@
     margin-top: global.vw(-400);
     margin-bottom: 0;
     margin-right: -1vw;
-
-    .p-works-item__img {
-      filter: drop-shadow(global.vw(52) global.vw(80) 10px global.$color-drop-shadow);
-    }
   }
 }
 
@@ -77,8 +69,9 @@
     margin-left: 3%;
     width: 115%;
     margin-top: global.vw(-40);
+
     .p-works-item__img {
-      filter: drop-shadow(global.vw(36) global.vw(33) 10px global.$color-drop-shadow);
+      filter: drop-shadow(0px 0px 0px global.$color-drop-shadow);
     }
   }
 }

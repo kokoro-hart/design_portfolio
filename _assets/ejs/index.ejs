@@ -90,17 +90,17 @@
           <% for(let work in jsonData.works){ %>
           <div id="<%= jsonData.works[work].id %>" class="p-works__item p-works-item js-follow-targets">
             <a href="<%= jsonData.works[work].slug %>" class="p-works-item__mockups" style="transform: translate(0px, 0px);">
-              <picture class="p-works-item__picture p-works-item__picture--sp" data-scroll data-scroll-speed="2">
+              <picture class="p-works-item__picture p-works-item__picture--sp" style="transform: translate(0px, 0px);">
                 <source srcset="<%= jsonData.works[work].mockSpWebp %>" class="p-works-item__img" type="image/webp" />
-                <img src="<%= jsonData.works[work].mockSpPng %>" class="p-works-item__img" width="357" height="719" alt="<%= jsonData.works[work].altSp %>" loading="lazy">
+                <img src="<%= jsonData.works[work].mockSpPng %>" class="p-works-item__img" width="357" height="719" alt="<%= jsonData.works[work].altSp %>" loading="lazy" data-scroll data-scroll-speed="2">
               </picture>
-              <picture class="p-works-item__picture p-works-item__picture--tab u-hidden-lax-down" data-scroll data-scroll-speed="1.25" data-scroll-delay="0.1">
+              <picture class="p-works-item__picture p-works-item__picture--tab u-hidden-lax-down" style="transform: translate(0px, 0px);">
                 <source srcset="<%= jsonData.works[work].mockTabWebp %>" class="p-works-item__img" type="image/webp" />
-                <img src="<%= jsonData.works[work].mockTabPng %>" class="p-works-item__img" width="508" height="712" alt="<%= jsonData.works[work].altTab %>" loading="lazy">
+                <img src="<%= jsonData.works[work].mockTabPng %>" class="p-works-item__img" width="508" height="712" alt="<%= jsonData.works[work].altTab %>" loading="lazy" data-scroll data-scroll-speed="1.25" data-scroll-delay="0.1">
               </picture>
               <picture class="p-works-item__picture p-works-item__picture--pc">
                 <source srcset="<%= jsonData.works[work].mockPcWebp %>" class="p-works-item__img" type="image/webp" />
-                <img src="<%= jsonData.works[work].mockPcPng %>" class="p-works-item__img" width="804" height="510" alt="<%= jsonData.works[work].altPc %>" loading="lazy">
+                <img src="<%= jsonData.works[work].mockPcPng %>" class="p-works-item__img" width="804" height="510" alt="<%= jsonData.works[work].altPc %>" loading="lazy" style="transform: translate(0px, 0px);">
               </picture>
             </a>
             <div class="p-works-item__body u-hidden-lax-up">

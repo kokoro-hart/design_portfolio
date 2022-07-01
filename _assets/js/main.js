@@ -12,7 +12,6 @@ import resizeEvent from './common/resizeEvent';
 import firstViewAnimation from './common/firstViewTrigger';
 import lazyVideo from './common/lazyVideo';
 import replaceHead from './common/replaceHead';
-import agentEvent from './common/agentEvent';
 import { initLoading, endLoading } from './common/loading';
 import { addBlendHeader, removeBlendHeader } from './common/header';
 
@@ -41,7 +40,6 @@ window.addEventListener('DOMContentLoaded', () => {
   resizeEvent();
   toggleEvent();
   lazyVideo();
-  agentEvent();
 });
 firstViewAnimation();
 
@@ -68,7 +66,6 @@ barba.init({
       afterEnter(data) {
         followContents();
         addBlendHeader();
-        agentEvent();
       }
     },
     {
