@@ -14,6 +14,7 @@ import lazyVideo from './common/lazyVideo';
 import replaceHead from './common/replaceHead';
 import { initLoading, endLoading } from './common/loading';
 import { addBlendHeader, removeBlendHeader } from './common/header';
+import inquiryCompleted from './common/inquiryCompleted';
 
 // intersectionObserver
 import addClassIntersection from './intersectionObserver/addClassIntersection';
@@ -23,6 +24,7 @@ import followContents from './intersectionObserver/followContents';
 // ドロワーのイベント
 import toggleEvent from './drawer/toggleEvent';
 import removeEvent from './drawer/removeEvent';
+import setFillHeight from './drawer/setFillHeight';
 
 // LocomotiveScroll options
 const scroll = new LocomotiveScroll({
@@ -42,6 +44,8 @@ window.addEventListener('DOMContentLoaded', () => {
   lazyVideo();
 });
 firstViewAnimation();
+window.addEventListener('resize', setFillHeight);
+setFillHeight();
 
 // barba.js options
 barba.init({
@@ -79,6 +83,7 @@ barba.init({
       namespace: 'contact',
       afterEnter(data) {
         addBlendHeader();
+        inquiryCompleted();
       }
     },
   ]
@@ -100,6 +105,8 @@ barba.hooks.beforeEnter((data) => {
 barba.hooks.after((data) => {
   scroll.init();
   window.scrollTo(0, 0);
+  window.addEventListener('resize', setFillHeight);
+  setFillHeight();
   firstViewAnimation();
   endLoading();
 });
