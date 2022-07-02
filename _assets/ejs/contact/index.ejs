@@ -4,9 +4,6 @@
 
 <% console.log(jsonData) %>
 <main class="l-lower-contact" data-barba="container" data-barba-namespace="contact">
-  <script type="text/javascript">
-    let submitted = false;
-  </script>
   <div class="l-container">
     <div id="js-first-view">
       <div class="p-lower-first-view">
@@ -31,7 +28,7 @@
           action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdWVihzITkGsBjGj6KJVVhGOgP-tTKr2I5zKUkF3J8DoT1cjA/formResponse"
           method="POST" 
           target="hidden_iframe" 
-          onsubmit="submitted=true;"
+          
         >
           <div class="p-form__dl">
             <%# お名前 %>
@@ -89,7 +86,7 @@
 
             <%# 送信 %>
             <input 
-              id="submit" 
+              id="js-submit" 
               class="c-button-submit p-form__submit" 
               type="submit" 
               value="送信"
@@ -100,10 +97,9 @@
       </div>
     </div>
   </div>
-  <!--サンクスページへの遷移-->
-  <iframe name="hidden_iframe" id="hidden_iframe" style="display: none"
-    onload="if (submitted) { window.location = '/contact-thanks/';}">
+  <%# サンクスページへの遷移 %>
+  <iframe name="hidden_iframe" id="hidden_iframe" style="display: none">
   </iframe>
-  <!--/サンクスページへの遷移-->
+  <%# /サンクスページへの遷移 %>
 </main>
 <%- include('../common/_footer', {pageId:pageId }) %>
