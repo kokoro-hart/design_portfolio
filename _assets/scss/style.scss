@@ -13,10 +13,6 @@
 @use "animation/is-fade-up";
 @use "animation/is-slide-mask";
 
-/* Animation（トリガー発火時のアニメーション）
-   ----------------------------------------------------------------- */
-@use "external/locomotive-scroll";
-
 /* Layout (prefix: l- )
    ----------------------------------------------------------------- */
 @use "layout/l-header";
