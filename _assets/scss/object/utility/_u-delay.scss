@@ -3,26 +3,10 @@
 // Utility transition-delay
 //--------------------------------------------------------------------------
 
-.u-delay01 {
-  transition-delay: 0.1s;
-}
-
-.u-delay02 {
-  transition-delay: 0.2s;
-}
-
-.u-delay03 {
-  transition-delay: 0.3s;
-}
-
-.u-delay04 {
-  transition-delay: 0.4s;
-}
-
-.u-delay05 {
-  transition-delay: 0.5s;
-}
-
-.u-delay06 {
-  transition-delay: 0.6s;
+.u-delay {
+  @for $i from 1 through 6 {
+    &0#{$i} {
+      transition-delay: $i * 0.1s;
+    }
+  }
 }

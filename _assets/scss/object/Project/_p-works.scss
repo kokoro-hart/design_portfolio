@@ -1,6 +1,6 @@
 @use "foundation/global";
 
-// Project 制作実績
+// Project トップページ制作実績
 //--------------------------------------------------------------------------
 
 .p-works__inner {
@@ -43,6 +43,7 @@
 }
 
 .p-works__item {
+  width: 100%;
   display: block;
   padding-top: 7.5vw;
 

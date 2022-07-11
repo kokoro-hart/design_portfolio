@@ -30,6 +30,11 @@ body {
   -ms-text-size-adjust: 100%;
 }
 
+html.has-scroll-smooth {
+	backface-visibility: hidden;
+	transform: translateZ(0);
+}
+
 body {
   position: relative;
   counter-reset: number 0;

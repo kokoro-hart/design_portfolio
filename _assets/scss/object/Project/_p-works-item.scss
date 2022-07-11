@@ -1,6 +1,6 @@
 @use "foundation/global";
 
-// Project 制作実績アイテム（モック sp時の作品タイトル、詳細）
+// Project 制作実績アイテム（モック sp時の作品タイトル、カテゴリ）
 //--------------------------------------------------------------------------
 
 .p-works-item {
@@ -26,7 +26,6 @@
 
   @include global.mq(lax) {
     filter: none;
-    transform: none;
   }
 }
 
@@ -69,10 +68,6 @@
     margin-left: 3%;
     width: 115%;
     margin-top: global.vw(-40);
-
-    .p-works-item__img {
-      filter: drop-shadow(0px 0px 0px global.$color-drop-shadow);
-    }
   }
 }
 

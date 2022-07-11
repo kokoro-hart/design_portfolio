@@ -4,6 +4,7 @@
 
 <main class="l-home" data-barba="container" data-barba-namespace="home">
   <div class="l-container">
+    <%# ファーストビュー %>
     <section id="js-first-view" class="p-first-view l-home__first-view">
       <div class="p-first-view__inner">
         <h2 class="p-first-view__heading" style="transform: translate(0px, 0px);">
@@ -22,8 +23,9 @@
           Web creator based in Japan - Ibaraki & Tokyo
         </p>
       </div>
-    </section>
+    </section><%# / ファーストビュー %>
 
+    <%# 私について %>
     <section class="p-home-about l-home__about">
       <h2 class="p-home-about__heading" data-scroll data-scroll-speed="-0.7" data-scroll-direction="horizontal">
         Web Creator
@@ -50,14 +52,16 @@
           </a>
         </div>
       </div>
-    </section>
+    </section><%# / 私について %>
   </div>
 
   <div class="l-container l-container--large">
+    <%# 制作実績 %>
     <section class="p-works l-home__works">
+      <h2 class="u-visually-hidden">制作実績</h2>
       <div class="p-works__inner">
+        <%# 制作実績 - コンテンツ _assets/ejs/data/site.jsonにて管理 %>
         <ul class="p-works__contents u-hidden-lax-down" data-scroll data-scroll-sticky data-scroll-target="#js-works-mask">
-          <%# 制作実績コンテンツ _assets/ejs/data/site.jsonにて管理 %>
           <% for(let work in jsonData.works){ %>
           <li data-id="<%= jsonData.works[work].dataId %>" class="p-works__content p-works-content">
             <div class="p-works-content__number">
@@ -84,8 +88,9 @@
             </div>
           </li>
           <% }; %>
-        </ul>
+        </ul><%# / 制作実績 - コンテンツ %>
 
+        <%# 制作実績 - モックアップ + スマホ時のテキスト情報 %>
         <div class="p-works__items">
           <% for(let work in jsonData.works){ %>
           <div id="<%= jsonData.works[work].id %>" class="p-works__item p-works-item js-follow-targets">
@@ -113,19 +118,20 @@
             </div>
           </div>
           <% }; %>
-        </div>
+        </div><%# / 制作実績 - モックアップ + スマホ時のテキスト情報 %>
         <div id="js-works-mask" class="p-works__mask"></div>
       </div>
-    </section>
+    </section><%# / 制作実績 %>
   </div>
 
+  <%# お問い合わせ導線 %>
   <div class="p-contact-connect" style="transform: translate(0px, 0px);">
     <a href="/contact/" class="p-contact-connect__link">
       <span class="p-contact-connect__text" data-text="Contact Me">
         Get In Touch
       </span>
     </a>
-  </div>
+  </div><%# / お問い合わせ導線 %>
 </main>
 
 <%- include('./common/_footer', {pageId:pageId }) %>

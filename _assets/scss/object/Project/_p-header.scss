@@ -63,7 +63,6 @@
 
 //乗算を外す
 .p-header.is-blend-normal {
-
   @include global.mq(lax) {
     color: global.$color-base;
   }

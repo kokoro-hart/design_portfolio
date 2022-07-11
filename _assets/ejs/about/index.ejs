@@ -4,14 +4,15 @@
 <% console.log(jsonData) %>
 <main class="l-lower-about" data-barba="container" data-barba-namespace="about">
   <div class="l-container">
+    <%# ファーストビュー %>
     <section id="js-first-view" class="p-lower-first-view">
       <div class="p-lower-first-view__inner">
         <div class="p-lower-first-view__heading c-page-heading">
-          <h2 class="c-page-heading__en is-wrap" style="transform: translate(0px, 0px);">
+          <h1 class="c-page-heading__en is-wrap" style="transform: translate(0px, 0px);">
             <span class="is-slide-up u-delay05">
               ABOUT <span class="u-hidden-lax-up">ME</span>
             </span>
-          </h2>
+          </h1>
           <span class="c-page-heading__en is-wrap u-hidden-lax-down" style="transform: translate(0px, 0px);">
             <span class="is-slide-up u-delay06">
               ME
@@ -19,30 +20,29 @@
           </span>
         </div>
         <div class="p-lower-first-view__intro p-intro">
-          <div class="p-intro__inner">
-            <h3 class="p-intro__heading  is-slide-up">
-              <span class="is-wrap" style="transform: translate(0px, 0px);">
-                <span class="is-slide-up">
-                  To be a creator
-                </span>
+          <p class="p-intro__heading  is-slide-up">
+            <span class="is-wrap" style="transform: translate(0px, 0px);">
+              <span class="is-slide-up">
+                To be a creator
               </span>
-              <span class="is-wrap" style="transform: translate(0px, 0px);">
-                <span class="is-slide-up u-delay01">
-                  who moves hearts
-                  <span class="p-intro__icon" aria-hidden="true">&#x1f5a4;</span>
-                </span>
+            </span>
+            <span class="is-wrap" style="transform: translate(0px, 0px);">
+              <span class="is-slide-up u-delay01">
+                who moves hearts
+                <span class="p-intro__icon" aria-hidden="true">&#x1f5a4;</span>
               </span>
-            </h3>
-            <p class="p-intro__text is-fade-up u-delay02">
-              コーダー・マークアップエンジニア志望の飛田 心です。<br>
-              Webサイトにおいての使いやすさを前提に、その上で視覚表現にこだわる事によって、
-              「驚いたり、ワクワクしたり、ドキドキしたり」人の心を動かす制作物を創れる実装者を目指しています。
-            </p>
-          </div>
+            </span>
+          </p>
+          <p class="p-intro__text is-fade-up u-delay02">
+            コーダー・マークアップエンジニア志望の飛田 心です。<br>
+            Webサイトにおいての使いやすさを前提に、その上で視覚表現にこだわる事によって、
+            「驚いたり、ワクワクしたり、ドキドキしたり」人の心を動かす制作物を創れる実装者を目指しています。
+          </p>
         </div>
       </div>
-    </section>
+    </section><%# / ファーストビュー %>
 
+    <%# プロフィール %>
     <section class="p-profile l-lower-about__profile">
       <h2 class="c-section-heading js-trigger" style="transform: translate(0px, 0px);">
         <span class="c-section-heading__en is-wrap">
@@ -119,10 +119,10 @@
           </h3>
           <dl class="p-profile__dl is-fade-up u-delay01">
             <div class="p-profile__row p-profile__row--links">
-              <dt class="p-profile__dt p-profile__dt--links">
+              <dt class="p-profile__dt">
                 Twitter
               </dt>
-              <dd class="p-profile__dd p-profile__dd--links">
+              <dd class="p-profile__dd">
                 <a href="https://twitter.com/coco_hack_ll" class="p-profile__link" target="_blank" rel="noopener noreferrer">
                   twitter.com/coco_hack_ll
                   <svg class="c-svg p-profile__svg" width="14" height="14">
@@ -132,10 +132,10 @@
               </dd>
             </div>
             <div class="p-profile__row p-profile__row--links">
-              <dt class="p-profile__dt p-profile__dt--links">
+              <dt class="p-profile__dt">
                 CodePen
               </dt>
-              <dd class="p-profile__dd p-profile__dd--links">
+              <dd class="p-profile__dd">
                 <a href="https://codepen.io/kokoro-hart/pens/public" class="p-profile__link" target="_blank" rel="noopener noreferrer">
                   codepen.io/kokoro-hart
                   <svg class="c-svg p-profile__svg" width="14" height="14">
@@ -145,10 +145,10 @@
               </dd>
             </div>
             <div class="p-profile__row p-profile__row--links">
-              <dt class="p-profile__dt p-profile__dt--links">
+              <dt class="p-profile__dt">
                 GitHub
               </dt>
-              <dd class="p-profile__dd p-profile__dd--links">
+              <dd class="p-profile__dd">
                 <a href="https://github.com/kokoro-hart" class="p-profile__link" target="_blank" rel="noopener noreferrer">
                   github.com/kokoro-hart
                   <svg class="c-svg p-profile__svg" width="14" height="14">
@@ -158,10 +158,10 @@
               </dd>
             </div>
             <div class="p-profile__row p-profile__row--links">
-              <dt class="p-profile__dt p-profile__dt--links">
+              <dt class="p-profile__dt">
                 Blog
               </dt>
-              <dd class="p-profile__dd p-profile__dd--links">
+              <dd class="p-profile__dd">
                 <a href="https://kt-media.blog/" class="p-profile__link" target="_blank" rel="noopener noreferrer">
                   kt-media.blog
                   <svg class="c-svg p-profile__svg" width="14" height="14">
@@ -173,8 +173,9 @@
           </dl>
         </section>
       </div>
-    </section>
+    </section><%# / プロフィール %>
 
+    <%# 使用技術 %>
     <section class="p-skills l-lower-about__skills">
       <h2 class="c-section-heading js-trigger" style="transform: translate(0px, 0px);">
         <span class="c-section-heading__en is-wrap">
@@ -219,8 +220,8 @@
               JavaScript
             </dt>
             <dd class="p-skills__dd">
-              カーセル、タブ、アコーディオン、モーダルような頻出のUIの実装が可能です。
-              現在はアニメーションの実装や非同期処理での外部との通信、Vue.js Nuxt.jsなどのフレームワークを中心に学んでいます。
+              カーセル、タブ、アコーディオン、モーダルような頻出UIの実装が可能です。
+              現在はネイティブの記法やメカニズムについて学んでいます。
             </dd>
           </div>
           <div class="p-skills__row">
@@ -242,7 +243,7 @@
               Git / GitHub
             </dt>
             <dd class="p-skills__dd">
-              個人のサイトやブログサイトなどを制作する際は、GitHubにて管理を行っています。複数人で使用した経験がなく、少しでも実践的なフローを学ぶため一人擬似チーム開発の練習をしています。
+              個人のサイトやブログサイトなどを制作する際は、GitHubにて管理を行っています。複数人で使用した経験がなく、実践的なフローを学ぶため一人擬似チーム開発の練習をしています。
             </dd>
           </div>
           <div class="p-skills__row">
@@ -254,7 +255,7 @@
             </dt>
             <dd class="p-skills__dd">
               各種コンパイル、jsのバンドル、トランスパイルなどで使用しています。<br>
-              ドキュメントを見ながら一から設定を記述することが可能です。
+              ドキュメントを見ながら設定を記述することが可能です。
             </dd>
           </div>
           <div class="p-skills__row">
@@ -276,14 +277,15 @@
               Design Tools
             </dt>
             <dd class="p-skills__dd">
-              Photoshop、XD、Figmaカンプからのコーディング経験があります。本サイトのデザインはfigmaを使用しました。
+              Photoshop、XD、Figmaカンプからのコーディング経験があります。デザイン作成する際はfigmaを使用しています。
             </dd>
           </div>
         </dl>
       </div>
-    </section>
+    </section><%# / 使用技術 %>
 
-    <section class="p-value l-lower-about__vision">
+    <%# バリュー %>
+    <section class="p-value l-lower-about__value">
       <h2 class="c-section-heading js-trigger" style="transform: translate(0px, 0px);">
         <span class="c-section-heading__en is-wrap">
           <span class="is-slide-up">
@@ -306,7 +308,7 @@
               </h3>
               <p class="p-value__text">
                 現職の経験から、納期という制作期限がある中でスムーズに進行していくには、連携が必要不可欠だと考えています。
-                チャットやメールの連絡は10分以内の返信を心がけています。即答できないものに関しても現状報告を怠らないことを徹底しています。
+                勤務時間内のチャットやメールの返信は10分以内を心がけています。即答できないものに関しても現状報告を怠らないことを徹底しています。
               </p>
             </li>
             <li class="p-value__item">
@@ -314,8 +316,8 @@
                 管理のしやすい構築
               </h3>
               <p class="p-value__text">
-                クラス名の付け方やCSSのフォルダ分けなども他の人に引き継いでも支障がでないように心がけています。<br>
-                ページ数やサイト全体のボリュームが多くなってしまった場合には、Readme.mdにコメントを残して改修の際に見返せるようにしています。
+                classの命名やCSSのフォルダ分けなども他の人に引き継いでも支障がでないように心がけています。<br>
+                ページ数やサイト全体のボリュームが多くなってしまった場合には、README.mdにコメントを残して改修の際に見返せるようにしています。
               </p>
             </li>
             <li class="p-value__item">
@@ -333,8 +335,9 @@
           <img src="/img/common/value.png" alt="" class="p-value__img">
         </figure>
       </div>
-    </section>
+    </section><%# / バリュー %>
 
+    <%# 経歴 %>
     <section class="p-career l-lower-about__career">
       <h2 class="c-section-heading js-trigger" style="transform: translate(0px, 0px);">
         <span class="c-section-heading__en is-wrap">
@@ -411,8 +414,10 @@
           </div>
         </dl>
       </div>
-    </section>
+    </section><%# / 経歴 %>
   </div>
+
+  <%# お問い合わせ導線 %>
   <div class="p-contact-connect" style="transform: translate(0px, 0px);">
     <a href="/contact/" class="p-contact-connect__link">
       <span class="p-contact-connect__text" data-text="Contact Me">
@@ -420,6 +425,7 @@
       </span>
     </a>
   </div>
+  <%# お問い合わせ導線 %>
 </main>
 
 <%- include('../common/_footer', {pageId:pageId }) %>

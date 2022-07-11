@@ -23,17 +23,13 @@
   width: 100%;
 
   @include global.mq(md) {
-    width: 80%;
-  }
-
-  @include global.mq(1026px, min) {
     width: calc(50% - 8% / 2);
   }
 
   &:not(:first-child) {
     margin-top: 70px;
 
-    @include global.mq(1026px, min) {
+    @include global.mq(md) {
       margin-top: 0;
     }
   }

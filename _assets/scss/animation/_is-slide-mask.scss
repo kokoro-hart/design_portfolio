@@ -1,6 +1,6 @@
 @use "foundation/global";
 
-// JavaScript スライドマスクアニメーション
+// Animation スライドマスクアニメーション
 //--------------------------------------------------------------------------
 
 .is-slide-mask {
@@ -12,6 +12,7 @@
   transition: color 0s 0.5s;
 }
 
+//トリガー発火後
 .is-show {
   .is-slide-mask {
     color: global.$color-primary;
