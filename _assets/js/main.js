@@ -10,7 +10,6 @@ import LocomotiveScroll from '@modules/locomotive-scroll/dist/locomotive-scroll.
 // common
 import resizeEvent from './common/resizeEvent';
 import firstViewAnimation from './common/firstViewTrigger';
-import lazyVideo from './common/lazyVideo';
 import replaceHead from './common/replaceHead';
 import { initLoading, endLoading } from './common/loading';
 import { addBlendHeader, removeBlendHeader } from './common/header';
@@ -41,7 +40,6 @@ window.onload = endLoading();
 window.addEventListener('DOMContentLoaded', () => {
   resizeEvent();
   toggleEvent();
-  lazyVideo();
 });
 firstViewAnimation();
 window.addEventListener('resize', setFillHeight);
@@ -54,14 +52,12 @@ barba.init({
       namespace: 'single',
       afterEnter(data) {
         toggleChangeBg(data.next.container.id);
-        lazyVideo();
         removeBlendHeader();
       }
     },
     {
       namespace: 'memories',
       beforeEnter(data) {
-        lazyVideo();
         addBlendHeader();
       }
     },
