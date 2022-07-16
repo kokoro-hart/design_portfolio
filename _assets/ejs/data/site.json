@@ -74,23 +74,6 @@
   },
   "//制作実績": "",
   "works": {
-    "memories": {
-      "dataId": "#js-memories",
-      "id": "js-memories",
-      "name": "Memories",
-      "category": "Event Site / Coding",
-      "description": "世界各国から集まるクラシックカーのチューニング・ドレスアップの総合展示会をコンセプトにした架空カーイベント特設サイトのコーディングを行いました。",
-      "slug": "/memories/",
-      "mockSpWebp": "/img/webp/sp-memories.webp",
-      "mockSpPng": "/img/common/sp-memories.png",
-      "mockTabWebp": "/img/webp/tab-memories.webp",
-      "mockTabPng": "/img/common/tab-memories.png",
-      "mockPcWebp": "/img/webp/pc-memories.webp",
-      "mockPcPng": "/img/common/pc-memories.png",
-      "altSp": "Memories架空カーイベントサイト、スマホ画面のビュー",
-      "altTab": "Memories架空カーイベントサイト、タブレット画面のビュー",
-      "altPc": "Memories架空カーイベントサイト、PC画面ファーストビュー"
-    },
     "brainApp": {
       "dataId": "#js-brain",
       "id": "js-brain",
@@ -98,15 +81,20 @@
       "category": "LP / Coding",
       "description": "生活習慣病の早期発見をサポートする、架空医療認定アプリ「Brain App」のLPコーディングを行いました。",
       "slug": "/brain-app/",
-      "mockSpWebp": "/img/webp/sp-BrainApp.webp",
-      "mockSpPng": "/img/common/sp-BrainApp.png",
-      "mockTabWebp": "/img/webp/tab-BrainApp.webp",
-      "mockTabPng": "/img/common/tab-BrainApp.png",
-      "mockPcWebp": "/img/webp/pc-BrainApp.webp",
-      "mockPcPng": "/img/common/pc-BrainApp.png",
-      "altSp": "Brain App架空医療系アプリLP、スマホ画面のビュー",
-      "altTab": "Brain App架空医療系アプリLP、タブレット画面のビュー",
-      "altPc": "Brain App架空医療系アプリLP、PC画面ファーストビュー"
+      "thumbnailWebp": "/img/webp/thumbnail-brain.webp",
+      "thumbnailPng": "/img/common/thumbnail-brain.png",
+      "alt": "サムネイル、Brain App架空医療系アプリLP"
+    },
+    "memories": {
+      "dataId": "#js-memories",
+      "id": "js-memories",
+      "name": "Memories",
+      "category": "Event Site / Coding",
+      "description": "世界各国から集まるクラシックカーのチューニング・ドレスアップの総合展示会をコンセプトにした架空カーイベント特設サイトのコーディングを行いました。",
+      "slug": "/memories/",
+      "thumbnailWebp": "/img/webp/thumbnail-memories.webp",
+      "thumbnailPng": "/img/common/thumbnail-memories.png",
+      "alt": "サムネイル、Memories架空カーイベントサイト"
     },
     "ktMedia": {
       "dataId": "#js-blog",
@@ -115,32 +103,9 @@
       "category": "Blog Site / Design / Coding",
       "description": "個人アウトプット用の技術ブログ「KT MEDIA」の企画、デザイン、コーディング、CMS構築を行いました。",
       "slug": "/kt-media/",
-      "mockSpWebp": "/img/webp/sp-media-light.webp",
-      "mockSpPng": "/img/common/sp-media-light.png",
-      "mockTabWebp": "/img/webp/tab-media-light.webp",
-      "mockTabPng": "/img/common/tab-media-light.png",
-      "mockPcWebp": "/img/webp/pc-media-light.webp",
-      "mockPcPng": "/img/common/pc-media-light.png",
-      "altSp": "KT MEDIA 個人技術ブログ、スマホ画面のビュー",
-      "altTab": "KT MEDIA 個人技術ブログ、タブレット画面のビュー",
-      "altPc": "KT MEDIA 個人技術ブログ、PC画面ファーストビュー"
-    },
-    "globalStandard": {
-      "dataId": "#js-global",
-      "id": "js-global",
-      "name": "Global Standard",
-      "category": "Corporate Site / Coding",
-      "description": "世界で活躍できるグローバルな人材を育てる事業会社の、架空コーポレートサイトのコーディング、CMS構築を行いました。",
-      "slug": "/global-standard/",
-      "mockSpWebp": "/img/webp/sp-global.webp",
-      "mockSpPng": "/img/common/sp-global.png",
-      "mockTabWebp": "/img/webp/tab-global.webp",
-      "mockTabPng": "/img/common/tab-global.png",
-      "mockPcWebp": "/img/webp/pc-global.webp",
-      "mockPcPng": "/img/common/pc-global.png",
-      "altSp": "Global Standard架空コーポレートサイト、スマホ画面のビュー",
-      "altTab": "Global Standard架空コーポレートサイト、タブレット画面のビュー",
-      "altPc": "Global Standard架空コーポレートサイト、PC画面ファーストビュー"
+      "thumbnailWebp":"/img/webp/thumbnail-media.webp",
+      "thumbnailPng": "/img/common/thumbnail-media.png",
+      "alt": "サムネイル、KT MEDIA 個人技術ブログ"
     },
     "openCafe": {
       "dataId": "#js-open",
@@ -149,15 +114,20 @@
       "category": "Cafe Site / Coding",
       "description": "「Open Cafe - dish & coffee」架空カフェサイトのコーディング、CMS構築を行いました。",
       "slug": "/open-cafe/",
-      "mockSpWebp": "/img/webp/sp-open.webp",
-      "mockSpPng": "/img/common/sp-open.png",
-      "mockTabWebp": "/img/webp/tab-open.webp",
-      "mockTabPng": "/img/common/tab-open.png",
-      "mockPcWebp": "/img/webp/pc-open.webp",
-      "mockPcPng": "/img/common/pc-open.png",
-      "altSp": "OpenCafe架空カフェサイト、スマホ画面のビュー",
-      "altTab": "OpenCafe架空カフェサイト、タブレット画面のビュー",
-      "altPc": "OpenCafe架空カフェサイト、PC画面ファーストビュー"
+      "thumbnailWebp": "/img/webp/thumbnail-open.webp",
+      "thumbnailPng": "/img/common/thumbnail-open.jpeg",
+      "alt": "サムネイル、OpenCafe架空カフェサイト"
+    },
+    "globalStandard": {
+      "dataId": "#js-global",
+      "id": "js-global",
+      "name": "Global Standard",
+      "category": "Corporate Site / Coding",
+      "description": "世界で活躍できるグローバルな人材を育てる事業会社の、架空コーポレートサイトのコーディング、CMS構築を行いました。",
+      "slug": "/global-standard/",
+      "thumbnailWebp": "/img/webp/thumbnail-global.webp",
+      "thumbnailPng": "/img/common/thumbnail-global.jpeg",
+      "alt": "サムネイル、Global Standard架空コーポレートサイト"
     },
     "minamiDental": {
       "dataId": "#js-minami",
@@ -166,15 +136,9 @@
       "category": "Dental Site / Coding",
       "description": "「みなみ歯科クリニック」架空歯科医院サイトのコーディング、CMS構築を行いました。",
       "slug": "/minami-dental/",
-      "mockSpWebp": "/img/webp/sp-minami.webp",
-      "mockSpPng": "/img/common/sp-minami.png",
-      "mockTabWebp": "/img/webp/tab-minami.webp",
-      "mockTabPng": "/img/common/tab-minami.png",
-      "mockPcWebp": "/img/webp/pc-minami.webp",
-      "mockPcPng": "/img/common/pc-minami.png",
-      "altSp": "みなみ歯科クリニック架空サイト、スマホ画面のビュー",
-      "altTab": "みなみ歯科クリニック架空サイト、タブレット画面のビュー",
-      "altPc": "みなみ歯科クリニック架空サイト、PC画面ファーストビュー"
+      "thumbnailWebp": "/img/webp/thumbnail-minami.webp",
+      "thumbnailPng": "/img/common/thumbnail-minami.jpeg",
+      "alt": "サムネイル、みなみ歯科クリニック架空サイト"
     },
     "gardenSalad": {
       "dataId": "#js-garden",
@@ -183,15 +147,9 @@
       "category": "Cafe Site / Coding",
       "description": "健康的なのに美味しい、SNSで拡散したくなるようなサラダ「Garden Salad」架空サラダカフェサイトのコーディングを行いました。",
       "slug": "/garden-salad/",
-      "mockSpWebp": "/img/webp/sp-garden.webp",
-      "mockSpPng": "/img/common/sp-garden.png",
-      "mockTabWebp": "/img/webp/tab-garden.webp",
-      "mockTabPng": "/img/common/tab-garden.png",
-      "mockPcWebp": "/img/webp/pc-garden.webp",
-      "mockPcPng": "/img/common/pc-garden.png",
-      "altSp": "Garden Salad架空カフェサイト、スマホ画面のビュー",
-      "altTab": "Garden Salad架空カフェサイト、タブレット画面のビュー",
-      "altPc": "Garden Salad架空カフェサイト、PC画面ファーストビュー"
+      "thumbnailWebp": "/img/webp/thumbnail-garden.webp",
+      "thumbnailPng": "/img/common/thumbnail-garden.jpeg",
+      "alt": "サムネイル、Garden Salad架空カフェサイト"
     }
   }
 }

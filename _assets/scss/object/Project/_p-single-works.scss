@@ -14,6 +14,7 @@
   font-weight: 500;
   letter-spacing: -0.01em;
   font-family: global.$font-family-en;
+  white-space: nowrap;
 
   @include global.mq(lax) {
     font-size: max(60px, #{global.vw(100)});
@@ -46,10 +47,14 @@
 
 .p-single-works__mockups {
   position: relative;
-  padding-top: 195%;
+  padding-top: 223%;
   margin-bottom: 14.5vw;
 
   @include global.mq(md) {
+    padding-top: 155%;
+  }
+
+  @include global.mq(1026px, min) {
     display: flex;
     align-items: flex-end;
     padding-top: 0;
@@ -64,9 +69,13 @@
   z-index: 2;
   width: 36%;
   transform-style: preserve-3d;
-  perspective: 840px;
+  perspective: global.vw(840, 375);
 
   @include global.mq(md) {
+    width: 25%;
+  }
+
+  @include global.mq(1026px, min) {
     position: static;
     width: 17%;
     transform-style: none;
@@ -76,7 +85,7 @@
   .p-single-works__mockup-img {
     transform: rotate3d(2, 2, -1.5, 34deg);
 
-    @include global.mq(md) {
+    @include global.mq(1026px, min) {
       transform: none;
     }
   }
@@ -84,13 +93,19 @@
 
 .p-single-works__mockup--tab {
   position: absolute;
-  top: 24%;
+  top: 21%;
   right: 0;
   width: 64%;
   transform-style: preserve-3d;
-  perspective: 840px;
+  perspective: global.vw(840, 375);
 
   @include global.mq(md) {
+    top: 13%;
+    right: 10%;
+    width: 43%;
+  }
+
+  @include global.mq(1026px, min) {
     position: static;
     transform-style: none;
     perspective: 0;
@@ -98,7 +113,7 @@
     margin-left: -8vw;
   }
 
-  @include global.mq(lax) {
+  @include global.mq(1026px, min) {
     margin-left: global.vw(-50);
     width: 27%;
   }
@@ -106,6 +121,9 @@
   .p-single-works__mockup-img {
     transform: rotate3d(1, -1, 1, 48deg);
     @include global.mq(md) {
+      transform: rotate3d(1, -1, 1, 37deg);
+    }
+    @include global.mq(1026px, min) {
       transform: none;
     }
   }
@@ -120,6 +138,11 @@
   width: 105%;
 
   @include global.mq(md) {
+    left: 5%;
+    width: 88%;
+  }
+
+  @include global.mq(1026px, min) {
     position: static;
     transform-style: none;
     perspective: 0;
@@ -130,7 +153,12 @@
 
   .p-single-works__mockup-img {
     transform: rotate3d(1, 1, -1, 29deg);
+
     @include global.mq(md) {
+      transform: rotate3d(1, 1, -1, 15deg);
+    }
+
+    @include global.mq(1026px, min) {
       transform: none;
     }
   }

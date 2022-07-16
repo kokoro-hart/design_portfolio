@@ -9,12 +9,13 @@
   overflow: hidden;
   height: 1.5em;
   padding-left: 26px;
-  @include global.fz(16, 18);
+  @include global.fz(16);
   @include global.lh(1.5);
   font-weight: 600;
 
-  @include global.mq(md) {
-    padding-left: 34px;
+  @include global.mq(lax) {
+    font-size: max(22px, #{global.vw(22)});
+    padding-left: max(32px, #{global.vw(32)});
   }
 
   &::before {
@@ -28,9 +29,9 @@
     height: 16px;
     background-color: global.$color-primary;
 
-    @include global.mq(md) {
-      width: 20px;
-      height: 20px;
+    @include global.mq(lax) {
+      width: max(18px, #{global.vw(18)});
+      height: max(18px, #{global.vw(18)});
     }
   }
 
@@ -55,15 +56,15 @@
 }
 
 .c-button-primary--large {
-  padding-left: max(34px, #{global.vw(34)});
   letter-spacing: -0.01em;
 
-  &::before {
-    width: max(20px, #{global.vw(20)});
-    height: max(20px, #{global.vw(20)});
-  }
-
-  @include global.mq(md) {
+  @include global.mq(lax) {
+    padding-left: max(34px, #{global.vw(34)});
     font-size: max(28px, #{global.vw(28)});
+
+    &::before {
+      width: max(20px, #{global.vw(20)});
+      height: max(20px, #{global.vw(20)});
+    }
   }
 }

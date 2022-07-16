@@ -15,7 +15,7 @@
           </span>
           <span class="is-wrap">
             <span class="is-slide-up u-delay02">
-              PORTFOLIO SITE.
+              PORTFOLIO<span class="u-hidden-md-down"> SITE</span>.
             </span>
           </span>
         </h2>
@@ -27,8 +27,8 @@
 
     <%# 私について %>
     <section class="p-home-about l-home__about">
-      <h2 class="p-home-about__heading" data-scroll data-scroll-speed="-0.7" data-scroll-direction="horizontal">
-        Web Creator
+      <h2 class="p-home-about__heading u-hidden-lax-down" data-scroll data-scroll-speed="-0.7" data-scroll-direction="horizontal">
+        Web Creator 
       </h2>
       <div class="p-home-about__profile">
         <h3 class="p-home-about__name">
@@ -90,24 +90,16 @@
           <% }; %>
         </ul><%# / 制作実績 - コンテンツ %>
 
-        <%# 制作実績 - モックアップ + スマホ時のテキスト情報 %>
+        <%# 制作実績 - サムネイル + スマホ時のテキスト情報 %>
         <div class="p-works__items">
           <% for(let work in jsonData.works){ %>
-          <div id="<%= jsonData.works[work].id %>" class="p-works__item p-works-item js-follow-targets">
-            <a href="<%= jsonData.works[work].slug %>" class="p-works-item__mockups" style="transform: translate(0px, 0px);">
-              <picture class="p-works-item__picture p-works-item__picture--sp" style="transform: translate(0px, 0px);">
-                <source srcset="<%= jsonData.works[work].mockSpWebp %>" class="p-works-item__img" type="image/webp" />
-                <img src="<%= jsonData.works[work].mockSpPng %>" class="p-works-item__img" width="357" height="719" alt="<%= jsonData.works[work].altSp %>" loading="lazy" data-scroll data-scroll-speed="2">
+          <a id="<%= jsonData.works[work].id %>" href="<%= jsonData.works[work].slug %>" class="p-works__item p-works-item js-follow-targets">
+            <div class="p-works-item__thumbnail" style="transform: translate(0px, 0px);">
+              <picture class="p-works-item__picture">
+                <source srcset="<%= jsonData.works[work].thumbnailWebp %>" class="p-works-item__img" type="image/webp" />
+                <img src="<%= jsonData.works[work].thumbnailPng %>" class="p-works-item__img" width="770" height="781" alt="<%= jsonData.works[work].alt %>" loading="lazy" data-scroll data-scroll-speed="-1">
               </picture>
-              <picture class="p-works-item__picture p-works-item__picture--tab u-hidden-lax-down" style="transform: translate(0px, 0px);">
-                <source srcset="<%= jsonData.works[work].mockTabWebp %>" class="p-works-item__img" type="image/webp" />
-                <img src="<%= jsonData.works[work].mockTabPng %>" class="p-works-item__img" width="508" height="712" alt="<%= jsonData.works[work].altTab %>" loading="lazy" data-scroll data-scroll-speed="1.25" data-scroll-delay="0.1">
-              </picture>
-              <picture class="p-works-item__picture p-works-item__picture--pc">
-                <source srcset="<%= jsonData.works[work].mockPcWebp %>" class="p-works-item__img" type="image/webp" />
-                <img src="<%= jsonData.works[work].mockPcPng %>" class="p-works-item__img" width="804" height="510" alt="<%= jsonData.works[work].altPc %>" loading="lazy" style="transform: translate(0px, 0px);">
-              </picture>
-            </a>
+            </div>
             <div class="p-works-item__body u-hidden-lax-up">
               <h3 class="p-works-item__title">
                 <%= jsonData.works[work].name %>
@@ -116,22 +108,22 @@
                 <%= jsonData.works[work].category %>
               </p>
             </div>
-          </div>
+          </a>
           <% }; %>
-        </div><%# / 制作実績 - モックアップ + スマホ時のテキスト情報 %>
+        </div><%# / 制作実績 - サムネイル + スマホ時のテキスト情報 %>
         <div id="js-works-mask" class="p-works__mask"></div>
       </div>
     </section><%# / 制作実績 %>
   </div>
 
   <%# お問い合わせ導線 %>
-  <div class="p-contact-connect" style="transform: translate(0px, 0px);">
-    <a href="/contact/" class="p-contact-connect__link">
+  <a href="/contact/" class="p-contact-connect" style="transform: translate(0px, 0px);">
+    <p class="p-contact-connect__text-wrapper">
       <span class="p-contact-connect__text" data-text="Contact Me">
         Get In Touch
       </span>
-    </a>
-  </div><%# / お問い合わせ導線 %>
+    </p>
+  </a><%# / お問い合わせ導線 %>
 </main>
 
 <%- include('./common/_footer', {pageId:pageId }) %>

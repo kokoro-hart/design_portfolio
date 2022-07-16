@@ -29,11 +29,11 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  row-gap: max(104px, #{global.vw(104, 1024)});
 
   @include global.mq(lax) {
     display: block;
     width: 52%;
-    margin-top: 0;
     margin-left: auto;
   }
 
@@ -44,30 +44,20 @@
 
 .p-works__item {
   width: 100%;
-  display: block;
-  padding-top: 7.5vw;
 
   @include global.mq(md) {
-    width: calc(50% - 1% / 2);
+    width: calc(50% - 5% / 2);
   }
 
   @include global.mq(lax) {
     width: 100% !important;
 
-    &:first-child {
-      padding-top: 0;
-    }
-
     &:not(:first-child) {
-      padding-top: 17vh;
+      padding-top: 15vh;
     }
-  }
 
-  &:not(:last-child) {
-    padding-bottom: max(92px, #{global.vw(180, 1024)});
-
-    @include global.mq(lax) {
-      padding-bottom: 17vh;
+    &:not(:last-child) {
+      padding-bottom: 15vh;
     }
   }
 }

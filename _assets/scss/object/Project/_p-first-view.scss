@@ -17,28 +17,29 @@
 
 .p-first-view__heading {
   width: 100%;
-  font-size: global.vw(41, 375);
+  font-size: max(52px, #{global.vw(52, 375)});
   @include global.lh(1.2);
   font-weight: 400;
   font-family: global.$font-family-en;
   white-space: nowrap;
   letter-spacing: -0.01em;
   
-  @include global.mq(lax) {
-    font-size: global.vw(74, 1024);
+  @include global.mq(sm) {
+    font-size: max(74px, #{global.vw(74, 1024)});
+    //font-size: global.vw(74, 1024);
   }
 }
 
 .p-first-view__text {
   width: 100%;
-  margin-top: 14px;
-  font-size: global.vw(16, 375);
+  margin-top: 18px;
+  font-size: global.vw(14, 375);
   letter-spacing: -0.01em;
   @include global.lh(1.2);
   font-family: global.$font-family-en;
   color: global.$color-secondary-dark;
 
-  @include global.mq(lax) {
+  @include global.mq(md) {
     margin-top: 24px;
     font-size: global.vw(24, 768);
   }

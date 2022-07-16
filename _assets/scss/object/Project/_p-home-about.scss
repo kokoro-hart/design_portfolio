@@ -21,7 +21,7 @@
   @include global.mq(lax) {
     width: 40%;
     margin-left: 0;
-    font-size: 12vw;
+    font-size: 14vw;
   }
 
   @include global.mq(xl) {
@@ -56,7 +56,7 @@
   letter-spacing: -0.02em;
 
   @include global.mq(md) {
-    font-size: max(48px, #{global.vw(80)});
+    font-size: max(28px, #{global.vw(80)});
   }
 }
 

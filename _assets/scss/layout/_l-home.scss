@@ -5,18 +5,18 @@
 
 //ファーストビュー
 .l-home__first-view {
-  padding: 20vh 0 15vh;
+  padding: 15vh 0 13vh;
 
   @include global.mq(lax) {
     min-height: 500px;
-    height: 83vh;
+    height: 86vh;
     padding: 0;
   }
 }
 
 //プロフィール
 .l-home__about {
-  padding-bottom: 134px;
+  padding-bottom: 84px;
 
   @include global.mq(lax) {
     padding-bottom: 0;

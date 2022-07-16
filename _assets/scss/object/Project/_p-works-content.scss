@@ -48,7 +48,7 @@
     font-family: global.$font-family-en;
     
     @include global.mq(md) {
-      font-size: max(30px, #{global.vw(38)});
+      font-size: max(30px, #{global.vw(36)});
     }
   }
 }

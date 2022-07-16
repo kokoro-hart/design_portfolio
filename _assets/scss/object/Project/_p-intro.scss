@@ -4,11 +4,11 @@
 //--------------------------------------------------------------------------
 
 .p-intro__heading {
-  font-size: max(33px, 5.5vw);
+  font-size: max(32px, 5.5vw);
   @include global.lh(1.05);
   font-weight: 400;
   font-family: global.$font-family-en;
-  letter-spacing: 0.01em;
+  letter-spacing: -0.01em;
 
   @include global.mq(lax) {
     margin-top: 0;

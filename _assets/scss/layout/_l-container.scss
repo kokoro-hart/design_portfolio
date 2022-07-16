@@ -11,7 +11,9 @@
 }
 
 .l-container--large {
-  width: 93%;
+  @include global.mq(lax) {
+    width: 93%;
+  }
 }
 
 .l-container--small {
