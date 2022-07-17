@@ -3,9 +3,12 @@
 
 <% console.log(jsonData) %>
 <main class="l-single-works p-single-works p-single-works--memories" data-barba="container" data-barba-namespace="memories">
-  <div class="p-single-works--memories__inner">
-    <div id="js-first-view" class="l-container">
-      <div class="l-single-works__first-view">
+  <%# 背景色変更エリア %>
+  <div class="p-single-works--memories__container">
+    <div class="l-container">
+
+      <%# ファーストビュー %>
+      <div id="js-first-view" class="l-single-works__first-view">
         <div class="p-single-works__heading c-single-heading">
           <h1 class="p-single-works__heading-en is-wrap" style="transform: translate(0px, 0px);">
             <span class="is-slide-up">
@@ -19,7 +22,9 @@
             Event Site / Coding
           </p>
         </div>
-      </div>
+      </div><%# / ファーストビュー %>
+
+      <%# モックアップ %>
       <div class="p-single-works__mockups" style="transform: translate(0px, 0px);">
         <picture class="p-single-works__mockup p-single-works__mockup--sp" data-scroll data-scroll-speed="1" data-scroll-delay="0.1">
           <source srcset="/img/webp/sp-memories.webp" class="p-single-works__mockup-img" type="image/webp"/>
@@ -35,10 +40,9 @@
           <source srcset="/img/webp/tab-memories.webp" class="p-single-works__mockup-img" type="image/webp"/>
           <img src="/img/common/tab-memories.png" class="p-single-works__mockup-img" alt="Memories架空カーイベントサイト、タブレット画面のビュー" width="443" height="620" decoding="async">
         </picture>
-      </div>
-    </div>
+      </div><%# / モックアップ %>
 
-    <div class="l-container l-container--small">
+      <%# サイトリンク 概要 %>
       <div class="p-single-works__info" style="transform: translate(0px, 0px);">
         <section class="p-single-works__overview p-works-overview">
           <h2 class="p-works-overview__heading">
@@ -97,11 +101,14 @@
             </p>
           </div>
         </section>
-      </div>
+      </div><%# / サイトリンク 概要 %>
 
+      <%# ワイドイメージ %>
       <picture class="p-single-works__picture p-single-works__picture--wide" style="transform: translate(0px, 0px);">
         <img src="/img/common/car.jpeg" class="p-single-works__img" width="1920" height="1251" loading="lazy" data-scroll data-scroll-speed="-1" alt="車の内装">
-      </picture>
+      </picture><%# / ワイドイメージ %>
+
+      <%# アニメーション %>
       <div class="p-single-works__info" style="transform: translate(0px, 0px);">
         <section class="p-single-works__overview p-works-overview">
           <h2 class="p-works-overview__heading">
@@ -113,16 +120,19 @@
             </p>
           </div>
         </section>
-      </div>
+      </div><%# / アニメーション %>
+
+      <%# 動画 %>
       <div class="p-single-works__video-wrapper">
         <video autoplay muted loop playsinline width="1632" height="1020" data-scroll data-scroll-speed="-1">
           <source src="/img/video/memories.mp4" type="video/mp4">
         </video>
-      </div>
+      </div><%# / 動画 %>
     </div>
-  </div>
+  </div><%# / 背景色変更エリア %>
 
-  <div class="l-single-works__detail l-container l-container--small">
+  <%# 詳細 %>
+  <div class="l-single-works__detail l-container">
     <section class="p-single-works__detail p-works-detail" data-scroll data-scroll-sticky data-scroll-target="#js-capture">
       <div class="p-works-detail__inner">
         <h2 class="p-works-detail__heading" style="transform: translate(0px, 0px);">
@@ -190,8 +200,9 @@
       </picture>
       <div class="p-single-works__capture-mask" id="js-capture"></div>
     </div>
-  </div>
+  </div><%# / 詳細 %>
 
+  <%# 制作実績導線 %>
   <div class="p-works-connect" style="transform: translate(0px, 0px);">
     <a href="/brain-app/" class="p-works-connect__link">
       <picture class="p-works-connect__bg">
@@ -215,7 +226,7 @@
         </span>
       </p>
     </a>
-  </div>
+  </div><%# / 制作実績導線 %>
 </main>
 
 <%- include('../common/_footer', {pageId:pageId }) %>

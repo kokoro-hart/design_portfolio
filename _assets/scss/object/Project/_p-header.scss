@@ -22,12 +22,13 @@
   @include global.lh(1.2);
   font-weight: 400;
   height: 1.2em;
+  letter-spacing: -0.01em;
 
   &:hover,
   &:focus {
     .p-header__logo-head,
     .p-header__logo-foot {
-      transform: translateY(-1.2em);
+      transform: translateY(-1.25em);
     }
   }
 }

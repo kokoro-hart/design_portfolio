@@ -4,9 +4,11 @@
 
 <% console.log(jsonData) %>
 <main id="js-minami-dental" class="l-single-works p-single-works" data-barba="container" data-barba-namespace="single" data-bg="#8DC7E3">
-  <div id="js-switching-trigger">
-    <div id="js-first-view" class="l-container">
-      <div class="l-single-works__first-view">
+  <div class="l-container">
+    <%# 背景色変更エリア %>
+    <div id="js-switching-trigger">
+      <%# ファーストビュー %>
+      <div id="js-first-view" class="l-single-works__first-view">
         <div class="p-single-works__heading c-single-heading">
           <h1 class="p-single-works__heading-en is-wrap" style="transform: translate(0px, 0px);">
             <span class="is-slide-up">
@@ -20,7 +22,9 @@
             Dental Site / Coding
           </p>
         </div>
-      </div>
+      </div><%# / ファーストビュー %>
+
+      <%# モックアップ %>
       <div class="p-single-works__mockups" style="transform: translate(0px, 0px);">
         <picture class="p-single-works__mockup p-single-works__mockup--sp" data-scroll data-scroll-speed="1" data-scroll-delay="0.1">
           <source srcset="/img/webp/sp-minami.webp" class="p-single-works__mockup-img" type="image/webp" />
@@ -36,10 +40,9 @@
           <source srcset="/img/webp/tab-minami.webp" class="p-single-works__mockup-img" type="image/webp" />
           <img src="/img/common/tab-minami.png" class="p-single-works__mockup-img" alt="みなみ歯科クリニック架空サイト、タブレット画面のビュー" width="445" height="622" decoding="async">
         </picture>
-      </div>
-    </div>
+      </div><%# / モックアップ %>
 
-    <div class="l-container l-container--small">
+      <%# サイトリンク 概要 %>
       <div class="p-single-works__info" style="transform: translate(0px, 0px);">
         <section class="p-single-works__overview p-works-overview">
           <h2 class="p-works-overview__heading">
@@ -100,12 +103,15 @@
             </p>
           </div>
         </section>
-      </div>
+      </div><%# / サイトリンク 概要 %>
 
+      <%# ワイドイメージ %>
       <picture class="p-single-works__picture p-single-works__picture--wide" style="transform: translate(0px, 0px);">
         <source srcset="/img/webp/minami-rotate.webp" class="p-single-works__img" type="image/webp" />
         <img src="/img/common/minami-rotate.png" class="p-single-works__img" width="1920" height="1333" loading="lazy" data-scroll data-scroll-speed="-1" alt="">
-      </picture>
+      </picture><%# / ワイドイメージ %>
+
+      <%# フューチャー %>
       <div class="p-single-works__info" style="transform: translate(0px, 0px);">
         <section class="p-single-works__overview p-works-overview">
           <h2 class="p-works-overview__heading">
@@ -117,112 +123,105 @@
             </p>
           </div>
         </section>
-      </div>
+      </div><%# / フューチャー %>
+
+      <%# 動画 %>
       <div class="p-single-works__video-wrapper">
         <video autoplay muted loop playsinline width="1632" height="1020" data-scroll data-scroll-speed="-1">
           <source src="/img/video/minami-video.mp4" type="video/mp4">
         </video>
-      </div>
-      <div class="p-single-works__info" style="transform: translate(0px, 0px);">
-        <section class="p-single-works__overview p-works-overview">
-          <h2 class="p-works-overview__heading">
-            POINT
+      </div><%# / 動画 %>
+
+    </div><%# / 背景色変更エリア %>
+
+    <%# 詳細 %>
+    <div class="l-single-works__detail">
+      <section class="p-single-works__detail p-works-detail" data-scroll data-scroll-sticky data-scroll-target="#js-capture">
+        <div class="p-works-detail__inner">
+          <h2 class="p-works-detail__heading" style="transform: translate(0px, 0px);">
+            DETAILS
           </h2>
-          <div class="p-works-overview__body">
-            <p class="p-works-overview__text">
-              「歯科医院の予約がしたい」という目的からサイトに訪問することを想定して、ページの表示速度に気を配りました。<br>
-              具体的には、画像サイズの最適化やデコード処理の非同期化、遅延読み込みなどを実装しました。
-            </p>
+          <div class="p-works-detail__body">
+            <dl class="p-works-detail__dl">
+              <div class="p-works-detail__row">
+                <dt class="p-works-detail__dt">
+                  担当範囲
+                </dt>
+                <dd class="p-works-detail__dd">
+                  コーディング（12P） / CMS構築
+                </dd>
+              </div>
+              <div class="p-works-detail__row">
+                <dt class="p-works-detail__dt">
+                  制作期間
+                </dt>
+                <dd class="p-works-detail__dd">
+                  2021.10.20 - 2021.12.19
+                </dd>
+              </div>
+              <div class="p-works-detail__row">
+                <dt class="p-works-detail__dt">
+                  実働時間
+                </dt>
+                <dd class="p-works-detail__dd">
+                  30日(2〜4時間/ 1日)
+                </dd>
+              </div>
+              <div class="p-works-detail__row">
+                <dt class="p-works-detail__dt">
+                  使用言語
+                </dt>
+                <dd class="p-works-detail__dd">
+                  HTML(EJS) / CSS(Scss) / JavaScript / PHP
+                </dd>
+              </div>
+              <div class="p-works-detail__row">
+                <dt class="p-works-detail__dt">
+                  使用ツール
+                </dt>
+                <dd class="p-works-detail__dd">
+                  git / gulp + webpack / vscode / XD
+                </dd>
+              </div>
+              <div class="p-works-detail__row">
+                <dt class="p-works-detail__dt">
+                  ライブラリ
+                </dt>
+                <dd class="p-works-detail__dd">
+                  swiper.js
+                </dd>
+              </div>
+              <div class="p-works-detail__row">
+                <dt class="p-works-detail__dt">
+                  使用CMS
+                </dt>
+                <dd class="p-works-detail__dd">
+                  WordPress
+                </dd>
+              </div>
+            </dl>
           </div>
-        </section>
-      </div>
-    </div>
-  </div>
-  <div class="l-single-works__detail l-container l-container--small">
-    <section class="p-single-works__detail p-works-detail" data-scroll data-scroll-sticky data-scroll-target="#js-capture">
-      <div class="p-works-detail__inner">
-        <h2 class="p-works-detail__heading" style="transform: translate(0px, 0px);">
-          DETAILS
-        </h2>
-        <div class="p-works-detail__body">
-          <dl class="p-works-detail__dl">
-            <div class="p-works-detail__row">
-              <dt class="p-works-detail__dt">
-                担当範囲
-              </dt>
-              <dd class="p-works-detail__dd">
-                コーディング（12P） / CMS構築
-              </dd>
-            </div>
-            <div class="p-works-detail__row">
-              <dt class="p-works-detail__dt">
-                制作期間
-              </dt>
-              <dd class="p-works-detail__dd">
-                2021.10.20 - 2021.12.19
-              </dd>
-            </div>
-            <div class="p-works-detail__row">
-              <dt class="p-works-detail__dt">
-                実働時間
-              </dt>
-              <dd class="p-works-detail__dd">
-                30日(2〜4時間/ 1日)
-              </dd>
-            </div>
-            <div class="p-works-detail__row">
-              <dt class="p-works-detail__dt">
-                使用言語
-              </dt>
-              <dd class="p-works-detail__dd">
-                HTML(EJS) / CSS(Scss) / JavaScript / PHP
-              </dd>
-            </div>
-            <div class="p-works-detail__row">
-              <dt class="p-works-detail__dt">
-                使用ツール
-              </dt>
-              <dd class="p-works-detail__dd">
-                git / gulp + webpack / vscode / XD
-              </dd>
-            </div>
-            <div class="p-works-detail__row">
-              <dt class="p-works-detail__dt">
-                ライブラリ
-              </dt>
-              <dd class="p-works-detail__dd">
-                swiper.js
-              </dd>
-            </div>
-            <div class="p-works-detail__row">
-              <dt class="p-works-detail__dt">
-                使用CMS
-              </dt>
-              <dd class="p-works-detail__dd">
-                WordPress
-              </dd>
-            </div>
-          </dl>
         </div>
+      </section>
+      <div class="p-single-works__captures">
+        <picture class="p-single-works__capture" style="transform: translate(0px, 0px);">
+          <source srcset="/img/webp/minami-top.webp" class="p-single-works__capture-img" type="image/webp" />
+          <img src="/img/common/minami-top.png" class="p-single-works__capture-img" alt="みなみ歯科クリニック架空サイトのトップページフルスクリーンキャプチャ" width="816" height="1932" loading="lazy">
+        </picture>
+        <picture class="p-single-works__capture" style="transform: translate(0px, 0px);">
+          <source srcset="/img/webp/minami-about.webp" class="p-single-works__capture-img" type="image/webp" />
+          <img src="/img/common/minami-about.png" class="p-single-works__capture-img" alt="みなみ歯科クリニック架空サイトのカンパニーページフルスクリーンキャプチャ" width="816" height="1046" loading="lazy">
+        </picture>
+        <picture class="p-single-works__capture" style="transform: translate(0px, 0px);">
+          <source srcset="/img/webp/minami-staff.webp" class="p-single-works__capture-img" type="image/webp" />
+          <img src="/img/common/minami-staff.png" class="p-single-works__capture-img" alt="みなみ歯科クリニック架空サイトのサービスページフルスクリーンキャプチャ" width="816" height="1376" loading="lazy">
+        </picture>
+        <div class="p-single-works__capture-mask" id="js-capture"></div>
       </div>
-    </section>
-    <div class="p-single-works__captures">
-      <picture class="p-single-works__capture" style="transform: translate(0px, 0px);">
-        <source srcset="/img/webp/minami-top.webp" class="p-single-works__capture-img" type="image/webp" />
-        <img src="/img/common/minami-top.png" class="p-single-works__capture-img" alt="みなみ歯科クリニック架空サイトのトップページフルスクリーンキャプチャ" width="816" height="1932" loading="lazy">
-      </picture>
-      <picture class="p-single-works__capture" style="transform: translate(0px, 0px);">
-        <source srcset="/img/webp/minami-about.webp" class="p-single-works__capture-img" type="image/webp" />
-        <img src="/img/common/minami-about.png" class="p-single-works__capture-img" alt="みなみ歯科クリニック架空サイトのカンパニーページフルスクリーンキャプチャ" width="816" height="1046" loading="lazy">
-      </picture>
-      <picture class="p-single-works__capture" style="transform: translate(0px, 0px);">
-        <source srcset="/img/webp/minami-staff.webp" class="p-single-works__capture-img" type="image/webp" />
-        <img src="/img/common/minami-staff.png" class="p-single-works__capture-img" alt="みなみ歯科クリニック架空サイトのサービスページフルスクリーンキャプチャ" width="816" height="1376" loading="lazy">
-      </picture>
-      <div class="p-single-works__capture-mask" id="js-capture"></div>
-    </div>
+    </div><%# / 詳細 %>
   </div>
 
+  <%# 制作実績導線 %>
   <div class="p-works-connect" style="transform: translate(0px, 0px);">
     <a href="/global-standard/" class="p-works-connect__link">
       <picture class="p-works-connect__bg">
@@ -246,7 +245,7 @@
         </span>
       </p>
     </a>
-  </div>
+  </div><%# / 制作実績導線 %>
 
 </main>
 

@@ -7,15 +7,6 @@
   display: block;
 }
 
-.p-works-item__thumbnail {
-  display: block;
-
-  @include global.mq(lax) {
-    width: 100%;
-    padding: 0;
-  }
-}
-
 .p-works-item__picture {
   display: block;
   overflow: hidden;

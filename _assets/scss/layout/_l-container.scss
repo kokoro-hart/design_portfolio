@@ -1,23 +1,25 @@
 @use "foundation/global";
 
-// Layout .l-container
+// Layout コンテナ
 //--------------------------------------------------------------------------
 
 .l-container {
   max-width: 100%;
-  width: 90%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
-}
+  padding-left: 24px;
+  padding-right: 24px;
 
-.l-container--large {
-  @include global.mq(lax) {
-    width: 93%;
+  @include global.mq(md) {
+    width: 90%;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
-.l-container--small {
-  @include global.mq(md) {
-    width: 85%;
+.l-container--large {
+  @include global.mq(xl) {
+    width: 93%;
   }
 }

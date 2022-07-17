@@ -1,12 +1,12 @@
 @use "foundation/global";
 
-// Layout .l-single-works
+// Layout 制作実績詳細ページ
 //--------------------------------------------------------------------------
 .l-single-works__first-view {
   padding: 20vh 0 8vh 2vw;
 
   @include global.mq(lax) {
-    padding: 15vw 0 7vw 9.5vw;
+    padding: 15vw 0 7vw 8.5vw;
   }
 }
 

@@ -26,7 +26,6 @@
   
   @include global.mq(sm) {
     font-size: max(74px, #{global.vw(74, 1024)});
-    //font-size: global.vw(74, 1024);
   }
 }
 

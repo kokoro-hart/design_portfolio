@@ -4,9 +4,11 @@
 
 <% console.log(jsonData) %>
 <main id="js-garden-salad" class="l-single-works p-single-works" data-barba="container" data-barba-namespace="single" data-bg="#8CA996">
-  <div id="js-switching-trigger">
-    <div id="js-first-view" class="l-container">
-      <div class="l-single-works__first-view">
+  <div class="l-container">
+    <%# 背景色変更エリア %>
+    <div id="js-switching-trigger">
+      <%# ファーストビュー %>
+      <div id="js-first-view" class="l-single-works__first-view">
         <div class="p-single-works__heading c-single-heading">
           <h1 class="p-single-works__heading-en is-wrap" style="transform: translate(0px, 0px);">
             <span class="is-slide-up">
@@ -20,7 +22,9 @@
             Cafe Site / Coding
           </p>
         </div>
-      </div>
+      </div><%# / ファーストビュー %>
+
+      <%# モックアップ %>
       <div class="p-single-works__mockups" style="transform: translate(0px, 0px);">
         <picture class="p-single-works__mockup p-single-works__mockup--sp" data-scroll data-scroll-speed="1" data-scroll-delay="0.1">
           <source srcset="/img/webp/sp-garden.webp" class="p-single-works__mockup-img" type="image/webp" />
@@ -36,10 +40,9 @@
           <source srcset="/img/webp/tab-garden.webp" class="p-single-works__mockup-img" type="image/webp" />
           <img src="/img/common/tab-garden.png" class="p-single-works__mockup-img" alt="Garden Salad架空カフェサイト、タブレット画面のビュー" width="445" height="622" decoding="async">
         </picture>
-      </div>
-    </div>
+      </div><%# / モックアップ %>
 
-    <div class="l-container l-container--small">
+      <%# サイトリンク 概要 %>
       <div class="p-single-works__info" style="transform: translate(0px, 0px);">
         <section class="p-single-works__overview p-works-overview">
           <h2 class="p-works-overview__heading">
@@ -101,12 +104,15 @@
             </p>
           </div>
         </section>
-      </div>
+      </div><%# / サイトリンク 概要 %>
 
+      <%# ワイドイメージ %>
       <picture class="p-single-works__picture p-single-works__picture--wide" style="transform: translate(0px, 0px);">
         <source srcset="/img/webp/garden-rotate.webp" class="p-single-works__img" type="image/webp" />
         <img src="/img/common/garden-rotate.png" class="p-single-works__img" width="1920" height="1336" loading="lazy" data-scroll data-scroll-speed="-1" alt="">
-      </picture>
+      </picture><%# / ワイドイメージ %>
+
+      <%# アニメーション %>
       <div class="p-single-works__info" style="transform: translate(0px, 0px);">
         <section class="p-single-works__overview p-works-overview">
           <h2 class="p-works-overview__heading">
@@ -118,83 +124,89 @@
             </p>
           </div>
         </section>
-      </div>
+      </div><%# アニメーション %>
+      
+      <%# 動画 %>
       <div class="p-single-works__video-wrapper">
         <video autoplay muted loop playsinline width="1632" height="1020" data-scroll data-scroll-speed="-1">
           <source src="/img/video/garden-video.mp4" type="video/mp4">
         </video>
-      </div>
-    </div>
-  </div>
-  <div class="l-single-works__detail l-container l-container--small">
-    <section class="p-single-works__detail p-works-detail" data-scroll data-scroll-sticky data-scroll-target="#js-capture">
-      <div class="p-works-detail__inner">
-        <h2 class="p-works-detail__heading" style="transform: translate(0px, 0px);">
-          DETAILS
-        </h2>
-        <div class="p-works-detail__body">
-          <dl class="p-works-detail__dl">
-            <div class="p-works-detail__row">
-              <dt class="p-works-detail__dt">
-                担当範囲
-              </dt>
-              <dd class="p-works-detail__dd">
-                コーディング（TOPのみ）
-              </dd>
-            </div>
-            <div class="p-works-detail__row">
-              <dt class="p-works-detail__dt">
-                制作期間
-              </dt>
-              <dd class="p-works-detail__dd">
-                2021.12.20 - 2021.12.28
-              </dd>
-            </div>
-            <div class="p-works-detail__row">
-              <dt class="p-works-detail__dt">
-                実働時間
-              </dt>
-              <dd class="p-works-detail__dd">
-                8日(2〜4時間/ 1日)
-              </dd>
-            </div>
-            <div class="p-works-detail__row">
-              <dt class="p-works-detail__dt">
-                使用言語
-              </dt>
-              <dd class="p-works-detail__dd">
-                HTML(EJS) / CSS(Scss) / JavaScript
-              </dd>
-            </div>
-            <div class="p-works-detail__row">
-              <dt class="p-works-detail__dt">
-                使用ツール
-              </dt>
-              <dd class="p-works-detail__dd">
-                git / gulp + webpack / vscode / figma
-              </dd>
-            </div>
-            <div class="p-works-detail__row">
-              <dt class="p-works-detail__dt">
-                ライブラリ
-              </dt>
-              <dd class="p-works-detail__dd">
-                simplePARALLAX.js
-              </dd>
-            </div>
-          </dl>
+      </div><%# / 動画 %>
+
+    </div><%# / 背景色変更エリア %>
+
+    <%# 詳細 %>
+    <div class="l-single-works__detail">
+      <section class="p-single-works__detail p-works-detail" data-scroll data-scroll-sticky data-scroll-target="#js-capture">
+        <div class="p-works-detail__inner">
+          <h2 class="p-works-detail__heading" style="transform: translate(0px, 0px);">
+            DETAILS
+          </h2>
+          <div class="p-works-detail__body">
+            <dl class="p-works-detail__dl">
+              <div class="p-works-detail__row">
+                <dt class="p-works-detail__dt">
+                  担当範囲
+                </dt>
+                <dd class="p-works-detail__dd">
+                  コーディング（TOPのみ）
+                </dd>
+              </div>
+              <div class="p-works-detail__row">
+                <dt class="p-works-detail__dt">
+                  制作期間
+                </dt>
+                <dd class="p-works-detail__dd">
+                  2021.12.20 - 2021.12.28
+                </dd>
+              </div>
+              <div class="p-works-detail__row">
+                <dt class="p-works-detail__dt">
+                  実働時間
+                </dt>
+                <dd class="p-works-detail__dd">
+                  8日(2〜4時間/ 1日)
+                </dd>
+              </div>
+              <div class="p-works-detail__row">
+                <dt class="p-works-detail__dt">
+                  使用言語
+                </dt>
+                <dd class="p-works-detail__dd">
+                  HTML(EJS) / CSS(Scss) / JavaScript
+                </dd>
+              </div>
+              <div class="p-works-detail__row">
+                <dt class="p-works-detail__dt">
+                  使用ツール
+                </dt>
+                <dd class="p-works-detail__dd">
+                  git / gulp + webpack / vscode / figma
+                </dd>
+              </div>
+              <div class="p-works-detail__row">
+                <dt class="p-works-detail__dt">
+                  ライブラリ
+                </dt>
+                <dd class="p-works-detail__dd">
+                  simplePARALLAX.js
+                </dd>
+              </div>
+            </dl>
+          </div>
         </div>
+      </section>
+      <div class="p-single-works__captures">
+        <picture class="p-single-works__capture" style="transform: translate(0px, 0px);">
+          <source srcset="/img/webp/garden-top.webp" class="p-single-works__capture-img" type="image/webp" />
+          <img src="/img/common/garden-top.png" class="p-single-works__capture-img" alt="Garden Salad架空カフェサイトのトップページフルスクリーンキャプチャ" width="816" height="3371" loading="lazy">
+        </picture>
+        <div class="p-single-works__capture-mask" id="js-capture"></div>
       </div>
-    </section>
-    <div class="p-single-works__captures">
-      <picture class="p-single-works__capture" style="transform: translate(0px, 0px);">
-        <source srcset="/img/webp/garden-top.webp" class="p-single-works__capture-img" type="image/webp" />
-        <img src="/img/common/garden-top.png" class="p-single-works__capture-img" alt="Garden Salad架空カフェサイトのトップページフルスクリーンキャプチャ" width="816" height="3371" loading="lazy">
-      </picture>
-      <div class="p-single-works__capture-mask" id="js-capture"></div>
-    </div>
+    </div><%# / 詳細 %>
   </div>
 
+  <%# 制作実績導線 %>
   <div class="p-works-connect" style="transform: translate(0px, 0px);">
     <a href="/minami-dental/" class="p-works-connect__link">
       <picture class="p-works-connect__bg">
@@ -218,7 +230,7 @@
         </span>
       </p>
     </a>
-  </div>
+  </div><%# / 制作実績導線 %>
 
 </main>
 

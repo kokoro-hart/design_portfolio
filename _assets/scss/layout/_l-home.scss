@@ -1,6 +1,6 @@
 @use "foundation/global";
 
-// Layout .l-home
+// Layout トップページ
 //--------------------------------------------------------------------------
 
 //ファーストビュー
@@ -25,9 +25,9 @@
 
 // 制作実績
 .l-home__works {
-  padding-bottom: 160px;
+  padding-bottom: 120px;
 
-  @include global.mq(md) {
+  @include global.mq(lax) {
     padding-bottom: 260px;
   }
 }

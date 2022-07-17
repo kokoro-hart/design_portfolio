@@ -4,251 +4,268 @@
 
 <% console.log(jsonData) %>
 <main id="js-kt-media" class="l-single-works p-single-works" data-barba="container" data-barba-namespace="single" data-bg="#80C0C0">
-<div id="js-switching-trigger">
-  <div id="js-first-view" class="l-container">
-    <div class="l-single-works__first-view">
-      <div class="p-single-works__heading c-single-heading">
-        <h1 class="p-single-works__heading-en is-wrap" style="transform: translate(0px, 0px);">
-          <span class="is-slide-up">
-            KT MEDIA
-          </span>
-        </h1>
-        <p class="p-single-works__heading-ja is-fade-up u-delay01">
-          アウトプット用の個人技術ブログ
-        </p>
-        <p class="p-single-works__category is-fade-up u-delay02">
-          Blog Site / Design / Coding
-        </p>
-      </div>
-    </div>
-    <div class="p-single-works__mockups" style="transform: translate(0px, 0px);">
-      <picture class="p-single-works__mockup p-single-works__mockup--sp" data-scroll data-scroll-speed="1" data-scroll-delay="0.1">
-        <source srcset="/img/webp/sp-media-light.webp" class="p-single-works__mockup-img" type="image/webp" />
-        <img src="/img/common/sp-media-light.png" class="p-single-works__mockup-img" alt="KT MEDIA、スマホ画面のビュー" width="70" height="141" decoding="async">
-      </picture>
+  <div class="l-container">
+    <%# 背景色変更エリア %>
+    <div id="js-switching-trigger">
+      <%# ファーストビュー %>
+      <div id="js-first-view" class="l-single-works__first-view">
+        <div class="p-single-works__heading c-single-heading">
+          <h1 class="p-single-works__heading-en is-wrap" style="transform: translate(0px, 0px);">
+            <span class="is-slide-up">
+              KT MEDIA
+            </span>
+          </h1>
+          <p class="p-single-works__heading-ja is-fade-up u-delay01">
+            アウトプット用の個人技術ブログ
+          </p>
+          <p class="p-single-works__category is-fade-up u-delay02">
+            Blog Site / Design / Coding
+          </p>
+        </div>
+      </div><%# / ファーストビュー %>
 
-      <picture class="p-single-works__mockup p-single-works__mockup--pc" data-scroll data-scroll-speed="0.5">
-        <source srcset="/img/webp/pc-media-light.webp" class="p-single-works__mockup-img" type="image/webp" />
-        <img src="/img/common/pc-media-light.png" class="p-single-works__mockup-img" alt="KT MEDIA、PC画面のビュー" width="949" height="811" decoding="async">
-      </picture>
+      <%# モックアップ %>
+      <div class="p-single-works__mockups" style="transform: translate(0px, 0px);">
+        <picture class="p-single-works__mockup p-single-works__mockup--sp" data-scroll data-scroll-speed="1" data-scroll-delay="0.1">
+          <source srcset="/img/webp/sp-media-light.webp" class="p-single-works__mockup-img" type="image/webp" />
+          <img src="/img/common/sp-media-light.png" class="p-single-works__mockup-img" alt="KT MEDIA、スマホ画面のビュー" width="70" height="141" decoding="async">
+        </picture>
 
-      <picture class="p-single-works__mockup p-single-works__mockup--tab" data-scroll data-scroll-speed="0.75" data-scroll-delay="0.05">
-        <source srcset="/img/webp/tab-media-light.webp" class="p-single-works__mockup-img" type="image/webp" />
-        <img src="/img/common/tab-media-light.png" class="p-single-works__mockup-img" alt="KT MEDIA、タブレット画面のビュー" width="445" height="622" decoding="async">
-      </picture>
-    </div>
-  </div>
+        <picture class="p-single-works__mockup p-single-works__mockup--pc" data-scroll data-scroll-speed="0.5">
+          <source srcset="/img/webp/pc-media-light.webp" class="p-single-works__mockup-img" type="image/webp" />
+          <img src="/img/common/pc-media-light.png" class="p-single-works__mockup-img" alt="KT MEDIA、PC画面のビュー" width="949" height="811" decoding="async">
+        </picture>
 
-  <div class="l-container l-container--small">
-    <div class="p-single-works__info" style="transform: translate(0px, 0px);">
-      <section class="p-single-works__overview p-works-overview">
-        <h2 class="p-works-overview__heading">
-          LINKS
-        </h2>
-        <div class="p-works-overview__body">
-          <dl class="p-works-overview__dl">
-            <div class="p-works-overview__row">
-              <dt class="p-works-overview__dt">
-                Site url
-              </dt>
-              <dd class="p-works-overview__dd">
-                <a href="https://kt-media.blog/" class="p-works-overview__link" target="_blank" rel="noopener noreferrer"
-                  style="transform: translate(0px, 0px);">
-                  https://kt-media.blog
-                  <svg class="c-svg p-works-overview__blank" width="14" height="14">
-                    <use xlink:href="/img/svg/sprite.min.svg#icon-blank" />
+        <picture class="p-single-works__mockup p-single-works__mockup--tab" data-scroll data-scroll-speed="0.75" data-scroll-delay="0.05">
+          <source srcset="/img/webp/tab-media-light.webp" class="p-single-works__mockup-img" type="image/webp" />
+          <img src="/img/common/tab-media-light.png" class="p-single-works__mockup-img" alt="KT MEDIA、タブレット画面のビュー" width="445" height="622" decoding="async">
+        </picture>
+      </div><%# / モックアップ %>
+
+      <%# サイトリンク 概要 %>
+      <div class="p-single-works__info" style="transform: translate(0px, 0px);">
+        <section class="p-single-works__overview p-works-overview">
+          <h2 class="p-works-overview__heading">
+            LINKS
+          </h2>
+          <div class="p-works-overview__body">
+            <dl class="p-works-overview__dl">
+              <div class="p-works-overview__row">
+                <dt class="p-works-overview__dt">
+                  Site url
+                </dt>
+                <dd class="p-works-overview__dd">
+                  <a href="https://kt-media.blog/" class="p-works-overview__link" target="_blank" rel="noopener noreferrer"
+                    style="transform: translate(0px, 0px);">
+                    https://kt-media.blog
+                    <svg class="c-svg p-works-overview__blank" width="14" height="14">
+                      <use xlink:href="/img/svg/sprite.min.svg#icon-blank" />
+                    </svg>
+                  </a>
+                </dd>
+              </div>
+              <div class="p-works-overview__row">
+                <dt class="p-works-overview__dt">
+                  Source
+                  <svg class="c-svg p-works-overview__svg" width="20" height="20" role="img"
+                    aria-label="GitHubのアイコン">
+                    <use xlink:href="/img/svg/sprite.min.svg#icon-github" />
                   </svg>
-                </a>
-              </dd>
-            </div>
-            <div class="p-works-overview__row">
-              <dt class="p-works-overview__dt">
-                Source
-                <svg class="c-svg p-works-overview__svg" width="20" height="20" role="img"
-                  aria-label="GitHubのアイコン">
-                  <use xlink:href="/img/svg/sprite.min.svg#icon-github" />
-                </svg>
-              </dt>
-              <dd class="p-works-overview__dd">
-                <a href="https://github.com/kokoro-hart/my_blog" class="p-works-overview__link"
-                  target="_blank" rel="noopener noreferrer" style="transform: translate(0px, 0px);">
-                  https://github.com/kokoro-hart
-                  <svg class="c-svg p-works-overview__blank" width="14" height="14">
-                    <use xlink:href="/img/svg/sprite.min.svg#icon-blank" />
-                  </svg>
-                </a>
-              </dd>
-            </div>
-          </dl>
-        </div>
-      </section>
-      <section class="p-single-works__overview p-works-overview">
-        <h2 class="p-works-overview__heading">
-          OVERVIEW
-        </h2>
-        <div class="p-works-overview__body">
-          <p class="p-works-overview__text">
-            技術的なアウトプットに加えて「デザイン、構築、運用」を一通り経験してみたいという目的から制作に至りました。<br>
-            また、ダークモード対応やbarba.jsとWordPressの連携など以前から興味を持っていた技術が多々あり、それらを試したいという思いもありました。
-          </p>
-        </div>
-      </section>
-    </div>
+                </dt>
+                <dd class="p-works-overview__dd">
+                  <a href="https://github.com/kokoro-hart/my_blog" class="p-works-overview__link"
+                    target="_blank" rel="noopener noreferrer" style="transform: translate(0px, 0px);">
+                    https://github.com/kokoro-hart
+                    <svg class="c-svg p-works-overview__blank" width="14" height="14">
+                      <use xlink:href="/img/svg/sprite.min.svg#icon-blank" />
+                    </svg>
+                  </a>
+                </dd>
+              </div>
+            </dl>
+          </div>
+        </section>
+        <section class="p-single-works__overview p-works-overview">
+          <h2 class="p-works-overview__heading">
+            OVERVIEW
+          </h2>
+          <div class="p-works-overview__body">
+            <p class="p-works-overview__text">
+              技術的なアウトプットに加えて「デザイン、構築、運用」を一通り経験してみたいという目的から制作に至りました。<br>
+              また、ダークモード対応やbarba.jsとWordPressの連携など以前から興味を持っていた技術が多々あり、それらを試したいという思いもありました。
+            </p>
+          </div>
+        </section>
+      </div><%# / サイトリンク 概要 %>
 
-    <picture class="p-single-works__picture p-single-works__picture--wide" style="transform: translate(0px, 0px);">
-      <source srcset="/img/webp/kt-rotate.webp" class="p-single-works__img" type="image/webp" />
-      <img src="/img/common/kt-rotate.png" class="p-single-works__img" width="1920" height="1333" loading="lazy" data-scroll data-scroll-speed="-1" alt="">
-    </picture>
-    <div class="p-single-works__info" style="transform: translate(0px, 0px);">
-      <section class="p-single-works__overview p-works-overview">
-        <h2 class="p-works-overview__heading">
-          DESIGN
-        </h2>
-        <div class="p-works-overview__body">
-          <p class="p-works-overview__text">
-            デザインカンプ、記事のサムネイル作成にはfigmaを使用しています。<br>
-            デザイン四原則やダークモード時に情報の階層を保つことを意識してデザインしました。
-          </p>
+      <%# ワイドイメージ %>
+      <picture class="p-single-works__picture p-single-works__picture--wide" style="transform: translate(0px, 0px);">
+        <source srcset="/img/webp/kt-rotate.webp" class="p-single-works__img" type="image/webp" />
+        <img src="/img/common/kt-rotate.png" class="p-single-works__img" width="1920" height="1333" loading="lazy" data-scroll data-scroll-speed="-1" alt="">
+      </picture><%# / ワイドイメージ %>
+
+      <%# デザイン %>
+      <div class="p-single-works__info" style="transform: translate(0px, 0px);">
+        <section class="p-single-works__overview p-works-overview">
+          <h2 class="p-works-overview__heading">
+            DESIGN
+          </h2>
+          <div class="p-works-overview__body">
+            <p class="p-works-overview__text">
+              デザインカンプ、記事のサムネイル作成にはfigmaを使用しています。<br>
+              デザイン四原則やダークモード時に情報の階層を保つことを意識してデザインしました。
+            </p>
+          </div>
+        </section>
+      </div><%# / デザイン %>
+
+      <%# デザインカンプの画像 %>
+      <picture class="p-single-works__picture" style="transform: translate(0px, 0px);">
+        <source srcset="/img/webp/media-design.webp" class="p-single-works__img" type="image/webp" />
+        <img src="/img/common/media-design.png" class="p-single-works__img" width="1273" height="825" loading="lazy" data-scroll data-scroll-speed="-1" alt="">
+      </picture><%# デザインカンプの画像 %>
+
+      <%# インタラクション %>
+      <div class="p-single-works__info" style="transform: translate(0px, 0px);">
+        <section class="p-single-works__overview p-works-overview">
+          <h2 class="p-works-overview__heading">
+            INTERACTION
+          </h2>
+          <div class="p-works-overview__body">
+            <p class="p-works-overview__text">
+              UX向上のためbarba.jsを用いて非同期遷移を実装しています。<br>
+              また、記事が長くなる場合を想定してスクロールと連動した目次のハイライトを実装しました。
+            </p>
+          </div>
+        </section>
+      </div><%# インタラクション %>
+
+      <%# 動画 %>
+      <div class="p-single-works__video-wrapper">
+        <video autoplay muted loop playsinline width="1632" height="1020" data-scroll data-scroll-speed="-1">
+          <source src="/img/video/media-video.mp4" type="video/mp4">
+        </video>
+      </div><%# / 動画 %>
+
+    </div><%# / 背景色変更エリア %>
+
+    <%# 詳細 %>
+    <div class="l-single-works__detail">
+      <section class="p-single-works__detail p-works-detail" data-scroll data-scroll-sticky
+        data-scroll-target="#js-capture">
+        <div class="p-works-detail__inner">
+          <h2 class="p-works-detail__heading" style="transform: translate(0px, 0px);">
+            DETAILS
+          </h2>
+          <div class="p-works-detail__body">
+            <dl class="p-works-detail__dl">
+              <div class="p-works-detail__row">
+                <dt class="p-works-detail__dt">
+                  担当範囲
+                </dt>
+                <dd class="p-works-detail__dd">
+                  デザイン / コーディング / CMS構築
+                </dd>
+              </div>
+              <div class="p-works-detail__row">
+                <dt class="p-works-detail__dt">
+                  制作期間
+                </dt>
+                <dd class="p-works-detail__dd">
+                  2022.4.18 - 2022.5.22
+                </dd>
+              </div>
+              <div class="p-works-detail__row">
+                <dt class="p-works-detail__dt">
+                  実働時間
+                </dt>
+                <dd class="p-works-detail__dd">
+                  18日 (2〜4時間/ 1日)
+                </dd>
+              </div>
+              <div class="p-works-detail__row">
+                <dt class="p-works-detail__dt">
+                  使用技術
+                </dt>
+                <dd class="p-works-detail__dd">
+                  HTML(EJS) / CSS(Scss) / JavaScript / PHP
+                </dd>
+              </div>
+              <div class="p-works-detail__row">
+                <dt class="p-works-detail__dt">
+                  使用ツール
+                </dt>
+                <dd class="p-works-detail__dd">
+                  git / gulp + webpack / vscode / figma
+                </dd>
+              </div>
+              <div class="p-works-detail__row">
+                <dt class="p-works-detail__dt">
+                  ライブラリ
+                </dt>
+                <dd class="p-works-detail__dd">
+                  barba.js / prism.js
+                </dd>
+              </div>
+              <div class="p-works-detail__row">
+                <dt class="p-works-detail__dt">
+                  使用CMS
+                </dt>
+                <dd class="p-works-detail__dd">
+                  WordPress
+                </dd>
+              </div>
+            </dl>
+          </div>
         </div>
       </section>
-    </div>
-    <picture class="p-single-works__picture" style="transform: translate(0px, 0px);">
-      <source srcset="/img/webp/media-design.webp" class="p-single-works__img" type="image/webp" />
-      <img src="/img/common/media-design.png" class="p-single-works__img" width="1273" height="825" loading="lazy" data-scroll data-scroll-speed="-1" alt="">
-    </picture>
-    <div class="p-single-works__info" style="transform: translate(0px, 0px);">
-      <section class="p-single-works__overview p-works-overview">
-        <h2 class="p-works-overview__heading">
-          INTERACTION
-        </h2>
-        <div class="p-works-overview__body">
-          <p class="p-works-overview__text">
-            UX向上のためbarba.jsを用いて非同期遷移を実装しています。<br>
-            また、記事が長くなる場合を想定してスクロールと連動した目次のハイライトを実装しました。
-          </p>
-        </div>
-      </section>
-    </div>
-    <div class="p-single-works__video-wrapper">
-      <video autoplay muted loop playsinline width="1632" height="1020" data-scroll data-scroll-speed="-1">
-        <source src="/img/video/media-video.mp4" type="video/mp4">
-      </video>
-    </div>
-  </div>
-</div>
-<div class="l-single-works__detail l-container l-container--small">
-  <section class="p-single-works__detail p-works-detail" data-scroll data-scroll-sticky
-    data-scroll-target="#js-capture">
-    <div class="p-works-detail__inner">
-      <h2 class="p-works-detail__heading" style="transform: translate(0px, 0px);">
-        DETAILS
-      </h2>
-      <div class="p-works-detail__body">
-        <dl class="p-works-detail__dl">
-          <div class="p-works-detail__row">
-            <dt class="p-works-detail__dt">
-              担当範囲
-            </dt>
-            <dd class="p-works-detail__dd">
-              デザイン / コーディング / CMS構築
-            </dd>
-          </div>
-          <div class="p-works-detail__row">
-            <dt class="p-works-detail__dt">
-              制作期間
-            </dt>
-            <dd class="p-works-detail__dd">
-              2022.4.18 - 2022.5.22
-            </dd>
-          </div>
-          <div class="p-works-detail__row">
-            <dt class="p-works-detail__dt">
-              実働時間
-            </dt>
-            <dd class="p-works-detail__dd">
-              18日 (2〜4時間/ 1日)
-            </dd>
-          </div>
-          <div class="p-works-detail__row">
-            <dt class="p-works-detail__dt">
-              使用技術
-            </dt>
-            <dd class="p-works-detail__dd">
-              HTML(EJS) / CSS(Scss) / JavaScript / PHP
-            </dd>
-          </div>
-          <div class="p-works-detail__row">
-            <dt class="p-works-detail__dt">
-              使用ツール
-            </dt>
-            <dd class="p-works-detail__dd">
-              git / gulp + webpack / vscode / figma
-            </dd>
-          </div>
-          <div class="p-works-detail__row">
-            <dt class="p-works-detail__dt">
-              ライブラリ
-            </dt>
-            <dd class="p-works-detail__dd">
-              barba.js / prism.js
-            </dd>
-          </div>
-          <div class="p-works-detail__row">
-            <dt class="p-works-detail__dt">
-              使用CMS
-            </dt>
-            <dd class="p-works-detail__dd">
-              WordPress
-            </dd>
-          </div>
-        </dl>
+      <div class="p-single-works__captures">
+        <picture class="p-single-works__capture" style="transform: translate(0px, 0px);">
+          <source srcset="/img/webp/media-top-light.webp" class="p-single-works__capture-img" type="image/webp" />
+          <img src="/img/common/media-top-light.png" class="p-single-works__capture-img" alt="KT MEDIAトップページのフルスクリーンキャプチャ" width="816" height="1777" loading="lazy">
+        </picture>
+        <picture class="p-single-works__capture" style="transform: translate(0px, 0px);">
+          <source srcset="/img/webp/media-top-dark.webp" class="p-single-works__capture-img" type="image/webp" />
+          <img src="/img/common/media-top-dark.png" class="p-single-works__capture-img" alt="KT MEDIAトップページのダークモード画面のフルスクリーンキャプチャ" width="816" height="1778" loading="lazy">
+        </picture>
+        <picture class="p-single-works__capture" style="transform: translate(0px, 0px);">
+          <source srcset="/img/webp/media-contact-light.webp" class="p-single-works__capture-img" type="image/webp" />
+          <img src="/img/common/media-contact-light.png" class="p-single-works__capture-img" alt="KT MEDIAお問い合わせページのフルスクリーンキャプチャ" width="816" height="1528" loading="lazy">
+        </picture>
+        <picture class="p-single-works__capture" style="transform: translate(0px, 0px);">
+          <source srcset="/img/webp/media-contact-dark.webp" class="p-single-works__capture-img" type="image/webp" />
+          <img src="/img/common/media-contact-dark.png" class="p-single-works__capture-img" alt="KT MEDIAお問い合わせページのダークモード画面のフルスクリーンキャプチャ" width="816" height="1528" loading="lazy">
+        </picture>
+        <div class="p-single-works__capture-mask" id="js-capture"></div>
       </div>
-    </div>
-  </section>
-  <div class="p-single-works__captures">
-    <picture class="p-single-works__capture" style="transform: translate(0px, 0px);">
-      <source srcset="/img/webp/media-top-light.webp" class="p-single-works__capture-img" type="image/webp" />
-      <img src="/img/common/media-top-light.png" class="p-single-works__capture-img" alt="KT MEDIAトップページのフルスクリーンキャプチャ" width="816" height="1777" loading="lazy">
-    </picture>
-    <picture class="p-single-works__capture" style="transform: translate(0px, 0px);">
-      <source srcset="/img/webp/media-top-dark.webp" class="p-single-works__capture-img" type="image/webp" />
-      <img src="/img/common/media-top-dark.png" class="p-single-works__capture-img" alt="KT MEDIAトップページのダークモード画面のフルスクリーンキャプチャ" width="816" height="1778" loading="lazy">
-    </picture>
-    <picture class="p-single-works__capture" style="transform: translate(0px, 0px);">
-      <source srcset="/img/webp/media-contact-light.webp" class="p-single-works__capture-img" type="image/webp" />
-      <img src="/img/common/media-contact-light.png" class="p-single-works__capture-img" alt="KT MEDIAお問い合わせページのフルスクリーンキャプチャ" width="816" height="1528" loading="lazy">
-    </picture>
-    <picture class="p-single-works__capture" style="transform: translate(0px, 0px);">
-      <source srcset="/img/webp/media-contact-dark.webp" class="p-single-works__capture-img" type="image/webp" />
-      <img src="/img/common/media-contact-dark.png" class="p-single-works__capture-img" alt="KT MEDIAお問い合わせページのダークモード画面のフルスクリーンキャプチャ" width="816" height="1528" loading="lazy">
-    </picture>
-    <div class="p-single-works__capture-mask" id="js-capture"></div>
+    </div><%# / 詳細 %>
   </div>
-</div>
-<div class="p-works-connect" style="transform: translate(0px, 0px);">
-  <a href="/memories/" class="p-works-connect__link">
-    <picture class="p-works-connect__bg">
-      <source srcset="/img/webp/thumbnail-memories.webp" type="image/webp" />
-      <img src="/img/common/thumbnail-memories.png" width="770" height="781" alt="サムネイル、Memories架空カーイベントサイト" loading="lazy">
-    </picture>
-    <p class="p-works-connect__text-wrapper">
-      <span class="p-works-connect__text" data-text="Memories">
-        Prev
-      </span>
-    </p>
-  </a>
-  <a href="/open-cafe/" class="p-works-connect__link">
-    <picture class="p-works-connect__bg">
-      <source srcset="/img/webp/thumbnail-open.webp" type="image/webp" />
-      <img src="/img/common/thumbnail-open.jpeg" width="770" height="781" alt="サムネイル、OpenCafe架空カフェサイト" loading="lazy">
-    </picture>
-    <p class="p-works-connect__text-wrapper">
-      <span class="p-works-connect__text" data-text="Open Cafe">
-        Next
-      </span>
-    </p>
-  </a>
-</div>
+
+  <%# 制作実績導線 %>
+  <div class="p-works-connect" style="transform: translate(0px, 0px);">
+    <a href="/memories/" class="p-works-connect__link">
+      <picture class="p-works-connect__bg">
+        <source srcset="/img/webp/thumbnail-memories.webp" type="image/webp" />
+        <img src="/img/common/thumbnail-memories.png" width="770" height="781" alt="サムネイル、Memories架空カーイベントサイト" loading="lazy">
+      </picture>
+      <p class="p-works-connect__text-wrapper">
+        <span class="p-works-connect__text" data-text="Memories">
+          Prev
+        </span>
+      </p>
+    </a>
+    <a href="/open-cafe/" class="p-works-connect__link">
+      <picture class="p-works-connect__bg">
+        <source srcset="/img/webp/thumbnail-open.webp" type="image/webp" />
+        <img src="/img/common/thumbnail-open.jpeg" width="770" height="781" alt="サムネイル、OpenCafe架空カフェサイト" loading="lazy">
+      </picture>
+      <p class="p-works-connect__text-wrapper">
+        <span class="p-works-connect__text" data-text="Open Cafe">
+          Next
+        </span>
+      </p>
+    </a>
+  </div><%# / 制作実績導線 %>
 
 </main>
 

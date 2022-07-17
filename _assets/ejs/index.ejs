@@ -7,7 +7,7 @@
     <%# ファーストビュー %>
     <section id="js-first-view" class="p-first-view l-home__first-view">
       <div class="p-first-view__inner">
-        <h2 class="p-first-view__heading" style="transform: translate(0px, 0px);">
+        <h1 class="p-first-view__heading" style="transform: translate(0px, 0px);">
           <span class="is-wrap">
             <span class="is-slide-up u-delay01">
               K.TOBITA
@@ -18,7 +18,7 @@
               PORTFOLIO<span class="u-hidden-md-down"> SITE</span>.
             </span>
           </span>
-        </h2>
+        </h1>
         <p class="p-first-view__text is-fade-up u-delay06">
           Web creator based in Japan - Ibaraki & Tokyo
         </p>
@@ -94,12 +94,10 @@
         <div class="p-works__items">
           <% for(let work in jsonData.works){ %>
           <a id="<%= jsonData.works[work].id %>" href="<%= jsonData.works[work].slug %>" class="p-works__item p-works-item js-follow-targets">
-            <div class="p-works-item__thumbnail" style="transform: translate(0px, 0px);">
-              <picture class="p-works-item__picture">
-                <source srcset="<%= jsonData.works[work].thumbnailWebp %>" class="p-works-item__img" type="image/webp" />
-                <img src="<%= jsonData.works[work].thumbnailPng %>" class="p-works-item__img" width="770" height="781" alt="<%= jsonData.works[work].alt %>" loading="lazy" data-scroll data-scroll-speed="-1">
-              </picture>
-            </div>
+            <picture class="p-works-item__picture">
+              <source srcset="<%= jsonData.works[work].thumbnailWebp %>" class="p-works-item__img" type="image/webp" />
+              <img src="<%= jsonData.works[work].thumbnailPng %>" class="p-works-item__img" width="770" height="781" alt="<%= jsonData.works[work].alt %>" loading="lazy" data-scroll data-scroll-speed="-1">
+            </picture>
             <div class="p-works-item__body u-hidden-lax-up">
               <h3 class="p-works-item__title">
                 <%= jsonData.works[work].name %>

@@ -1,6 +1,6 @@
 @use "foundation/global";
 
-// Layout .l-header
+// Layout ヘッダー
 //--------------------------------------------------------------------------
 
 .l-header {
@@ -21,7 +21,7 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding: 20px 20px 0;
+  padding: 24px 24px 0;
 
   @include global.mq(md) {
     padding: 40px 40px 0;

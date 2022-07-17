@@ -18,6 +18,7 @@
   <meta property="og:local" content="ja_JP">
   <meta property="og:image" content="https://k-tobita.jp/img/common/og-image.png">
   <meta property="og:site_name" content="<%= jsonData.siteInfo.siteUrl %> ">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="/img/common/favicon.ico">
   <link rel="apple-touch-icon" sizes="180x180" href="https://k-tobita.jp/img/common/apple-touch-icon-180x180.png">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
@@ -30,23 +31,6 @@
     <header id="js-header" class="l-header p-header" style="transform: translate(0px, 0px);">
       <div class="l-header__inner">
         <%# ヘッダー - ロゴ %>
-        <% if (pageId==='home' ){ %>
-        <h1 class="p-header__logo">
-          <a href="/" class="p-header__logo-link">
-            <span class="p-header__logo-text">
-              KOKORO
-            </span>
-            <span class="p-header__logo-change">
-              <span class="p-header__logo-head">
-                &copy;2022
-              </span>
-              <span class="p-header__logo-foot">
-                Tobita
-              </span>
-            </span>
-          </a>
-        </h1>
-        <% } else { %>
         <p class="p-header__logo">
           <a href="/" class="p-header__logo-link">
             <span class="p-header__logo-text">
@@ -61,8 +45,7 @@
               </span>
             </span>
           </a>
-        </p>
-        <% } %><%# / ヘッダー - ロゴ %>
+        </p><%# / ヘッダー - ロゴ %>
         <div class="p-header__contents u-hidden-md-down">
           <%# ヘッダー - グローバルナビゲージョン %>
           <nav class="p-header__nav p-global-nav">
@@ -111,11 +94,11 @@
           </ul><%# / ヘッダー - sns %>
         </div>
 
-        <button id="js-drawer-button" class="p-header__button c-button-drawer u-hidden-md-up"
-          aria-controls="js-drawer-nav" aria-expanded="false">
+        <%# ドロワーボタン %>
+        <button type="button" id="js-drawer-button" class="p-header__button c-button-drawer u-hidden-md-up" aria-controls="js-drawer-nav" aria-expanded="false">
           <span class="c-button-drawer__line">
           </span>
-        </button>
+        </button><%# / ドロワーボタン %>
       </div>
     </header><%# / ヘッダー %>
     <%# ドロワーナビゲーション %>
