@@ -43,7 +43,6 @@
   display: block;
   font-size: 32px;
   @include global.lh(1);
-  font-family: global.$font-family-en;
   letter-spacing: -0.01em;
 
   @include global.mq(md) {
@@ -57,10 +56,12 @@
   color: global.$color-primary;
   @include global.fz(14, 16);
   @include global.lh(1.2);
+  font-family: global.$font-family-ja;
 }
 
 .p-profile__dl {
   margin-top: 32px;
+  font-family: global.$font-family-ja;
 
   @include global.mq(lax) {
     margin-top: 40px;

@@ -3,7 +3,6 @@
 // Project トップページ制作実績 pc時の作品名のタイトル、詳細
 //--------------------------------------------------------------------------
 
-
 .p-works-content {
   opacity: 0;
   visibility: hidden;
@@ -31,7 +30,6 @@
   @include global.lh(1.2);
   font-weight: 500;
   letter-spacing: -0.01em;
-  font-family: global.$font-family-en;
 
   @include global.mq(md) {
     font-size: max(50px, #{global.vw(80)});
@@ -45,7 +43,6 @@
     counter-increment: number 1;
     font-size: 24px;
     font-weight: 600;
-    font-family: global.$font-family-en;
     
     @include global.mq(md) {
       font-size: max(30px, #{global.vw(36)});
@@ -59,7 +56,6 @@
   @include global.lh(1.4);
   font-weight: 500;
   letter-spacing: -0.01em;
-  font-family: global.$font-family-en;
 
   @include global.mq(md) {
     font-size: max(24px, #{global.vw(32)});
@@ -71,6 +67,7 @@
   @include global.lh(1.4, 1.7);
   font-weight: 400;
   font-size: max(16px, #{global.vw(20)});
+  font-family: global.$font-family-ja;
 }
 
 .p-works-content__link-wrapper {

@@ -29,7 +29,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  row-gap: max(104px, #{global.vw(104, 1024)});
+  row-gap: 104px;
 
   @include global.mq(lax) {
     display: block;
@@ -38,7 +38,7 @@
   }
 
   @include global.mq(xl) {
-    width: 50%;
+    width: 49%;
   }
 }
 
@@ -53,11 +53,11 @@
     width: 100% !important;
 
     &:not(:first-child) {
-      padding-top: 13vh;
+      padding-top: 17vh;
     }
 
     &:not(:last-child) {
-      padding-bottom: 13vh;
+      padding-bottom: 17vh;
     }
   }
 }

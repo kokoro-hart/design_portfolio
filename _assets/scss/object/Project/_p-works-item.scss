@@ -13,7 +13,6 @@
 
   @include global.mq(lax) {
     position: relative;
-    border-radius: global.vw(8);
     width: 115%;
     z-index: 1;
   }
@@ -33,7 +32,6 @@
   @include global.fz(24, 28);
   @include global.lh(1.1);
   font-weight: 500;
-  font-family: global.$font-family-en;
   letter-spacing: -0.01em;
 
   @include global.mq(md) {

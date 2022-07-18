@@ -1,6 +1,6 @@
 @use "foundation/global";
 
-// Project お問い合わせリンク
+// Project お問い合わせ導線
 //--------------------------------------------------------------------------
 
 .p-contact-connect {
@@ -40,7 +40,6 @@
   color: global.$color-base;
   font-size: max(42px, #{global.vw(110)});
   @include global.lh(1.2);
-  font-family: global.$font-family-en;
   font-weight: 400;
   text-align: center;
   white-space: nowrap;

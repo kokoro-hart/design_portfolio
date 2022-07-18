@@ -2,6 +2,9 @@
 
 // Project フォーム
 //--------------------------------------------------------------------------
+.p-form__dl {
+  font-family: global.$font-family-ja;
+}
 .p-form__row {
   &:not(:first-child) {
     margin-top: 42px;

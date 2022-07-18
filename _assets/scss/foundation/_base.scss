@@ -21,15 +21,12 @@ body {
   color: global.$color-primary;
   font-size: 16px;
   font-weight: 400;
-  font-family: global.$font-family-ja;
-  -webkit-font-smoothing: antialiased;
+  font-family: global.$font-family-en;
   font-feature-settings: "palt";
   text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
 }
 
+// locomotive-scroll.jsのバグ対応
 html.has-scroll-smooth {
 	backface-visibility: hidden;
 	transform: translateZ(0);
@@ -63,6 +60,8 @@ main {
   width: 100%;
   z-index: map-get(global.$layer, main);
   overflow: hidden;
+
+  // スクロール時に透けるfooterが見えてしまうのを防ぐ指定
   background-color: global.$color-base;
   color: global.$color-primary;
 }
@@ -126,7 +125,6 @@ dd {
 }
 
 p {
-  letter-spacing: 0.03em;
 }
 
 ul,

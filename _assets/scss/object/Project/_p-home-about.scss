@@ -14,7 +14,6 @@
   font-size: 18vw;
   @include global.lh(1);
   font-weight: 400;
-  font-family: global.$font-family-en;
   white-space: nowrap;
   letter-spacing: -0.01em;
 
@@ -51,7 +50,6 @@
   font-size: 32px;
   @include global.lh(1);
   font-weight: 400;
-  font-family: global.$font-family-en;
   white-space: nowrap;
   letter-spacing: -0.02em;
 
@@ -66,6 +64,7 @@
   font-weight: 400;
   @include global.fz(14, 16);
   @include global.lh(1.2);
+  font-family: global.$font-family-ja;
 
   @include global.mq(md) {
     margin-top: 7px;
@@ -76,6 +75,8 @@
   margin-top: 14px;
   @include global.fz(14, 16);
   line-height: 1.7em;
+  font-family: global.$font-family-ja;
+  font-weight: 400;
 
   @include global.mq(md) {
     margin-top: 24px;

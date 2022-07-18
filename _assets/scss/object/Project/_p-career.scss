@@ -92,6 +92,7 @@
   position: relative;
   @include global.lh(1.44);
   font-weight: 600;
+  font-family: global.$font-family-ja;
 
   @include global.mq(md) {
     font-size: max(24px, #{global.vw(24)});
@@ -103,7 +104,7 @@
   @include global.fz(14, 16);
   @include global.lh(2);
   font-weight: 400;
-  letter-spacing: 0.03em;
+  font-family: global.$font-family-ja;
 
   @include global.mq(md) {
     margin-top: 14px;

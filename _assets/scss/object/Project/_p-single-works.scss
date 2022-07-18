@@ -13,7 +13,6 @@
   @include global.lh(1.2);
   font-weight: 500;
   letter-spacing: -0.01em;
-  font-family: global.$font-family-en;
   white-space: nowrap;
 
   @include global.mq(lax) {
@@ -26,7 +25,6 @@
   font-size: 14px;
   @include global.lh(1.44);
   font-weight: 500;
-  font-family: global.$font-family-en;
 
   @include global.mq(md) {
     font-size: max(20px, #{global.vw(24)});
@@ -38,7 +36,6 @@
   @include global.lh(1.44);
   font-size: 14px;
   font-weight: 500;
-  font-family: global.$font-family-en;
 
   @include global.mq(md) {
     font-size: max(20px, #{global.vw(24)});
@@ -165,7 +162,7 @@
 }
 
 .p-single-works__info {
-  padding-top: max(84px, #{global.vw(134)});
+  padding-top: max(84px, #{global.vw(164)});
   @include global.mq(lax) {
     display: flex;
   }

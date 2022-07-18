@@ -5,7 +5,6 @@
 
 .p-header {
   background-color: transparent;
-  font-family: global.$font-family-en;
   color: global.$color-base;
   mix-blend-mode: difference;
 
@@ -28,14 +27,14 @@
   &:focus {
     .p-header__logo-head,
     .p-header__logo-foot {
-      transform: translateY(-1.25em);
+      transform: translateY(-1.2em);
     }
   }
 }
 
 .p-header__logo-text {
   font-weight: 500;
-  @include global.lh(1.15);
+  @include global.lh(1.2);
 }
 
 .p-header__logo-change {

@@ -10,8 +10,9 @@
   height: 1.5em;
   padding-left: 26px;
   @include global.fz(16);
-  @include global.lh(1.5);
-  font-weight: 600;
+  @include global.lh(1.65);
+  font-weight: 500;
+  letter-spacing: -0.01em;
 
   @include global.mq(lax) {
     font-size: max(22px, #{global.vw(22)});
@@ -38,7 +39,7 @@
   &:hover,
   &:focus {
     .c-button-primary__text {
-      transform: translateY(-1.5em);
+      transform: translateY(-1.65em);
     }
   }
 }
@@ -56,8 +57,6 @@
 }
 
 .c-button-primary--large {
-  letter-spacing: -0.01em;
-
   @include global.mq(lax) {
     padding-left: max(34px, #{global.vw(34)});
     font-size: max(28px, #{global.vw(28)});

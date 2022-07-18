@@ -7,7 +7,6 @@
   font-size: max(32px, 5.5vw);
   @include global.lh(1.05);
   font-weight: 400;
-  font-family: global.$font-family-en;
   letter-spacing: -0.01em;
 
   @include global.mq(lax) {
@@ -23,6 +22,7 @@
   @include global.fz(14, 16);
   @include global.lh(1.7, 1.8);
   font-weight: 400;
+  font-family: global.$font-family-ja;
 
   @include global.mq(md) {
     width: 80%;

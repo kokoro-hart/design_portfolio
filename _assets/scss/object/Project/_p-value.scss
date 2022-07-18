@@ -6,6 +6,7 @@
 .p-value__contents {
   width: 100%;
   margin-top: 52px;
+  font-family: global.$font-family-ja;
 
   @include global.mq(md) {
     margin-top: 84px;

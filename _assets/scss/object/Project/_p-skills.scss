@@ -50,7 +50,6 @@
   font-size: 20px;
   @include global.lh(1.4, 1.2);
   font-weight: 500;
-  font-family: global.$font-family-en;
 
   @include global.mq(md) {
     font-size:  max(24px, #{global.vw(24)});
@@ -62,7 +61,7 @@
   padding-left: 45px;
   @include global.fz(14, 16);
   @include global.lh(1.7, 1.8);
-  letter-spacing: 0.03em;
+  font-family: global.$font-family-ja;
 
   @include global.mq(md) {
     margin-top: max(4px, #{global.vw(4)});

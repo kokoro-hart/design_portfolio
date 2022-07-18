@@ -78,7 +78,6 @@
   color: global.$color-base;
   font-size: max(42px, #{global.vw(100)});
   @include global.lh(1.2);
-  font-family: global.$font-family-en;
   font-weight: 400;
   text-align: center;
 

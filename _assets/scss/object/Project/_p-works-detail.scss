@@ -6,8 +6,7 @@
 .p-works-detail__heading {
   font-size: 24px;
   @include global.lh(1);
-  font-weight: 500;
-  font-family: global.$font-family-en;
+  font-weight: 400;
   letter-spacing: -0.01em;
 
   @include global.mq(md) {
@@ -39,9 +38,11 @@
 .p-works-detail__dt {
   max-width: 80px;
   width: 100%;
-  font-weight: 600;
   @include global.fz(14, 16);
   @include global.lh(1.2);
+  font-family: global.$font-family-ja;
+  font-weight: 500;
+  letter-spacing: 0.03em;
 
   @include global.mq(md) {
     max-width: 110px;
@@ -54,6 +55,8 @@
   padding-left: 7px;
   @include global.fz(14, 16);
   @include global.lh(1.7);
+  font-family: global.$font-family-ja;
+  font-weight: 400;
 
   @include global.mq(md) {
     padding-left: 14px;

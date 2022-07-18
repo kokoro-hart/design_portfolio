@@ -33,7 +33,6 @@
   font-size: max(34px, 4vw);
   @include global.lh(1);
   font-weight: 400;
-  font-family: global.$font-family-en;
   letter-spacing: -0.01em;
   white-space: nowrap;
 
@@ -48,4 +47,5 @@
   @include global.fz(14, 16);
   @include global.lh(1);
   font-weight: 400;
+  font-family: global.$font-family-ja;
 }

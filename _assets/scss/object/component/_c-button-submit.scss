@@ -18,6 +18,7 @@
   background-color: global.$color-primary;
   color: global.$color-base;
   transition: opacity 0.3s ease-in-out;
+  font-family: global.$font-family-ja;
 
   @include global.mq(md) {
     max-width: 192px;
