@@ -23,3 +23,9 @@
     width: 93%;
   }
 }
+
+.l-container--small {
+  @include global.mq(1920px, min) {
+    width: 86%;
+  }
+}
