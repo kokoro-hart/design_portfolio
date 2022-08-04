@@ -6,11 +6,12 @@
 .p-works-detail__heading {
   font-size: 24px;
   @include global.lh(1);
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: -0.01em;
 
   @include global.mq(md) {
     font-size: max(32px, #{global.vw(40)});
+    font-weight: 400;
   }
 }
 
@@ -41,11 +42,12 @@
   @include global.fz(14, 16);
   @include global.lh(1.2);
   font-family: global.$font-family-ja;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.03em;
 
   @include global.mq(md) {
     max-width: 110px;
+    font-weight: 500;
   }
 }
 

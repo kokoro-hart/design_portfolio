@@ -30,8 +30,6 @@ const scroll = new LocomotiveScroll({
   el: document.querySelector('[data-scroll-container]'),
   smooth: true,
   multiplier: 1,
-  getSpeed: true,
-  getDirection: true
 });
 
 window.onload = endLoading();
