@@ -4,12 +4,14 @@
 //--------------------------------------------------------------------------
 
 .p-profile__contents {
-  margin-top: 52px;
+  display: flex;
+  flex-direction: column-reverse;
+  margin-top: 42px;
 
-  @include global.mq(md) {
+  @include global.mq(lax) {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    flex-wrap: wrap;
     margin-left: auto;
     margin-top: 84px;
   }
@@ -21,17 +23,32 @@
 
 .p-profile__column {
   width: 100%;
+  
+  @include global.mq(lax) {
+    width: calc(47% - 5% / 2);
+    margin-top: 4.7vw;
+  }
+}
+
+.p-profile__sns {
+  display: flex;
+  margin-top: 32px;
 
   @include global.mq(md) {
-    width: calc(50% - 8% / 2);
+    margin-top: 52px;
+  }
+}
+
+.p-profile__img-wrapper {
+  width: 100%;
+  margin-bottom: 32px;
+
+  @include global.mq(md) {
+    width: calc(53% - 5% / 2);
   }
 
-  &:not(:first-child) {
-    margin-top: 70px;
-
-    @include global.mq(md) {
-      margin-top: 0;
-    }
+  @include global.mq(lax) {
+    margin-bottom: 0;
   }
 }
 
@@ -83,38 +100,6 @@
   }
 }
 
-//ddがリンクの場合
-.p-profile__row--links {
-  display: flex;
-  align-items: baseline;
-
-  &:not(:first-child) {
-    margin-top: 22px;
-
-    @include global.mq(lax) {
-      margin-top: 28px;
-    }
-  }
-
-  .p-profile__dt {
-    max-width: 80px;
-    width: 100%;
-
-    @include global.mq(md) {
-      max-width: 80px;
-    }
-  }
-  .p-profile__dd {
-    margin-top: 0;
-    padding-left: 8px;
-    @include global.lh(2);
-
-    @include global.mq(md) {
-      padding-left: 14px;
-    }
-  }
-}
-
 .p-profile__dt {
   position: relative;
   @include global.fz(16);
@@ -141,40 +126,8 @@
   }
 }
 
-.p-profile__link {
+.p-profile__picture {
   display: block;
-  position: relative;
-  padding-right: 20px;
-  color: global.$color-primary;
-  white-space: nowrap;
-  transition: color 0.3s ease-in-out;
-  font-weight: 400;
-
-  &::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 3px;
-    width: 100%;
-    height: 1px;
-    background-color: global.$color-primary;
-    transform: scale(0, 1);
-    transform-origin: right top;
-    transition: transform 0.6s global.ease(out-quint);
-  }
-  &:hover,
-  &:focus {
-    &::before {
-      transform: scale(1, 1);
-      transform-origin: left top;
-    }
-  }
-}
-
-.p-profile__svg {
-  position: absolute;
-  top: 44%;
-  right: 0;
-  transform: translateY(-50%);
-  transition: color 0.3s ease-in-out;
+  overflow: hidden;
+  width: 100%;
 }

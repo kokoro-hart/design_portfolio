@@ -54,8 +54,8 @@
         </span>
       </h2>
       <div class="p-profile__contents js-trigger">
-        <section class="p-profile__column">
-          <h3 class="p-profile__heading is-fade-up">
+        <div class="p-profile__column" data-scroll data-scroll-speed="-1">
+          <h3 class="p-profile__heading">
             <span class="p-profile__heading-en">
               Kokoro Tobita
             </span>
@@ -63,7 +63,7 @@
               飛田 心
             </span>
           </h3>
-          <dl class="p-profile__dl is-fade-up u-delay01">
+          <dl class="p-profile__dl">
             <div class="p-profile__row">
               <dt class="p-profile__dt">
                 生年月日
@@ -101,76 +101,44 @@
                 関心領域
               </dt>
               <dd class="p-profile__dd">
-                JavaScript、WAI-ARIA
+                Jamstack、インタラクションデザイン
               </dd>
             </div>
           </dl>
-        </section>
+          <ul class="p-profile__sns p-sns">
+            <li class="p-sns__item">
+              <a href="https://twitter.com/coco_hack_ll" class="p-sns__link" target="_blank" rel="noopener noreferrer">
+                <span class="u-visually-hidden">Twitter（外部リンク）</span>
+                <svg class="c-svg p-sns__svg" width="20" height="20" role="img" aria-label="Twitterのアイコン">
+                  <use xlink:href="/img/svg/sprite.min.svg#icon-twitter" />
+                </svg>
+              </a>
+            </li>
+            <li class="p-sns__item">
+              <a href="https://codepen.io/kokoro-hart/pens/public" class="p-sns__link" target="_blank" rel="noopener noreferrer">
+                <span class="u-visually-hidden">CodePen（外部リンク）</span>
+                <svg class="c-svg p-sns__svg" width="20" height="20" role="img" aria-label="CodePenのアイコン">
+                  <use xlink:href="/img/svg/sprite.min.svg#code-pen" />
+                </svg>
+              </a>
+            </li>
+            <li class="p-sns__item">
+              <a href="https://github.com/kokoro-hart" class="p-sns__link" target="_blank" rel="noopener noreferrer">
+                <span class="u-visually-hidden">GitHub（外部リンク）</span>
+                <svg class="c-svg p-sns__svg" width="20" height="20" role="img" aria-label="GitHubのアイコン">
+                  <use xlink:href="/img/svg/sprite.min.svg#icon-github" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
 
-        <section class="p-profile__column">
-          <h3 class="p-profile__heading is-fade-up">
-            <span class="p-profile__heading-en">
-              Media
-            </span>
-            <span class="p-profile__heading-ja">
-              メディア・SNS
-            </span>
-          </h3>
-          <dl class="p-profile__dl is-fade-up u-delay01">
-            <div class="p-profile__row p-profile__row--links">
-              <dt class="p-profile__dt">
-                Twitter
-              </dt>
-              <dd class="p-profile__dd">
-                <a href="https://twitter.com/coco_hack_ll" class="p-profile__link" target="_blank" rel="noopener noreferrer">
-                  twitter.com/coco_hack_ll
-                  <svg class="c-svg p-profile__svg" width="14" height="14">
-                    <use xlink:href="/img/svg/sprite.min.svg#icon-blank" />
-                  </svg>
-                </a>
-              </dd>
-            </div>
-            <div class="p-profile__row p-profile__row--links">
-              <dt class="p-profile__dt">
-                CodePen
-              </dt>
-              <dd class="p-profile__dd">
-                <a href="https://codepen.io/kokoro-hart/pens/public" class="p-profile__link" target="_blank" rel="noopener noreferrer">
-                  codepen.io/kokoro-hart
-                  <svg class="c-svg p-profile__svg" width="14" height="14">
-                    <use xlink:href="/img/svg/sprite.min.svg#icon-blank" />
-                  </svg>
-                </a>
-              </dd>
-            </div>
-            <div class="p-profile__row p-profile__row--links">
-              <dt class="p-profile__dt">
-                GitHub
-              </dt>
-              <dd class="p-profile__dd">
-                <a href="https://github.com/kokoro-hart" class="p-profile__link" target="_blank" rel="noopener noreferrer">
-                  github.com/kokoro-hart
-                  <svg class="c-svg p-profile__svg" width="14" height="14">
-                    <use xlink:href="/img/svg/sprite.min.svg#icon-blank" />
-                  </svg>
-                </a>
-              </dd>
-            </div>
-            <div class="p-profile__row p-profile__row--links">
-              <dt class="p-profile__dt">
-                Blog
-              </dt>
-              <dd class="p-profile__dd">
-                <a href="https://kt-media.blog/" class="p-profile__link" target="_blank" rel="noopener noreferrer">
-                  kt-media.blog
-                  <svg class="c-svg p-profile__svg" width="14" height="14">
-                    <use xlink:href="/img/svg/sprite.min.svg#icon-blank" />
-                  </svg>
-                </a>
-              </dd>
-            </div>
-          </dl>
-        </section>
+        <div class="p-profile__img-wrapper">
+          <picture class="p-profile__picture">
+            <source srcset="/img/webp/profile01.webp" class="p-profile__img" type="image/webp" />
+            <img src="/img/common/profile01.jpeg" class="p-profile__img" width="545" height="700" loading="lazy" alt="プロフィールの顔写真" data-scroll data-scroll-speed="-1">
+          </picture>
+        </div>
       </div>
     </section><%# / プロフィール %>
 
@@ -276,7 +244,7 @@
               Design Tools
             </dt>
             <dd class="p-skills__dd">
-              Photoshop、XD、Figmaカンプからのコーディング経験があります。デザイン作成する際はfigmaを使用しています。
+              Photoshop、XD、Figmaデータからのコーディング経験があります。本サイトのデザインはFigmaを使用しています。
             </dd>
           </div>
         </dl>
@@ -288,7 +256,7 @@
       <h2 class="c-section-heading js-trigger" style="transform: translate(0px, 0px);">
         <span class="c-section-heading__en is-wrap">
           <span class="is-slide-up">
-            Value
+            VALUE
           </span>
         </span>
         <span class="c-section-heading__ja is-fade-up">
@@ -315,7 +283,7 @@
                 管理のしやすい構築
               </h3>
               <p class="p-value__text">
-                classの命名やCSSのフォルダ分けなども他の人に引き継いでも支障がでないように心がけています。<br>
+                classの命名やCSSのフォルダ分けなども他の人に引き継いでも支障がでないように心がけています。
                 ページ数やサイト全体のボリュームが多くなってしまった場合には、随所にコメントを残して改修の際に見返せるようにしています。
               </p>
             </li>
@@ -358,17 +326,20 @@
               高校卒業後、化学メーカーに就職
             </dt>
             <dd class="p-career__dd">
-              化学メーカーにて、医療機器の受託製造に従事する。4人チームの1人として製造工程の進捗管理、製品の仕上げ・検査作業を行う。
+              医療機器の製造に従事し、製造工程の進捗管理、製品の仕上げ・検査業務を担当。<br>
+              製品不良が増加傾向であるという課題に対して、
               <br>
-              少人数チームであることから、<span class="u-under-line">ナレッジの共有や業務効率化の推進</span>を行い、誰かが不在時のリスクマネジメントを心掛けている。
+              「不良対策アイデアを気軽に出し合える仕組み作り」や「直感的でわかりやすいデザインの作業指示書の作成」等、
               <br>
-              前年度から製品不良が多いという課題があり、現行業務の見直しを提案。トラブル時の対策用ドキュメント作成や製品出荷前のチェックシート作成などの対策を講じ、<span class="u-under-line">前年度比不良品率57%削減</span>。
+              様々な改善を実施した結果、<span class="u-under-line u-weight600">1年間で年間不良品率を66%削減することに成功。</span>
               <hr>
-              <span class="u-weight600">
-                →チームで仕事をする難しさを学んだ。 
-                <br>
-                →課題解決のプロセスから面白さを感じた。
-              </span>
+              直属の上司からは「最年少のお前が主体的に取り組んでくれたことで、他の社員のモチベーションが上がった」と評価をいただき、その後も社内の改善業務を任される。
+              <br>
+              しかし、会社が保守的なカルチャーであることや自分自身の提案スキル面での力不足もあり、課題解決に向けた提案を却下される場面も多々あった。
+              <hr>
+              →<span class="u-under-line u-weight600">「課題解決」にはやりがいを感じており</span>、 社内だけでなく会社の外の状況に目を向けるチャンスと捉え、他の企業が持つ課題に対しても何かアプローチができないかと考えた。
+              <br>
+              → リサーチを行った結果、ブランディングやマーケティング、採用など企業が持つ様々な課題解決につながる<span class="u-under-line u-weight600">Webの受託制作に興味を持った。</span>
               <hr>
               【取得資格・認定】<br>
               ・第二種電気工事士<br>
@@ -387,14 +358,16 @@
             </dt>
             <dd class="p-career__dd p-career__dd--two-column">
               <div class="p-career__dd-text">
-                著名なデザイナーさんのポートフォリオサイトを拝見したのをきっかけにサイト制作を学び始める。
-                デザインツールの使い方やHTML、CSSの基礎から入り、サイトを作っていく中で<span class="u-under-line">コーディングの楽しさにハマる</span>。
-                サイトを作るための知識を学び続ける楽しさから本格的に仕事として携わりたいと考え、転職を決意する。
+                2021年5月より、独学でWeb周りの知識、デザイン・コーディング等の学習を始める。<br>
+                学習していく中で躓きながらも、知識を付け応用していく過程がとても楽しく、寝食を忘れる程夢中になる。
+                中でもコードを書くことがとても楽しく、アクセシブルな設計やユーザビリティの向上、インタラクション・アニメーションの実装など、コーディングによってデザインをよりジャンプアップさせられる事に魅力を感じる。
                 <br>
-                主にUdemyや書籍、チュートリアル、ブログなどで学習を進める。
+                <span class="u-under-line u-weight600">
+                  「自分自身が夢中になれること」と現職を通して見えてきた「企業課題の解決という挑戦したい領域」の2つがマッチしたことから、Web業界への転職を決意。
+                </span>
               </div>
               <picture class="p-career__dd-picture">
-                <source srcset="/img/webp/books.webp" class="p-works-item__img" type="image/webp" />
+                <source srcset="/img/webp/books.webp" class="p-career__dd-img" type="image/webp" />
                 <img src="/img/common/books.png" alt="web技術に関する書籍類" width="608" height="389" decoding="async" class="p-career__dd-img">
               </picture>
             </dd>
@@ -408,7 +381,76 @@
             </dt>
             <dd class="p-career__dd">
               ポートフォリオサイトを公開。<br>
-              現職業務と並行しながら転職活動中。
+              現職業務と並行しながら転職活動を開始。
+            </dd>
+          </div>
+          <div class="p-career__row">
+            <dt class="p-career__date">
+              20XX
+            </dt>
+            <dt class="p-career__dt">
+              将来どんなエンジニアになりたいか
+            </dt>
+            <dd class="p-career__dd">
+              <span class="p-career__dd-heading">
+                1年目〜<br class="u-hidden-md-up">
+                スキルアップにフルコミット
+              </span>
+              <br>
+              まずは、スキルアップにフルコミットして、いち早く一人前に仕事を任せて貰える様になりたいと考え、現在も仕事の傍ら学習を継続。<br>
+              この取り組みを今後も継続し、業務中はもちろん業務時間外も含めて精一杯学習してスキルアップに努め、タスクを一人でも対応できるように尽力。
+              <hr>
+              <span class="p-career__dd-heading">
+                2年目〜<br class="u-hidden-md-up">
+                デザインへの理解があるエンジニア
+              </span>
+              <br>
+              要望通り実装するだけではなく、デザインへの理解を持ち、最適なインタラクション・アニメーションの提案・実装ができるエンジニアを目指す。
+              <br>
+              その為に現在は、毎日コードを書く以外にも、<span class="u-under-line u-weight600">国内のギャラリーサイトや海外のアワード等の先端事例を追ってデザイントレンドのキャッチアップを行っている。</span><br>
+              また、参考にできそうな部分はプロトタイプを作成し、実際に本サイトに取り入れてみるなどを行っている。<br>
+              デザインへの理解を通して、デザイナーとの円滑なコミュニケーションや提案をすることにより、お客さまの課題に対しての解決策の幅を広げられるような人材を目指す。
+              <hr>
+              <span class="p-career__dd-heading">
+                3年目〜<br class="u-hidden-md-up">
+                お客さまのビジネスに貢献できるエンジニア
+              </span>
+              <br>
+              「何故これを作りたいのか」という目的から <br>
+              「そのためにどんなアプローチが必要か」という手段の選択、<br>
+              加えて「どのくらいの期間と予算感か」という制約を踏まえた上で、<br>
+              「求められているものを、実現できる最高の状態」で作れるエンジニアを目指す。
+              <hr>
+              独りよがりのクリエイティブにならずに、<span class="u-under-line u-weight600">「課題解決に繋がるプロダクト」に重きを置きお客さまのビジネスに貢献できる人材を目指す。</span>
+              <hr>
+              その為に現在は、<span class="u-under-line u-weight600">技術を学んで理解を深めるにあたって"言語化"を重視。
+              <br>
+              </span> ただキャッチアップするだけではなく、<span class="u-under-line u-weight600">ブログやNotionにてアウトプットを積極的に行っている。</span>
+              <br>
+              曖昧な理解を防いだり、提案の際、納得感のある説明ができるようになる為にも日々学んだことを言語化することが重要だと考えている。
+            </dd>
+            <dd class="p-career__dd p-career__dd--pictures">
+              <a href="https://kt-media.blog/" class="p-career__dd-picture p-career__dd-picture--link" target="_blank" rel="noopener noreferrer">
+                <picture>
+                  <source srcset="/img/webp/career-blog.webp" class="p-career__dd-img" type="image/webp" />
+                  <img src="/img/common/career-blog.png" alt="技術ブログ「KT MEDIA」のファーストビューのスクリーンショット" width="331" height="174" loading="lazy" class="p-career__dd-img">
+                </picture>
+                <span class="p-career__dd-caption p-career__dd-caption--link">
+                  技術ブログ「KT MEDIA」運営
+                  <svg class="c-svg" width="12" height="12">
+                    <use xlink:href="/img/svg/sprite.min.svg#icon-blank" />
+                  </svg>
+                </span>
+              </a>
+              <span class="p-career__dd-picture">
+                <picture>
+                  <source srcset="/img/webp/career-notion.webp" class="p-career__dd-img" type="image/webp" />
+                  <img src="/img/common/career-notion.png" alt="Notionで管理している開発ログのスクリーンショット" width="331" height="174" loading="lazy" class="p-career__dd-img">
+                </picture>
+                <span class="p-career__dd-caption">
+                  Notionにて自作の開発ドキュメントを運用
+                </span>
+              </span>
             </dd>
           </div>
         </dl>

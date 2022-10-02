@@ -39,8 +39,8 @@
 
 .p-career__row {
   position: relative;
-  background-color: global.$color-secondary-thin;
-  padding:40px 30px 40px 60px;
+  background-color: global.$color-base-dark;
+  padding: 40px 25px 40px 55px;
 
   @include global.mq(md) {
     padding: 4vw 9vw 4vw 13vw;
@@ -102,9 +102,11 @@
 .p-career__dd {
   margin-top: 7px;
   @include global.fz(14, 16);
-  @include global.lh(2);
+  @include global.lh(1.9, 2);
   font-weight: 400;
   font-family: global.$font-family-ja;
+  text-align: justify;
+  letter-spacing: 0.01em;
 
   @include global.mq(md) {
     margin-top: 14px;
@@ -118,9 +120,45 @@
   }
 }
 
+.p-career__dd-heading {
+  position: relative;
+  display: inline-block;
+  font-weight: 600;
+  margin-top: 18px;
+  margin-bottom: 6px;
+  @include global.lh(1.7);
+  @include global.fz(16, 18);
+
+  @include global.mq(md) {
+    margin-bottom: 12px;
+    padding-left: 17px;
+    &::before {
+      content: "⚫︎";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+    }
+  }
+}
+
 .p-career__dd-text {
   @include global.mq(xl) {
     width: calc(60% - 8% / 2);
+  }
+}
+
+.p-career__dd--pictures {
+  margin-top: 24px;
+
+  @include global.mq(md) {
+    margin-top: 40px;
+  }
+
+  @include global.mq(xl) {
+    display: flex;
+    align-items: center;
+    gap: 20px;
   }
 }
 
@@ -131,5 +169,38 @@
   @include global.mq(xl) {
     width: calc(40% - 8% / 2);
     margin-top: 0;
+  }
+}
+
+.p-career__dd-picture--link {
+  &:hover,
+  &:focus {
+    .p-career__dd-caption--link {
+      background-position: bottom left;
+      background-size: 100% 1px;
+    }
+  }
+}
+
+.p-career__dd-caption {
+  @include global.fz(12, 14);
+  @include global.lh(1.7);
+}
+
+.p-career__dd-caption--link {
+  position: relative;
+  display: inline-block;
+  transition: color 0.4s ease-in-out;
+  background: linear-gradient(transparent 0, global.$color-primary 40%) no-repeat;
+  background-position: bottom right;
+  background-size: 0 1px;
+  transition: background-size 0.6s global.ease(out-quint);
+
+  svg {
+    transform: translateY(9%);
+    @include global.mq(md) {
+      width: 14px;
+      height: 14px;
+    }
   }
 }
