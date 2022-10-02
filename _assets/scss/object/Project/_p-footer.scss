@@ -14,34 +14,28 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.p-footer__foot {
+  display: flex;
+  flex-direction: column;
+  margin-top: 42px;
 
   @include global.mq(md) {
-    width: 100%;
+    justify-content: space-between;
     flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-  }
-}
-
-.p-footer__info {
-  max-width: 316px;
-  width: 100%;
-}
-
-.p-footer__nav {
-  margin-top: 50px;
-
-  @include global.mq(md) {
-    width: calc(100% - 15% - 316px);
-    max-width: 500px;
-    margin-top: 0;
-    margin-left: 20%;
+    margin-top: 60px;
   }
 }
 
 .p-footer__copyright {
-  width: 90%;
+  width: 100%;
   @include global.fz(14, 16);
   @include global.lh(1.2);
   text-align: right;
+  margin-top: 32px;
+
+  @include global.mq(md) {
+    margin-top: 32px;
+  }
 }

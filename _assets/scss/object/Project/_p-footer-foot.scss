@@ -1,23 +1,41 @@
 @use "foundation/global";
 
-// Project フッターナビゲーション
+// Project フッター下部
 //--------------------------------------------------------------------------
 
-.p-footer-nav {
+.p-footer-foot__text {
+  @include global.fz(16, 18);
+  @include global.lh(1.4);
+}
+
+.p-footer-foot__sns {
+  margin-top: 10px;
+  display: flex;
+}
+
+.p-footer-foot__nav {
+  margin-top: 32px;
   @include global.mq(md) {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 13em;
+    align-items: flex-end;
+    margin-top: 40px;
   }
 }
 
-.p-footer-nav__link {
+.p-footer-foot__nav-item {
+  @include global.mq(md) {
+    &:not(:first-child) {
+      margin-left: 40px;
+    }
+  }
+}
+
+.p-footer-foot__nav-link {
   position: relative;
   display: inline-block;
   padding-top: 14px;
   padding-bottom: 14px;
-  @include global.fz(18, 20);
+  @include global.fz(18, 22);
   @include global.lh(1.2);
   font-weight: 400;
 
@@ -47,7 +65,7 @@
   }
 }
 
-.p-footer-nav__link--blank {
+.p-footer-foot__nav-link--blank {
   padding-right: 20px;
 
   &::after {
