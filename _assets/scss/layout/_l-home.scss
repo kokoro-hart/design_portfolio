@@ -9,7 +9,8 @@
 
   @include global.mq(lax) {
     min-height: 500px;
-    height: 86vh;
+    height: 48vw;
+    max-height: 86vh;
     padding: 0;
   }
 }
