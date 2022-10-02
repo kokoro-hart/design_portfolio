@@ -38,7 +38,7 @@
   overflow: hidden;
   height: 1.2em;
   color: global.$color-base;
-  font-size: max(42px, #{global.vw(110)});
+  font-size: max(42px, #{global.vw(120)});
   @include global.lh(1.2);
   font-weight: 400;
   text-align: center;
