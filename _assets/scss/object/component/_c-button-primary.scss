@@ -15,14 +15,14 @@
   letter-spacing: -0.01em;
 
   @include global.mq(lax) {
-    font-size: max(22px, #{global.vw(22)});
+    font-size: max(24px, #{global.vw(24)});
     padding-left: max(32px, #{global.vw(32)});
   }
 
   &::before {
     content: "";
     position: absolute;
-    top: 50%;
+    top: 54%;
     left: 0;
     transform: translateY(-50%);
     border-radius: 50%;
@@ -31,8 +31,8 @@
     background-color: global.$color-primary;
 
     @include global.mq(lax) {
-      width: max(18px, #{global.vw(18)});
-      height: max(18px, #{global.vw(18)});
+      width: max(20px, #{global.vw(20)});
+      height: max(20px, #{global.vw(20)});
     }
   }
 
