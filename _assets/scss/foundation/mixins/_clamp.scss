@@ -1,0 +1,21 @@
+/*
+  clamp()関数の推奨値を1次関数を用いて計算
+  $property: プロパティ
+  $minBp: 下限ブレークポイント
+  $maxBp: 上限ブレークポイント
+  $minVal: 最小値
+  $maxVal: 最大値
+  
+  @include clampFunction('プロパティ', 下限ブレークポイント, 上限ブレークポイント, 最小値, 最大値);
+*/
+@mixin clampFunction($property, $minBp, $maxBp, $minVal, $maxVal) {
+  $a: round(100 * ($maxVal - $minVal) / ($maxBp - $minBp));
+  $b: round($minVal - ($minBp / 100) * $a);
+  $vw: calc(#{$a}vw + #{$b}px);
+
+   // フォールバック
+  @supports not (#{$property}: clamp(#{$minVal}px, #{$vw}, #{$maxVal}px)) {
+    #{$property}: unquote('max(#{$minVal}px, min(#{$vw}, #{$maxVal}px))'); 
+  }
+  #{$property}: clamp(#{$minVal}px, #{$vw}, #{$maxVal}px);
+}
