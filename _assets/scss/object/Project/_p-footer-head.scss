@@ -19,7 +19,7 @@
 .p-footer-head__heading {
   @include global.lh(1.2);
   font-weight: 400;
-  font-size: 60px;
+  font-size: 52px;
 
   @include global.mq(md) {
     @include global.clampFunction("font-size", 1024, 1440, 74, 100);
@@ -61,8 +61,8 @@
   border-radius: 50%;
   overflow: hidden;
   margin-right: 0.2em;
-  width: 60px;
-  height: 60px;
+  width: 52px;
+  height: 52px;
 
   @include global.mq(md) {
     width: 100px;
