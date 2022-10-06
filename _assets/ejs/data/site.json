@@ -78,78 +78,85 @@
       "dataId": "#js-brain",
       "id": "js-brain",
       "name": "Brain App",
-      "category": "LP / Coding",
+      "category": "Landing Page",
       "description": "生活習慣病の早期発見をサポートする、架空医療認定アプリ「Brain App」のLPコーディングを行いました。",
       "slug": "/brain-app/",
       "thumbnailWebp": "/img/webp/thumbnail-brain.webp",
       "thumbnailPng": "/img/common/thumbnail-brain.png",
-      "alt": "サムネイル、Brain App架空医療系アプリLP"
+      "alt": "サムネイル、Brain App架空医療系アプリLP",
+      "scope": "Development"
     },
     "memories": {
       "dataId": "#js-memories",
       "id": "js-memories",
       "name": "Memories",
-      "category": "Event Site / Coding",
+      "category": "Event Site",
       "description": "世界各国から集まるクラシックカーのチューニング・ドレスアップの総合展示会をコンセプトにした架空カーイベント特設サイトのコーディングを行いました。",
       "slug": "/memories/",
       "thumbnailWebp": "/img/webp/thumbnail-memories.webp",
       "thumbnailPng": "/img/common/thumbnail-memories.png",
-      "alt": "サムネイル、Memories架空カーイベントサイト"
+      "alt": "サムネイル、Memories架空カーイベントサイト",
+      "scope": "Development"
     },
     "ktMedia": {
       "dataId": "#js-blog",
       "id": "js-blog",
       "name": "KT MEDIA",
-      "category": "Blog Site / Design / Coding",
+      "category": "Blog Site",
       "description": "個人アウトプット用の技術ブログ「KT MEDIA」の企画、デザイン、コーディング、CMS構築を行いました。",
       "slug": "/kt-media/",
       "thumbnailWebp":"/img/webp/thumbnail-media.webp",
       "thumbnailPng": "/img/common/thumbnail-media.png",
-      "alt": "サムネイル、KT MEDIA 個人技術ブログ"
-    },
-    "openCafe": {
-      "dataId": "#js-open",
-      "id": "js-open",
-      "name": "Open Cafe",
-      "category": "Cafe Site / Coding",
-      "description": "「Open Cafe - dish & coffee」架空カフェサイトのコーディング、CMS構築を行いました。",
-      "slug": "/open-cafe/",
-      "thumbnailWebp": "/img/webp/thumbnail-open.webp",
-      "thumbnailPng": "/img/common/thumbnail-open.jpeg",
-      "alt": "サムネイル、OpenCafe架空カフェサイト"
+      "alt": "サムネイル、KT MEDIA 個人技術ブログ",
+      "scope": "UI Design / Development"
     },
     "globalStandard": {
       "dataId": "#js-global",
       "id": "js-global",
       "name": "Global Standard",
-      "category": "Corporate Site / Coding",
+      "category": "Corporate Site",
       "description": "世界で活躍できるグローバルな人材を育てる事業会社の、架空コーポレートサイトのコーディング、CMS構築を行いました。",
       "slug": "/global-standard/",
       "thumbnailWebp": "/img/webp/thumbnail-global.webp",
       "thumbnailPng": "/img/common/thumbnail-global.jpeg",
-      "alt": "サムネイル、Global Standard架空コーポレートサイト"
+      "alt": "サムネイル、Global Standard架空コーポレートサイト",
+      "scope": "Development"
+    },
+    "openCafe": {
+      "dataId": "#js-open",
+      "id": "js-open",
+      "name": "Open Cafe",
+      "category": "Cafe Site",
+      "description": "「Open Cafe - dish & coffee」架空カフェサイトのコーディング、CMS構築を行いました。",
+      "slug": "/open-cafe/",
+      "thumbnailWebp": "/img/webp/thumbnail-open.webp",
+      "thumbnailPng": "/img/common/thumbnail-open.jpeg",
+      "alt": "サムネイル、OpenCafe架空カフェサイト",
+      "scope": "Development"
     },
     "minamiDental": {
       "dataId": "#js-minami",
       "id": "js-minami",
       "name": "Minami Dental",
-      "category": "Dental Site / Coding",
+      "category": "Dental Site",
       "description": "「みなみ歯科クリニック」架空歯科医院サイトのコーディング、CMS構築を行いました。",
       "slug": "/minami-dental/",
       "thumbnailWebp": "/img/webp/thumbnail-minami.webp",
       "thumbnailPng": "/img/common/thumbnail-minami.jpeg",
-      "alt": "サムネイル、みなみ歯科クリニック架空サイト"
+      "alt": "サムネイル、みなみ歯科クリニック架空サイト",
+      "scope": "Development"
     },
     "gardenSalad": {
       "dataId": "#js-garden",
       "id": "js-garden",
       "name": "Garden Salad",
-      "category": "Cafe Site / Coding",
+      "category": "Cafe Site",
       "description": "健康的なのに美味しい、SNSで拡散したくなるようなサラダ「Garden Salad」架空サラダカフェサイトのコーディングを行いました。",
       "slug": "/garden-salad/",
       "thumbnailWebp": "/img/webp/thumbnail-garden.webp",
       "thumbnailPng": "/img/common/thumbnail-garden.jpeg",
-      "alt": "サムネイル、Garden Salad架空カフェサイト"
+      "alt": "サムネイル、Garden Salad架空カフェサイト",
+      "scope": "Development"
     }
   }
 }
