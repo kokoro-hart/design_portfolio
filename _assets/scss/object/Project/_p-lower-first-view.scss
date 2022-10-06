@@ -9,6 +9,10 @@
 
   @include global.mq(lax) {
     display: flex;
+    padding: 20vw 0 10vw;
+  }
+
+  @include global.mq(xxl) {
     padding: 15vw 0 8.6vw;
   }
 }
