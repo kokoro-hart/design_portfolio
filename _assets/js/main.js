@@ -12,8 +12,9 @@ import resizeEvent from './common/resizeEvent';
 import firstViewAnimation from './common/firstViewTrigger';
 import replaceHead from './common/replaceHead';
 import { initLoading, endLoading } from './common/loading';
-import { addBlendHeader, removeBlendHeader } from './common/header';
+import { addBlendHeader, removeBlendHeader,pageTransitionHeader } from './common/header';
 import inquiryCompleted from './common/inquiryCompleted';
+import slideUpLines from './common/slide-up-lines'
 
 // intersectionObserver
 import addClassIntersection from './intersectionObserver/addClassIntersection';
@@ -40,8 +41,11 @@ window.addEventListener('DOMContentLoaded', () => {
   toggleEvent();
 });
 firstViewAnimation();
+slideUpLines();
 window.addEventListener('resize', setFillHeight);
 setFillHeight();
+
+pageTransitionHeader();
 
 // barba.js options
 barba.init({
@@ -94,6 +98,7 @@ barba.hooks.beforeLeave((data) => {
 barba.hooks.beforeEnter((data) => {
   replaceHead(data);
   removeEvent();
+  pageTransitionHeader()
 })
 
 barba.hooks.after((data) => {
@@ -103,4 +108,5 @@ barba.hooks.after((data) => {
   setFillHeight();
   firstViewAnimation();
   endLoading();
+  slideUpLines();
 });
