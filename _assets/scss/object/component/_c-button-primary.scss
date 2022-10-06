@@ -6,45 +6,84 @@
 .c-button-primary {
   position: relative;
   display: inline-block;
-  overflow: hidden;
-  height: 1.5em;
   padding-left: 26px;
+  padding-right: 4px;
+  padding-bottom: 4px;
   @include global.fz(16);
   @include global.lh(1.65);
   font-weight: 500;
   letter-spacing: -0.01em;
+  overflow: hidden;
 
   @include global.mq(lax) {
-    font-size: max(24px, #{global.vw(24)});
-    padding-left: max(32px, #{global.vw(32)});
+    padding-bottom: max(6px, #{global.vw(6)});
+    font-size: max(20px, #{global.vw(24)});
+    padding-left: max(28px, #{global.vw(32)});
   }
 
-  &::before {
+  &::before,
+  &::after {
     content: "";
     position: absolute;
-    top: 54%;
+    top: 46%;
     left: 0;
-    transform: translateY(-50%);
     border-radius: 50%;
     width: 16px;
     height: 16px;
     background-color: global.$color-primary;
+    transition: transform 0.6s global.ease(out-quint);
 
     @include global.mq(lax) {
-      width: max(20px, #{global.vw(20)});
-      height: max(20px, #{global.vw(20)});
+      width: max(16px, #{global.vw(20)});
+      height: max(16px, #{global.vw(20)});
     }
+  }
+
+  &::before {
+    transform: translateY(-50%);
+  }
+
+  &::after {
+    transform: translateY(-200%) scale(0.1, 0.1);
   }
 
   &:hover,
   &:focus {
-    .c-button-primary__text {
+    &::before {
+      transform: translateY(110%) scale(0.1, 0.1);
+    }
+
+    &::after {
+      transform: translateY(-50%) scale(1, 1);
+    }
+
+    .c-button-primary__text-inner {
       transform: translateY(-1.65em);
+    }
+
+    .c-button-primary__line {
+      &::before {
+        height: 3px;
+        transform-origin: left top;
+        transform: scale(1, 1) translateX(0);
+      }
+
+      &::after {
+        height: 3px;
+        transform-origin: right top;
+        transform: scale(0, 1);
+      }
     }
   }
 }
 
 .c-button-primary__text {
+  display: block;
+  overflow: hidden;
+  height: 1.5em;
+}
+
+.c-button-primary__text-inner {
   position: relative;
   display: block;
   transition: transform 0.6s global.ease(out-quint);
@@ -56,14 +95,45 @@
   }
 }
 
-.c-button-primary--large {
-  @include global.mq(lax) {
-    padding-left: max(34px, #{global.vw(34)});
-    font-size: max(28px, #{global.vw(28)});
+.c-button-primary__line {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  left: 0;
 
-    &::before {
-      width: max(20px, #{global.vw(20)});
-      height: max(20px, #{global.vw(20)});
-    }
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    opacity: 0.8;
+    transition: transform 0.6s global.ease(out-quint);
+    background-color: global.$color-primary;
+  }
+
+  &::before {
+    transform: scale(0, 1) translateX(-80%);
+    transform-origin: left top;
+  }
+
+  &::after {
+    transform: scale(1, 1);
+    transform-origin: right top;
+  }
+}
+
+.c-button-primary--large {
+  &::before,
+  &::after {
+    top: 45.5%;
+  }
+  @include global.mq(lax) {
+    padding-bottom: max(6px, #{global.vw(7)});
+    padding-left: max(28px, #{global.vw(34)});
+    font-size: max(20px, #{global.vw(26)});
   }
 }
