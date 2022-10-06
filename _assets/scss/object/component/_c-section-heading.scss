@@ -30,6 +30,7 @@
 }
 
 .c-section-heading__en {
+  display: block;
   font-size: max(34px, 4vw);
   @include global.lh(1);
   font-weight: 400;
@@ -43,6 +44,7 @@
 }
 
 .c-section-heading__ja {
+  display: block;
   margin-top: 8px;
   @include global.fz(14, 16);
   @include global.lh(1);
