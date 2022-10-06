@@ -19,11 +19,16 @@
             </span>
           </span>
         </h1>
-        <span class="is-wrap">
+        <span class="is-wrap" style="transform: translate(0px, 0px);">
           <p class="p-first-view__text is-slide-up u-delay04">
             Web creator based in Japan - Ibaraki & Tokyo
           </p>
         </span>
+        <p class="p-first-view__information js-slide-up-row" data-scroll data-scroll-speed="0.5">
+          I'm passionate about web technology and focused on the 
+          user experience. I aim to create web experiences that are 
+          surprising, exciting and memorable on top of that.
+        </p>
       </div>
     </section><%# / ファーストビュー %>
 
@@ -48,9 +53,12 @@
         </p>
         <div class="p-home-about__link-wrapper">
           <a href="/about/" class="c-button-primary">
-            <span class="c-button-primary__text" data-text="About me">
-              View more
+            <span class="c-button-primary__text">
+              <span class="c-button-primary__text-inner"  data-text="About me">
+                View more
+              </span>
             </span>
+            <span class="c-button-primary__line"></span>
           </a>
         </div>
       </div>
@@ -79,14 +87,22 @@
               </p><br>
               <p class="p-works-content__text is-slide-mask">
                 <%= jsonData.works[work].description %>
-              </p>
+              </p><br>
+              <div class="p-works-content__link-wrapper is-slide-mask">
+                <a href="<%= jsonData.works[work].slug %>" class="c-button-primary c-button-primary--large">
+                  <span class="c-button-primary__text">
+                    <span class="c-button-primary__text-inner" data-text="<%= jsonData.works[work].name %>">
+                      View more
+                    </span>
+                  </span>
+                  <span class="c-button-primary__line"></span>
+                </a>
+              </div>
             </div>
-            <div class="p-works-content__link-wrapper">
-              <a href="<%= jsonData.works[work].slug %>" class="c-button-primary c-button-primary--large is-slide-mask">
-                <span class="c-button-primary__text" data-text="<%= jsonData.works[work].name %>">
-                  View more
-                </span>
-              </a>
+            <div class="p-works-content__scope-wrapper">
+              <p class="p-works-content__scope is-slide-mask">
+                <%= jsonData.works[work].scope %>
+              </p>
             </div>
           </li>
           <% }; %>
@@ -105,7 +121,7 @@
                 <%= jsonData.works[work].name %>
               </h3>
               <p class="p-works-item__category">
-                <%= jsonData.works[work].category %>
+                <%= jsonData.works[work].category %> / <%= jsonData.works[work].scope %>
               </p>
             </div>
           </a>
@@ -116,14 +132,14 @@
     </section><%# / 制作実績 %>
   </div>
 
-  <%# お問い合わせ導線 %>
-  <a href="/contact/" class="p-contact-connect" style="transform: translate(0px, 0px);">
+  <%# 次ページへの導線 %>
+  <a href="/about/" class="p-contact-connect" style="transform: translate(0px, 0px);">
     <p class="p-contact-connect__text-wrapper">
-      <span class="p-contact-connect__text" data-text="Contact Me">
-        Get In Touch
+      <span class="p-contact-connect__text" data-text="About Me">
+        About Me
       </span>
     </p>
-  </a><%# / お問い合わせ導線 %>
+  </a><%# / 次ページへの導線 %>
 </main>
 
 <%- include('./common/_footer', {pageId:pageId }) %>

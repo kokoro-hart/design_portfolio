@@ -32,18 +32,18 @@
   letter-spacing: -0.01em;
 
   @include global.mq(md) {
-    font-size: max(50px, #{global.vw(82)});
+    font-size: max(54px, #{global.vw(82)});
   }
 }
 
 .p-works-content__number {
-  padding-top: 45px;
+  padding-top: max(45px, #{global.vw(45)});
   span::before {
     content: counter(number, decimal-leading-zero);
     counter-increment: number 1;
     font-size: 24px;
     font-weight: 600;
-    
+
     @include global.mq(md) {
       font-size: max(30px, #{global.vw(36)});
     }
@@ -60,16 +60,36 @@
   @include global.mq(md) {
     font-size: max(24px, #{global.vw(32)});
   }
+
+  @include global.mq(lax) {
+    margin-top: max(8px, #{global.vw(8)});
+  }
 }
 
 .p-works-content__text {
-  margin-top: 12px;
+  margin-top: max(12px, #{global.vw(12)});
   @include global.lh(1.4, 1.7);
   font-weight: 400;
   font-size: max(16px, #{global.vw(20)});
   font-family: global.$font-family-ja;
 }
 
+.p-works-content__scope-wrapper {
+  padding-bottom: max(50px, #{global.vw(50)});
+}
+
+.p-works-content__scope {
+  font-size: 32px;
+  @include global.lh(1.4);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+
+  @include global.mq(md) {
+    font-size: max(24px, #{global.vw(32)});
+  }
+}
+
 .p-works-content__link-wrapper {
-  padding-bottom: 50px;
+  margin-top: 52px;
+  margin-top: max(52px, #{global.vw(52)});
 }
