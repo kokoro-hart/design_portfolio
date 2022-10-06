@@ -5,11 +5,11 @@
 
 //ファーストビュー
 .l-home__first-view {
-  padding: 15vh 0 13vh;
+  padding: 18vh 0 13vh;
 
   @include global.mq(lax) {
     min-height: 500px;
-    height: 48vw;
+    height: 61vw;
     max-height: 86vh;
     padding: 0;
   }

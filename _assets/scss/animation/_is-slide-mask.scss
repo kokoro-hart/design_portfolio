@@ -10,6 +10,15 @@
   background-color: transparent;
   color: transparent;
   transition: color 0s 0.5s;
+
+  .c-button-primary__line {
+    &::before,
+    &::after  {
+      background-color: transparent;
+      transition: transform 0.6s global.ease(out-quint) 0s ,
+      background-color 0s 0.5s;
+    }
+  }
 }
 
 //トリガー発火後
@@ -29,7 +38,7 @@
       height: 100%;
       background-color: global.$color-primary;
       transform: translate(101%, 0);
-      animation: mask-bg 1s global.ease(out-expo) 0s 1 normal forwards running;
+      animation: mask-bg 1s cubic-bezier(0.19, 1, 0.22, 1) 0s 1 normal forwards running;
     }
     @keyframes mask-bg {
       0% {
@@ -42,6 +51,13 @@
       100% {
         transform: translate(101%, 0);
       }
+    }
+  }
+
+  .c-button-primary__line {
+    &::before,
+    &::after  {
+      background-color: global.$color-primary;
     }
   }
 }
