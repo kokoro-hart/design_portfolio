@@ -12,7 +12,7 @@ import resizeEvent from './common/resizeEvent';
 import firstViewAnimation from './common/firstViewTrigger';
 import replaceHead from './common/replaceHead';
 import { initLoading, endLoading } from './common/loading';
-import { addBlendHeader, removeBlendHeader,pageTransitionHeader } from './common/header';
+import { addBlendHeader, removeBlendHeader,pageTransitionHeader, scrollHide } from './common/header';
 import inquiryCompleted from './common/inquiryCompleted';
 import slideUpLines from './common/slide-up-lines'
 
@@ -39,6 +39,7 @@ window.onload = endLoading();
 window.addEventListener('DOMContentLoaded', () => {
   resizeEvent();
   toggleEvent();
+  scrollHide();
 });
 firstViewAnimation();
 slideUpLines();
@@ -98,7 +99,8 @@ barba.hooks.beforeLeave((data) => {
 barba.hooks.beforeEnter((data) => {
   replaceHead(data);
   removeEvent();
-  pageTransitionHeader()
+  pageTransitionHeader();
+  scrollHide();
 })
 
 barba.hooks.after((data) => {

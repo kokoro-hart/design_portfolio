@@ -26,3 +26,41 @@ export function pageTransitionHeader() {
     header.classList.remove('is-slide-border');
   }, 1000)
 }
+
+/**
+ * sp,tab時上下スクロール判定にてheaderの表示 / 非表示切り替え
+ */
+export function scrollHide() {
+  const mediaQueryList = window.matchMedia('(min-width: 1025px)');
+  let scrollPoint = 0; 
+  let lastPoint = 100; 
+
+  /**
+ * イベントリスナー
+ */
+  const listener = (event) => {
+    if (!event.matches) {
+      // 1024px以下の処理
+      addEventListener("scroll", function () {
+
+        scrollPoint = window.scrollY;
+
+        if (scrollPoint >= lastPoint && scrollPoint > 100) {
+          // 下スクロールの場合
+          header.style.transform = 'translate(-50%, -90%)';
+        } else {
+          // 上スクロールの場合
+          header.style.transform = 'translate(-50%, 0px)';
+        }
+
+        lastPoint = scrollPoint;
+      });
+    }
+  };
+
+  // リスナー登録
+  mediaQueryList.addEventListener("change", listener);
+
+  // 初期化処理
+  listener(mediaQueryList);
+}
