@@ -15,3 +15,14 @@ export function addBlendHeader() {
 export function removeBlendHeader() {
   header.classList.add('is-blend-normal');
 }
+
+/**
+ * headerのborderをアニメーション発火
+ */
+export function pageTransitionHeader() {
+  header.classList.add('is-slide-border');
+
+  setTimeout(() => {
+    header.classList.remove('is-slide-border');
+  }, 1000)
+}

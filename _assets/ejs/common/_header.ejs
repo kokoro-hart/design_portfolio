@@ -22,14 +22,14 @@
   <link rel="icon" href="/img/common/favicon.ico">
   <link rel="apple-touch-icon" sizes="180x180" href="https://k-tobita.jp/img/common/apple-touch-icon-180x180.png">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <link rel="stylesheet" type="text/css" href="/css/style.css?ver=1.0.2">
 </head>
 
 <body data-barba="wrapper">
   <div id="page-wrapper" class="data-scroll-container" data-scroll-container>
     <%# ヘッダー %>
-    <header id="js-header" class="l-header p-header" style="transform: translate(0px, 0px);">
-      <div class="l-header__inner">
+    <header id="js-header" class="l-header p-header" style="transform: translate(-50%, 0px);">
+      <div class="p-header__inner">
         <%# ヘッダー - ロゴ %>
         <p class="p-header__logo">
           <a href="/" class="p-header__logo-link">
@@ -57,7 +57,7 @@
               </li>
               <li class="p-global-nav__item">
                 <a href="/about/" class="p-global-nav__link">
-                  ABOUT
+                  ABOUT ME
                 </a>
               </li>
               <li class="p-global-nav__item">
@@ -74,6 +74,14 @@
           </nav><%# / ヘッダー - グローバルナビゲージョン %>
           <%# ヘッダー - sns %>
           <ul class="p-header__sns p-header-sns">
+            <li class="p-header-sns__item">
+              <a href="https://twitter.com/coco_hack_ll" class="p-header-sns__link" target="_blank" rel="noopener noreferrer">
+                <span class="u-visually-hidden">Twitter（外部リンク）</span>
+                <svg class="c-svg p-header-sns__svg" width="20" height="20" role="img" aria-label="Twitterのアイコン">
+                  <use xlink:href="/img/svg/sprite.min.svg#icon-twitter" />
+                </svg>
+              </a>
+            </li>
             <li class="p-header-sns__item">
               <a href="https://codepen.io/kokoro-hart/pens/public" class="p-header-sns__link" target="_blank" rel="noopener noreferrer">
                 <span class="u-visually-hidden">CodePen（外部リンク）</span>
@@ -112,7 +120,7 @@
           </li>
           <li class="p-drawer-nav__item">
             <a href="/about/" class="p-drawer-nav__link">
-              ABOUT
+              ABOUT ME
             </a>
           </li>
           <li class="p-drawer-nav__item">
@@ -132,6 +140,14 @@
         </ul>
         <p class="p-drawer-nav__text">FOLLOW ME</p>
         <ul class="p-drawer-nav__sns p-sns">
+          <li class="p-sns__item">
+            <a href="https://twitter.com/coco_hack_ll" class="p-sns__link" target="_blank" rel="noopener noreferrer">
+              <span class="u-visually-hidden">Twitter（外部リンク）</span>
+              <svg class="c-svg p-sns__svg" width="20" height="20" role="img" aria-label="Twitterのアイコン">
+                <use xlink:href="/img/svg/sprite.min.svg#icon-twitter" />
+              </svg>
+            </a>
+          </li>
           <li class="p-sns__item">
             <a href="https://codepen.io/kokoro-hart/pens/public" class="p-sns__link" target="_blank" rel="noopener noreferrer">
               <span class="u-visually-hidden">CodePen（外部リンク）</span>

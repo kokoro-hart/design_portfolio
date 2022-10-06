@@ -6,24 +6,16 @@
 .l-header {
   position: fixed;
   top: 0;
-  left: 0;
+  left: 50%;
   z-index: map-get(global.$layer, header);
   width: 100%;
+  overflow: hidden;
+
+  @include global.mq(md) {
+    width: 95%;
+  }
 
   @include global.mq(lax) {
     position: absolute;
-  }
-}
-
-.l-header__inner {
-  position: relative;
-  z-index: map-get(global.$layer, header-inner);
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  padding: 24px 24px 0;
-
-  @include global.mq(md) {
-    padding: 40px 40px 0;
   }
 }
