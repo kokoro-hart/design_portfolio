@@ -1,0 +1,22 @@
+.js-slide-up-row {
+  position: relative;
+  opacity: 0;
+  width: fit-content;
+}
+.js-slide-up-row.is-setup {
+  opacity: 1;
+}
+.js-slide-up-row__base {
+  opacity: 0;
+}
+.js-slide-up-row__line,
+.js-slide-up-row__checker {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+}
+.js-slide-up-row__text {
+  display: block;
+}
