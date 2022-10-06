@@ -9,7 +9,6 @@
 }
 
 .p-home-about__heading {
-  margin-left: -8%;
   color: global.$color-secondary;
   font-size: 18vw;
   @include global.lh(1);
@@ -19,12 +18,12 @@
 
   @include global.mq(lax) {
     width: 40%;
-    margin-left: 0;
     font-size: 14.5vw;
+    margin-left: -0.8%;
   }
 
   @include global.mq(xl) {
-    width: 47%;
+    width: 50.5%;
   }
 }
 
