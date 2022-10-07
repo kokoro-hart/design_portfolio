@@ -32,7 +32,7 @@
   width: 100%;
 
   @include global.mq(lax) {
-    margin-top: global.vw(170);
+    margin-top: global.vw(190);
   }
 
   @include global.mq(xl) {
