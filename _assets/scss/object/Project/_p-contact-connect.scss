@@ -24,7 +24,7 @@
     }
 
     .p-contact-connect__text {
-      transform: translateY(-1.2em);
+      transform: translateY(-1.25em);
     }
   }
 }
@@ -36,10 +36,10 @@
   transform: translate(-50%, -50%);
   display: inline-block;
   overflow: hidden;
-  height: 1.2em;
+  height: 1.25em;
   color: global.$color-base;
   font-size: max(42px, #{global.vw(120)});
-  @include global.lh(1.2);
+  @include global.lh(1.25);
   font-weight: 400;
   text-align: center;
   white-space: nowrap;
