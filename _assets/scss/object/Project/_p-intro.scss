@@ -4,37 +4,37 @@
 //--------------------------------------------------------------------------
 
 .p-intro__heading {
-  font-size: max(32px, 5.5vw);
-  @include global.lh(1.05);
+  font-size: max(33px, 5.5vw);
+  @include global.lh(1.2, 1.05);
   font-weight: 400;
+  margin-left: -1%;
   letter-spacing: -0.01em;
 
   @include global.mq(lax) {
     margin-top: 0;
     white-space: nowrap;
-    font-size: max(40px, #{global.vw(86)});
+    font-size: max(40px, #{global.vw(90)});
+  }
+}
+
+.p-intro__heading--contact {
+  font-size: max(37px, 5.5vw);
+  span {
+    &:not(:first-child) {
+      @include global.lh(1.24);
+    }
   }
 }
 
 .p-intro__text {
   width: 100%;
-  margin-top: 32px;
+  margin-top: 40px;
   @include global.fz(14, 16);
   @include global.lh(1.7, 1.8);
   font-weight: 400;
   font-family: global.$font-family-ja;
 
   @include global.mq(md) {
-    width: 80%;
     margin-top: 40px;
   }
-
-  @include global.mq(1026px, min) {
-    width: 100%;
-  }
-}
-
-.p-intro__icon {
-  color: transparent;
-  text-shadow: 0 0 0 global.$color-accent;
 }

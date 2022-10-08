@@ -1,45 +1,73 @@
 <% let pageId='contact-thanks' ; %>
-<%- include('../common/_header', {pageId:pageId }) %>
+  <%- include('../common/_header', {pageId:pageId }) %>
 
-<% console.log(jsonData) %>
-<main class="l-lower-contact" data-barba="container" data-barba-namespace="contact">
-  <div class="l-container">
-    <div id="js-first-view" class="p-lower-first-view">
-      <h1 class="c-page-heading">
-        <span class="c-page-heading__en is-wrap">
-          <span class="is-slide-up">
-            CONTACT
-          </span>
-        </span>
-        <span class="c-page-heading__ja is-wrap">
-          <span class="is-slide-up">
-            お問い合わせ完了
-          </span>
-        </span>
-      </h1>
-    </div>
-    <div class="l-lower-contact__thanks">
-      <section class="p-contact-thanks">
-        <div class="p-contact-thanks__inner">
-          <h2 class="p-contact-thanks__heading">
-            THANK YOU!
-          </h2>
-          <p class="p-contact-thanks__text">
-            お問い合わせありがとうございます。<br>
-            ご入力いただいたメールアドレスに自動送信メールをお送り致しました。<br>
-            万が一、自動返信メールが届かない場合はお手数ですが迷惑メールフォルダを確認いただくか、再度ご連絡をお願い致します。<br>
-            また、お問い合わせいただいた内容は確認後、48時間以内にご連絡させていただきます。<br>
-            今しばらくお時間をいただければ幸いです。
-          </p>
+    <% console.log(jsonData) %>
+      <main class="p-contact" data-barba="container" data-barba-namespace="contact">
+        <div class="l-container">
+          <div id="js-first-view" class="p-contact__thanks-fv">
+            <h1 class="c-page-heading">
+              <span class="c-page-heading__en c-page-heading__en--contact is-wrap">
+                <span class="is-slide-up">
+                  Thank you 
+                </span>
+              </span>
+              <span class="c-page-heading__en c-page-heading__en--contact is-wrap u-hidden-md-down">
+                <span class="is-slide-up u-delay01">
+                  for your inquiry.
+                </span>
+              </span>
+            </h1>
+          </div>
+          <div class="p-contact__thanks">
+            <section class="p-contact-thanks">
+              <div class="p-contact-thanks__inner">
+                <div data-scroll data-scroll-speed="-0.5">
+                  <span class="p-contact-thanks__arrow is-wrap">
+                    <svg class="p-contact-thanks__arrow-svg is-slide-up u-delay04" width="24px" height="24px" viewBox="0 0 14 14"
+                      version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <title>arrow-up-right</title>
+                      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="Artboard" transform="translate(-1019.000000, -279.000000)" stroke="#000" stroke-width="1.5">
+                          <g id="arrow-up-right"
+                            transform="translate(1026.000000, 286.000000) rotate(90.000000) translate(-1026.000000, -286.000000) translate(1020.000000, 280.000000)">
+                            <polyline id="Path" points="2.76923077 0 12 0 12 9.23076923"></polyline>
+                            <line x1="12" y1="0" x2="0" y2="12" id="Path"></line>
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                  </span>
+                </div>
+                <p class="p-contact-thanks__text js-slide-up-row">
+                  お問い合わせありがとうございます。<br>
+                  ご入力いただいたメールアドレスに自動送信メールをお送り致しました。<br>
+                  万が一、自動返信メールが届かない場合はお手数ですが迷惑メールフォルダを確認いただくか、再度ご連絡をお願い致します。<br>
+                  また、お問い合わせいただいた内容は確認後、48時間以内にご連絡させていただきます。<br>
+                  今しばらくお時間をいただければ幸いです。
+                </p>
+              </div>
+              <div class="p-contact-thanks__link-wrapper">
+                <a href="/" class="c-button-primary">
+                  <span class="c-button-primary__text">
+                    <span class="c-button-primary__text-inner" data-text="Back to top">
+                      Back to top
+                    </span>
+                  </span>
+                  <span class="c-button-primary__line"></span>
+                </a>
+              </div>
+            </section>
+          </div>
         </div>
-        <div class="p-contact-thanks__link-wrapper">
-          <a href="/" class="c-button-primary">
-            TOPへ戻る
+        <%# 次ページへの導線 %>
+          <a href="/" class="p-contact-connect" style="transform: translate(0px, 0px);">
+            <p class="p-contact-connect__text-wrapper">
+              <span class="p-contact-connect__text" data-text="Back to top">
+                Back to top
+              </span>
+            </p>
           </a>
-        </div>
-      </section>            
-    </div>
-  </div>
-</main>
+          <%# / 次ページへの導線 %>
+      </main>
 
-<%- include('../common/_footer', {pageId:pageId }) %>
+      <%- include('../common/_footer', {pageId:pageId }) %>

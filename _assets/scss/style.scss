@@ -12,6 +12,7 @@
 @use "animation/is-slide-up";
 @use "animation/is-fade-up";
 @use "animation/is-slide-mask";
+@use "animation/is-slide-up-lines";
 
 /* Layout (prefix: l- )
    ----------------------------------------------------------------- */
@@ -20,7 +21,6 @@
 @use "layout/l-container";
 @use "layout/l-footer";
 @use "layout/l-lower-about";
-@use "layout/l-lower-contact";
 @use "layout/l-single-works";
 
 /* Component (prefix: c- )
@@ -54,6 +54,8 @@
 @use "object/Project/p-value";
 @use "object/Project/p-career";
 @use "object/Project/p-form";
+@use "object/Project/p-contact";
+@use "object/Project/p-contact-details";
 @use "object/Project/p-contact-connect";
 @use "object/Project/p-contact-thanks";
 @use "object/Project/p-footer";

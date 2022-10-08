@@ -1,105 +1,182 @@
 <% let pageId='contact' ; %>
 
-<%- include('../common/_header', {pageId:pageId }) %>
+  <%- include('../common/_header', {pageId:pageId }) %>
 
-<% console.log(jsonData) %>
-<main class="l-lower-contact" data-barba="container" data-barba-namespace="contact">
-  <div class="l-container">
-    <div id="js-first-view">
-      <div class="p-lower-first-view">
-        <h1 class="c-page-heading">
-          <span class="c-page-heading__en is-wrap">
-            <span class="is-slide-up">
-              CONTACT
-            </span>
-          </span>
-          <span class="c-page-heading__ja is-wrap">
-            <span class="is-slide-up">
-              お問い合わせ
-            </span>
-          </span>
-        </h1>
-      </div>
-      <div class="l-lower-contact__contents is-slide-up">
-        <h2 class="u-visually-hidden">お問い合わせフォーム</h2>
-        <form 
-          id="js-form" 
-          class="p-form"
-          action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdWVihzITkGsBjGj6KJVVhGOgP-tTKr2I5zKUkF3J8DoT1cjA/formResponse"
-          method="POST" 
-          target="hidden_iframe" 
-          
-        >
-          <div class="p-form__dl">
-            <%# お名前 %>
-            <p class="p-form__row">
-              <label class="p-form__label p-form__label--required" for="your-name">お名前</label>
-              <input 
-                class="p-form__input" 
-                id="your-name" 
-                type="text" 
-                placeholder="例） 山田 太郎"
-                name="entry.228557334" 
-                autocomplete="name" 
-                required 
-                aria-required="true"
-              >
-            </p>
-            <%# /お名前 %>
+    <% console.log(jsonData) %>
+      <main class="p-contact" data-barba="container" data-barba-namespace="contact">
+        <div class="l-container">
+          <div id="js-first-view" class="p-lower-first-view p-lower-first-view--contact">
+            <div class="p-lower-first-view__inner">
+              <div class="p-lower-first-view__heading c-page-heading">
+                <h1 class="c-page-heading__en is-wrap" style="transform: translate(0px, 0px);">
+                  <span class="is-slide-up">
+                    CONTACT
+                  </span>
+                </h1>
+              </div>
+              <div class="p-lower-first-view__intro p-intro">
+                <p class="p-intro__heading p-intro__heading--contact">
+                  <span class="is-wrap" style="transform: translate(0px, 0px);">
+                    <span class="is-slide-up u-delay02">
+                      Let's start a
+                    </span>
+                  </span>
+                  <span class="is-wrap" style="transform: translate(0px, 0px);">
+                    <span class="is-slide-up u-delay03">
+                      Project together.
+                    </span>
+                  </span>
+                </p>
+              </div>
+            </div>
+            <div class="p-contact__contents">
+              <div class="p-contact__details p-contact-details">
+                <div class="p-contact-details__inner">
+                  <div  data-scroll data-scroll-speed="-0.5">
+                    <span class="p-contact-details__arrow is-wrap">
+                      <svg class="p-contact-details__arrow-svg is-slide-up u-delay04" width="24px" height="24px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <title>arrow-up-right</title>
+                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                          <g id="Artboard" transform="translate(-1019.000000, -279.000000)" stroke="#000" stroke-width="1.5">
+                            <g id="arrow-up-right"
+                              transform="translate(1026.000000, 286.000000) rotate(90.000000) translate(-1026.000000, -286.000000) translate(1020.000000, 280.000000)">
+                              <polyline id="Path" points="2.76923077 0 12 0 12 9.23076923"></polyline>
+                              <line x1="12" y1="0" x2="0" y2="12" id="Path"></line>
+                            </g>
+                          </g>
+                        </g>
+                      </svg>
+                    </span>
+                  </div>
+                  <div class="p-contact-details__row">
+                    <h3 class="p-contact-details__heading is-wrap">
+                      <span class="is-slide-up u-delay08">
+                        LOCATION
+                      </span>
+                    </h3>
+                    <ul class="p-contact-details__list">
+                      <li class="p-contact-details__item is-wrap">
+                        <span class="p-contact-details__text is-slide-up u-delay09">
+                          Japan Ibaraki
+                        </span>
+                      </li>
+                      <li class="p-contact-details__item is-wrap">
+                        <span class="p-contact-details__text is-slide-up u-delay010">
+                          Japan Tokyo
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="p-contact-details__row">
+                    <h3 class="p-contact-details__heading is-wrap">
+                      <span class="is-slide-up u-delay08">
+                        CONTACT DETAILS
+                      </span>
+                    </h3>
+                    <ul class="p-contact-details__list">
+                      <li class="p-contact-details__item is-wrap">
+                        <a href="mailto:cocosyu.11261126@gmail.com" class="p-contact-details__link is-slide-up u-delay09" target="_blank" rel="noopener noreferrer">
+                          cocosyu.11261126@gmail.com
+                        </a>
+                      </li>
+                      <li class="p-contact-details__item is-wrap">
+                        <a href="tel:09030460556" class="p-contact-details__link is-slide-up u-delay010" target="_blank" rel="noopener noreferrer">
+                          +090 3046 0556
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="p-contact-details__row">
+                    <h3 class="p-contact-details__heading is-wrap">
+                      <span class="is-slide-up u-delay08">
+                        SOCIALS
+                      </span>
+                    </h3>
+                    <ul class="p-contact-details__list">
+                      <li class="p-contact-details__item is-wrap">
+                        <a href="https://twitter.com/coco_hack_ll" class="p-contact-details__link is-slide-up u-delay09" target="_blank" rel="noopener noreferrer">
+                          Twitter
+                        </a>
+                      </li>
+                      <li class="p-contact-details__item is-wrap">
+                        <a href="https://codepen.io/kokoro-hart/pens/public" class="p-contact-details__link is-slide-up u-delay010" target="_blank" rel="noopener noreferrer">
+                          CodePen
+                        </a>
+                      </li>
+                      <li class="p-contact-details__item is-wrap">
+                        <a href="https://github.com/kokoro-hart" class="p-contact-details__link is-slide-up u-delay011" target="_blank" rel="noopener noreferrer">
+                          GitHub
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <h2 class="u-visually-hidden">お問い合わせフォーム</h2>
+              <form id="js-form" class="p-contact__form p-form is-slide-up"
+                action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdWVihzITkGsBjGj6KJVVhGOgP-tTKr2I5zKUkF3J8DoT1cjA/formResponse"
+                method="POST" target="hidden_iframe">
+                <div class="p-form__dl">
+                  <%# お名前 %>
+                  <p class="p-form__row">
+                    <span class="p-form__number">01</span>
+                    <label class="p-form__label" for="your-name">お名前 <span>*</span></label>
+                    <input class="p-form__input" id="your-name" type="text" placeholder="例） 山田 太郎"
+                      name="entry.228557334" autocomplete="name" required aria-required="true">
+                  </p>
+                  <%# /お名前 %>
 
-            <%# 御社名 %>
-            <p class="p-form__row">
-              <label class="p-form__label" for="your-company">御社名</label>
-              <input 
-                class="p-form__input" 
-                id="your-company" 
-                type="text" 
-                name="entry.1322745816"
-                placeholder="例） 株式会社xxx" 
-                autocomplete="organization"
-              >
-            </p>
-            <%# /御社名 %>
+                  <%# 御社名 %>
+                  <p class="p-form__row">
+                    <span class="p-form__number">02</span>
+                    <label class="p-form__label" for="your-company">御社名</label>
+                    <input class="p-form__input" id="your-company" type="text" name="entry.1322745816"
+                      placeholder="例） 株式会社xxx" autocomplete="organization">
+                  </p>
+                  <%# /御社名 %>
 
-            <%# メールアドレス %>
-            <p class="p-form__row">
-              <label class="p-form__label p-form__label--required" for="your-email">メールアドレス</label>
-              <input 
-                class="p-form__input" 
-                id="your-email" 
-                type="email" 
-                placeholder="例） example@mail.com"
-                js-name="YPqjbf"
-                name="entry.1785101720" 
-                autocomplete="email" 
-                required aria-required="true"
-              >
-            </p>
-            <%# /メールアドレス %>
+                  <%# メールアドレス %>
+                  <p class="p-form__row">
+                    <span class="p-form__number">03</span>
+                    <label class="p-form__label" for="your-email">メールアドレス <span>*</span></label>
+                    <input class="p-form__input" id="your-email" type="email"
+                      placeholder="例） example@mail.com" js-name="YPqjbf" name="entry.1785101720"
+                      autocomplete="email" required aria-required="true">
+                  </p>
+                  <%# /メールアドレス %>
 
-            <%# お問い合わせ内容 %>
-            <p class="p-form__row">
-              <label class="p-form__label p-form__label--required" for="your-textarea">お問い合わせ内容</label>
-              <textarea class="p-form__input p-form__textarea maxlength"  id="your-textarea" placeholder="お問い合わせ内容を入力してください。"  name="entry.2130733584"  required aria-required="true"></textarea>
-            </p>
-            <%# /お問い合わせ内容 %>
+                  <%# お問い合わせ内容 %>
+                  <p class="p-form__row">
+                    <span class="p-form__number">04</span>
+                    <label class="p-form__label"
+                      for="your-textarea">お問い合わせ内容 <span>*</span></label>
+                    <textarea class="p-form__input p-form__textarea maxlength" id="your-textarea"
+                      placeholder="お問い合わせ内容を入力してください。" name="entry.2130733584" required
+                      aria-required="true"></textarea>
+                  </p>
+                  <%# /お問い合わせ内容 %>
 
-            <%# 送信 %>
-            <input 
-              id="js-submit" 
-              class="c-button-submit p-form__submit" 
-              type="submit" 
-              value="送信"
-            >
-            <%# /送信 %>
+                  <%# 送信 %>
+                  <input id="js-submit" class="c-button-submit p-form__submit" type="submit"value="送信">
+                  <%# /送信 %>
+                </div>
+              </form>
+            </div>
           </div>
-        </form>
-      </div>
-    </div>
-  </div>
-  <%# サンクスページへの遷移 %>
-  <iframe name="hidden_iframe" id="hidden_iframe" style="display: none">
-  </iframe>
-  <%# /サンクスページへの遷移 %>
-</main>
-<%- include('../common/_footer', {pageId:pageId }) %>
+        </div>
+        <%# 次ページへの導線 %>
+        <a href="/" class="p-contact-connect" style="transform: translate(0px, 0px);">
+          <p class="p-contact-connect__text-wrapper">
+            <span class="p-contact-connect__text" data-text="Back to top">
+              Back to top
+            </span>
+          </p>
+        </a>
+        <%# / 次ページへの導線 %>
+        <%# サンクスページへの遷移 %>
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display: none">
+        </iframe>
+        <%# /サンクスページへの遷移 %>
+      </main>
+      <%- include('../common/_footer', {pageId:pageId }) %>

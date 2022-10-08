@@ -8,7 +8,6 @@
   padding: 23vh 0 15vh;
 
   @include global.mq(lax) {
-    display: flex;
     padding: 20vw 0 10vw;
   }
 
@@ -32,11 +31,19 @@
 }
 
 .p-lower-first-view__intro {
-  margin-top: 84px;
+  margin-top: 52px;
 
   @include global.mq(lax) {
     width: calc(55% - 8% / 2);
     margin-top: global.vw(174);
     margin-left: 8%;
+  }
+}
+
+.p-lower-first-view--contact {
+  .p-lower-first-view__intro {
+    @include global.mq(lax) {
+      margin-top: global.vw(164);
+    }
   }
 }

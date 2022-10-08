@@ -1,0 +1,53 @@
+@use "foundation/global";
+
+// Project お問い合わせ
+//--------------------------------------------------------------------------
+
+.p-contact__contents {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-top: 52px;
+  @include global.mq(lax) {
+    flex-direction: row;
+    margin-top: 0;
+  }
+}
+
+.p-contact__details {
+  width: 100%;
+
+  @include global.mq(md) {
+    width: calc(40% - 8% / 2);
+  }
+}
+
+.p-contact__form {
+  max-width: 790px;
+  width: 100%;
+  padding-bottom: 80px;
+  margin-top: 24px;
+
+  @include global.mq(lax) {
+    max-width: 100%;
+    width: calc(60% - 8% / 2);
+    margin-top: 80px;
+    margin-left: 8%;
+  }
+}
+
+.p-contact__thanks-fv {
+  width: 100%;
+  padding: 23vh 0 7vh;
+
+  @include global.mq(lax) {
+    padding: 20vw 0 5vw;
+  }
+
+  @include global.mq(xxl) {
+    padding: 15vw 0 4.3vw;
+  }
+}
+
+.p-contact__thanks {
+  padding-bottom: 160px;
+}

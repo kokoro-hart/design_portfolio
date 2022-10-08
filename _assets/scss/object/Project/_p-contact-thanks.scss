@@ -3,10 +3,26 @@
 // Project お問い合わせ完了
 //--------------------------------------------------------------------------
 
-.p-contact-thanks__heading {
-  @include global.fz(28, 34);
-  @include global.lh(1.4, 1.2);
-  font-weight: 400;
+.p-contact-thanks {
+  @include global.mq(md) {
+    margin-left: 18.5vw;
+  }
+}
+
+.p-contact-thanks__arrow {
+  @include global.mq(md) {
+    transform: translateX(-4%);
+  }
+}
+
+.p-contact-thanks__arrow-svg {
+  width: 28px;
+  height: 28px;
+
+  @include global.mq(md) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .p-contact-thanks__text {

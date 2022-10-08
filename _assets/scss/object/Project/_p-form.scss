@@ -2,65 +2,55 @@
 
 // Project フォーム
 //--------------------------------------------------------------------------
+
 .p-form__dl {
   font-family: global.$font-family-ja;
+  border-top: 1px solid global.$color-primary;
 }
 .p-form__row {
-  &:not(:first-child) {
-    margin-top: 42px;
+  position: relative;
+  border-bottom: 1px solid global.$color-primary;
+  padding: 0 27px;
 
-    @include global.mq(md) {
-      margin-top: 48px;
-    }
+  @include global.mq(md) {
+    padding: 0 52px;
+  }
+}
+
+.p-form__number {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  @include global.fz(14, 16);
+  @include global.lh(1.44, 1.2);
+  color: global.$color-primary-thin;
+
+  @include global.mq(md) {
+    top: 32px;
   }
 }
 
 .p-form__label {
-  @include global.fz(16, 20);
+  display: block;
+  padding-top: 28px;
+  @include global.fz(16, 18);
   @include global.lh(1.44, 1.2);
   font-weight: 400;
-}
-
-//必須の場合
-.p-form__label--required {
-  position: relative;
-  padding-right: 55px;
 
   @include global.mq(md) {
-    padding-right: 63px;
+    padding-top: 32px;
   }
 
-  &::after {
-    content: "必須";
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 48px;
-    height: 24px;
-    @include global.fz(14);
-    @include global.lh(1);
-    background-color: global.$color-primary;
-    color: global.$color-base;
-    font-weight: 700;
-
-    @include global.mq(md) {
-      width: 56px;
-      height: 28px;
-    }
+  span {
+    color: global.$color-accent;
   }
 }
 
 .p-form__input {
   width: 100%;
-  padding: 13px 16px;
-  margin-top: 13px;
+  padding: 18px 0 36px;
   box-shadow: none;
   appearance: none;
-  border: 1px solid global.$color-primary;
   border-radius: 0;
   background-color: global.$color-base;
   color: inherit;
@@ -69,19 +59,19 @@
   font-family: inherit;
 
   @include global.mq(md) {
-    margin-top: 16px;
-    padding: 16px;
+    padding: 24px 0 52px;
   }
 
   &::placeholder {
     color: global.$color-primary-thin;
-    @include global.fz(14);
+    @include global.fz(14, 16);
   }
 }
 
 .p-form__textarea {
   display: inline-block;
   min-height: 140px;
+  @include global.lh(1.7);
 
   @include global.mq(md) {
     min-height: 200px;

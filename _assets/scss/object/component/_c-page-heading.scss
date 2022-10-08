@@ -7,19 +7,17 @@
   font-size: max(52px, 8vw);
   @include global.lh(1);
   font-weight: 400;
-  letter-spacing: -0.01em;
   white-space: nowrap;
-
-  @include global.mq(lax) {
-    font-size: max(60px, #{global.vw(133)});
-  }
-}
-
-.c-page-heading__en {
+  letter-spacing: -0.01em;
+  
   @include global.mq(md) {
     &:not(:first-child) {
       padding-left: 18vw;
     }
+  }
+
+  @include global.mq(lax) {
+    font-size: max(60px, #{global.vw(133)});
   }
 }
 
