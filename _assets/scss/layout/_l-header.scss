@@ -10,6 +10,7 @@
   z-index: map-get(global.$layer, header);
   width: 100%;
   overflow: hidden;
+  transition: transform 0.2s;
 
   @include global.mq(md) {
     width: 95%;
