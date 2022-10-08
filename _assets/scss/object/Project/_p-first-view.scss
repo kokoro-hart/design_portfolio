@@ -25,6 +25,7 @@
   @include global.lh(1.4);
   font-weight: 400;
   color: global.$color-primary;
+  text-align: justify;
 
   @include global.mq(xl) {
     position: absolute;
