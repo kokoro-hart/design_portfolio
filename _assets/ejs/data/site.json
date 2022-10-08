@@ -1,12 +1,12 @@
 {
   "siteInfo": {
-    "name": "KT portfolio",
+    "name": "Kokoro Tobita Portfolio",
     "siteUrl": "https://k-tobita.jp"
   },
   "//ページ": "",
   "pages": {
     "home": {
-      "name": "KT portfolio",
+      "name": "Kokoro Tobita Portfolio",
       "description": "Webクリエイター飛田 心のポートフォリオサイト",
       "type": "website",
       "slug": "/"
