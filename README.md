@@ -1,6 +1,6 @@
 # kokorotobita-portfolio 
 
-![firstView](https://kt-media.blog/wp-content/uploads/2022/07/mockup_portfolio.png)
+![firstView](https://kt-media.blog/wp-content/uploads/2022/10/Group-6-2.png)
 
 ## 🌐 Site URL
 
