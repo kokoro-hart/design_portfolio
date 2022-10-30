@@ -31,7 +31,7 @@ We received the following awards at the CSS Design Awards
 
 ![firstView](https://kt-media.blog/wp-content/uploads/2022/10/Group-27-7.png)
 
-Special Kudos Award
-Best UI Design Award
-Best UX Design Award
-Best Innovation Award
+- Special Kudos Award
+- Best UI Design Award
+- Best UX Design Award
+- Best Innovation Award
