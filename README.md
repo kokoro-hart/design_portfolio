@@ -10,18 +10,28 @@
 This is a portfolio site of Shin Tobita. It was created for job hunting.
 
 ## Usage
-### mode:developmentで出力
-_gulpフォルダに移動後、node-modulesをインストールし以下のコマンドを実行
+### Output with mode:development
+After moving to the `_gulp` folder, install node-modules and execute the following command.
 ```
 $ npm run server
 ```
-- http://localhost:3000 でローカルサーバーが起動。
-- ejs,scssのコンパイル、jsのバンドル、babelトランスパイル...etc
-- 詳しくはgulpfile.js, webpack.config.jsを参照
+- Local server starts at http://localhost:3000.
+- Compile ejs,scss, bundle js, babel transpile.... .etc.
+- See gulpfile.js, webpack.config.js for details.
 
-### mode:productionで出力
+### Output with mode:production
 
 ```
 $ npm run build
 ```
-- distフォルダ直下に納品時ファイルを生成
+- Generate files at the time of delivery directly under the `dist` folder.
+
+## 🏆 Award
+We received the following awards at the CSS Design Awards
+
+![firstView](https://kt-media.blog/wp-content/uploads/2022/10/Group-27-7.png)
+
+Special Kudos Award
+Best UI Design Award
+Best UX Design Award
+Best Innovation Award
