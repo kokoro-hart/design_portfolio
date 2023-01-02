@@ -6,6 +6,7 @@
 .c-button-drawer {
   position: relative;
   width: 32px;
+  height: inherit;
 }
 
 .c-button-drawer__line {
@@ -14,7 +15,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 20px;
-  height: 2px;
+  height: 1.5px;
   background-color: global.$color-base;
   transition: width 0.3s ease-in-out;
 
@@ -26,7 +27,7 @@
     left: 50%;
     transform: translateX(-50%);
     width: 20px;
-    height: 2px;
+    height: 1.5px;
     background-color: global.$color-base;
     transition: transform 0.6s global.ease(out-quint);
   }

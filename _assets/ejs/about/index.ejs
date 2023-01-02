@@ -5,7 +5,7 @@
 <main class="l-lower-about" data-barba="container" data-barba-namespace="about">
   <div class="l-container">
     <%# ファーストビュー %>
-    <section id="js-first-view" class="p-lower-first-view">
+    <section id="js-first-view" class="p-lower-first-view p-lower-first-view--about">
       <div class="p-lower-first-view__inner">
         <div class="p-lower-first-view__heading c-page-heading">
           <h1 class="c-page-heading__en is-wrap" style="transform: translate(0px, 0px);">
@@ -34,7 +34,7 @@
           </p>
           <p class="p-intro__text js-slide-up-row">
             飛田 心と申します。<br>
-            Webサイトにおいての使いやすさを前提に、その上で視覚表現にこだわる事によって、
+            Webサイト・アプリケーションにおいての使いやすさを前提に、その上で視覚表現にこだわる事によって、
             「驚いたり、ワクワクしたり、ドキドキしたり」人の心を動かす制作物を創れるクリエイターを目指しています。
           </p>
         </div>
@@ -43,18 +43,16 @@
 
     <%# プロフィール %>
     <section class="p-profile l-lower-about__profile">
-      <h2 class="c-section-heading js-trigger" style="transform: translate(0px, 0px);">
-        <span class="c-section-heading__en is-wrap">
-          <span class="is-slide-up">
-            PROFILE
-          </span>
+      <h2 class="c-section-heading" style="transform: translate(0px, 0px);">
+        <span class="c-section-heading__en">
+          PROFILE
         </span>
-        <span class="c-section-heading__ja is-fade-up">
+        <span class="c-section-heading__ja">
           プロフィール
         </span>
       </h2>
-      <div class="p-profile__contents js-trigger">
-        <div class="p-profile__column" data-scroll data-scroll-speed="-1">
+      <div class="p-profile__contents">
+        <div class="p-profile__column">
           <h3 class="p-profile__heading">
             <span class="p-profile__heading-en">
               Kokoro Tobita
@@ -63,83 +61,96 @@
               飛田 心
             </span>
           </h3>
-          <dl class="p-profile__dl">
-            <div class="p-profile__row">
-              <dt class="p-profile__dt">
-                生年月日
-              </dt>
-              <dd class="p-profile__dd">
-                2000年11月26日
-              </dd>
-            </div>
-            <div class="p-profile__row">
-              <dt class="p-profile__dt">
-                出身地
-              </dt>
-              <dd class="p-profile__dd">
-                茨城県
-              </dd>
-            </div>
-            <div class="p-profile__row">
-              <dt class="p-profile__dt">
-                現職
-              </dt>
-              <dd class="p-profile__dd">
-                化学メーカーにて勤務、現在4年目
-              </dd>
-            </div>
-            <div class="p-profile__row">
-              <dt class="p-profile__dt">
-                好きなこと
-              </dt>
-              <dd class="p-profile__dd">
-                小学生のときからゲームが大好きです。好きなことにひたすら没頭できるスキルは、ゲームで鍛えられたと思っています。
-              </dd>
-            </div>
-            <div class="p-profile__row">
-              <dt class="p-profile__dt">
-                関心領域
-              </dt>
-              <dd class="p-profile__dd">
-                Jamstack、インタラクションデザイン
-              </dd>
-            </div>
-          </dl>
-          <ul class="p-profile__sns p-sns">
-            <li class="p-sns__item">
-              <a href="https://twitter.com/coco_hack_ll" class="p-sns__link" target="_blank" rel="noopener noreferrer">
-                <span class="u-visually-hidden">Twitter（外部リンク）</span>
-                <svg class="c-svg p-sns__svg" width="20" height="20" role="img" aria-label="Twitterのアイコン">
-                  <use xlink:href="/img/svg/sprite.min.svg#icon-twitter" />
+          <p class="p-profile__text">
+            2000年生まれ、東京都在住のAB型。
+            Webサイトやアプリなどオンスクリーンのデザイン、フロントエンドの実装をおこなっています。 「好き」を突き詰めて、常に幅広い表現やより良いコードを追究していきます。
+          </p>
+          <div class="p-profile__details">
+            <div data-scroll data-scroll-speed="-0.5">
+              <span class="p-information__arrow u-hidden-lax-down">
+                <svg class="p-information__arrow-svg" width="24px" height="24px" viewBox="0 0 14 14"
+                  version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <title>arrow-up-right</title>
+                  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="Artboard" transform="translate(-1019.000000, -279.000000)" stroke="#000" stroke-width="1.5">
+                      <g id="arrow-up-right"
+                        transform="translate(1026.000000, 286.000000) rotate(90.000000) translate(-1026.000000, -286.000000) translate(1020.000000, 280.000000)">
+                        <polyline id="Path" points="2.76923077 0 12 0 12 9.23076923"></polyline>
+                        <line x1="12" y1="0" x2="0" y2="12" id="Path"></line>
+                      </g>
+                    </g>
+                  </g>
                 </svg>
-                <span class="p-sns__border"></span>
-              </a>
-            </li>
-            <li class="p-sns__item">
-              <a href="https://codepen.io/kokoro-hart/pens/public" class="p-sns__link" target="_blank" rel="noopener noreferrer">
-                <span class="u-visually-hidden">CodePen（外部リンク）</span>
-                <svg class="c-svg p-sns__svg" width="20" height="20" role="img" aria-label="CodePenのアイコン">
-                  <use xlink:href="/img/svg/sprite.min.svg#code-pen" />
-                </svg>
-                <span class="p-sns__border"></span>
-              </a>
-            </li>
-            <li class="p-sns__item">
-              <a href="https://github.com/kokoro-hart" class="p-sns__link" target="_blank" rel="noopener noreferrer">
-                <span class="u-visually-hidden">GitHub（外部リンク）</span>
-                <svg class="c-svg p-sns__svg" width="20" height="20" role="img" aria-label="GitHubのアイコン">
-                  <use xlink:href="/img/svg/sprite.min.svg#icon-github" />
-                </svg>
-                <span class="p-sns__border"></span>
-              </a>
-            </li>
-          </ul>
+              </span>
+            </div>
+            <div class="p-information__row">
+              <h3 class="p-information__heading">
+                LOCATION
+              </h3>
+              <ul class="p-information__list">
+                <li class="p-information__item">
+                  <span class="p-information__text">
+                    Japan Ibaraki
+                  </span>
+                </li>
+                <li class="p-information__item">
+                  <span class="p-information__text">
+                    Japan Tokyo
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <div class="p-information__row">
+              <h3 class="p-information__heading">
+                CONTACT DETAILS
+              </h3>
+              <ul class="p-information__list">
+                <li class="p-information__item">
+                  <a href="mailto:cocosyu.11261126@gmail.com" class="p-information__link"
+                    target="_blank" rel="noopener noreferrer">
+                    cocosyu.11261126@gmail.com
+                  </a>
+                </li>
+                <li class="p-information__item">
+                  <a href="tel:09030460556" class="p-information__link" target="_blank"
+                    rel="noopener noreferrer">
+                    +090 3046 0556
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="p-information__row">
+              <h3 class="p-information__heading">
+                SOCIALS
+              </h3>
+              <ul class="p-information__list">
+                <li class="p-information__item">
+                  <a href="https://twitter.com/coco_hack_ll" class="p-information__link" target="_blank"
+                    rel="noopener noreferrer">
+                    Twitter
+                  </a>
+                </li>
+                <li class="p-information__item">
+                  <a href="https://codepen.io/kokoro-hart/pens/public" class="p-information__link"
+                    target="_blank" rel="noopener noreferrer">
+                    CodePen
+                  </a>
+                </li>
+                <li class="p-information__item">
+                  <a href="https://github.com/kokoro-hart" class="p-information__link" target="_blank"
+                    rel="noopener noreferrer">
+                    GitHub
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
 
         <div class="p-profile__img-wrapper">
           <picture class="p-profile__picture">
-            <source srcset="/img/webp/profile01.webp" class="p-profile__img" type="image/webp" />
-            <img src="/img/common/profile01.jpeg" class="p-profile__img" width="545" height="700" loading="lazy" alt="プロフィールの顔写真" data-scroll data-scroll-speed="-1">
+            <source srcset="/img/webp/profile02.webp?20221223" class="p-profile__img" type="image/webp" />
+            <img src="/img/common/profile02.jpeg?20221223" class="p-profile__img" width="520" height="662" loading="lazy" alt="プロフィールの顔写真" data-scroll data-scroll-speed="-1">
           </picture>
         </div>
       </div>
@@ -147,318 +158,143 @@
 
     <%# 使用技術 %>
     <section class="p-skills l-lower-about__skills">
-      <h2 class="c-section-heading js-trigger" style="transform: translate(0px, 0px);">
-        <span class="c-section-heading__en is-wrap">
-          <span class="is-slide-up">
-            SKILLS
-          </span>
+      <h2 class="c-section-heading" style="transform: translate(0px, 0px);">
+        <span class="c-section-heading__en">
+          SKILLS
         </span>
-        <span class="c-section-heading__ja is-fade-up">
-          使用言語・ツール
+        <span class="c-section-heading__ja">
+          スキル・ツール
         </span>
       </h2>
       <div class="p-skills__contents js-trigger">
-        <dl class="p-skills__dl is-fade-up">
-          <div class="p-skills__row">
-            <dt class="p-skills__dt">
-              <svg class="c-svg p-skills__svg" width="40" height="40" role="img" aria-label="HTMLのアイコン">
-                <use xlink:href="/img/svg/sprite.min.svg#icon-html" />
-              </svg>
-              HTML
-            </dt>
-            <dd class="p-skills__dd">
-              セマンティクスやアクセシビリティを考慮したマークアップを心掛けています。また、EJSやPugなどのテンプレートエンジンを用いたコーディングも可能です。<br>
-              現在はWAI-ARIAについて学んでいます。
-            </dd>
-          </div>
-          <div class="p-skills__row">
-            <dt class="p-skills__dt">
-              <svg class="c-svg p-skills__svg" width="40" height="40" role="img" aria-label="CSSのアイコン">
-                <use xlink:href="/img/svg/sprite.min.svg#icon-css" />
-              </svg>
-              CSS
-            </dt>
-            <dd class="p-skills__dd">
-              基本的なスタイリングから、Scssで変数やmixin、functionなどを用いたコーディングが可能です。CSS設計は予測しやすく、可読性が高いことから主にFLOCSSを使用しています。
-            </dd>
-          </div>
-          <div class="p-skills__row">
-            <dt class="p-skills__dt">
-              <svg class="c-svg p-skills__svg" width="40" height="40" role="img" aria-label="JavaScriptのアイコン">
-                <use xlink:href="/img/svg/sprite.min.svg#icon-js" />
-              </svg>
-              JavaScript
-            </dt>
-            <dd class="p-skills__dd">
-              カーセル、タブ、アコーディオン、モーダルような頻出UIの実装が可能です。
-              現在はネイティブの記法やメカニズムについて学んでいます。
-            </dd>
-          </div>
-          <div class="p-skills__row">
-            <dt class="p-skills__dt">
-              <svg class="c-svg p-skills__svg" width="40" height="40" role="img" aria-label="WordPressのアイコン">
-                <use xlink:href="/img/svg/sprite.min.svg#icon-wp" />
-              </svg>
-              WordPress
-            </dt>
-            <dd class="p-skills__dd">
-              カスタム投稿やカスタムフィールドなどを用いた保守・管理に強い自作テーマ構築が可能です。サイト制作後の修正まで意識した制作を心掛けています。既存テーマの修正対応も可能です。
-            </dd>
-          </div>
-          <div class="p-skills__row">
-            <dt class="p-skills__dt">
-              <svg class="c-svg p-skills__svg" width="40" height="40" role="img" aria-label="Gitのアイコン">
-                <use xlink:href="/img/svg/sprite.min.svg#icon-git" />
-              </svg>
-              Git / GitHub
-            </dt>
-            <dd class="p-skills__dd">
-              個人のサイトやブログサイトなどを制作する際は、GitHubにて管理を行っています。複数人で使用した経験がなく、実践的なフローを学ぶため一人擬似チーム開発の練習をしています。
-            </dd>
-          </div>
-          <div class="p-skills__row">
-            <dt class="p-skills__dt">
-              <svg class="c-svg p-skills__svg" width="40" height="40" role="img" aria-label="webpackのアイコン">
-                <use xlink:href="/img/svg/sprite.min.svg#icon-webpack" />
-              </svg>
-              webpack
-            </dt>
-            <dd class="p-skills__dd">
-              各種コンパイル、jsのバンドル、トランスパイルなどで使用しています。<br>
-              ドキュメントを見ながら設定を記述することが可能です。
-            </dd>
-          </div>
-          <div class="p-skills__row">
-            <dt class="p-skills__dt">
-              <svg class="c-svg p-skills__svg" width="40" height="40" role="img" aria-label="Gulpのアイコン">
-                <use xlink:href="/img/svg/sprite.min.svg#icon-gulp" />
-              </svg>
-              Gulp
-            </dt>
-            <dd class="p-skills__dd">
-              一から設定を記述することが可能です。webpackと併用して使用することが多いです。
-            </dd>
-          </div>
-          <div class="p-skills__row">
-            <dt class="p-skills__dt">
-              <svg class="c-svg p-skills__svg" width="40" height="40" role="img" aria-label="Photoshopのアイコン">
-                <use xlink:href="/img/svg/sprite.min.svg#icon-ps" />
-              </svg>
-              Design Tools
-            </dt>
-            <dd class="p-skills__dd">
-              Photoshop、XD、Figmaデータからのコーディング経験があります。本サイトのデザインはFigmaを使用しています。
-            </dd>
-          </div>
-        </dl>
+        <ul class="p-skills__list">
+          <li class="p-skills__item  is-fade-up">
+            <span class="p-skills__number">01 サイト構築</span>
+            <h3 class="p-skills__heading">
+              Web Coding
+            </h3>
+            <p class="p-skills__text">
+              静的なWebサイトからCMS導入をする動的サイト・アニメーション導入。細部に妥協せず、良いものを作るためにこだわりを持って取り組んでいます。細かなコーディングルールの仕様がある場合はそれに沿ったマークアップや、CSS設計等も他の人に引き継いでも支障がでないように心がけています。 ページ数やサイト全体のボリュームが多くなってしまった場合には、随所にコメントを残して改修の際に見返せるようにしています。
+            </p>
+          </li>
+          <li class="p-skills__item  is-fade-up u-delay01">
+            <span class="p-skills__number">02 Web・UI デザイン</span>
+            <h3 class="p-skills__heading">
+              Web・UI Design
+            </h3>
+            <p class="p-skills__text">
+              見た目の美しさだけでなく、情報設計や機能性といった部分に重きを置いています。有用で質が高いことを前提に、その上で視覚表現にこだわることで人の心を動かせるようなデザインを目指しています。
+            </p>
+          </li>
+          <li class="p-skills__item  is-fade-up u-delay02">
+            <span class="p-skills__number">03 言語・ツール</span>
+            <h3 class="p-skills__heading">
+              Tools
+            </h3>
+            <p class="p-skills__text">
+              現在は主に下記の言語やツールを使用しています。<br>
+              HTML / CSS / JavaScript / TypeScript / WordPress / Git / GitHub / webpack / Gulp / Photoshop / XD / Figma / vscode
+              <br class="u-mt8">
+              下記の技術を学習中です。<br>
+              React / Next.js / GraphQL / TypeScript / WebGL
+            </p>
+          </li>
+          <li class="p-skills__item  is-fade-up u-delay03">
+            <span class="p-skills__number">04 執筆</span>
+              <h3 class="p-skills__heading">
+                Writhing
+              </h3>
+              <p class="p-skills__text">
+                個人で<a href="https://kt-media.blog/" class="u-under-line u-weight600" target="_blank" rel="noopener noreferrer">ブログ</a>の執筆をおこなっています。Web制作周りやフロントエンド技術関連の記事を定期的に更新している学習ブログです。
+                技術的なアウトプット、知識の言語化に加えユーザーにとって分かりやすいデザイン、読みやすい文章設計などを日々鍛えています。
+              </p>
+          </li>
+        </ul>
       </div>
     </section><%# / 使用技術 %>
 
     <%# バリュー %>
     <section class="p-value l-lower-about__value">
-      <h2 class="c-section-heading js-trigger" style="transform: translate(0px, 0px);">
-        <span class="c-section-heading__en is-wrap">
-          <span class="is-slide-up">
-            VALUE
-          </span>
+      <h2 class="c-section-heading" style="transform: translate(0px, 0px);">
+        <span class="c-section-heading__en">
+          VALUE
         </span>
-        <span class="c-section-heading__ja is-fade-up">
-          バリュー
+        <span class="c-section-heading__ja">
+          大事にしていること
         </span>
       </h2>
       <div class="p-value__contents js-trigger">
-        <div class="p-value__body is-fade-up">
-          <h3 class="p-value__heading">
-            大事にしていること
-          </h3>
-          <ul class="p-value__list">
-            <li class="p-value__item">
-              <h3 class="p-value__title">
-                チームメンバーとの連携
-              </h3>
-              <p class="p-value__text">
-                現職の経験から、納期という制作期限がある中でスムーズに進行していくには、連携が必要不可欠だと考えています。
-                勤務時間内のチャットやメールの返信は10分以内を心がけています。即答できないものに関しても現状報告を怠らないことを徹底しています。
-              </p>
-            </li>
-            <li class="p-value__item">
-              <h3 class="p-value__title">
-                管理のしやすい構築
-              </h3>
-              <p class="p-value__text">
-                classの命名やCSSのフォルダ分けなども他の人に引き継いでも支障がでないように心がけています。
-                ページ数やサイト全体のボリュームが多くなってしまった場合には、随所にコメントを残して改修の際に見返せるようにしています。
-              </p>
-            </li>
-            <li class="p-value__item">
-              <h3 class="p-value__title">
-                デザインの再現性
-              </h3>
-              <p class="p-value__text">
-                デザインデータに忠実に再現していくことを意識しています。
-                基本的にはどのデバイスでも崩れが起きないように調節をしています。
-              </p>
-            </li>
-          </ul>
+        <div class="p-value__circle">
+          <div class="p-value__circle-inner">
+            <svg class="p-value__circle-svg01" id="circle-1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="381px" height="381px"
+              viewBox="0 0 381 381">
+              <path class="p-value__circle-pass" d="M376.0118,190.5c0,102.4553-83.0565,185.5118-185.5118,185.5118S4.9882,292.9554,4.9882,190.5
+                        S88.0447,4.9882,190.5,4.9882S376.0118,88.0447,376.0118,190.5"></path>
+            </svg>
+            <span class="p-value__circle-text p-value__circle-text--1">Cooperation</span>
+          </div>
+          <div class="p-value__circle-column">
+            <div class="p-value__circle-inner">
+              <svg class="p-value__circle-svg02" id="circle-2" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="381px" height="381px"
+                viewBox="0 0 381 381">
+                <path class="p-value__circle-pass" d="M376.0118,190.5c0,102.4553-83.0565,185.5118-185.5118,185.5118S4.9882,292.9554,4.9882,190.5
+                          S88.0447,4.9882,190.5,4.9882S376.0118,88.0447,376.0118,190.5"></path>
+              </svg>
+              <span class="p-value__circle-text p-value__circle-text--2">Useful</span>
+            </div>
+            <div class="p-value__circle-inner">
+              <svg class="p-value__circle-svg03" id="circle-3" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="381px" height="381px"
+                viewBox="0 0 381 381">
+                <path class="p-value__circle-pass" d="M376.0118,190.5c0,102.4553-83.0565,185.5118-185.5118,185.5118S4.9882,292.9554,4.9882,190.5
+                          S88.0447,4.9882,190.5,4.9882S376.0118,88.0447,376.0118,190.5"></path>
+              </svg>
+              <span class="p-value__circle-text p-value__circle-text--3">Pursue</span>
+            </div>
+          </div>
         </div>
-        <figure class="p-value__img-wrapper is-fade-up">
-          <img src="/img/common/value.png" alt="" class="p-value__img">
-        </figure>
+        <ul class="p-value__list">
+          <li class="p-value__item is-fade-up u-delay09">
+            <div class="p-value__item-number">01 連携</div>
+            <div class="p-value__item-body">
+              <h3 class="p-value__item-heading">
+                Cooperation
+              </h3>
+              <p class="p-value__item-text">
+                現職の経験から、納期という制作期限がある中でスムーズに進行していくには、プロジェクトメンバー同士での連携が必要不可欠だと考えています。 
+                勤務時間内のチャットやメールの返信は10分以内を心がけています。即答できないものに関しても現状報告を怠らないことを徹底しています。
+                また、相手のことを正しく理解し、良好な関係づくりを徹底することでより良いアウトプットが生み出せると考えています。
+              </p>
+            </div>
+          </li>
+          <li class="p-value__item is-fade-up u-delay010">
+            <div class="p-value__item-number">02 利便性</div>
+            <div class="p-value__item-body">
+              <h3 class="p-value__item-heading">
+                Useful
+              </h3>
+              <p class="p-value__item-text">
+                プロダクトの見た目の「美しさ・見やすさ」に加えて、利便性(使いやすさ)の追求。
+                「見る人、使う人、一緒に作る人、運用する人」どの観点から見ても優秀であるプロダクトを目指しています。
+                デジタルコンテンツの良さでもある「人間の動作に対してプロダクトが反応を返す双方向性」を最大限に活かすことを重要視しています。
+              </p>
+            </div>
+          </li>
+          <li class="p-value__item is-fade-up u-delay011">
+            <div class="p-value__item-number">03 追求</div>
+            <div class="p-value__item-body">
+              <h3 class="p-value__item-heading">
+                Pursue
+              </h3>
+              <p class="p-value__item-text">
+                幼い頃からゲームが好きで、好きなことにひたすら没頭できるスキルは、ゲームで鍛えられたと思っています。
+                開発やデザインも同様で、限られた時間の中でも、クオリティを追究することは惜しみません。
+                素早く良質なアウトプットを生み出すために自分自身のアップデートやより良いクリエイティブの検証に貪欲に取り組みたいです。
+              </p>
+            </div>
+          </li>
+        </ul>
       </div>
     </section><%# / バリュー %>
-
-    <%# 経歴 %>
-    <section class="p-career l-lower-about__career">
-      <h2 class="c-section-heading js-trigger" style="transform: translate(0px, 0px);">
-        <span class="c-section-heading__en is-wrap">
-          <span class="is-slide-up">
-            CAREER
-          </span>
-        </span>
-        <span class="c-section-heading__ja is-fade-up">
-          これまでの経歴
-        </span>
-      </h2>
-      <div class="p-career__contents js-trigger">
-        <dl class="p-career__dl">
-          <div class="p-career__row">
-            <dt class="p-career__date">
-              2019
-            </dt>
-            <dt class="p-career__dt">
-              高校卒業後、化学メーカーに就職
-            </dt>
-            <dd class="p-career__dd">
-              医療機器の製造に従事し、製造工程の進捗管理、製品の仕上げ・検査業務を担当。<br>
-              製品不良が増加傾向であるという課題に対して、
-              <br>
-              「不良対策アイデアを気軽に出し合える仕組み作り」や「直感的でわかりやすいデザインの作業指示書の作成」等、
-              <br>
-              様々な改善を実施した結果、<span class="u-under-line u-weight600">1年間で年間不良品率を66%削減することに成功。</span>
-              <hr>
-              直属の上司からは「最年少のお前が主体的に取り組んでくれたことで、他の社員のモチベーションが上がった」と評価をいただき、その後も社内の改善業務を任される。
-              <br>
-              しかし、会社が保守的なカルチャーであることや自分自身の提案スキル面での力不足もあり、課題解決に向けた提案を却下される場面も多々あった。
-              <hr>
-              →<span class="u-under-line u-weight600">「課題解決」にはやりがいを感じており</span>、 社内だけでなく会社の外の状況に目を向けるチャンスと捉え、他の企業が持つ課題に対しても何かアプローチができないかと考えた。
-              <br>
-              → リサーチを行った結果、ブランディングやマーケティング、採用など企業が持つ様々な課題解決につながる<span class="u-under-line u-weight600">Webの受託制作に興味を持った。</span>
-              <hr>
-              【取得資格・認定】<br>
-              ・第二種電気工事士<br>
-              ・危険物取扱者乙４類取得<br>
-              ・有機溶剤作業主任者取得<br>
-              ・品質管理技能競技会認定作業者<br>
-              ・インライン検査認定作業者
-            </dd>
-          </div>
-          <div class="p-career__row">
-            <dt class="p-career__date">
-              2021
-            </dt>
-            <dt class="p-career__dt">
-              Web業界への転職を決意
-            </dt>
-            <dd class="p-career__dd p-career__dd--two-column">
-              <div class="p-career__dd-text">
-                2021年5月より、独学でWeb周りの知識、デザイン・コーディング等の学習を始める。<br>
-                学習していく中で躓きながらも、知識を付け応用していく過程がとても楽しく、寝食を忘れる程夢中になる。
-                中でもコードを書くことがとても楽しく、アクセシブルな設計やユーザビリティの向上、インタラクション・アニメーションの実装など、コーディングによってデザインをよりジャンプアップさせられる事に魅力を感じる。
-                <br>
-                <span class="u-under-line u-weight600">
-                  「自分自身が夢中になれること」と現職を通して見えてきた「企業課題の解決という挑戦したい領域」の2つがマッチしたことから、Web業界への転職を決意。
-                </span>
-              </div>
-              <picture class="p-career__dd-picture">
-                <source srcset="/img/webp/books.webp" class="p-career__dd-img" type="image/webp" />
-                <img src="/img/common/books.png" alt="web技術に関する書籍類" width="608" height="389" decoding="async" class="p-career__dd-img">
-              </picture>
-            </dd>
-          </div>
-          <div class="p-career__row">
-            <dt class="p-career__date">
-              2022
-            </dt>
-            <dt class="p-career__dt">
-              転職活動開始
-            </dt>
-            <dd class="p-career__dd">
-              ポートフォリオサイトを公開。<br>
-              現職業務と並行しながら転職活動を開始。
-            </dd>
-          </div>
-          <div class="p-career__row">
-            <dt class="p-career__date">
-              20XX
-            </dt>
-            <dt class="p-career__dt">
-              将来どんなエンジニアになりたいか
-            </dt>
-            <dd class="p-career__dd">
-              <span class="p-career__dd-heading">
-                1年目〜<br class="u-hidden-md-up">
-                スキルアップにフルコミット
-              </span>
-              <br>
-              まずは、スキルアップにフルコミットして、いち早く一人前に仕事を任せて貰える様になりたいと考え、現在も仕事の傍ら学習を継続。<br>
-              この取り組みを今後も継続し、業務中はもちろん業務時間外も含めて精一杯学習してスキルアップに努め、タスクを一人でも対応できるように尽力。
-              <hr>
-              <span class="p-career__dd-heading">
-                2年目〜<br class="u-hidden-md-up">
-                デザインへの理解があるエンジニア
-              </span>
-              <br>
-              要望通り実装するだけではなく、デザインへの理解を持ち、最適なインタラクション・アニメーションの提案・実装ができるエンジニアを目指す。
-              <br>
-              その為に現在は、毎日コードを書く以外にも、<span class="u-under-line u-weight600">国内のギャラリーサイトや海外のアワード等の先端事例を追ってデザイントレンドのキャッチアップを行っている。</span><br>
-              また、参考にできそうな部分はプロトタイプを作成し、実際に本サイトに取り入れてみるなどを行っている。<br>
-              デザインへの理解を通して、デザイナーとの円滑なコミュニケーションや提案をすることにより、お客さまの課題に対しての解決策の幅を広げられるような人材を目指す。
-              <hr>
-              <span class="p-career__dd-heading">
-                3年目〜<br class="u-hidden-md-up">
-                お客さまのビジネスに貢献できるエンジニア
-              </span>
-              <br>
-              「何故これを作りたいのか」という目的から <br>
-              「そのためにどんなアプローチが必要か」という手段の選択、<br>
-              加えて「どのくらいの期間と予算感か」という制約を踏まえた上で、<br>
-              「求められているものを、実現できる最高の状態」で作れるエンジニアを目指す。
-              <hr>
-              独りよがりのクリエイティブにならずに、<span class="u-under-line u-weight600">「課題解決に繋がるプロダクト」に重きを置きお客さまのビジネスに貢献できる人材を目指す。</span>
-              <hr>
-              その為に現在は、<span class="u-under-line u-weight600">技術を学んで理解を深めるにあたって"言語化"を重視。
-              <br>
-              </span> ただキャッチアップするだけではなく、<span class="u-under-line u-weight600">ブログやNotionにてアウトプットを積極的に行っている。</span>
-              <br>
-              曖昧な理解を防いだり、提案の際、納得感のある説明ができるようになる為にも日々学んだことを言語化することが重要だと考えている。
-            </dd>
-            <dd class="p-career__dd p-career__dd--pictures">
-              <a href="https://kt-media.blog/" class="p-career__dd-picture p-career__dd-picture--link" target="_blank" rel="noopener noreferrer">
-                <picture>
-                  <source srcset="/img/webp/career-blog.webp" class="p-career__dd-img" type="image/webp" />
-                  <img src="/img/common/career-blog.png" alt="技術ブログ「KT MEDIA」のファーストビューのスクリーンショット" width="331" height="174" loading="lazy" class="p-career__dd-img">
-                </picture>
-                <span class="p-career__dd-caption p-career__dd-caption--link">
-                  技術ブログ「KT MEDIA」運営
-                  <svg class="c-svg" width="12" height="12">
-                    <use xlink:href="/img/svg/sprite.min.svg#icon-blank" />
-                  </svg>
-                </span>
-              </a>
-              <span class="p-career__dd-picture">
-                <picture>
-                  <source srcset="/img/webp/career-notion.webp" class="p-career__dd-img" type="image/webp" />
-                  <img src="/img/common/career-notion.png" alt="Notionで管理している開発ログのスクリーンショット" width="331" height="174" loading="lazy" class="p-career__dd-img">
-                </picture>
-                <span class="p-career__dd-caption">
-                  Notionにて自作の開発ドキュメントを運用
-                </span>
-              </span>
-            </dd>
-          </div>
-        </dl>
-      </div>
-    </section><%# / 経歴 %>
   </div>
 
   <%# お問い合わせ導線 %>

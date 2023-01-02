@@ -3,11 +3,80 @@
 // Project フッター上部
 //--------------------------------------------------------------------------
 
-.p-footer-head__link {
+.p-footer-head__picture {
+  position: relative;
+  display: inline-block;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 2em;
+  width: 70px;
+  height: 70px;
+
+  @include global.mq(md) {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.p-footer-head__img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.p-footer-head__heading {
+  margin-top: 4px;
+
+  @include global.mq(md) {
+    margin-top: 0;
+  }
+}
+
+.p-footer-head__inner {
+  @include global.mq(md) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.p-footer-head__heading-en {
+  display: block;
+  @include global.fz(16, 18);
+  @include global.lh(1.4);
+  letter-spacing: -0.01em;
+  font-weight: 400;
+}
+
+.p-footer-head__heading-ja {
+  display: block;
+  margin-top: 12px;
+  @include global.fz(12, 14);
+  @include global.lh(1);
+  font-weight: 400;
+  color: rgba(global.$color-primary, 0.5);
+}
+
+.p-footer-head__email {
+  display: block;
+  font-size: 22px;
+  @include global.lh(1.7);
+  letter-spacing: -0.01em;
+  font-weight: 400;
+  margin-top: 32px;
+  white-space: nowrap;
   position: relative;
   display: block;
-  padding-bottom: 32px;
+  padding-bottom: 12px;
   overflow: hidden;
+
+  @include global.mq(md) {
+    @include global.clampFunction("font-size", 768, 1920, 24, 60);
+  }
+
+  @include global.mq(lax) {
+    padding-bottom: 24px;
+  }
 
   &::before,
   &::after {
@@ -16,10 +85,14 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 2.5px;
+    height: 1px;
     opacity: 0.7;
     transition: transform 1s global.ease(out-quint);
     background-color: global.$color-primary;
+
+    @include global.mq(lax) {
+      height: 2px;
+    }
   }
 
   &::before {
@@ -58,75 +131,13 @@
   }
 }
 
-.p-footer-head__heading {
-  @include global.lh(1.2);
-  font-weight: 400;
-  font-size: 52px;
+.p-footer-head__blank {
+  transform: translateY(8%) rotate(-90deg);
+  width: 18px;
+  height: 18px;
 
-  @include global.mq(md) {
-    @include global.clampFunction("font-size", 1024, 1440, 74, 100);
-  }
-}
-
-.p-footer-head__heading-text {
-  position: relative;
-  display: inline-block;
-  white-space: nowrap;
-  display: flex;
-  align-items: center;
-  clip-path: inset(0 0 -0.1em);
-
-  &:nth-child(2) {
-    span {
-      padding-left: 0.07em;
-      transition: transform 0.6s global.ease(out-quint) 0.2s;
-    }
-  }
-
-  span {
-    position: relative;
-    display: inline-block;
-    transition: transform 0.6s global.ease(out-quint);
-    height: 1.2em;
-    padding-left: 0.2em;
-
-    &::after {
-      content: attr(data-text);
-      display: block;
-      white-space: nowrap;
-    }
-  }
-}
-
-.p-footer-head__picture {
-  position: relative;
-  display: inline-block;
-  border-radius: 50%;
-  overflow: hidden;
-  margin-right: 0.2em;
-  width: 52px;
-  height: 52px;
-
-  @include global.mq(md) {
-    width: 100px;
-    height: 100px;
-  }
-}
-
-.p-footer-head__img {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.p-footer-head__text {
-  margin-top: 21px;
-  @include global.fz(14, 16);
-  @include global.lh(1.44);
-  font-family: global.$font-family-ja;
-
-  @include global.mq(md) {
-    margin-top: 32px;
+  @include global.mq(lax) {
+    @include global.clampFunction("width", 768, 1920, 24, 32);
+    @include global.clampFunction("height", 768, 1920, 24, 32);
   }
 }

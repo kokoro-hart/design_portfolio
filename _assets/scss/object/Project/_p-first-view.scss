@@ -39,14 +39,25 @@
 
 .p-first-view__heading {
   width: 100%;
-  font-size: max(52px, #{global.vw(52, 375)});
+  font-size: max(52px, #{global.vw(58, 375)});
   @include global.lh(1.12);
   font-weight: 400;
   white-space: nowrap;
   letter-spacing: -0.01em;
 
   @include global.mq(sm) {
-    font-size: max(74px, #{global.vw(79, 1024)});
+    font-size: max(74px, #{global.vw(77, 1024)});
+  }
+}
+
+.p-first-view__heading-text {
+  font-weight: 400;
+  font-size: min(60px, #{global.vw(40, 375)});
+  @include global.lh(1);
+  letter-spacing: 0.01em;
+
+  &:nth-child(2) {
+    margin-top: 12px;
   }
 }
 
@@ -55,7 +66,7 @@
   margin-top: 18px;
   font-size: global.vw(14, 375);
   letter-spacing: -0.01em;
-  @include global.lh(1.2);
+  @include global.lh(1.7, 1.2);
   color: global.$color-secondary-dark;
   white-space: nowrap;
 

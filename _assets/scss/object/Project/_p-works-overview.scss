@@ -61,7 +61,7 @@
 
 .p-works-overview__dd {
   margin-top: 3px;
-  @include global.fz(14, 16);
+  @include global.fz(12, 16);
   @include global.lh(2);
   font-family: global.$font-family-en;
 
@@ -88,12 +88,20 @@
   }
 }
 
-.p-works-overview__svg {
-  transform: translateY(22%);
+.p-works-overview__blank {
+  width: 12px;
+  height: 12px;
+  transform: translateY(15%);
+
+  @include global.mq(md) {
+    width: 14px;
+    height: 14px;
+    transform: translateY(9%);
+  }
 }
 
 .p-works-overview__text {
-  @include global.fz(14, 16);
+  @include global.fz(12, 16);
   @include global.lh(1.7);
   font-weight: 300;
 }

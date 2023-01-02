@@ -72,10 +72,11 @@
 .p-drawer-nav__text {
   opacity: 0;
   margin-top: 32px;
-  @include global.fz(14);
+  @include global.fz(12);
   @include global.lh(1.4);
   letter-spacing: 1px;
-  font-weight: 500;
+  font-weight: 400;
+  color: rgba(global.$color-primary, 0.5);
 }
 
 .p-drawer-nav__sns {

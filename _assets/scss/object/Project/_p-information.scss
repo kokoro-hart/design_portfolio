@@ -1,0 +1,98 @@
+@use "foundation/global";
+
+// Project お問い合わせ詳細
+//--------------------------------------------------------------------------
+
+.p-information {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  @include global.mq(lax) {
+    align-items: flex-end;
+  }
+}
+
+.p-information__arrow {
+  display: block;
+  @include global.mq(lax) {
+    transform: translateX(-9%);
+  }
+}
+
+.p-information__arrow-svg {
+  width: 24px;
+  height: 24px;
+
+  @include global.mq(lax) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.p-information__row {
+  margin-top: 28px;
+  @include global.mq(md) {
+    margin-top: 32px;
+  }
+}
+
+.p-information__list {
+  margin-top: 8px;
+  @include global.mq(md) {
+    margin-top: 12px;
+  }
+}
+
+.p-information__heading {
+  @include global.fz(14, 16);
+  @include global.lh(1.4);
+  font-weight: 400;
+  color: global.$color-primary-thin;
+}
+
+.p-information__item {
+  &:not(:first-child) {
+    margin-top: 4px;
+
+    @include global.mq(md) {
+      margin-top: 6px;
+    }
+  }
+}
+
+.p-information__link,
+.p-information__text {
+  display: inline-block;
+  @include global.fz(12, 16);
+  @include global.lh(1.4);
+  padding: 2px 0;
+}
+
+.p-information__link {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: global.$color-base;
+    transform: scale(0, 1);
+    transform-origin: right top;
+    transition: transform 0.6s global.ease(out-quint);
+
+    @include global.mq(lax) {
+      background-color: global.$color-primary;
+    }
+  }
+  &:hover,
+  &:focus {
+    &::before {
+      transform-origin: left top;
+      transform: scale(1, 1);
+    }
+  }
+}

@@ -29,12 +29,8 @@
 .p-intro__text {
   width: 100%;
   margin-top: 40px;
-  @include global.fz(14, 16);
-  @include global.lh(1.7, 1.8);
+  @include global.fz(12, 16);
+  @include global.lh(1.85,1.8);
   font-weight: 400;
   font-family: global.$font-family-ja;
-
-  @include global.mq(md) {
-    margin-top: 40px;
-  }
 }

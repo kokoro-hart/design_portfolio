@@ -29,7 +29,11 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  row-gap: 104px;
+  row-gap: 84px;
+
+  @include global.mq(md) {
+    row-gap: 134px;
+  }
 
   @include global.mq(lax) {
     display: block;
@@ -38,7 +42,7 @@
   }
 
   @include global.mq(xl) {
-    width: 49.5%;
+    width: 48.5%;
   }
 }
 

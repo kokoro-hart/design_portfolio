@@ -28,8 +28,8 @@ body {
 
 // locomotive-scroll.jsのバグ対応
 html.has-scroll-smooth {
-	backface-visibility: hidden;
-	transform: translateZ(0);
+  backface-visibility: hidden;
+  transform: translateZ(0);
 }
 
 body {
@@ -163,6 +163,24 @@ input:focus:not(:focus-visible) {
 }
 
 input:focus,
-textarea:focus{
+textarea:focus {
   outline: 0;
+}
+
+.awwwards {
+  position: absolute;
+  z-index: 20;
+  transform: translateY(-27%) scale(0.5);
+  transform-origin: right;
+  top: calc(7.5vw + 15vh);
+  right: 0;
+
+  @include global.mq(md) {
+    top: 220px;
+  }
+
+  @include global.mq(1200px, min) {
+    top: 19.7vw;
+    transform: translateY(-50%);
+  }
 }

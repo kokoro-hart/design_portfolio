@@ -52,10 +52,9 @@
 @use "object/Project/p-profile";
 @use "object/Project/p-skills";
 @use "object/Project/p-value";
-@use "object/Project/p-career";
 @use "object/Project/p-form";
 @use "object/Project/p-contact";
-@use "object/Project/p-contact-details";
+@use "object/Project/p-information";
 @use "object/Project/p-contact-connect";
 @use "object/Project/p-contact-thanks";
 @use "object/Project/p-footer";
@@ -70,4 +69,5 @@
 @use "object/utility/u-weight";
 @use "object/utility/u-family";
 @use "object/utility/u-under-line";
+@use "object/utility/u-margin";
 

@@ -17,6 +17,12 @@
       "type": "article",
       "slug": "/about/"
     },
+    "pokedex": {
+      "name": "PokeDex",
+      "description": "PokeAPIを使用したポケモンWeb図鑑",
+      "type": "article",
+      "slug": "/pokedex/"
+    },
     "memories": {
       "name": "Memories",
       "description": "世界最大級のカーイベント。世界各国から集まるクラシックカーのチューニング・ドレスアップの総合展示会",
@@ -74,6 +80,18 @@
   },
   "//制作実績": "",
   "works": {
+    "pokedex": {
+      "dataId": "#js-pokedex",
+      "id": "js-pokedex",
+      "name": "PokeDex",
+      "category": "Gallery Site",
+      "description": "PokeAPIを利用してポケモンWeb図鑑を制作しました。ガラル地方のポケモンNo.897まで掲載しています。",
+      "slug": "/pokedex/",
+      "thumbnailWebp": "/img/webp/thumbnail-pokedex.webp",
+      "thumbnailPng": "/img/common/thumbnail-pokedex.jpeg",
+      "alt": "サムネイル pokedexポケモンWeb図鑑",
+      "scope": "Some UI design / Development"
+    },
     "brainApp": {
       "dataId": "#js-brain",
       "id": "js-brain",

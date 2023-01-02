@@ -5,13 +5,22 @@
 
 //ファーストビュー
 .l-home__first-view {
-  padding: 18vh 0 13vh;
+  padding: 15vh 0 10vh;
 
   @include global.mq(lax) {
     min-height: 500px;
     height: 61vw;
     max-height: 86vh;
     padding: 0;
+  }
+}
+
+.l-home__contents {
+  display: flex;
+  flex-direction: column-reverse;
+
+  @include global.mq(lax) {
+    display: block;
   }
 }
 

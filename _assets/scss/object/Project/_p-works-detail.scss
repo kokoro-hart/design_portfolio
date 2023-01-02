@@ -39,7 +39,7 @@
 .p-works-detail__dt {
   max-width: 80px;
   width: 100%;
-  @include global.fz(14, 16);
+  @include global.fz(12, 16);
   @include global.lh(1.2);
   font-family: global.$font-family-ja;
   font-weight: 600;
@@ -55,7 +55,7 @@
   max-width: calc(100% - 110px);
   width: 100%;
   padding-left: 7px;
-  @include global.fz(14, 16);
+  @include global.fz(12, 16);
   @include global.lh(1.7);
   font-family: global.$font-family-ja;
   font-weight: 400;

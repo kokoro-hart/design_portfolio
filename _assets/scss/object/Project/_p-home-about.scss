@@ -10,11 +10,12 @@
 
 .p-home-about__heading {
   color: global.$color-secondary;
-  font-size: 18vw;
+  font-size: max(24px, #{global.vw(42)});
   @include global.lh(1);
   font-weight: 400;
   white-space: nowrap;
   letter-spacing: -0.01em;
+  margin-left: -0.8%;
 
   @include global.mq(lax) {
     width: 40%;
@@ -46,7 +47,7 @@
 
 .p-home-about__name-en {
   display: block;
-  font-size: 32px;
+  font-size: 28px;
   @include global.lh(1);
   font-weight: 400;
   white-space: nowrap;
@@ -61,19 +62,24 @@
   display: block;
   margin-top: 4px;
   font-weight: 400;
-  @include global.fz(14, 16);
+  @include global.fz(12, 16);
   @include global.lh(1.2);
   font-family: global.$font-family-ja;
+  opacity: 0.5;
 
   @include global.mq(md) {
     margin-top: 7px;
+  }
+
+  @include global.mq(lax) {
+    opacity: 1;
   }
 }
 
 .p-home-about__text {
   margin-top: 14px;
-  @include global.fz(14, 16);
-  line-height: 1.7em;
+  @include global.fz(12, 16);
+  line-height: 1.85em;
   font-family: global.$font-family-ja;
   font-weight: 400;
 

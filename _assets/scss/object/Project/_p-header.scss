@@ -19,14 +19,16 @@
   z-index: map-get(global.$layer, header-inner);
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: calc(100% - 48px);
   overflow: hidden;
   margin-left: auto;
   margin-right: auto;
-  padding: 20px 0 14px;
+  height: 53px;
 
   @include global.mq(md) {
     width: 100%;
+    height: auto;
     padding: 40px 0 24px;
   }
 
@@ -37,11 +39,12 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 2px;
+    height: 1px;
     opacity: 0.6;
     background-color: global.$color-base;
 
     @include global.mq(lax) {
+      height: 2px;
       background-color: global.$color-primary;
     }
   }
@@ -62,7 +65,7 @@
 .p-header__logo-link {
   display: flex;
   overflow: hidden;
-  @include global.fz(18, 20);
+  @include global.fz(16, 20);
   @include global.lh(1.2);
   font-weight: 400;
   height: 1.2em;
