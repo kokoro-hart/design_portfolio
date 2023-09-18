@@ -1,10 +1,10 @@
-<% let pageId='pokedex' ; %>
+<% let pageId='smarthr' ; %>
 
   <%- include('../common/_header', {pageId:pageId }) %>
 
     <% console.log(jsonData) %>
-      <main id="js-pokedex-app" class="l-single-works p-single-works" data-barba="container"
-        data-barba-namespace="single" data-bg="#AAAADA">
+      <main id="js-smarthr-product" class="l-single-works p-single-works" data-barba="container"
+        data-barba-namespace="single" data-bg="#00C4CC">
         <div class="l-container l-container--small">
           <%# 背景色変更エリア %>
           <div id="js-switching-trigger">
@@ -13,17 +13,17 @@
               <div class="p-single-works__heading c-single-heading">
                 <h1 class="p-single-works__heading-en is-wrap" style="transform: translate(0px, 0px);">
                   <span class="is-slide-up">
-                    PokeDex
+                    SmartHR
                   </span>
                 </h1>
                 <p class="p-single-works__heading-ja is-wrap">
                   <span class="is-slide-up u-delay04">
-                    Gallery Site
+                    Product Tutorial
                   </span>
                 </p>
                 <p class="p-single-works__category is-wrap">
                   <span class="is-slide-up u-delay05">
-                    Some UI design / Development
+                    Development
                   </span>
                 </p>
               </div>
@@ -34,23 +34,23 @@
             <div class="p-single-works__mockups" style="transform: translate(0px, 0px);">
               <picture class="p-single-works__mockup p-single-works__mockup--sp" data-scroll
                 data-scroll-speed="1" data-scroll-delay="0.1">
-                <!-- <source srcset="/img/webp/sp-brain.webp" class="p-single-works__mockup-img" type="image/webp" /> -->
-                <img src="/img/common/sp-pokedex.png" class="p-single-works__mockup-img"
-                  alt="pokedexポケモンWeb図鑑、スマホ画面のビュー" width="70" height="141" decoding="async">
+                <source srcset="/img/webp/sp-smarthr.webp" class="p-single-works__mockup-img" type="image/webp" />
+                <img src="/img/common/sp-smarthr.png" class="p-single-works__mockup-img"
+                  alt="SmartHR機能ガイド、スマホ画面のビュー" width="70" height="141" decoding="async">
               </picture>
 
               <picture class="p-single-works__mockup p-single-works__mockup--pc" data-scroll
                 data-scroll-speed="0.5">
-                <!-- <source srcset="/img/webp/pc-brain.webp" class="p-single-works__mockup-img" type="image/webp" /> -->
-                <img src="/img/common/pc-pokedex.png" class="p-single-works__mockup-img"
-                  alt="pokedexポケモンWeb図鑑、PC画面のビュー" width="949" height="811" decoding="async">
+                <source srcset="/img/webp/pc-smarthr.webp" class="p-single-works__mockup-img" type="image/webp" />
+                <img src="/img/common/pc-smarthr.png" class="p-single-works__mockup-img"
+                  alt="SmartHR機能ガイド、PC画面のビュー" width="949" height="811" decoding="async">
               </picture>
 
               <picture class="p-single-works__mockup p-single-works__mockup--tab" data-scroll
                 data-scroll-speed="0.75" data-scroll-delay="0.05">
-                <!-- <source srcset="/img/webp/tab-brain.webp" class="p-single-works__mockup-img"type="image/webp" /> -->
-                <img src="/img/common/tab-pokedex.png" class="p-single-works__mockup-img"
-                  alt="pokedexポケモンWeb図鑑、タブレット画面のビュー" width="445" height="622" decoding="async">
+                <source srcset="/img/webp/tab-smarthr.webp" class="p-single-works__mockup-img"type="image/webp" />
+                <img src="/img/common/tab-smarthr.png" class="p-single-works__mockup-img"
+                  alt="SmartHR機能ガイド、タブレット画面のビュー" width="445" height="622" decoding="async">
               </picture>
             </div>
             <%# / モックアップ %>
@@ -68,9 +68,9 @@
                         Site url
                       </dt>
                       <dd class="p-works-overview__dd">
-                        <a href="https://pokedex-six-mocha.vercel.app/" class="p-works-overview__link"
+                        <a href="https://cs.smarthr.jp/product/engagement-survey/" class="p-works-overview__link"
                           target="_blank" rel="noopener noreferrer" style="transform: translate(0px, 0px);">
-                          https://pokedex-six-mocha.vercel.app/
+                          https://cs.smarthr.jp/product/engagement-survey/
                           <svg class="c-svg p-works-overview__blank" width="14" height="14">
                             <use xlink:href="/img/svg/sprite.min.svg#icon-blank" />
                           </svg>
@@ -86,7 +86,7 @@
                 </h2>
                 <div class="p-works-overview__body">
                   <p class="p-works-overview__text">
-                    PokeAPIを利用してポケモンWeb図鑑を制作しました。ガラル地方のポケモンNo.897まで掲載しています。
+                    SmartHRプロダクトの機能ガイド、チュートリアル画面の開発を行いました。
                   </p>
                 </div>
               </section>
@@ -96,27 +96,25 @@
             <%# ワイドイメージ %>
             <picture class="p-single-works__picture p-single-works__picture--wide"
               style="transform: translate(0px, 0px);">
-              <source srcset="/img/webp/pokedex-rotate01.webp" class="p-single-works__img" type="image/webp" />
-              <img src="/img/common/pokedex-rotate01.png" class="p-single-works__img" width="1920"
+              <source srcset="/img/webp/smarthr-rotate01.webp" class="p-single-works__img" media="(max-width: 768px)" type="image/webp" />
+              <source srcset="/img/common/smarthr-rotate01.png" class="p-single-works__img" media="(max-width: 768px)" />
+              <source srcset="/img/webp/smarthr-rotate01-pc.webp" class="p-single-works__img" type="image/webp" />
+              <img src="/img/common/smarthr-rotate01-pc.png" class="p-single-works__img" width="1920"
                 height="1333" loading="lazy" data-scroll data-scroll-speed="-1" alt="">
             </picture>
-            <picture class="p-single-works__picture p-single-works__picture--wide"
-              style="transform: translate(0px, 0px);">
-              <source srcset="/img/webp/pokedex-rotate02.webp" class="p-single-works__img" type="image/webp" />
-              <img src="/img/common/pokedex-rotate02.png" class="p-single-works__img" width="1920"
-                height="1333" loading="lazy" data-scroll data-scroll-speed="-1" alt="">
+            <picture class="p-single-works__picture p-single-works__picture--wide" style="transform: translate(0px, 0px);">
+              <source srcset="/img/webp/smarthr-rotate02.webp" class="p-single-works__img" media="(max-width: 768px)" type="image/webp"/>
+              <source srcset="/img/common/smarthr-rotate02.png" class="p-single-works__img" media="(max-width: 768px)" />
+              <source srcset="/img/webp/smarthr-rotate02-pc.webp" class="p-single-works__img" type="image/webp" />
+              <img src="/img/common/smarthr-rotate02-pc.png" class="p-single-works__img" width="1920" height="1333" loading="lazy"
+                data-scroll data-scroll-speed="-1" alt="">
             </picture>
-            <picture class="p-single-works__picture p-single-works__picture--wide"
-              style="transform: translate(0px, 0px);">
-              <source srcset="/img/webp/pokedex-rotate03.webp" class="p-single-works__img" type="image/webp" />
-              <img src="/img/common/pokedex-rotate03.png" class="p-single-works__img" width="1920"
-                height="1333" loading="lazy" data-scroll data-scroll-speed="-1" alt="">
-            </picture>
-            <picture class="p-single-works__picture p-single-works__picture--wide"
-              style="transform: translate(0px, 0px);">
-              <source srcset="/img/webp/pokedex-rotate04.webp" class="p-single-works__img" type="image/webp" />
-              <img src="/img/common/pokedex-rotate04.png" class="p-single-works__img" width="1920"
-                height="1333" loading="lazy" data-scroll data-scroll-speed="-1" alt="">
+            <picture class="p-single-works__picture p-single-works__picture--wide" style="transform: translate(0px, 0px);">
+              <source srcset="/img/webp/smarthr-rotate03.webp" class="p-single-works__img" media="(max-width: 768px)" type="image/webp" />
+              <source srcset="/img/common/smarthr-rotate03.png" class="p-single-works__img" media="(max-width: 768px)" />
+              <source srcset="/img/webp/smarthr-rotate03-pc.webp" class="p-single-works__img" type="image/webp" />
+              <img src="/img/common/smarthr-rotate03-pc.png" class="p-single-works__img" width="1920" height="1333" loading="lazy"
+                data-scroll data-scroll-speed="-1" alt="">
             </picture>
             <%# ワイドイメージ %>
 
@@ -124,7 +122,7 @@
             <div class="p-single-works__video-wrapper">
               <video autoplay muted loop playsinline width="1351" height="844" data-scroll
                 data-scroll-speed="-1">
-                <source src="/img/video/pokedex-video.mp4" type="video/mp4">
+                <source src="/img/video/smarthr-video.mp4" type="video/mp4">
               </video>
             </div>
             <%# / 動画 %>
@@ -144,26 +142,26 @@
                   <dl class="p-works-detail__dl">
                     <div class="p-works-detail__row">
                       <dt class="p-works-detail__dt">
+                        クライアント
+                      </dt>
+                      <dd class="p-works-detail__dd">
+                        <a href="https://smarthr.co.jp/" target="_blank">株式会社SmartHR</a>
+                      </dd>
+                    </div>
+                    <div class="p-works-detail__row">
+                      <dt class="p-works-detail__dt">
+                        公開日
+                      </dt>
+                      <dd class="p-works-detail__dd">
+                        2023年
+                      </dd>
+                    </div>
+                    <div class="p-works-detail__row">
+                      <dt class="p-works-detail__dt">
                         担当範囲
                       </dt>
                       <dd class="p-works-detail__dd">
-                        デザイン / コーディング
-                      </dd>
-                    </div>
-                    <div class="p-works-detail__row">
-                      <dt class="p-works-detail__dt">
-                        制作期間
-                      </dt>
-                      <dd class="p-works-detail__dd">
-                        2022.12.4 - 2022.12.7
-                      </dd>
-                    </div>
-                    <div class="p-works-detail__row">
-                      <dt class="p-works-detail__dt">
-                        実働時間
-                      </dt>
-                      <dd class="p-works-detail__dd">
-                        3日 (1〜2時間/ 1日)
+                        フロントエンド開発
                       </dd>
                     </div>
                     <div class="p-works-detail__row">
@@ -171,15 +169,17 @@
                         使用技術
                       </dt>
                       <dd class="p-works-detail__dd">
-                        HTML / CSS / JavaScript
+                        Astro / Vue.js / TypeScript
                       </dd>
                     </div>
                     <div class="p-works-detail__row">
                       <dt class="p-works-detail__dt">
-                        使用ツール
+                        クレジット
                       </dt>
                       <dd class="p-works-detail__dd">
-                        vscode / Figma
+                        PM：サトウハルミ（FLAT, Inc.）<br>
+                        Director：小濱 （FLAT, Inc.）<br>
+                        Develop：浅井（FLAT, Inc.）、飛田（FLAT, Inc.）
                       </dd>
                     </div>
                   </dl>
@@ -188,9 +188,9 @@
             </section>
             <div class="p-single-works__captures">
               <picture class="p-single-works__capture" style="transform: translate(0px, 0px);">
-                <source srcset="/img/webp/pokemon.webp" class="p-single-works__capture-img" type="image/webp" />
-                <img src="/img/common/pokemon.png" class="p-single-works__capture-img"
-                  alt="" width="1079" height="3714" loading="lazy">
+                <source srcset="/img/webp/smarthr-capture.webp" class="p-single-works__capture-img" type="image/webp" />
+                <img src="/img/common/smarthr-capture.png" class="p-single-works__capture-img"
+                  alt="" width="1632" height="3065" loading="lazy">
               </picture>
               <div class="p-single-works__capture-mask" id="js-capture"></div>
             </div>
@@ -200,25 +200,24 @@
 
         <%# 制作実績導線 %>
           <div class="p-works-connect" style="transform: translate(0px, 0px);">
-            <a href="/smarthr/" class="p-works-connect__link">
+            <a href="/kt-media/" class="p-works-connect__link">
               <picture class="p-works-connect__bg">
-                <source srcset="/img/webp/thumbnail-smarthr.webp" type="image/webp" />
-                <img src="/img/common/thumbnail-smarthr.jpeg" width="770" height="781" alt="サムネイル、smarthr"
-                  loading="lazy">
+                <source srcset="/img/webp/thumbnail-media.webp" type="image/webp" />
+                <img src="/img/common/thumbnail-media.png" width="770" height="781" alt="サムネイル、KT MEDIA個人技術ブログ" loading="lazy">
               </picture>
               <p class="p-works-connect__text-wrapper">
-                <span class="p-works-connect__text" data-text="SmartHR">
+                <span class="p-works-connect__text" data-text="KT MEDIA">
                   Prev
                 </span>
               </p>
             </a>
-            <a href="/brain-app/" class="p-works-connect__link">
+            <a href="/pokedex/" class="p-works-connect__link">
               <picture class="p-works-connect__bg">
-                <source srcset="/img/webp/thumbnail-brain.webp" type="image/webp" />
-                <img src="/img/common/thumbnail-brain.png" width="770" height="781" alt="サムネイル、Brain App架空医療系アプリLP" loading="lazy">
+                <source srcset="/img/webp/thumbnail-pokedex.webp" type="image/webp" />
+                <img src="/img/common/thumbnail-pokedex.png" width="770" height="781" alt="サムネイル、Pokedex" loading="lazy">
               </picture>
               <p class="p-works-connect__text-wrapper">
-                <span class="p-works-connect__text" data-text="Brain App">
+                <span class="p-works-connect__text" data-text="Pokedex">
                   Next
                 </span>
               </p>

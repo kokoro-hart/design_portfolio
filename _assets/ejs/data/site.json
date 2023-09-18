@@ -17,6 +17,12 @@
       "type": "article",
       "slug": "/about/"
     },
+    "smarthr": {
+      "name": "SmartHR",
+      "description": "サービスチュートリアル画面",
+      "type": "article",
+      "slug": "/smarthr/"
+    },
     "pokedex": {
       "name": "PokeDex",
       "description": "PokeAPIを使用したポケモンWeb図鑑",
@@ -35,35 +41,11 @@
       "type": "article",
       "slug": "/brain-app/"
     },
-    "global-standard": {
-      "name": "Global Standard",
-      "description": "世界で活躍できるグローバルな人材を育てる、架空事業会社のコーポレートサイト",
-      "type": "article",
-      "slug": "/global-standard/"
-    },
     "kt-media": {
-      "name": "KT MEDIA",
-      "description": "「KT MEDIA」個人アウトプット用の技術ブログ",
+      "name": "Old Blog Site",
+      "description": "個人アウトプット用の技術ブログ",
       "type": "article",
       "slug": "/kt-media/"
-    },
-    "open-cafe": {
-      "name": "Open Cafe",
-      "description": "最高のコーヒーと、 時の流れを味わうことができる架空カフェサイト",
-      "type": "article",
-      "slug": "/open-cafe/"
-    },
-    "minami-dental": {
-      "name": "Minami Dental",
-      "description": "健康的で素敵な笑顔あふれる街づくりを目指す架空歯科医院",
-      "type": "article",
-      "slug": "/minami-dental/"
-    },
-    "garden-salad": {
-      "name": "Garden Salad",
-      "description": "健康的で素敵な笑顔あふれる街づくりを目指す架空歯科医院",
-      "type": "article",
-      "slug": "/garden-salad/"
     },
     "contact": {
       "name": "CONTACT",
@@ -80,6 +62,18 @@
   },
   "//制作実績": "",
   "works": {
+    "smarthr": {
+      "dataId": "#js-smarthr",
+      "id": "js-smarthr",
+      "name": "SmartHR",
+      "category": "Product Tutorial",
+      "description": "SmartHRプロダクトの機能ガイド、チュートリアル画面の開発を行いました。",
+      "slug": "/smarthr/",
+      "thumbnailWebp": "/img/webp/thumbnail-smarthr.webp",
+      "thumbnailPng": "/img/common/thumbnail-smarthr.jpeg",
+      "alt": "サムネイル smarthr機能ガイド",
+      "scope": "Development"
+    },
     "pokedex": {
       "dataId": "#js-pokedex",
       "id": "js-pokedex",
@@ -90,7 +84,7 @@
       "thumbnailWebp": "/img/webp/thumbnail-pokedex.webp",
       "thumbnailPng": "/img/common/thumbnail-pokedex.jpeg",
       "alt": "サムネイル pokedexポケモンWeb図鑑",
-      "scope": "Some UI design / Development"
+      "scope": "UI design / Development"
     },
     "brainApp": {
       "dataId": "#js-brain",
@@ -119,62 +113,14 @@
     "ktMedia": {
       "dataId": "#js-blog",
       "id": "js-blog",
-      "name": "KT MEDIA",
+      "name": "Old Blog Site",
       "category": "Blog Site",
-      "description": "個人アウトプット用の技術ブログ「KT MEDIA」の企画、デザイン、コーディング、CMS構築を行いました。",
+      "description": "個人アウトプット用の技術ブログ「KT MEDIA」のデザイン、コーディング、CMS構築を行いました。",
       "slug": "/kt-media/",
       "thumbnailWebp":"/img/webp/thumbnail-media.webp",
       "thumbnailPng": "/img/common/thumbnail-media.png",
       "alt": "サムネイル、KT MEDIA 個人技術ブログ",
       "scope": "UI Design / Development"
-    },
-    "globalStandard": {
-      "dataId": "#js-global",
-      "id": "js-global",
-      "name": "Global Standard",
-      "category": "Corporate Site",
-      "description": "世界で活躍できるグローバルな人材を育てる事業会社の、架空コーポレートサイトのコーディング、CMS構築を行いました。",
-      "slug": "/global-standard/",
-      "thumbnailWebp": "/img/webp/thumbnail-global.webp",
-      "thumbnailPng": "/img/common/thumbnail-global.jpeg",
-      "alt": "サムネイル、Global Standard架空コーポレートサイト",
-      "scope": "Development"
-    },
-    "openCafe": {
-      "dataId": "#js-open",
-      "id": "js-open",
-      "name": "Open Cafe",
-      "category": "Cafe Site",
-      "description": "「Open Cafe - dish & coffee」架空カフェサイトのコーディング、CMS構築を行いました。",
-      "slug": "/open-cafe/",
-      "thumbnailWebp": "/img/webp/thumbnail-open.webp",
-      "thumbnailPng": "/img/common/thumbnail-open.jpeg",
-      "alt": "サムネイル、OpenCafe架空カフェサイト",
-      "scope": "Development"
-    },
-    "minamiDental": {
-      "dataId": "#js-minami",
-      "id": "js-minami",
-      "name": "Minami Dental",
-      "category": "Dentist Site",
-      "description": "「みなみ歯科クリニック」架空歯科医院サイトのコーディング、CMS構築を行いました。",
-      "slug": "/minami-dental/",
-      "thumbnailWebp": "/img/webp/thumbnail-minami.webp",
-      "thumbnailPng": "/img/common/thumbnail-minami.jpeg",
-      "alt": "サムネイル、みなみ歯科クリニック架空サイト",
-      "scope": "Development"
-    },
-    "gardenSalad": {
-      "dataId": "#js-garden",
-      "id": "js-garden",
-      "name": "Garden Salad",
-      "category": "Cafe Site",
-      "description": "健康的なのに美味しい、SNSで拡散したくなるようなサラダ「Garden Salad」架空サラダカフェサイトのコーディングを行いました。",
-      "slug": "/garden-salad/",
-      "thumbnailWebp": "/img/webp/thumbnail-garden.webp",
-      "thumbnailPng": "/img/common/thumbnail-garden.jpeg",
-      "alt": "サムネイル、Garden Salad架空カフェサイト",
-      "scope": "Development"
     }
   }
 }
